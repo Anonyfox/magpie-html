@@ -116,6 +116,19 @@ export {
   extractTwitterCard,
   extractVerification,
 } from './metadata/index.js';
+export type { PluckInit, PluckResponse } from './pluck/index.js';
+// Enhanced fetch for web scraping
+export {
+  PluckContentTypeError,
+  PluckEncodingError,
+  PluckError,
+  PluckHttpError,
+  PluckNetworkError,
+  PluckRedirectError,
+  PluckSizeError,
+  PluckTimeoutError,
+  pluck,
+} from './pluck/index.js';
 
 /**
  * Extract plain text content from HTML string.
