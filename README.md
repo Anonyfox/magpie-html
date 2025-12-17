@@ -21,129 +21,44 @@ npm install magpie-html
 
 ## Usage
 
-### Basic Example
-
-```typescript
-import { helloWorld, extractText, getEnvironment } from "magpie-html";
-
-// Simple greeting
-console.log(helloWorld("Developer"));
-// Output: Hello, Developer! Welcome to Magpie HTML 🦅
-
-// Extract text from HTML
-const html = "<div><h1>Title</h1><p>Content</p></div>";
-const text = extractText(html);
-console.log(text);
-// Output: Title Content
-
-// Check environment
-console.log(getEnvironment());
-// Output: 'node' or 'browser'
-```
-
-### In Browser
-
-```html
-<script type="module">
-  import { extractText } from "https://unpkg.com/magpie-html";
-
-  const html = document.body.innerHTML;
-  const text = extractText(html);
-  console.log(text);
-</script>
-```
-
-## Feed Parsing
-
-### Quick Start
+### Feed Parsing
 
 ```typescript
 import { parseFeed } from 'magpie-html';
 
-// Parse any feed format (RSS, Atom, JSON Feed)
-const result = parseFeed(feedContent);
+// Auto-detect and parse any feed format (RSS, Atom, JSON Feed)
+const feed = await fetch('https://example.com/feed.xml').then(r => r.text());
+const result = parseFeed(feed, 'https://example.com/feed.xml');
+
 console.log(result.feed.title);
 console.log(result.feed.items[0].title);
+console.log(result.feed.items[0].url); // Absolute URLs
 ```
 
-### URL Normalization
+Supports RSS 2.0, Atom 1.0, and JSON Feed with automatic format detection and URL normalization.
 
-Automatically resolve relative URLs to absolute URLs:
+### HTML Text Extraction
 
 ```typescript
-import { parseFeed } from 'magpie-html';
+import { extractText } from 'magpie-html';
 
-const feedWithRelativeUrls = `<?xml version="1.0"?>
-<rss version="2.0">
-  <channel>
-    <title>Blog</title>
-    <link>/blog</link>
-    <description>Blog</description>
-    <item>
-      <title>Post</title>
-      <link>/blog/post-1</link>
-    </item>
-  </channel>
-</rss>`;
-
-// Without base URL - URLs remain relative
-const result1 = parseFeed(feedWithRelativeUrls);
-console.log(result1.feed.url); // "/blog"
-
-// With base URL - URLs become absolute
-const result2 = parseFeed(feedWithRelativeUrls, 'https://example.com/feed.xml');
-console.log(result2.feed.url); // "https://example.com/blog"
-console.log(result2.feed.items[0].url); // "https://example.com/blog/post-1"
+const html = '<div><h1>Title</h1><p>Content</p></div>';
+const text = extractText(html); // "Title Content"
 ```
-
-### Supported Feed Formats
-
-- **RSS 2.0** (including common extensions like Dublin Core, Content, Media RSS)
-- **Atom 1.0**
-- **JSON Feed 1.0 and 1.1**
-
-All formats are automatically detected and normalized to a unified interface.
 
 ## API
 
-### Feed Parsing
+### `parseFeed(content: string, baseUrl?: string | URL)`
 
-#### `parseFeed(content: string, baseUrl?: string | URL): ParseResult`
+Parse any feed format with auto-detection. Returns normalized `Feed` object and original data.
 
-Parse any feed format with automatic format detection.
+### `detectFormat(content: string)`
 
-- **content**: Feed content as string (XML or JSON)
-- **baseUrl** (optional): Base URL for resolving relative URLs
-- Returns: `ParseResult` with normalized feed data and original format-specific data
+Detect feed format without parsing. Returns `'rss'`, `'atom'`, `'json-feed'`, or `'unknown'`.
 
-#### `parseFeedNormalized(content: string, baseUrl?: string | URL): Feed`
+### `extractText(html: string)`
 
-Convenience wrapper that returns only the normalized feed data.
-
-#### `detectFormat(content: string): FeedFormat`
-
-Detect the format of a feed without parsing it.
-
-- Returns: `'rss'`, `'atom'`, `'json-feed'`, or `'unknown'`
-
-### Text Extraction
-
-#### `extractText(html: string): string`
-
-Extracts plain text content from an HTML string.
-
-- **html**: The HTML string to parse
-- Returns: The extracted text with normalized whitespace
-
-### Environment Detection
-
-#### `isBrowser(): boolean`
-
-Checks if the code is running in a browser environment.
-
-#### `getEnvironment(): 'browser' | 'node'`
-
-Gets the current runtime environment.
+Extract plain text from HTML. Removes tags, scripts, styles and normalizes whitespace.
 
 ## Development
 

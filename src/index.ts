@@ -26,26 +26,7 @@ export type {
   ParseResult,
 } from './feed/index.js';
 // Feed Parser - Main API
-export {
-  detectFormat,
-  isAtom,
-  isFeed,
-  isJSONFeed,
-  isRSS,
-  parseAtom,
-  parseFeed,
-  parseFeedAs,
-  parseFeedNormalized,
-  parseJSONFeed,
-  parseRSS,
-} from './feed/index.js';
-// URL Utilities
-export {
-  normalizeUrl,
-  normalizeUrlHttps,
-  normalizeUrls,
-  preferHttps,
-} from './utils/normalize-url.js';
+export { detectFormat, isAtom, isFeed, isJSONFeed, isRSS, parseFeed } from './feed/index.js';
 
 /**
  * Simple greeting function for testing package integration.
