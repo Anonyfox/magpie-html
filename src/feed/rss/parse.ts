@@ -3,18 +3,20 @@
  * Orchestrates parsing of RSS 2.0, 0.9x feeds
  */
 
-import { parseRSSXML, querySelector } from './xml-parser.js';
+import { normalizeUrlHttps } from '../../utils/normalize-url.js';
 import { extractChannel } from './extract-channel.js';
 import { extractItem } from './extract-item.js';
 import { extractNamespaces } from './extract-namespaces.js';
-import type { RssFeedExtended, RssItemExtended } from './types.js';
-import { querySelectorAll } from './xml-parser.js';
+import type { RssChannel, RssFeedExtended, RssItem, RssItemExtended } from './types.js';
+import { parseRSSXML, querySelector, querySelectorAll } from './xml-parser.js';
 
 /**
  * Parse RSS feed from XML string
  * Supports RSS 2.0, 0.92, 0.91, 0.9
+ * @param xml - RSS XML string
+ * @param baseUrl - Optional base URL for resolving relative URLs
  */
-export function parseRSS(xml: string): RssFeedExtended {
+export function parseRSS(xml: string, baseUrl?: string | URL): RssFeedExtended {
   // Parse XML
   const doc = parseRSSXML(xml);
 
@@ -50,10 +52,51 @@ export function parseRSS(xml: string): RssFeedExtended {
     return item;
   });
 
+  // Apply URL normalization if base URL provided
+  const normalizedChannel = baseUrl ? normalizeChannelUrls(channel, baseUrl) : channel;
+  const normalizedItems = baseUrl ? items.map((item) => normalizeItemUrls(item, baseUrl)) : items;
+
   return {
     version,
-    channel,
-    items,
+    channel: normalizedChannel,
+    items: normalizedItems,
+  };
+}
+
+/**
+ * Normalize all URLs in channel
+ */
+function normalizeChannelUrls(channel: RssChannel, baseUrl: string | URL): RssChannel {
+  return {
+    ...channel,
+    link: channel.link ? normalizeUrlHttps(baseUrl, channel.link) : channel.link,
+    image: channel.image
+      ? {
+          ...channel.image,
+          url: normalizeUrlHttps(baseUrl, channel.image.url),
+          link: channel.image.link
+            ? normalizeUrlHttps(baseUrl, channel.image.link)
+            : channel.image.link,
+        }
+      : channel.image,
+    docs: channel.docs ? normalizeUrlHttps(baseUrl, channel.docs) : channel.docs,
+  };
+}
+
+/**
+ * Normalize all URLs in item
+ */
+function normalizeItemUrls(item: RssItem, baseUrl: string | URL): RssItem {
+  return {
+    ...item,
+    link: item.link ? normalizeUrlHttps(baseUrl, item.link) : item.link,
+    comments: item.comments ? normalizeUrlHttps(baseUrl, item.comments) : item.comments,
+    enclosure: item.enclosure
+      ? {
+          ...item.enclosure,
+          url: normalizeUrlHttps(baseUrl, item.enclosure.url),
+        }
+      : item.enclosure,
   };
 }
 
@@ -75,4 +118,3 @@ export function isRSS(xml: string): boolean {
     return false;
   }
 }
-

@@ -1,7 +1,7 @@
-import { describe, it } from 'node:test';
 import assert from 'node:assert/strict';
-import { parseRSSXML } from './xml-parser.js';
+import { describe, it } from 'node:test';
 import { extractNamespaces } from './extract-namespaces.js';
+import { parseRSSXML } from './xml-parser.js';
 
 describe('extractNamespaces', () => {
   it('should extract content:encoded', () => {
@@ -243,4 +243,3 @@ describe('extractNamespaces', () => {
     assert.ok(ns.contentEncoded?.includes('Paragraph 3'));
   });
 });
-

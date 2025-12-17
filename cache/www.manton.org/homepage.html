@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="generator" content="Hugo 0.91.2" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta content="Manton Reece" name="author">
+
+  <title>Manton Reece</title>
+
+  <link href="/assets/css/style.css?1765914601" rel="stylesheet">
+  <link href="/assets/css/highlight.css?1765914601" rel="stylesheet">
+  <link href="/assets/css/alpine.css?1765914601" rel="stylesheet">
+  <style>
+
+.site-title {
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 1.35;
+	padding-left: 5px;
+	margin-top: 0px;
+	margin-bottom: 5px;
+	padding-top: 5px;
+	padding-bottom: 10px;
+}
+
+nav.main-nav a.cta {
+	background: #ffffff;
+	color: #f29c38;
+	padding: 6px 14px;
+	border: 2px solid #f29c38;
+	border-radius: 20px;
+	white-space: nowrap;
+	box-shadow: none;
+}
+
+nav.main-nav a.cta:hover {
+	background: #fffee4;
+	color: #f29c38;
+	margin-left: 12px;
+}
+
+</style>
+
+  
+
+<link rel="alternate" href="https://www.manton.org/feed.xml" type="application/rss+xml" title="Manton Reece">
+<link rel="alternate" href="https://www.manton.org/feed.json" type="application/json" title="Manton Reece">
+
+  <link rel="alternate" href="https://www.manton.org/podcast.xml" type="application/rss+xml" title="Podcast">
+  <link rel="alternate" href="https://www.manton.org/podcast.json" type="application/json" title="Podcast">
+
+
+<link rel="me" href="https://micro.blog/manton">
+
+
+  <link rel="me" href="https://twitter.com/mantonsblog">
+
+
+
+  <link rel="me" href="https://github.com/manton">
+
+
+
+
+<link rel="shortcut icon" href="https://micro.blog/manton/favicon.png" type="image/x-icon">
+<link rel="EditURI" type="application/rsd+xml" href="https://www.manton.org/rsd.xml">
+<link rel="authorization_endpoint" href="https://micro.blog/indieauth/auth">
+<link rel="token_endpoint" href="https://micro.blog/indieauth/token">
+<link rel="subscribe" href="https://micro.blog/users/follow">
+<link rel="webmention" href="https://micro.blog/webmention">
+<link rel="micropub" href="https://micro.blog/micropub">
+<link rel="microsub" href="https://micro.blog/microsub">
+
+<link rel="stylesheet" href="/custom.css?1765914601">
+
+
+  <link rel="stylesheet" href="/css/bookgoals.css?v=59">
+
+  <link rel="stylesheet" href="/css/all.min.css?v=59">
+
+  <link rel="stylesheet" href="/dark.css?v=59">
+
+  <link rel="stylesheet" href="/css/collections.css?v=59">
+
+  <link rel="stylesheet" href="/archive_months.css?v=59">
+
+
+
+  <link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+
+
+  <script type="module">
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('https:\/\/www.manton.org\/surprise-me\/redirect.js')
+    .catch((error) => {
+      console.error('Service Worker registration failed:', error);
+    });
+}
+</script>
+
+
+  <link rel="stylesheet" href="/css/barefoot.min.css">
+<script src="/js/barefoot.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", (event) => {  
+    var barefoot = new BareFoot();
+    barefoot.init();
+  });
+</script>
+
+
+  
+  <link rel="blogroll" type="text/xml" href="/.well-known/recommendations.opml">
+
+
+
+  <script>
+	document.addEventListener('DOMContentLoaded', () => {
+		const images = document.querySelectorAll('.microblog_collection img');
+		let currentImageIndex = 0;
+		let isMultiLightbox = false;
+
+		function isDataURL(url) {
+			return (typeof url == 'string') && url.trim().startsWith('data:');
+		}
+
+		function createLightbox() {
+			
+			const lightbox = document.createElement('div');
+			lightbox.id = 'microblog_lightbox';
+			
+			const closeBtn = document.createElement('button');
+			closeBtn.id = 'microblog_lightbox_close_btn';
+			closeBtn.innerHTML = '&times;';
+			
+			const prevBtn = document.createElement('button');
+			prevBtn.id = 'microblog_lightbox_prev_btn';
+			prevBtn.className = 'microblog_lightbox_nav';
+			prevBtn.innerHTML = '&larr;';
+			
+			const nextBtn = document.createElement('button');
+			nextBtn.id = 'microblog_lightbox_next_btn';
+			nextBtn.className = 'microblog_lightbox_nav';
+			nextBtn.innerHTML = '&rarr;';
+			
+			const lightboxImg = document.createElement('img');
+			lightboxImg.id = 'microblog_lightbox_img';
+			lightboxImg.alt = 'Lightbox Image';
+			
+			lightbox.appendChild(closeBtn);
+			lightbox.appendChild(prevBtn);
+			lightbox.appendChild(lightboxImg);
+			lightbox.appendChild(nextBtn);
+			
+			document.body.appendChild(lightbox);
+		
+			return { lightbox, closeBtn, prevBtn, nextBtn, lightboxImg };
+		}
+		
+		const { 
+			lightbox, 
+			closeBtn, 
+			prevBtn, 
+			nextBtn, 
+			lightboxImg 
+		} = createLightbox();
+
+		function openMultiLightbox(index) {
+			isMultiLightbox = true;
+			currentImageIndex = index;
+			lightboxImg.src = images[index].getAttribute('data-microblog-lightbox');
+			lightbox.style.display = 'flex';
+
+			
+			prevBtn.style.display = 'block';
+			nextBtn.style.display = 'block';
+		}
+		
+		function openSingleLightbox(url) {
+			isMultiLightbox = false;
+			lightboxImg.src = url;
+			lightbox.style.display = 'flex';
+
+			
+			prevBtn.style.display = 'none';
+			nextBtn.style.display = 'none';
+		}
+
+		function closeLightbox() {
+			lightbox.style.display = 'none';
+		}
+
+		function navigatePrevious() {
+			currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+			lightboxImg.src = images[currentImageIndex].getAttribute('data-microblog-lightbox');
+		}
+
+		function navigateNext() {
+			currentImageIndex = (currentImageIndex + 1) % images.length;
+			lightboxImg.src = images[currentImageIndex].getAttribute('data-microblog-lightbox');
+		}
+
+		
+		images.forEach((img, index) => {
+			if (isDataURL(img.src)) {
+				return;
+			}
+			img.addEventListener('click', () => openMultiLightbox(index));
+		});
+
+		closeBtn.addEventListener('click', closeLightbox);
+		prevBtn.addEventListener('click', navigatePrevious);
+		nextBtn.addEventListener('click', navigateNext);
+
+		
+		document.addEventListener('keydown', (e) => {
+			if (lightbox.style.display === 'flex') {
+				switch (e.key) {
+					case 'ArrowLeft':
+						if (isMultiLightbox) {
+							navigatePrevious();
+						}
+						break;
+					case 'ArrowRight':
+						if (isMultiLightbox) {
+							navigateNext();
+						}
+						break;
+					case 'Escape':
+						closeLightbox();
+						break;
+				}
+			}
+		});
+
+		
+		lightbox.addEventListener('click', (e) => {
+			if (e.target === lightbox) {
+				closeLightbox();
+			}
+		});
+		
+		
+		const single_images = document.querySelectorAll(".e-content img, .p-summary img");
+		single_images.forEach(function(image) {
+			
+			if (image.closest(".microblog_collection")) {
+				return;
+			}
+		
+			
+			if (!image.closest("a")) {
+				
+				const hasClickHandler = image.onclick || image.hasAttribute("onclick");
+				const hasTouchHandler = image.ontouchstart || image.hasAttribute("ontouchstart");
+		
+				
+				if (!hasClickHandler && !hasTouchHandler && !isDataURL(image.src)) {
+					image.addEventListener("click", function() {
+						openSingleLightbox(image.src);
+					});
+				}
+			}
+		});
+	});
+</script>
+
+
+  
+	 
+
+
+
+
+</head>
+
+<body>
+  <nav class="main-nav">
+
+	<div class="site-title">
+		<img src="https://avatars.micro.blog/avatars/2025/22/3.jpg" width="25" height="25" class="site-image">
+		<a href="/">Manton Reece</a>
+	</div>
+
+	<div class="site-menus">
+
+	
+		
+			<a href="/about/">About</a>
+		
+	
+		
+			<a href="/photos/">Photos</a>
+		
+	
+		
+			<a href="/videos/">Videos</a>
+		
+	
+		
+			<a href="/archive/">Archive</a>
+		
+	
+		
+			<a href="/30-days/">30 days</a>
+		
+	
+		
+			<a href="/90-parks/">90 parks</a>
+		
+	
+		
+			<a href="/replies/">Replies</a>
+		
+	
+		
+			<a href="/reading/">Reading</a>
+		
+	
+		
+			<a href="/search/">Search</a>
+		
+	
+
+	<a class="cta" href="https://micro.blog/manton" rel="me">Also on Micro.blog</a>
+
+	</div>
+</nav>
+
+
+
+
+
+  <section id="wrapper">
+	
+
+<style>
+
+#wrapper {
+	max-width: 1000px;
+}
+
+.home_columns {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.home_posts {
+	flex: 1;
+	padding-left: 20px;
+	padding-right: 80px;
+	box-sizing: border-box;
+}
+
+.home_blogroll {
+	padding-left: 20px;
+	padding-right: 20px;
+	box-sizing: border-box;
+	width: 30%;
+	font-size: 15px;
+}
+
+.home_blogroll ul {
+	padding-top: 14px;
+}
+
+.home_blogroll ul li {
+	list-style-type: none;
+	padding-bottom: 4px;
+}
+
+.home_blogroll a {
+	text-decoration: none;
+	color: black;
+}
+
+.home_blogroll a span {
+	color: gray;
+}
+
+
+@media screen and (max-width: 600px) {
+	.home_blogroll {
+		display: none;
+	}
+
+	.home_posts {
+		padding-right: 20px;
+	}
+}
+
+</style>
+
+<div class="home_columns">
+
+<ul id="post-list" class="h-feed home_posts">
+
+
+	
+	
+	
+		<li>
+<article class="h-entry">
+  
+	<div class="e-content"><p>For day 2 of the winter photo challenge: cozy blanket and cozy book, <a href="https://micro.blog/books/9781250324610">The Spellshop</a>.</p>
+<img src="https://cdn.uploads.micro.blog/10/2025/7f3a4124d3.jpg" width="600" height="600" alt="">
+</div>
+  
+  <a href="https://www.manton.org/2025/12/16/for-day-of-the-winter.html" class="u-url">
+	<aside class="dates">
+	  <time datetime="2025-12-16 14:41:52 -0600" class="dt-published">→ 2:41 PM, Dec 16</time>
+	</aside>
+  </a>
+
+  
+    <a class="u-syndication" href="at://did:plc:pko7wbcggok753hnvndxh3ni/app.bsky.feed.post/3ma4z4n2flh2c" style="display: none;">Also on Bluesky</a>
+  
+	
+</article>
+</li>
+<span class="separator"><span class="divider"></span></span>
+
+	
+		<li>
+<article class="h-entry">
+  
+	<div class="e-content"><p>John Gruber <a href="https://daringfireball.net/2025/12/apple_tv_new_fanfare">blogging at Daring Fireball</a> about the updated Apple TV logo animation and sound:</p>
+<blockquote>
+<p>The new one feels like a branding stroke unto itself. Sonically, it doesn’t evoke anything else. It just sounds rich and cool. Visually, with its rotating prism effect, it does evoke the classic six-color Apple logo.</p>
+</blockquote>
+<p>The new one is great. The glowing background of the old logo actually bugged me from the very beginning. Something about it felt wrong, like design that uses too many gradients getting muddled instead of crisp and clear.</p>
+</div>
+  
+  <a href="https://www.manton.org/2025/12/16/john-gruber-blogging-at-daring.html" class="u-url">
+	<aside class="dates">
+	  <time datetime="2025-12-16 14:04:22 -0600" class="dt-published">→ 2:04 PM, Dec 16</time>
+	</aside>
+  </a>
+
+  
+    <a class="u-syndication" href="at://did:plc:pko7wbcggok753hnvndxh3ni/app.bsky.feed.post/3ma4wz2agw72e" style="display: none;">Also on Bluesky</a>
+  
+	
+</article>
+</li>
+<span class="separator"><span class="divider"></span></span>
+
+	
+		<li>
+<article class="h-entry">
+  
+	<div class="e-content"><p>MacStories 2025 Lifetime Achievement Award: <a href="https://www.macstories.net/stories/the-macstories-selects-2025-lifetime-achievement-award/">Unread</a>. Congrats <a href="https://micro.blog/johnbrayton">@johnbrayton</a>!</p>
+<blockquote>
+<p>Eleven years after its inception and eight years after its second sale to a different developer, Unread still stands out in the third-party indie app market because it’s managed to honor its lineage while adapting to the ever-changing nature of the Apple ecosystem.</p>
+</blockquote>
+</div>
+  
+  <a href="https://www.manton.org/2025/12/16/macstories-lifetime-achievement-award-unread.html" class="u-url">
+	<aside class="dates">
+	  <time datetime="2025-12-16 11:28:41 -0600" class="dt-published">→ 11:28 AM, Dec 16</time>
+	</aside>
+  </a>
+
+  
+    <a class="u-syndication" href="at://did:plc:pko7wbcggok753hnvndxh3ni/app.bsky.feed.post/3ma4of4f7eg2q" style="display: none;">Also on Bluesky</a>
+  
+	
+</article>
+</li>
+<span class="separator"><span class="divider"></span></span>
+
+	
+		<li>
+<article class="h-entry">
+  
+	<div class="e-content"><p>If you missed it, we brought our Core Intuition podcast back for another <a href="https://coreint.org/2025/12/episode-26-2-a-little-bit-of-light/">special bonus episode</a>. We catch up on AI, the new Micro.blog Studio plan, Daniel&rsquo;s family and college search, losing trust in Tim Cook, and whether Steve Jobs can be replaced.</p>
+</div>
+  
+  <a href="https://www.manton.org/2025/12/16/if-you-missed-it-we.html" class="u-url">
+	<aside class="dates">
+	  <time datetime="2025-12-16 09:16:55 -0600" class="dt-published">→ 9:16 AM, Dec 16</time>
+	</aside>
+  </a>
+
+  
+    <a class="u-syndication" href="at://did:plc:pko7wbcggok753hnvndxh3ni/app.bsky.feed.post/3ma4gx5en2w2u" style="display: none;">Also on Bluesky</a>
+  
+	
+</article>
+</li>
+<span class="separator"><span class="divider"></span></span>
+
+	
+		<li>
+<article class="h-entry">
+  
+	<div class="e-content"><p><a href="https://manuelmoreale.com/thoughts/age-gating-the-web">Manu Moreale</a>:</p>
+<blockquote>
+<p>How about, instead of preventing “the kids” from accessing social media, we go in the opposite direction and keep all the adults out? Wouldn’t that be wonderful?</p>
+</blockquote>
+<p>🙂</p>
+<p>Joking aside, I do think there is something to <em>just make the social web better</em>, for everyone.</p>
+</div>
+  
+  <a href="https://www.manton.org/2025/12/16/manu-moreale-how-about-instead.html" class="u-url">
+	<aside class="dates">
+	  <time datetime="2025-12-16 09:03:53 -0600" class="dt-published">→ 9:03 AM, Dec 16</time>
+	</aside>
+  </a>
+
+  
+    <a class="u-syndication" href="at://did:plc:pko7wbcggok753hnvndxh3ni/app.bsky.feed.post/3ma4g7zroua2c" style="display: none;">Also on Bluesky</a>
+  
+	
+</article>
+</li>
+<span class="separator"><span class="divider"></span></span>
+
+	
+		<li>
+<article class="h-entry">
+  
+	<div class="e-content"><p><a href="https://a.wholelottanothing.org/a-2-200-mile-ev-test-drive-from-texas-to-oregon/">Great blog post from Matt Haughey</a> on driving a VW Buzz from Texas to Oregon. When the Buzz was announced, I was hoping it would look a little more old-school VW, but seeing one in person they look really good. Seems mostly well designed inside too.</p>
+</div>
+  
+  <a href="https://www.manton.org/2025/12/16/great-blog-post-from-matt.html" class="u-url">
+	<aside class="dates">
+	  <time datetime="2025-12-16 08:29:37 -0600" class="dt-published">→ 8:29 AM, Dec 16</time>
+	</aside>
+  </a>
+
+  
+    <a class="u-syndication" href="at://did:plc:pko7wbcggok753hnvndxh3ni/app.bsky.feed.post/3ma4efdnnbn2x" style="display: none;">Also on Bluesky</a>
+  
+	
+</article>
+</li>
+<span class="separator"><span class="divider"></span></span>
+
+	
+		<li>
+<article class="h-entry">
+  
+	<div class="e-content"><p>Watched: <a href="https://www.themoviedb.org/movie/590757">Mushka</a>. Andreas Deja helping keep hand-drawn animation alive, purposefully showing the pencil lines in the age of AI and computer-generated everything. 🍿</p>
+</div>
+  
+  <a href="https://www.manton.org/2025/12/15/watched-mushka-andreas-deja-helping.html" class="u-url">
+	<aside class="dates">
+	  <time datetime="2025-12-15 21:35:58 -0600" class="dt-published">→ 9:35 PM, Dec 15</time>
+	</aside>
+  </a>
+
+  
+    <a class="u-syndication" href="at://did:plc:pko7wbcggok753hnvndxh3ni/app.bsky.feed.post/3ma37toqsmc22" style="display: none;">Also on Bluesky</a>
+  
+	
+</article>
+</li>
+<span class="separator"><span class="divider"></span></span>
+
+	
+		<li>
+<article class="h-entry">
+  
+	<div class="e-content"><p>We just posted a new Core Intuition! Wha&hellip;?! <a href="https://coreint.org/2025/12/episode-26-2-a-little-bit-of-light/">Episode 26.2</a>.</p>
+</div>
+  
+  <a href="https://www.manton.org/2025/12/15/we-just-posted-a-new.html" class="u-url">
+	<aside class="dates">
+	  <time datetime="2025-12-15 16:27:22 -0600" class="dt-published">→ 4:27 PM, Dec 15</time>
+	</aside>
+  </a>
+
+  
+    <a class="u-syndication" href="at://did:plc:pko7wbcggok753hnvndxh3ni/app.bsky.feed.post/3ma2okn66wn2e" style="display: none;">Also on Bluesky</a>
+  
+	
+</article>
+</li>
+<span class="separator"><span class="divider"></span></span>
+
+	
+		<li>
+<article class="h-entry">
+  
+	<div class="e-content"><p><a href="https://pxlnv.com/linklog/apple-account-lockout/">Nick Heer</a> on locked Apple accounts:</p>
+<blockquote>
+<p>Given this tight control, the bar for locking a user out of their Apple Account and, to some extent, out of their devices should be unbelievably high.</p>
+</blockquote>
+<p>As an aside, I use iCloud but also (less frequently) copy my photos to Dropbox and Google Photos. Too important to only have one synced copy.</p>
+</div>
+  
+  <a href="https://www.manton.org/2025/12/15/nick-heer-on-locked-apple.html" class="u-url">
+	<aside class="dates">
+	  <time datetime="2025-12-15 12:30:44 -0600" class="dt-published">→ 12:30 PM, Dec 15</time>
+	</aside>
+  </a>
+
+  
+    <a class="u-syndication" href="at://did:plc:pko7wbcggok753hnvndxh3ni/app.bsky.feed.post/3ma2be3rsob22" style="display: none;">Also on Bluesky</a>
+  
+	
+</article>
+</li>
+<span class="separator"><span class="divider"></span></span>
+
+	
+		<li>
+<article class="h-entry">
+  
+	<div class="e-content"><p>Tesla robotaxis in Austin <a href="https://techcrunch.com/2025/12/15/tesla-starts-testing-robotaxis-in-austin-with-no-safety-driver/">no longer need safety drivers</a>. Worrisome. Elon Musk&rsquo;s insistence that self-driving does not need radar or lidar is just needlessly dangerous. Waymos drive better than human drivers in part because <em>they can see better</em>.</p>
+</div>
+  
+  <a href="https://www.manton.org/2025/12/15/tesla-robotaxis-in-austin-no.html" class="u-url">
+	<aside class="dates">
+	  <time datetime="2025-12-15 10:14:58 -0600" class="dt-published">→ 10:14 AM, Dec 15</time>
+	</aside>
+  </a>
+
+  
+    <a class="u-syndication" href="at://did:plc:pko7wbcggok753hnvndxh3ni/app.bsky.feed.post/3m7zzqr6b5f2u" style="display: none;">Also on Bluesky</a>
+  
+	
+</article>
+</li>
+<span class="separator"><span class="divider"></span></span>
+
+	
+		<li>
+<article class="h-entry">
+  
+	<div class="e-content"><p><a href="https://www.manton.org/2019/12/27/my-favorite-christmas.html">Six years ago</a> I blogged about my favorite Christmas movies. No changes needed yet. 🎄</p>
+</div>
+  
+  <a href="https://www.manton.org/2025/12/15/six-years-ago-i-blogged.html" class="u-url">
+	<aside class="dates">
+	  <time datetime="2025-12-15 09:48:39 -0600" class="dt-published">→ 9:48 AM, Dec 15</time>
+	</aside>
+  </a>
+
+  
+    <a class="u-syndication" href="at://did:plc:pko7wbcggok753hnvndxh3ni/app.bsky.feed.post/3m7zyarhyxu2g" style="display: none;">Also on Bluesky</a>
+  
+	
+</article>
+</li>
+<span class="separator"><span class="divider"></span></span>
+
+	
+		<li>
+<article class="h-entry">
+  
+	<div class="e-content"><p>Too many guns. I don&rsquo;t have a lot of words beyond what has already been said for years. Sad for the victims and families from Brown University and Bondi Beach. We should watch what Australia does next and learn from it.</p>
+</div>
+  
+  <a href="https://www.manton.org/2025/12/15/too-many-guns-i-dont.html" class="u-url">
+	<aside class="dates">
+	  <time datetime="2025-12-15 09:30:31 -0600" class="dt-published">→ 9:30 AM, Dec 15</time>
+	</aside>
+  </a>
+
+  
+    <a class="u-syndication" href="at://did:plc:pko7wbcggok753hnvndxh3ni/app.bsky.feed.post/3m7zxbcprjz22" style="display: none;">Also on Bluesky</a>
+  
+	
+</article>
+</li>
+<span class="separator"><span class="divider"></span></span>
+
+	
+		<li>
+<article class="h-entry">
+  
+	<div class="e-content"><p>For the first day of the <a href="https://challenges.micro.blog/2025/12/12/days-of-winter-wonder-photo.html">winter photo challenge</a>, no actual frost anywhere near me, although it is nearly freezing in Austin, so I&rsquo;m going with <em>Frosty</em>.</p>
+<img src="https://cdn.uploads.micro.blog/10/2025/38de055561.jpg" alt="A small, festive snowman decoration with a top hat and orange stars is displayed on a wooden stool, next to a potted plant.">
+</div>
+  
+  <a href="https://www.manton.org/2025/12/15/for-the-first-day-of.html" class="u-url">
+	<aside class="dates">
+	  <time datetime="2025-12-15 08:31:33 -0600" class="dt-published">→ 8:31 AM, Dec 15</time>
+	</aside>
+  </a>
+
+  
+    <a class="u-syndication" href="at://did:plc:pko7wbcggok753hnvndxh3ni/app.bsky.feed.post/3m7zujay2uh2y" style="display: none;">Also on Bluesky</a>
+  
+	
+</article>
+</li>
+<span class="separator"><span class="divider"></span></span>
+
+	
+		<li>
+<article class="h-entry">
+  
+	<div class="e-content"><p>Watched: <a href="https://www.themoviedb.org/movie/812583">Wake Up Dead Man: A Knives Out Mystery</a>. Another great one. 🍿</p>
+</div>
+  
+  <a href="https://www.manton.org/2025/12/14/watched-wake-up-dead-man.html" class="u-url">
+	<aside class="dates">
+	  <time datetime="2025-12-14 19:45:28 -0600" class="dt-published">→ 7:45 PM, Dec 14</time>
+	</aside>
+  </a>
+
+  
+    <a class="u-syndication" href="at://did:plc:pko7wbcggok753hnvndxh3ni/app.bsky.feed.post/3m7yj74o3n72e" style="display: none;">Also on Bluesky</a>
+  
+	
+</article>
+</li>
+<span class="separator"><span class="divider"></span></span>
+
+	
+		<li>
+<article class="h-entry">
+  
+	<div class="e-content"><p>Just noticed a new F1 movie ad in the Apple Sports app. So weird that Apple has become a company that doesn’t mind upselling everything, cluttering the UI of their own apps. It’s a pattern at this point.</p>
+</div>
+  
+  <a href="https://www.manton.org/2025/12/14/just-noticed-a-new-f.html" class="u-url">
+	<aside class="dates">
+	  <time datetime="2025-12-14 15:53:40 -0600" class="dt-published">→ 3:53 PM, Dec 14</time>
+	</aside>
+  </a>
+
+  
+    <a class="u-syndication" href="at://did:plc:pko7wbcggok753hnvndxh3ni/app.bsky.feed.post/3m7y4eqonz22o" style="display: none;">Also on Bluesky</a>
+  
+	
+</article>
+</li>
+<span class="separator"><span class="divider"></span></span>
+
+	
+		<li>
+<article class="h-entry">
+  
+	<div class="e-content"><p>David Pierce introducing <a href="https://www.theverge.com/podcast/844401/tech-industry-2026-predictions-openai-apple">the latest Vergecast</a>:</p>
+<blockquote>
+<p>Here’s a thought: what if the next-generation Siri is awesome? Not just awesome for setting timers and dictating text messages (though that would be nice), but so awesome and fun to talk to that people actually start falling in love with their iPhones. We may not be prepared for what happens next.</p>
+</blockquote>
+<p>It could happen. Expectations are so low that Apple could surprise people. I&rsquo;m just skeptical that Apple is prioritizing the right things to get there.</p>
+</div>
+  
+  <a href="https://www.manton.org/2025/12/14/david-pierce-introducing-the-latest.html" class="u-url">
+	<aside class="dates">
+	  <time datetime="2025-12-14 13:40:27 -0600" class="dt-published">→ 1:40 PM, Dec 14</time>
+	</aside>
+  </a>
+
+  
+    <a class="u-syndication" href="at://did:plc:pko7wbcggok753hnvndxh3ni/app.bsky.feed.post/3m7xurwhzqg2r" style="display: none;">Also on Bluesky</a>
+  
+	
+</article>
+</li>
+<span class="separator"><span class="divider"></span></span>
+
+	
+		<li>
+<article class="h-entry">
+  
+	<div class="e-content"><p>Quick trip up to Dallas this weekend to see the kids. The weather turned cold overnight! ❄️ Speaking of the winter&hellip; We&rsquo;re starting a <a href="https://challenges.micro.blog/2025/12/12/days-of-winter-wonder-photo.html">12-day holiday photo challenge</a> tomorrow. 🎄</p>
+</div>
+  
+  <a href="https://www.manton.org/2025/12/14/quick-trip-up-to-dallas.html" class="u-url">
+	<aside class="dates">
+	  <time datetime="2025-12-14 10:49:06 -0600" class="dt-published">→ 10:49 AM, Dec 14</time>
+	</aside>
+  </a>
+
+  
+    <a class="u-syndication" href="at://did:plc:pko7wbcggok753hnvndxh3ni/app.bsky.feed.post/3m7xl7bxlsh2q" style="display: none;">Also on Bluesky</a>
+  
+	
+</article>
+</li>
+<span class="separator"><span class="divider"></span></span>
+
+	
+		<li>
+<article class="h-entry">
+  
+	<div class="e-content"><p>Great to see Wemby back tonight for the NBA cup semifinals, even in very limited minutes. 🏀</p>
+</div>
+  
+  <a href="https://www.manton.org/2025/12/13/great-to-see-wemby-back.html" class="u-url">
+	<aside class="dates">
+	  <time datetime="2025-12-13 21:40:07 -0600" class="dt-published">→ 9:40 PM, Dec 13</time>
+	</aside>
+  </a>
+
+  
+    <a class="u-syndication" href="at://did:plc:pko7wbcggok753hnvndxh3ni/app.bsky.feed.post/3m7w77cbowa2y" style="display: none;">Also on Bluesky</a>
+  
+	
+</article>
+</li>
+<span class="separator"><span class="divider"></span></span>
+
+	
+		<li>
+<article class="h-entry">
+  
+	<div class="e-content"><p>Coming 2026, in Denton.</p>
+<img src="https://cdn.uploads.micro.blog/10/2025/d0bc8d6dd7.jpg" width="600" height="600" alt="A vintage theater facade features a vertical Fine Arts sign and a marquee displaying COMING 2026.">
+</div>
+  
+  <a href="https://www.manton.org/2025/12/13/coming-in-denton.html" class="u-url">
+	<aside class="dates">
+	  <time datetime="2025-12-13 19:03:32 -0600" class="dt-published">→ 7:03 PM, Dec 13</time>
+	</aside>
+  </a>
+
+  
+    <a class="u-syndication" href="at://did:plc:pko7wbcggok753hnvndxh3ni/app.bsky.feed.post/3m7vwgrwmtb2r" style="display: none;">Also on Bluesky</a>
+  
+	
+</article>
+</li>
+<span class="separator"><span class="divider"></span></span>
+
+	
+		<li>
+<article class="h-entry">
+  
+	<div class="e-content"><p>Thinking more <a href="https://www.manton.org/2025/12/12/enjoyed-the-discussion-on-hard.html">about Australia</a>&hellip; Our kids are adults now, and they grew up through the rise of Instagram, through Covid shutdowns&hellip; We can choose to make a better environment for the next generation, if society makes progress on social media. Less anxiety, fewer ads, more time away from screens.</p>
+</div>
+  
+  <a href="https://www.manton.org/2025/12/13/thinking-more-about-australia-our.html" class="u-url">
+	<aside class="dates">
+	  <time datetime="2025-12-13 10:19:45 -0600" class="dt-published">→ 10:19 AM, Dec 13</time>
+	</aside>
+  </a>
+
+  
+    <a class="u-syndication" href="at://did:plc:pko7wbcggok753hnvndxh3ni/app.bsky.feed.post/3m7uz437oza2r" style="display: none;">Also on Bluesky</a>
+  
+	
+</article>
+</li>
+<span class="separator"><span class="divider"></span></span>
+
+	
+
+
+</ul>
+
+<div class="home_blogroll">
+	<b>Recommendations</b>
+
+	
+	
+	<ul>
+		
+			
+				<li><a href="https://jonhays.me">Jon Hays</a></li>
+			
+		
+			
+				<li><a href="https://bitsplitting.org">Daniel Jalkut</a></li>
+			
+		
+			
+				<li><a href="https://inessential.com">Brent Simmons</a></li>
+			
+		
+			
+				<li><a href="https://vincentritter.com/blog">Vincent Ritter</a></li>
+			
+		
+			
+				<li><a href="https://daringfireball.net">John Gruber</a></li>
+			
+		
+			
+				<li><a href="https://micro.welltempered.net">Jean MacDonald</a></li>
+			
+		
+			
+				<li><a href="https://social.ayjay.org">Alan Jacobs</a></li>
+			
+		
+			
+				<li><a href="https://www.mollywhite.net">Molly White</a></li>
+			
+		
+			
+				<li><a href="https://ohhelloana.blog">Ana Rodrigues</a></li>
+			
+		
+			
+				<li><a href="https://om.co">Om Malik</a></li>
+			
+		
+			
+				<li><a href="https://aows.co/blog">Adrian Vila</a></li>
+			
+		
+			
+				<li><a href="https://mjtsai.com/blog/">Michael Tsai</a></li>
+			
+		
+			
+				<li><a href="http://scripting.com">Dave Winer</a></li>
+			
+		
+			
+				<li><a href="https://rebeccatoh.co">Rebecca Toh</a></li>
+			
+		
+			
+				<li><a href="https://stratechery.com">Ben Thompson</a></li>
+			
+		
+			
+				<li><a href="https://dahlstrand.net">Sven Dahlstrand</a></li>
+			
+		
+			
+				<li><a href="https://austinkleon.com">Austin Kleon</a></li>
+			
+		
+			
+				<li><a href="https://www.zylstra.org/blog/">Ton Zĳlstra</a></li>
+			
+		
+			
+				<li><a href="https://pxlnv.com">Nick Heer</a></li>
+			
+		
+			
+				<li><a href="https://world.hey.com/jason">Jason Fried</a></li>
+			
+		
+	</ul>
+
+	<p>Blogroll as: <a href="/.well-known/recommendations.opml">OPML</a> | <a href="/.well-known/recommendations.json">JSON</a></p>
+</div>
+
+</div>
+
+
+	
+
+
+
+  </section>
+  <footer id="footer">
+
+<section id="wrapper">
+  <ul>
+    <li><a href="/feed.xml">RSS</a></li>
+    <li><a href="/feed.json">JSON Feed</a></li>
+    <li><a href="/surprise-me/">Surprise me!</a></li>
+    <li><a href="/tweets/">Tweets</a></li>
+  </ul>
+</section>
+
+</footer>
+
+  
+		
+			<script src="https://cdn.jsdelivr.net/npm/hls.js?v=59"></script>
+		
+			<script src="/js/studio.js?v=59"></script>
+		
+</body>
+</html>

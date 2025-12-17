@@ -1,8 +1,7 @@
-import { describe, it } from 'node:test';
 import assert from 'node:assert/strict';
-import { parseRSSXML } from './xml-parser.js';
+import { describe, it } from 'node:test';
 import { extractItem, extractItems } from './extract-item.js';
-import { querySelector } from './xml-parser.js';
+import { parseRSSXML } from './xml-parser.js';
 
 describe('extractItem', () => {
   it('should extract item with title only', () => {
@@ -307,4 +306,3 @@ describe('extractItems', () => {
     assert.equal(items[2].description, 'Item with description only');
   });
 });
-

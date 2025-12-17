@@ -1,6 +1,6 @@
-import { describe, it } from 'node:test';
 import assert from 'node:assert/strict';
-import { parseRFC822Date, parseRSSDate, isValidDate } from './parse-date.js';
+import { describe, it } from 'node:test';
+import { isValidDate, parseRFC822Date, parseRSSDate } from './parse-date.js';
 
 describe('parseRFC822Date', () => {
   it('should parse standard RFC 822 date with GMT', () => {
@@ -148,4 +148,3 @@ describe('isValidDate', () => {
     assert.equal(isValidDate(''), false);
   });
 });
-

@@ -1,6 +1,6 @@
-import { describe, it } from 'node:test';
 import assert from 'node:assert/strict';
-import { parseRSS, isRSS } from './parse.js';
+import { describe, it } from 'node:test';
+import { isRSS, parseRSS } from './parse.js';
 
 describe('parseRSS', () => {
   it('should parse minimal valid RSS 2.0 feed', () => {
@@ -293,4 +293,3 @@ describe('isRSS', () => {
     assert.equal(isRSS(xml), true);
   });
 });
-

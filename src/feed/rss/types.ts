@@ -194,4 +194,3 @@ export interface RssItemExtended extends RssItem {
 export interface RssFeedExtended extends RssFeed {
   items: RssItemExtended[];
 }
-

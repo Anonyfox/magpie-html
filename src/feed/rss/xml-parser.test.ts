@@ -1,12 +1,11 @@
-import { describe, it } from 'node:test';
 import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import {
+  getAttribute,
+  getText,
   parseRSSXML,
   querySelector,
   querySelectorAll,
-  getText,
-  getAttribute,
-  type RSSElement,
 } from './xml-parser.js';
 
 describe('parseRSSXML', () => {
@@ -355,4 +354,3 @@ describe('Real-world RSS parsing', () => {
     assert.equal(items.length, 1);
   });
 });
-

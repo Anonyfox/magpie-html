@@ -1,0 +1,660 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <xmeta name="viewport" content="width=device-width, initial-scale=1">
+        
+    	<link rel="alternate" title="shapeof.com feed" type="application/json" href="https://shapeof.com/feed.json" />
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="https://shapeof.com/rss.xml" />
+        <link rel="SHORTCUT ICON" HREF="https://shapeof.com/favicon.ico" />
+        <link href="https://micro.blog/ccgus" rel="me" />
+        
+        <title>The Shape of Everything</title>
+        
+        <style type="text/css">
+        
+        
+            body {
+                margin-top:         0px;
+                margin-left:        0px;
+                margin-right:       0px;
+                background-color:   #fff;
+                font-size:          15px;
+                font-family:        apple-system, -apple-system-font, "HelveticaNeue",  "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+                text-rendering:     optimizeLegibility;
+            }
+            
+            .main {
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 800px;
+                padding-left: 10px;
+            }
+            
+            .header {
+                font-weight: bold;
+                font-size: 2em;
+                padding: 0px;
+                padding-top: 20px;
+                padding-bottom: 40px;
+            }
+            
+            .header a {
+                color: #000;
+            }
+            
+            .headerFoot {
+                font-weight: normal;
+                font-size: 13px;
+                color: #999;
+            }
+            
+            .date {
+                color: #999;
+                font-size: .8em;
+            }
+            
+            .post {
+                padding-bottom: 40px;
+                color: #000;
+                font-size: 15px;
+                width: 660px;
+                line-height: 1.3em;
+            }
+            
+            .secondaryText {
+                color: #777;
+            }
+            
+            .secondaryTextSmall {
+                color: #777;
+                font-size: .85em;
+            }
+            
+            
+            .microPost {
+                padding: 10px;
+                margin-left: -10px;
+                margin-right: -10px;
+                font-size: 15px;
+                width: 660px;
+                
+                margin-bottom: 20px;
+                background: #fdfdfd;
+                xborder: solid 1px #ddd;
+                border-radius: 2px 25px 2px 2px;
+            }
+            
+            .postTitle {
+                font-size: 19px;
+                font-weight: bold;
+                padding-bottom: 0px;
+            }
+            
+            
+            .microPostTitle {
+                font-weight: bold;
+            }
+            
+            .microPostLink {
+                padding-bottom: 0px;
+                font-size: .8em;
+                color: #aaa;
+            }
+            
+            .microPostLink a {
+                color: #ccc;
+            }
+            
+            .postTitle a {
+                color: #000;
+                text-decoration: none;
+            }
+            
+            .postTitle a:hover, .microPostTitle a:hover {
+                color: #253253;
+                text-decoration: underline;
+            }
+            
+            
+            
+            .microPostLink a {
+                text-decoration: none;
+            }
+            
+            .microPostLink a:hover {
+                text-decoration: underline;
+            }
+            
+            
+            
+            #copyright {
+                font-size: 9pt;
+                color: #555;
+                width: 660px;
+            }
+            
+            .quote, blockquote {
+                position: relative;
+                border-radius: 8px;
+                padding: 1px 12px 1px 18px;
+                margin: 0px;
+                font-size: 1.0em;
+                color: #333;
+                background-color: #f6f6f6;
+            }
+            
+            blockquote::before {
+                content: '';
+                position: absolute;
+                left: 8px;
+                top: 8px;
+                bottom: 8px;
+                width: 1px;
+                background-color: #25325355;
+                border-radius: 0;
+            }
+            
+
+            
+            .main a {
+                color: #253253;
+                xtext-decoration: solid;
+            }
+            
+            
+            .archiveMonthHeader {
+                font-weight: bold;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                padding-bottom: 0px;
+            }
+            
+            .archiveEntry {
+                margin-top: 2px;
+                margin-bottom: 2px;
+                padding-left: 10px;
+            }
+            
+            .archiveMonthEntry {
+                margin-top: 0px;
+                margin-bottom: 20px;
+            }
+            
+            .commentsArea {
+                color: #000;
+                border-top: solid 1px #555;
+                width: 660px;
+            }
+            
+            #disqus_thread a {
+                color: black;
+            }
+            
+            .toc {
+                
+                position: sticky !important;
+                top: 60px;
+                float: left;
+                margin-left: -10px; /* Adjust based on TOC width */
+                max-width: 120px; /* Set a fixed width */
+                z-index: 100;
+                text-align: right;
+                
+                padding-top: 10px;
+                padding-right: 10px;
+                line-height: 2.2em;
+                font-size: .9em;
+                display: block;
+                
+            }
+            
+            .toc a {
+                color: #253253;
+                font-weight: 600;
+                
+            }
+            
+            code {
+            	--color: rgb(215, 44, 64);
+            	background-color: rgb(247, 247, 249);
+            	/*border: solid 1px rgb(225, 225, 232);*/
+            	border-radius: 2px; 
+            	/* padding: 2px; */
+            	/* margin: 2px;  */
+            	/*display: block; messes up inline things boo*/
+            }
+            
+            pre {
+            	background-color: rgb(247, 247, 249);
+                white-space: pre-wrap;
+                word-wrap: break-word;
+                overflow-wrap: anywhere; /* Most aggressive wrapping */
+                max-width: 100%; /* Prevents overflow */
+                overflow-x: auto; /* Horizontal scroll as fallback */
+            }
+            
+            
+            .importDisclaimer {
+                color: #999;
+            }
+            
+            .aboutSiteEntry {
+                background-color: #eee;
+                border-radius: 2px;
+                padding: 20px;
+                padding-top: 0px;
+                border: solid 1px rgb(225, 225, 232);
+                margin-bottom: 20px;
+            }
+            
+            
+            </style>
+        
+    
+    <script language="javascript">
+    /*
+    function loadDisqus() {
+        var disqus_shortname = 'shapeof';
+        (function () {
+            var s = document.createElement('script'); s.async = true;
+            s.src = 'http://disqus.com/forums/shapeof/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+
+        (function() {
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = 'http://shapeof.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    
+    }*/
+    </script>
+    
+    
+    </head>
+    <body>
+        
+        <div class="main">
+            
+            <div class="header">
+                <center>
+                    <a href="/"><img border="0" width="128" height="128" src="https://shapeof.com/images/header-256.png" /></a><br/>
+                    <a href="/" style="text-decoration: none;">The Shape of Everything</a><br/>
+                    <span class="headerFoot">A website mostly about Mac stuff, written by August "Gus" Mueller</span>
+                </center>
+            </div>
+            
+            <div class="toc">
+                » <a href="https://flyingmeat.com/acorn/">Acorn</a><br/>
+                » <a href="https://flyingmeat.com/retrobatch/">Retrobatch</a><br/>
+                » <a rel="me" href="https://mastodon.social/@ccgus">Mastodon</a><br/>
+                » <a href="https://bsky.app/profile/ccgus.bsky.social">Bluesky</a><br/>
+                » <a href="https://micro.blog/ccgus">Micro.blog</a><br/>
+                » <a href="https://www.instagram.com/ccgus/">Instagram</a><br/>
+                » <a href="https://github.com/ccgus">Github</a><br/>
+                » <a href="https://maybepizza.com/">Maybe Pizza?</a><br/>
+                » <a href="/archive.html">Archives</a><br/>
+                » <a href="https://shapeof.com/rss.xml">Feed</a><br/>
+                » <a href="https://shapeof.com/microrss.xml">Micro feed</a><br/>
+                <!--
+                » <a href="https://twitter.com/ccgus">Twitter</a><br/>
+                -->
+            </div>
+            
+            <div style="margin-left: 120px">
+            <div class="microPost">
+    <img src="https://shapeof.com/images/micro-link.png" width="18" height="18" style="float: left; margin-right: 4px;" />
+    <div class="microPostTitle"><a href="https://shapeof.com/archives/2025/12/creating_a_python-based_html5_parser_with_agents.html">Creating a Python-Based HTML5 Parser With Agents</a></div><br/>
+    <p><a href="https://friendlybit.com/python/writing-justhtml-with-coding-agents/">How I wrote JustHTML using coding agents</a>, a post by Emil Stenström:</p>
+<blockquote>
+<p>I recently released <a href="https://github.com/EmilStenstrom/justhtml">JustHTML</a>, a python-based HTML5 parser. It passes 100% of the html5lib test suite, has zero dependencies, and includes a CSS selector query API. Writing it taught me a lot about how to work with coding agents effectively.</p>
+</blockquote>
+<p>…</p>
+<blockquote>
+<p>JustHTML is about 3,000 lines of Python with 8,500+ tests passing. I couldn&#39;t have written it this quickly without the agent.</p>
+<p>But &quot;quickly&quot; doesn&#39;t mean &quot;without thinking.&quot; I spent a lot of time reviewing code, making design decisions, and steering the agent in the right direction. The agent did the typing; I did the thinking.</p>
+</blockquote>
+<p>I haven’t quite embraced agents in this way (yet?), but I think the balance Stenström took in directing the LLMs to take out the busy work is the right way to go.</p>
+
+    <div class="microPostLink"><a href="https://shapeof.com/archives/2025/12/creating_a_python-based_html5_parser_with_agents.html">December 16, 2025 at 8:10:35</a></div>
+</div><div class="post">
+    <img src="https://shapeof.com/images/mueller-post.png" width="18" height="18" style="float: left; margin-right: 4px;" />
+    <div class="postTitle"><a href="https://shapeof.com/archives/2025/12/decompiling_binaries_with_llms.html">Decompiling Binaries With LLMs</a></strong></div>
+    <div class="date">December 6, 2025</div>
+    <p>Chris Lewis: <a href="https://blog.chrislewis.au/using-coding-agents-to-decompile-nintendo-64-games/">Using Coding Agents to Decompile Nintendo 64 Games:</a></p>
+<blockquote>
+<p>Recently, I’ve been working on a matching decompilation of Snowboard Kids 2, an incredibly underrated racing game for the Nintendo 64. The purpose of this post is to document how coding agents have and haven’t helped with the decompilation process. While much has been written about LLMs, far less has been written about decompilation, so I’m adding another data point</p>
+</blockquote>
+<p>I&#39;ve used ChatGPT to decompile a little bit of code in the past, which worked pretty well (and is super informative, you should try it. (also thank goodness for <a href="https://www.hopperapp.com">Hopper</a>)). But using an LLM to decompile a N64 game is next level awesome.</p>
+<p>Lewis also has another post worth reading - <a href="https://blog.chrislewis.au/the-unexpected-effectiveness-of-one-shot-decompilation-with-claude/">The Unexpected Effectiveness of One-Shot Decompilation with Claude</a>.</p>
+
+</div><div class="post">
+    <img src="https://shapeof.com/images/mueller-post.png" width="18" height="18" style="float: left; margin-right: 4px;" />
+    <div class="postTitle"><a href="https://shapeof.com/archives/2025/11/acorn_app_store_awards_finalist.html">Acorn is an App Store Awards Finalist</a></strong></div>
+    <div class="date">November 19, 2025</div>
+    <p>Acorn is an <a href="https://www.apple.com/newsroom/2025/11/apple-announces-finalists-for-the-2025-app-store-awards/">App Store Awards Finalist for 2025</a>!</p>
+<p>I&#39;m pretty excited about this! - thanks to everyone at Apple for the recognition, and congrats to the other finalists as well.</p>
+<center>
+<picture>
+  <source style="max-width: 75%;" srcset="https://shapeof.com/archives/2025/11/app_store_awards_acorn.jxl" type="image/jxl">
+  <img style="max-width:  75%;" src="https://shapeof.com/archives/2025/11/app_store_awards_acorn.jpeg" alt="">
+</picture>
+</center>
+
+
+
+</div><div class="post">
+    <img src="https://shapeof.com/images/mueller-post.png" width="18" height="18" style="float: left; margin-right: 4px;" />
+    <div class="postTitle"><a href="https://shapeof.com/archives/2025/11/drawing_to_a_cgbitmapcontext_with_multiple_threads.html">Parallel Vector Drawing to a CGBitmapContext</a></strong></div>
+    <div class="date">November 17, 2025</div>
+    <p>I recently came across a post by Aurimas Gasiulis on <a href="https://gasiulis.name/parallel-rasterization-on-cpu/">Parallel vector graphics rasterization on CPU</a>, which I found pretty intriguing. Gasiulis wrote a vector shape renderer named “Blaze” and made it work across multiple threads. Very cool stuff.</p>
+<p>But I was shocked when performance charts were provided, which included comparisons to rendering with Apple’s Core Graphics library. Blaze was around 20x faster at rendering than CG.</p>
+<p>This sounds like a wonderful <a href="https://xkcd.com/356/">nerd snipe</a> to me.</p>
+<p>Does Core Graphics (CG) already do parallel drawing? Not that I’m aware of, at least when it comes to rendering vector shapes. What if we just … draw on multiple threads with the same <code>CGContextRef</code>? That seems like a bad idea and as far as I’m aware, <code>CGBitmapContext</code> isn’t thread-safe. And it turns out that yes - this is a bad idea. Segfaults abound.</p>
+<p>What if we make multiple CGContextRefs for each thread, but they all reference the same backing store? And what if we clip to horizontal stripes like the Blaze renderer does?</p>
+<p>Well, that seems to work just fine, and it’s a nice speed boost. A quick little test in Acorn where it rendered 28,200 shapes took about 0.93 seconds single-threaded, and only 0.11 seconds with the parallel drawing.</p>
+<p>Both are very fast for rendering that many shapes. But if we make the rendering a bit more complex by giving each of those shapes a 5pt drop shadow? Here we get 17.8 seconds for a single-thread render, and 2.7 seconds for a parallel render. Even though the multiplier is about the same (~8× speedup), 15 seconds saved is a lot.</p>
+<p>Were there any rendering glitches? There were very, very tiny anti-aliased edges that were not perceptible to the eye, and the images were otherwise identical (and I used Acorn’s “<a href="https://flyingmeat.com/acorn/docs-8.0/command_bar.html#compare-two-front-windows">Compare Two Front Windows</a>” command (new in 8.3!) to figure this out).
+The implementation is very simple as well:</p>
+<pre><code class="language-objective-c">
+CGContextRef FMCGBitmapContextCopySharingData(CGContextRef originalCTX) {
+    CGContextRef ctx =
+        CGBitmapContextCreate(CGBitmapContextGetData(originalCTX),
+        CGBitmapContextGetWidth(originalCTX),
+        CGBitmapContextGetHeight(originalCTX),
+        CGBitmapContextGetBitsPerComponent(originalCTX),
+        CGBitmapContextGetBytesPerRow(originalCTX),
+        CGBitmapContextGetColorSpace(originalCTX),
+        CGBitmapContextGetBitmapInfo(originalCTX));
+
+    return ctx;
+}
+
+void FMCGBitmapContextParallelDraw(CGContextRef context, void (^b)(CGContextRef chunkContext, CGRect chunkRect)) {
+
+    size_t height = CGBitmapContextGetHeight(context);
+    size_t chunkSize = 100;
+    size_t chunks = (height + chunkSize - 1) / chunkSize;
+
+    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0);
+
+    dispatch_apply(chunks, queue, ^(size_t chunk) {
+
+        CGContextRef chunkContext = FMCGBitmapContextCopySharingData(context);
+
+        CGRect chunkRect = CGRectMake(0, chunkSize * chunk, CGBitmapContextGetWidth(chunkContext), chunkSize);
+
+        NSGraphicsContext *currentNSContext = [NSGraphicsContext graphicsContextWithCGContext:chunkContext flipped:NO];
+        [NSGraphicsContext saveGraphicsState];
+        [NSGraphicsContext setCurrentContext:currentNSContext];
+
+        CGContextSaveGState(chunkContext);
+
+        CGContextClipToRect(chunkContext, chunkRect);
+
+        b(chunkContext, chunkRect);
+
+        CGContextRestoreGState(chunkContext);
+        [NSGraphicsContext restoreGraphicsState];
+    });
+}</code></pre>
+<p>Can this be made any faster? Maybe by reusing the temporary contexts? But an 8× speed improvement is good enough for me for now. Will I use this code in production? I’m not sure yet, but I’m tempted.</p>
+
+</div><div class="post">
+    <img src="https://shapeof.com/images/mueller-post.png" width="18" height="18" style="float: left; margin-right: 4px;" />
+    <div class="postTitle"><a href="https://shapeof.com/archives/2025/11/acorn_8.3_with_liquid_glass.html">Acorn 8.3 With Liquid Glass</a></strong></div>
+    <div class="date">November 6, 2025</div>
+    <p><a href="https://flyingmeat.com/acorn/">Acorn 8.3</a> is out and the big new feature is that it supports Liquid Glass for folks who are running macOS Tahoe (which is over 50% of Acorn 8 users at this point!).</p>
+<center>
+<picture>
+  <source style="max-width: 100%;" srcset="https://shapeof.com/archives/2025/11/Acorn8.3.Parrot.jxl" type="image/jxl">
+  <img style="max-width: 100%;" src="https://shapeof.com/archives/2025/11/Acorn8.3.Parrot.png" alt="">
+</picture>
+</center>
+
+<p>Actually, Acorn 8.3 came out a few weeks ago and the current release<sup><a href="#lgfn1">1</a></sup> at the time of this writing is 8.3.2. I wanted to sit on an announcement a bit because I knew the refinements were going to be coming fast and I was really hoping macOS 26.1 would be released soon (it had some bugs that hurt Acorn in a number of ways). Also, you really shouldn’t be running macOS Tahoe unless you’ve updated to 26.1 (the initial release was <em>very</em> bumpy).</p>
+<p>At any rate, what’s new? Basically the UI. That’s it. The <a href="https://flyingmeat.com/acorn/releasenotes.html">full release notes</a> are available as usual (and it includes some minor changes and bug fixes).</p>
+<p>But the UI was a ton of work! And I made it extra difficult on myself by making Liquid Glass optional. Why the heck would I do that?</p>
+<p>There were a couple of reasons (besides some people really, really not liking Liquid Glass).</p>
+<p>First of all, Acorn still supports macOS 14 and 15. And if you recall, Liquid Glass is only available on macOS 26. So any changes I’d make to Acorn would also have to work fine on previous OS releases. So in a sense, you could choose to use LG or not based on what version of macOS you’re running.</p>
+<p>But I didn’t want to completely keep folks on pre-Tahoe from joining in on the fun. So I actually broke the setting up into two different preferences.</p>
+<p>The first option in Acorn’s new Appearance settings is a checkbox for “Liquid Glass palettes”. This does the obvious thing on macOS Tahoe, and on previous versions of macOS this checkbox is disabled.</p>
+<p>The second option is “Display images edge-to-edge”. This one works on all versions of macOS that Acorn 8.3 runs on. This is the fancy look where the toolbar floats above the content as if it was a delicate and beautifully manicured piece of glass. It also removes the bottom toolbar, so there’s maximal room for your pixels to shine.</p>
+<p>I also reworked the tool palette so that it no longer takes up the whole left side of the window and instead floats above the canvas and gives more space for your image to be viewed. (And every time I look at it, it makes me think of <a href="https://en.wikipedia.org/wiki/MacPaint">MacPaint and its tool palette</a>. What a great app that was!)</p>
+<p>Acorn 8.3 is a free update for anyone who’s already purchased Acorn 8, and we also provide a 14 day free <a href="https://flyingmeat.com/acorn/">trial from its website</a>. You should check it out and give it a try.</p>
+<p>So what’s next? I plan on spending the next couple of months refining Acorn 8’s UI even more. Some things are missing from the edge to edge window look, and I’d really like to see those come back. And it’s also nice seeing how other apps adopt the new UI in Tahoe, and I’m gathering inspiration from that. I’m wanting to see what the developer community coalesces around when it comes to Liquid Glass. So expect Acorn’s UI to change a bit more as time goes on.</p>
+<p><br/><br/><br/></p>
+<p><a name="lgfn1"></a>* Acorn 8.3.2 is out for folks who have purchased it directly from our store. If you purchased via the App Store, it’s currently waiting for review and should be out shortly.</p>
+
+</div><div class="microPost">
+    <img src="https://shapeof.com/images/micro-link.png" width="18" height="18" style="float: left; margin-right: 4px;" />
+    <div class="microPostTitle"><a href="https://buttondown.com/whatever_jamie/archive/the-many-many-many-javascript-runtimes-of-the-last-decade/">The many, many, many JavaScript runtimes of the last decade</a></div><br/>
+    <p>From &quot;Whatever, Jamie&quot; (a confusing newsletter name if you’re not familiar with it):</p>
+<blockquote>
+<p>This last decade has seen an inundation of new JavaScript runtimes (and engines in equal measure), enabling us to run JavaScript in all manner of contexts with precise fitness for task. Through these, we&#39;ve seen the language spread to the Cloud, the edge, Smart TVs, mobile devices, and even microcontrollers.</p>
+<p>In this article, we&#39;ll explore what&#39;s driving this diversity, and why no one runtime or engine suffices for all purposes.</p>
+</blockquote>
+<p>I found this whole post pretty amazing. I considered myself well versed in the various JavaScript engines out there, but it turns out there a lot more than I knew of.</p>
+
+    <div class="microPostLink"><a href="https://shapeof.com/archives/2025/9/the_many_many_many_javascript_runtimes_of_the_last_decade.html">September 15, 2025 at 10:51:47</a></div>
+</div><div class="microPost">
+    <img src="https://shapeof.com/images/micro-link.png" width="18" height="18" style="float: left; margin-right: 4px;" />
+    <div class="microPostTitle"><a href="https://marioaguzman.github.io/design/layoutguidelines/">Mario Guzman's Mac Layout Guidelines</a></div><br/>
+    <blockquote>
+<p>The following sections are general guidelines that describe fundamental Mac layout principles of center equalization, text and control alignment, appropriate use of white space, and visual balance. Following these guidelines will help you create functional and aesthetically pleasing windows that are easy for Mac users to understand and use.</p>
+</blockquote>
+
+    <div class="microPostLink"><a href="https://shapeof.com/archives/2025/9/mario_guzman_layout_guidelines.html">September 5, 2025 at 13:04:08</a></div>
+</div><div class="microPost">
+    <img src="https://shapeof.com/images/micro-link.png" width="18" height="18" style="float: left; margin-right: 4px;" />
+    <div class="microPostTitle"><a href="https://emilkowal.ski/ui/you-dont-need-animations">Emil Kowalski: You Don't Need Animations</a></div><br/>
+    <blockquote>
+<p>Before you start animating, ask yourself: what’s the purpose of this animation?</p>
+</blockquote>
+<p>…</p>
+<blockquote>
+<p>Morphing of the feedback component below helps make the experience more unique and memorable. This works as long as the user will rarely interact with it. It’ll then become a pleasant surprise, rather than a daily annoyance.</p>
+<p>Used multiple times a day, this component would quickly become irritating. The initial delight would fade and the animation would slow users down.</p>
+</blockquote>
+<p>This is one things that drives me a little nuts about the Apple Watch. The animations feel incredibly sluggish and notifications are slow to dismiss. It usually happens when I&#39;m about to start a workout and inevitably I end up putting the UI in a state that I don&#39;t want.</p>
+
+    <div class="microPostLink"><a href="https://shapeof.com/archives/2025/9/emil_kowalski_you_dont_need_animations.html">September 5, 2025 at 12:09:59</a></div>
+</div><div class="post">
+    <img src="https://shapeof.com/images/mueller-post.png" width="18" height="18" style="float: left; margin-right: 4px;" />
+    <div class="postTitle"><a href="https://shapeof.com/archives/2025/9/acorn_8.2_and_tahoe_plans.html">Acorn 8.2 and macOS 26 Tahoe + Liquid Glass Plans</a></strong></div>
+    <div class="date">September 4, 2025</div>
+    <p>Acorn 8.2 is out. You can use either the Acorn ▸ Check for Updates… menu item, or use the App Store to update if you purchased it from there. The <a href="https://flyingmeat.com/acorn/releasenotes.html">full release notes are available</a> as well.</p>
+<p>Here are my favorite things:</p>
+<h4 id="export-gets-improvements-including-image-diffing">Export Gets Improvements Including Image Diffing</h4>
+<img src="https://shapeof.com/archives//2025/9/acorn82_export_diff.png" width="200" style="float: right; border: solid 1px black;" alt="Acorn's export diffing options" />
+
+<p>When I wrote the new image diffing features for <a href="https://flyingmeat.com/retrobatch/">Retrobatch</a>, I knew I wanted to bring those to Acorn as well. Acorn 8&#39;s Export window now has the option to show differences as a highlighted overlay between the original and exported image. I&#39;ve also brought over the split view as well.</p>
+<p>When I wrote the new diff view, I knew I wanted to have it shared between the two apps, and I did a lot of work to make sure all of Acorn&#39;s main canvas features went into it as well. So things like overscroll, zooming to where the cursor pointer is, click-drag to move, shared shortcuts for zooming, deep image support, wide gamut support, etc. were all there. It was super gratifying to have that just work.</p>
+<p>And that new canvas was so nice, I ended up using it in other locations in Acorn. The RAW Import window gets the new canvas, so does the Image ▸ New View… window. I&#39;ve even added a mostly hidden new action in the Command Bar called &quot;Compare Two Front Windows&quot; which will bring up a new diff window between two images you have open.</p>
+<h4 id="non-destructive-linear--radial-multi-stop-gradient-filters">Non-Destructive Linear &amp; Radial Multi-Stop Gradient Filters</h4>
+<div style="overflow:auto;">
+<img src="https://shapeof.com/archives//2025/9/acorn82_multistop.png" width="260" style="float: left;" alt="Acorn's multistop non-destructive gradients" />
+
+<p>This is a feature I&#39;ve wanted for years, and while I&#39;ve always had the idea in my head how to do it, I just always kept pushing it off for some reason. At some point this past month, I think I just got tired of seeing it on the list, and finally decided to give it a proper go.</p>
+<p>I&#39;m pretty happy with how it turned out, and how performant it is. I even did a bit of extra work to make sure there&#39;s some dithering in there for the linear gradient, so you won&#39;t get any annoying color banding with certain colors.</p>
+</div>
+
+<h4 id="lots-of-little-things-thanks-to-some-torn-ligaments">Lots of Little Things, Thanks to Some Torn Ligaments</h4>
+<p>So as I was walking out of the climbing gym a few weeks ago, I stepped off a curb, caught an edge in the ground with my foot, and rolled my ankle. There was a pop, myself on the ground, and a lot of pain. The end result was me moving around on crutches for a while and not a whole lot to do but sit with my ankle wrapped and elevated. (I thought I had broken it, but X-rays said otherwise. Apparently I&#39;m a bit of a wuss?)</p>
+<p>So I took the opportunity to whittle away at little things, and even add some of my own personal features.</p>
+<img src="https://shapeof.com/archives//2025/9/acorn82_blend_mode.png" width="187" style="float: right;" alt="Acorn's new blend mode icons" />
+
+<ul>
+<li>The blend mode popup now shows a little icon next to each item with a little representation of what each blend mode does. This is super informative if you have no idea what some of these blend modes will do.</li>
+<li>Smart Layer Export now has an option for shared backgrounds between exported layers.</li>
+<li>Command-Option-J is a new shortcut for duplicating the currently selected shape(s). You can also use the Quick Process menu to copy a selected shape a specific amount, but sometimes you just want to duplicate something quickly.</li>
+<li>Zoom modifiers when using the panning tool via the space bar. You can now press the space bar and then the command key to switch to the zoom tool (or use space bar + command + option to zoom out).</li>
+<li>Acorn will update its selection mode icons when you’ve pressed one of the modifier keys for adding, subtracting, or intersecting the selection (shift, option, shift+option).</li>
+<li>A new preference tab named “Mueller”. This is a little vain, but I often find myself wanting to add little tweaks just for me that I know not everyone will like. These tweaks have mostly come out of working on updates for Liquid Glass (more on that below), and I just felt like there should be a general place to do this. I know an “Appearance” tab might make more sense - but I already have ideas for other things that could go in there. <br/><br/>Who knows (besides me of course) what else might show up there eventually, and it might even go away some day. But for now it&#39;s a place where you&#39;re going to be able to change the personality of Acorn a little bit. For now there&#39;s two options: hiding the Arial font in the font picker, and changing the app icon in the Dock.</li>
+</ul>
+<center><img src="https://shapeof.com/archives//2025/9/acorn82_mueller_mode.png" width="500" alt="Creator Preferences" /></center>
+
+
+<h4 id="file-compatibility">File Compatibility</h4>
+<p>There’s now an option to save a flattened composite of each layer in .acorn files. This is a per image setting, and you can find it in the File ▸ File Info… window under “General”. When enabled Acorn will write a composite of your layer data into the saved .acorn file exactly as it’s rendered on canvas. This includes layer filters, masks, rasterized vectors, etc. This is super useful if you’d like to pull out full-fidelity representations of your layer data—something that’s super easy to do using SQLite:<br><code>select writefile(&#39;/tmp/&#39; || layers.name || &#39;-&#39; || layers.uti || &#39;.png&#39;, value) from layers, layer_attributes where layers.id = layer_attributes.id and layer_attributes.name = &#39;composite&#39;;</code></p>
+<p>This is not currently a global setting, since it will increase the size of your .acorn images, but using the following defaults command will turn it on by default:<br><code>defaults write com.flyingmeat.Acorn8 alwaysSaveLayerComposites 1</code></p>
+<p>Acorn’s file format is easy to grok and documented here: <a href="https://flyingmeat.com/acorn/docs/technotes/ACTN002.html">https://flyingmeat.com/acorn/docs/technotes/ACTN002.html</a>.</p>
+<p>I really want it to be easy for other apps to read Acorn image (even Retrobatch!). And with SQLite being the basis for Acorn image files, it&#39;s incredibly easy to get that data out.</p>
+<h2 id="macos-26-tahoe-and-liquid-glass-support">macOS 26 Tahoe and Liquid Glass Support</h2>
+<p>Obviously I&#39;ve been working on macOS 26 Tahoe support this summer for Acorn. While it was relatively easy to get something up and working with Liquid Glass, it&#39;s taking a bit more work to iron out all the details and work through OS bugs. Right now Acorn 8 supports macOS 14 Sonoma and later, so I&#39;m not quite ready to leave those folks behind.</p>
+<p>If the macOS 26 betas are any indication, Apple still has a lot of work left to make Tahoe amazing. I&#39;m hoping they take their time and wait until later in the fall to ship the next great version of macOS. Acorn is going to take this approach at any rate. My goal is to make Acorn feel at home in macOS Tahoe, but still retain its own personality as well.</p>
+<p>I work every day in macOS 26 right now, and Acorn 8.2 is fully supported even in the betas. All of Acorn&#39;s functionality is there, even if the UI isn&#39;t all glass all the time yet.</p>
+
+</div><div class="post">
+    <img src="https://shapeof.com/images/mueller-post.png" width="18" height="18" style="float: left; margin-right: 4px;" />
+    <div class="postTitle"><a href="https://shapeof.com/archives/2025/8/what_is_a_color_space.html">What Is a Color Space?</a></strong></div>
+    <div class="date">August 26, 2025</div>
+    <p>Dan Hollick on <a href="https://www.makingsoftware.com/chapters/color-spaces-models-and-gamuts">Making Software: What is a color space?</a>:</p>
+<blockquote>
+<p>In which we answer every question you&#39;ve ever had about digital color, and some you haven&#39;t.  </p>
+</blockquote>
+<p>He&#39;s not kidding.  </p>
+<blockquote>
+<p>Your computer has an operating system, which uses a color space. But your computer also runs applications, which might use a different color space. Those apps can render content, like images and videos, which might be in yet another color space. And then your monitor has its own color space, which might not even match the color space of the operating system. You could even have multiple monitors, each with different color spaces. Yep.</p>
+</blockquote>
+<p>This is a pretty great writeup, and required reading for anyone who deals with color profiles and color spaces. I had only one quibble, and that was the bit which said sRGB was only capable of 8 bits per channel (that&#39;s how it&#39;s usually used on the web, but you can have 8, 10, 12, 16, 32 bits per channel sRGB images).</p>
+<p>Besides being super informative and delightful (I laughed out loud when I saw &quot;A DIAGRAM SHOWING HOW TO CONVERT RGB TO HSL.&quot;), the layout of the page is top notch. I&#39;m envious of Hollick&#39;s work.</p>
+
+</div><div class="microPost">
+    <img src="https://shapeof.com/images/micro-link.png" width="18" height="18" style="float: left; margin-right: 4px;" />
+    <div class="microPostTitle"><a href="https://brittanygoris.com/2025/07/08/something-in-between-aka-rocklands-crack-smash/">Brittany Goris, Professional Dirtbag, Climbing in Rocklands</a></div><br/>
+    <!--
+Brittany Goris: [Something in Between (aka Rocklands Crack Smash)](https://brittanygoris.com/2025/07/08/something-in-between-aka-rocklands-crack-smash/)-->
+
+<blockquote>
+<p>My mind went back to a statement from a street performer in Cape Town the previous day: “Check this out, I’m about to be amazing!” At the time I had joked about using his catch phrase for my climbing, but I hadn’t really meant it because this whole time I’d been so focused on the opposite: staying humble, no egos allowed.</p>
+<p>What if that was the kind of energy I needed right now though? What if there was something in between my meek humility on this trip and the toxic rage from my youth? The paradigm shifted a little more. Why not try a little reckless egotism? It’s just a form of belief, after all, and didn’t that stranger’s bravado mirror the exact kind of belief I’d once wielded like a weapon? Maybe he had stumbled across the alchemical gold without even realizing it.</p>
+<p>“I’m about to be amazing,” a shy voice whispered in my head as I pulled off the ground and the world around me faded away, leaving just the void of a perfect crack stretching out before me into the abyss.</p>
+</blockquote>
+<p>I love reading Goris&#39;s posts on climbing. She’s constantly traveling to amazing places and then writes about them in a way that makes me super envious. Why can’t I write like this?</p>
+<p>Even if you&#39;re not a climber, you&#39;ll probably find her writeup engaging. And if you are a climber, you&#39;ll want to read it because you&#39;ll certainly learn a thing or two.</p>
+
+    <div class="microPostLink"><a href="https://shapeof.com/archives/2025/8/brittany_goris_in_rocklands.html">August 21, 2025 at 10:20:24</a></div>
+</div><div class="microPost">
+    <img src="https://shapeof.com/images/micro-link.png" width="18" height="18" style="float: left; margin-right: 4px;" />
+    <div class="microPostTitle"><a href="https://shapeof.com/archives/2025/8/deltadb_from_zed.html">DeltaDB From Zed (the Code Editor)</a></div><br/>
+    <p>From a post on Zed.dev: <a href="https://zed.dev/blog/sequoia-backs-zed#introducing-deltadb-operation-level-version-control">Introducing DeltaDB: Operation-Level Version Control</a>:</p>
+<blockquote>
+<p>Our vision is turn your IDE into a collaborative workspace where humans and AI agents work together across a range of time scales, with every insight preserved and linked to the code forever. To make this possible, we&#39;re building DeltaDB: a new kind of version control that tracks every operation, not just commits.</p>
+<p>DeltaDB uses CRDTs to incrementally record and synchronize changes as they happen. Its designed to interoperate with Git, but its operation-based design supports real-time interactions that aren&#39;t supported by Git&#39;s snapshots.</p>
+</blockquote>
+<p>That sounds pretty neat, and I&#39;m really interested to see how it goes.</p>
+<p>Zed fascinates me for some reason, and I can&#39;t quite pin down why. Is it because of the hardware accelerated text rendering? Is it because it&#39;s crazy fast? It&#39;s written in Rust? Some combo of those and other things? Beats me, but I think Zed is cool.</p>
+<p>It&#39;s also worth noting that Zed raised $32M in a Series B investment. I had no idea they were funded. In my brain it was a plain old open source product, but it looks like they have some serious funding to make it.</p>
+
+    <div class="microPostLink"><a href="https://shapeof.com/archives/2025/8/deltadb_from_zed.html">August 20, 2025 at 12:06:46</a></div>
+</div><div class="post">
+    <img src="https://shapeof.com/images/mueller-post.png" width="18" height="18" style="float: left; margin-right: 4px;" />
+    <div class="postTitle"><a href="https://shapeof.com/archives/2025/8/retrobatch_2.3_is_out.html">Retrobatch 2.3 Is Out</a></strong></div>
+    <div class="date">August 20, 2025</div>
+    <p><a href="https://flyingmeat.com/retrobatch/">Retrobatch 2.3</a> has been released. Some of the highlights:</p>
+<p><strong>Image Diffing</strong>: You can now compare your modified image against the original image using new handy new toolbar modes, or keyboard shortcuts.</p>
+<p><strong>PDF Rasterizer</strong> (Pro only): Convert all vector and text components of a PDF to full page images (handy for folks who want to &quot;bake&quot; their PDFs so text or elements can&#39;t be removed to find hidden information).</p>
+<p><strong>Send Notification</strong> node: Does what it sounds like — send out system notifications for when a workflow starts, ends, or for each image processed.</p>
+<p>The <strong>Write</strong> node now has options to make indexed PNG files. This replaces the dedicated &quot;Indexed PNG&quot; node, so it&#39;s all wrapped together in a single node now.</p>
+<p>There are little changes and bug fixes of course. The<a href="https://flyingmeat.com/retrobatch/releasenotes.html"> full release notes are available</a> as usual. If you already have Retrobatch 2 installed, use the Retrobatch ▸ Check for Updates… menu item to update to the latest version.</p>
+<p>One thing I did, which isn&#39;t in the release notes, is the preview canvas got a big upgrade as far as zooming, panning, and deep color support. I did a lot of refactoring when I was implementing the image diffing tools because I wanted to bring that feature to Acorn as well. So with some smart subclassing and such, I&#39;ve got a shared Metal accelerated canvas that works for both Acorn and Retrobatch. This new class is used in quite a few places in the next release of Acorn (Web Export, RAW Image preview, New View windows, etc), and obviously in Retrobatch&#39;s main preview window. It&#39;s nice having a fully built out class that can I can just drop in for standard image editing behaviors.</p>
+
+</div><div class="microPost">
+    <img src="https://shapeof.com/images/micro-link.png" width="18" height="18" style="float: left; margin-right: 4px;" />
+    <div class="microPostTitle"><a href="https://macrowave.co/">Macrowave is pretty cool</a></div><br/>
+    <p><a href="https://macrowave.co/">Macrowave</a>: Turn Your Mac Into a Private Radio Station</p>
+<p>It&#39;s a Mac and iOS app for sending and receiving audio. </p>
+<p>I don&#39;t have a need for this app, but I saw the UI and instantly wanted to play with it. It&#39;s a nice throwback to the MacAmp or Winamp days.</p>
+
+    <div class="microPostLink"><a href="https://shapeof.com/archives/2025/8/macrowave.html">August 18, 2025 at 12:00:28</a></div>
+</div><div class="post">
+    <img src="https://shapeof.com/images/mueller-post.png" width="18" height="18" style="float: left; margin-right: 4px;" />
+    <div class="postTitle"><a href="https://shapeof.com/archives/2025/8/apple_developer_relations_over_the_years.html">Apple Developer Relations Over the Years</a></strong></div>
+    <div class="date">August 1, 2025</div>
+    <p>Sub Club Podcast: <a href="https://subclub.com/episode/the-past-present-and-future-of-building-on-apple-john-gruber-daring-fireball">The Past, Present, and Future of Building on Apple</a>.</p>
+<p>Another interview with <a href="https://daringfireball.net">John Gruber</a> about the history of developer relations with Apple.</p>
+<p>I thought this was a great episode, and it brought back some memories. I can remember when Apple would call you up and let you know early bird pricing for WWDC was about to go away. How quaint that seems now. (I even went to WWDC on their dime back in the late 90s when I was working for <a href="https://missouri.edu">Mizzou</a>).</p>
+<p>I still get on well with the folks in Apple Developer relations, and I guess I always have. Maybe because I&#39;ve been developing on the Mac for so long, and I tend to keep a cool head about things? Of course there&#39;s always ups and downs, but I try to remember there are very different divisions in Apple, with different opinions on how things should be. &quot;Apple&quot; isn&#39;t really a single entity anymore, at least from my perspective.</p>
+
+</div><div class="post">
+    <img src="https://shapeof.com/images/mueller-post.png" width="18" height="18" style="float: left; margin-right: 4px;" />
+    <div class="postTitle"><a href="https://shapeof.com/archives/2025/8/gruber_and_snell_on_liquid_glass.html">Gruber and Snell on Liquid Glass</a></strong></div>
+    <div class="date">August 1, 2025</div>
+    <p>The Talk Show: <a href="https://daringfireball.net/thetalkshow/2025/07/25/ep-427">Ep. 427 ‘THE SHIFT-2 CROWD’,, With Jason Snell</a>:</p>
+<blockquote>
+<p>Jason Snell returns to the show to talk about the early PC platform rivalries of the 1980s, iOS 26 leaks (and Apple suing YouTuber Jon Prosser), the various Apple OS 26 public betas and the state of Liquid Glass, and more.</p>
+</blockquote>
+<p>I thought the discussion on Liquid Glass, especially the state of it on the Mac, was pretty good. Like Gruber and Snell, I worry that the Mac is more of an afterthought when it comes to the new UI.</p>
+<p>One can hope that it gets better as the betas come along (as they always do).</p>
+
+</div><div class="microPost">
+    <img src="https://shapeof.com/images/micro-link.png" width="18" height="18" style="float: left; margin-right: 4px;" />
+    <div class="microPostTitle"><a href="https://social.lol/@tjw/114844316027070179">Duct Tape and Bailing Wire</a></div><br/>
+    <p>Tim Wood <a href="https://social.lol/@tjw/114844316027070179">on Mastodon</a>:</p>
+<blockquote>
+<p>OK, OK, ok, story time.</p>
+<p>Way back when (early 90s), when Omni was consulting for McCaw Cellular (or AT&amp;T Wireless, not sure which it was at the time), we were working on apps for NeXTSTEP for sales, customer care, and such for cell phones, nation wide. We&#39;d occasionally get a crash reports and I don&#39;t even remember how those got back to us back in the day before automated collection and reporting, but eventually we were able to reproduce it.</p>
+</blockquote>
+<p>I won&#39;t spoil the punchline as there&#39;s only two paragraphs remaining, so go treat yourself.</p>
+
+    <div class="microPostLink"><a href="https://shapeof.com/archives/2025/7/duct_tape_and_bailing_wire.html">July 17, 2025 at 9:30:29</a></div>
+</div><div class="post">
+    <img src="https://shapeof.com/images/mueller-post.png" width="18" height="18" style="float: left; margin-right: 4px;" />
+    <div class="postTitle"><a href="https://shapeof.com/archives/2025/6/acorn_fn_wwdc_2025_keynote.html">Acorn in the f'n WWDC 2025 Keynote</a></strong></div>
+    <div class="date">June 14, 2025</div>
+    <center>
+<img src="https://shapeof.com/archives/2025/6/acorn_wwdc_cafe_macs.jpeg" width="650" />
+</center>
+
+<p><a href="https://flyingmeat.com/acorn/">Acorn</a> was in Apple&#39;s WWDC 2025 keynote! How f&#39;n rad is that?</p>
+<p>So a little before WWDC I got a chance to fly down to Cupertino in the dead of night, to secretly adopt Acorn&#39;s UI to use the new look and feel of Apple&#39;s forthcoming Liquid Glass. NDAs were signed and I can&#39;t say much—other than it was super quick to adopt for Acorn&#39;s main canvas window. Acorn is a mostly Objective-C app&#185; with a codebase that&#39;s effectively 20 years old now, so that speaks to how relatively smooth this transition should be.</p>
+<p>I was super stoked to be able to do it, and though I&#39;m sure there will be the usual bumps along the way (especially for iOS devs), it&#39;s great to have a new UI playground to run around in.</p>
+<p>You can watch Acorn&#39;s 15 seconds on the big screen with this timestamped YouTube link: <a href="https://youtu.be/0_DjDdfqtUE?t=3640">Apple&#39;s WWDC 2025</a>.</p>
+<p>&#185; <span style="font-size: .8em;">As John Gruber pointed out during <a href="https://youtu.be/vqwPUHTFEkg?t=1455s">The Talk Show Live From WWDC 2025</a>, which you should also watch.</span></p>
+
+</div><div class="post">
+    <img src="https://shapeof.com/images/mueller-post.png" width="18" height="18" style="float: left; margin-right: 4px;" />
+    <div class="postTitle"><a href="https://shapeof.com/archives/2025/6/script_debugger_retired.html">Script Debugger Retired</a></strong></div>
+    <div class="date">June 1, 2025</div>
+    <p>Mark Alldritt: <a href="https://latenightsw.com/script-debugger-retired/">Script Debugger Retired</a>:</p>
+<blockquote>
+<p>The day has finally come. After 30 years of continuous development, Script Debugger has been retired and will no longer be available for sale. <a href="https://latenightsw.com/%5B%5D(https://forum.latenightsw.com/t/retiring-script-debugger/5071)retiring-script-debugger/">Please see this post for more information</a>.</p>
+</blockquote>
+<p>I just looked up when I made my first purchase of Script Debugger — version 4.5 in 2009 for $199, and it was worth every penny.</p>
+<p>I still use Script Debugger to this day.</p>
+<p>30 years of development is a long time, and Script Debugger is such a great app. Congrats Mark - you made something awesome.</p>
+
+</div><div class="post">
+    <img src="https://shapeof.com/images/mueller-post.png" width="18" height="18" style="float: left; margin-right: 4px;" />
+    <div class="postTitle"><a href="https://shapeof.com/archives/2025/5/brent_on_biases_and_retirement.html">Brent on Biases and Retirement</a></strong></div>
+    <div class="date">May 25, 2025</div>
+    <p>Brent Simmons: <a href="https://inessential.com/2025/05/23/love_letter.html">My Wildly Incorrect Bias About Corporate Engineers</a></p>
+<blockquote>
+<p>Before I went to work for Audible (five years ago now — time flies!) I had a bias about engineers that worked for large corporations. I assumed that they weren’t as good as indies and engineers at small companies, or else they’d actually be indies or work at small shops like Omni.</p>
+<p>…</p>
+<p>And so I learned very quickly when I started at Audible that I was very wrong. I was impressed, and grew more impressed as time went on, by my fellow engineers’ rigor, talent, professionalism, care, and, especially, ability to work with other people toward common goals.</p>
+</blockquote>
+<p>Not long after Brent joined Audible, I clearly remember him telling me that there were really smart people there who were amazing coders. And he was completely shocked by this. The look on Brent&#39;s face was just pure amazement, and he was so happy about it!</p>
+<p>I laughed and laughed at him. Of course there&#39;s talented people there! Only crazy people are willing to put up with having to file business taxes, mess with social security, find healthcare, deal with all the <em>stuff</em> you have to handle to be indie. And you don&#39;t even have to be a particularly good programmer. You just have to be persistent.</p>
+<p>Sometimes I really miss working with other folks, so I&#39;m especially happy for Brent that his exit to retirement was working with a great group of people, in a giant ass company. Everyone should experience that at least once.</p>
+<p>And now Brent is retiring! I&#39;ve known this for a while as well, because he&#39;s insanely excited and absolutely won&#39;t shut up about it (in a good way). I bet he&#39;s even counting down the number of meetings he has left at this point.</p>
+<p>Pure freedom to work on what you want, for the rest of your life. And of course he&#39;s <a href="https://inessential.com/2025/05/24/retirement_and_netnewswire.html">going to be coding</a>, because Brent is a developer, and I don&#39;t think you could stop him anyway.</p>
+<p>Congrats, Brent.</p>
+
+</div>
+            </div>
+            
+            <div id="copyright" style="margin-left: 120px">
+                <center>
+                    &copy; August Mueller.
+                </center>
+            </div>
+            
+        </div>
+    </body>
+</html>

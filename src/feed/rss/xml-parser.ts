@@ -39,7 +39,7 @@ function extractCDATA(text: string): { text: string; cdataMap: Map<string, strin
   const cdataMap = new Map<string, string>();
   let counter = 0;
 
-  const processed = text.replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, (match, content) => {
+  const processed = text.replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, (_match, content) => {
     const placeholder = `__CDATA_${counter}__`;
     cdataMap.set(placeholder, content);
     counter++;
@@ -66,10 +66,11 @@ function restoreCDATA(text: string, cdataMap: Map<string, string>): string {
 function parseAttributes(tagContent: string): Record<string, string> {
   const attributes: Record<string, string> = {};
   const attrRegex = /(\S+)=["']([^"']*)["']/g;
-  let match: RegExpExecArray | null;
+  let match: RegExpExecArray | null = attrRegex.exec(tagContent);
 
-  while ((match = attrRegex.exec(tagContent)) !== null) {
+  while (match !== null) {
     attributes[match[1]] = match[2];
+    match = attrRegex.exec(tagContent);
   }
 
   return attributes;
@@ -272,4 +273,3 @@ export function getText(element: RSSElement | null | undefined): string {
 export function getAttribute(element: RSSElement | null | undefined, name: string): string | null {
   return element?.attributes[name] || null;
 }
-

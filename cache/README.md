@@ -7,11 +7,12 @@ Real-world HTML and feed files for integration testing.
 ```
 cache/
 └── {domain}/
-    ├── homepage.html          # Main site homepage
+    ├── homepage.html                    # Main site homepage
     ├── feeds/
-    │   └── *.{rss|atom}.xml   # Feed files
+    │   ├── *.{rss|atom}.xml            # XML feed files
+    │   └── *.json                      # JSON Feed files
     └── articles/
-        └── *.html             # Sample articles
+        └── *.html                      # Sample articles
 ```
 
 ## Sources
@@ -34,6 +35,13 @@ cache/
 
 - **react.dev** - Official React Blog
 - **blog.rust-lang.org** - Official Rust Blog
+
+### JSON Feed Examples
+
+- **daringfireball.net** - Daring Fireball (John Gruber) - JSON Feed 1.1
+- **inessential.com** - Inessential (Brent Simmons, JSON Feed co-creator) - JSON Feed 1.1
+- **www.manton.org** - Manton Reece (Manton Reece, JSON Feed co-creator) - JSON Feed 1.1
+- **shapeof.com** - Shape of Everything (Gus Mueller) - JSON Feed 1.1
 
 ## Usage
 

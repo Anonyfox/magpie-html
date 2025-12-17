@@ -1,7 +1,7 @@
-import { describe, it } from 'node:test';
 import assert from 'node:assert/strict';
-import { parseRSSXML } from './xml-parser.js';
+import { describe, it } from 'node:test';
 import { extractChannel } from './extract-channel.js';
+import { parseRSSXML } from './xml-parser.js';
 
 describe('extractChannel', () => {
   it('should extract required fields', () => {
@@ -318,4 +318,3 @@ describe('extractChannel', () => {
     assert.equal(channel.language, 'en-us');
   });
 });
-

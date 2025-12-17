@@ -1,0 +1,1919 @@
+<!DOCTYPE html>
+<html lang="en"  class="daringfireball-net">
+<head>
+	<meta charset="UTF-8" />
+	<title>Daring Fireball</title>
+
+	<link rel="apple-touch-icon-precomposed" href="/graphics/apple-touch-icon.png" />
+	<link rel="shortcut icon" href="/graphics/favicon.ico?v=005" />
+	<link rel="mask-icon" href="/graphics/dfstar.svg" color="#4a525a">
+	<link rel="stylesheet" type="text/css" media="screen"  href="/css/fireball_screen.css?v1.2025-03-12" />
+	<link rel="stylesheet" type="text/css" media="screen"  href="/css/ie_sucks.php" />
+	<link rel="stylesheet" type="text/css" media="print"   href="/css/fireball_print.css?v01" />
+	<link rel="alternate"  type="application/atom+xml"     href="/feeds/main" />
+	<link rel="alternate"  type="application/json"         href="/feeds/json" />
+	<link rel="me"                                         href="https://mastodon.social/@gruber" />
+	<link rel="me"                                         href="https://mastodon.social/@daringfireball" />
+	<script src="/js/js-global/FancyZoom.js"></script>
+	<script src="/js/js-global/FancyZoomHTML.js"></script>
+
+	<!-- Open Graph bullshit, for home page: -->
+	<meta property="og:title"       content="Daring Fireball, by John Gruber" />
+	<meta property="og:type"        content="website" />
+	<meta property="og:url"         content="https://daringfireball.net/" />
+	<meta property="og:image"       content="https://daringfireball.net/graphics/df-wide-card.png" />
+	<meta property="og:site_name"   content="Daring Fireball" />
+	<meta property="og:description" content="Commentary on Apple, technology, design, politics, and more." />
+</head>
+<body  class="daringfireball-net"  onload="setupZoom()">
+<div id="Box">
+
+<div id="Banner"><a href="/" title="Daring Fireball: Home"><img src="/graphics/logos/" alt="Daring Fireball" height="56" /></a></div><div id="Sidebar">
+<p>By <strong>John&nbsp;Gruber</strong></p>
+
+<ul><!--&#9733;-->
+<li><a href="/archive/" title="Previous articles.">Archive</a></li><li><script>
+// <![CDATA[
+function ReadCookie(name) {
+	var nameEQ = name + "=";
+	var ca = document.cookie.split(';');
+	for(var i=0; i < ca.length; i++) {
+		var c = ca[i];
+		while (c.charAt(0)==' ') c = c.substring(1, c.length);
+		if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+	}
+	return null;
+}
+var display_linked_list = ReadCookie('displayLinkedList');
+var li_linked = '<a href="/linked/" title="The Linked List.">Linked List<\/a>';
+if (display_linked_list == "hide") {
+	// Linked List is off on home page, so show it in menu:
+	document.write(li_linked + "<\/li>\n<li>");
+}
+else {
+	// Default to not putting separate LL item in sidebar:
+}
+// ]]>
+</script></li>
+<li><a href="/thetalkshow/" title="America’s favorite 3-star podcast.">The Talk Show</a></li>
+<li><a href="https://dithering.fm/" title="Two episodes per week, 15 minutes per episode. Not a minute less, not a minute more.">Dithering</a></li>
+<li><a href="/projects/" title="Software projects, including SmartyPants and Markdown.">Projects</a></li>
+<li><a href="/contact/" title="How to send email or feedback regarding Daring Fireball.">Contact</a></li>
+<li><a href="/colophon/" title="About this site and the tools used to produce it.">Colophon</a></li>
+<li><a href="/feeds/">Feeds / Social</a></li>
+<!-- 
+<li><a href="https://twitter.com/daringfireball">Twitter</a></li>
+ -->
+<li><a href="/feeds/sponsors/">Sponsorship</a></li>
+</ul>
+
+<div id="SidebarMartini">
+<a href="https://finalist.works/df">
+	<img alt="Finalist" src="/martini/images/finalist-2.png" height="90">
+</a>
+<p><a href="https://finalist.works/df">Finalist for iOS</a>: A love letter to paper planners</p>
+</div>
+
+</div> <!-- Sidebar -->
+
+<div id="Main">
+
+<dl class="linkedlist">
+<dt>
+<a href="https://x.com/avatar3news/status/2000390070256418915">James Cameron’s Instructions to Theater Projectionists Regarding ‘Avatar 3: Fire and&#160;Ash’</a>&nbsp;<a class="permalink" title="Permanent link to ‘James Cameron’s Instructions to Theater Projectionists Regarding ‘Avatar 3: Fire and Ash’’" href="https://daringfireball.net/linked/2025/12/16/cameron-avatar-3-letter">&#9733;</a>
+</dt>
+<dd>
+<p>The letter is typeset in Papyrus, the typeface for which James Cameron’s affection inspired not <a href="https://www.youtube.com/watch?v=jVhlJNJopOQ">one</a> but <a href="https://www.youtube.com/watch?v=Q8PdffUfoF0">two</a> classic SNL shorts starring Ryan Gosling — which <a href="https://www.tiktok.com/@bbcradio1/video/7179200551207357702?lang=en">Cameron has a good sense of humor about</a>.</p>
+
+<p><a href="https://aphelis.net/actual-copy-terrence-malicks-notice-projectionists-tree-life/">Terrence Malick’s letter</a> accompanying <em>Tree of Life</em> in 2011 was plainly and humbly set in Helvetica. <a href="https://www.reddit.com/r/movies/comments/7gv7hb/david_lynchs_memos_to_projectionists_for/">David Lynch’s accompanying <em>Mulholland Drive</em></a> was also in Helvetica, but in a very Lynchian way. And then there is Stanley Kubrick, <a href="https://www.reddit.com/r/StanleyKubrick/comments/1n5spa8/stanley_kubricks_letter_to_projectionists/">whose letter to projectionists that accompanied <em>Barry Lyndon</em></a> was typeset in Futura — quite the feat in 1975. (It was almost certainly <a href="https://fontsinuse.com/typefaces/148003/mid-century">IBM’s Mid-Century</a> typeface, a <a href="https://typecast.munk.org/2011/04/25/1964-nomda-blue-book-ibm-font-styles/">beautiful adaptation</a> of Futura <a href="https://archive.org/details/ibm-executive-typefaces">for their Executive line of typewriters</a>.)</p>
+
+</dd>
+
+
+<dt>
+<a href="https://adrianroselli.com/2015/03/typefaces-for-dyslexia.html">Typefaces for Dyslexia</a>&nbsp;<a class="permalink" title="Permanent link to ‘Typefaces for Dyslexia’" href="https://daringfireball.net/linked/2025/12/16/debunking-special-typefaces-for-dyslexia">&#9733;</a>
+</dt>
+<dd>
+<p>I dare say this post from Adrian Roselli — first published in 2015 and updated 16 times (and counting) since — is <em>the</em> definitive debunking of the pseudoscience claims regarding deliberately ugly fonts being somehow beneficial to readers with dyslexia.</p>
+
+</dd>
+
+
+<dt>
+<a href="https://www.modernillustration.org/?ref=simplebits.com">Zara Picken’s ‘Modern Illustration’</a>&nbsp;<a class="permalink" title="Permanent link to ‘Zara Picken’s ‘Modern Illustration’’" href="https://daringfireball.net/linked/2025/12/16/modern-illustration">&#9733;</a>
+</dt>
+<dd>
+<blockquote>
+  <p>Modern Illustration is a project by illustrator <a href="https://www.zarapicken.com/">Zara Picken</a>,
+featuring print artefacts from her extensive personal collection.
+Her aim is to preserve and document outstanding examples of
+mid-20th century commercial art, creating an accessible resource
+for understanding illustration history.</p>
+</blockquote>
+
+<p>Glorious collection of mid-century illustrations and graphic design. Also <a href="https://www.instagram.com/ephemeramablog">a good follow on Instagram</a>. (<a href="https://simplebits.com/notebook/studio-notes-60/">Via Dan Cederholm</a>.)</p>
+
+</dd>
+
+
+</dl>
+
+<hr class="ookiaks" />
+
+
+<div class="article">
+<h1><a href="https://daringfireball.net/2025/12/apple_tv_new_fanfare" title="Permanent link to ‘Apple TV’s New Fanfare’">Apple TV’s New Fanfare</a></h1>
+<h6 class="dateline">Tuesday, 16 December 2025</h6>
+
+<p>Tim Nudd, <a href="https://adage.com/creativity/work/aa-apple-tv-mnemonic-visual-branding/">writing at Ad Age a few weeks ago</a> (paywalled, alas):</p>
+
+<blockquote>
+  <p>As we <a href="https://adage.com/creativity/campaigns-commercials/aa-creative-ads-today-apple-kraft-mac-cheese-lexus-philadelphia-cream-cheese/">mentioned in roundup</a> yesterday, Finneas (aka, Finneas
+O’Connell) has developed a new sonic logo for Apple TV, the
+streaming service previously known as Apple TV+. However, the
+rebrand, created with Apple agency TBWA\Media Arts Lab, goes
+beyond the audio mnemonics to include a striking new visual look
+as well.</p>
+
+<p>The visual branding centers on layers of shifting colored light, a
+metaphor for the range of genres and emotions that Apple TV has
+cultivated since its 2019 debut.</p>
+</blockquote>
+
+<p>I held off on posting about this new Apple TV fanfare (a.k.a. <em>sonic logo</em>, a.k.a. <em>mnemonic</em> ) until I’d experienced it a few times, and after a few weeks, watching a bunch of episodes from a few Apple TV series — <em><a href="https://tv.apple.com/us/show/mr-scorsese/umc.cmc.4a06j5lm5pxny9nx505zo5g0y">Mr. Scorsese</a></em>, a 5-star five-part documentary by Rebecca Miller, absolutely riveting; <em><a href="https://tv.apple.com/us/show/pluribus/umc.cmc.37axgovs2yozlyh3c2cmwzlza">Pluribus</a></em>, Vince Gilligan’s excellent new the-less-you-know-about-it-before-you-start-watching-<a href="https://daringfireball.net/linked/2025/11/21/pluribus-carol-sturka-ama">the-better</a> series starring Rhea Seehorn; and <em><a href="https://tv.apple.com/us/show/the-morning-show/umc.cmc.25tn3v8ku4b39tr6ccgb8nl6m">The Morning Show</a></em> season 4, a series that’s skirting <em>just</em> above the good-enough-to-keep-watching line for me — I’m willing to render a verdict.</p>
+
+<p>I love it.</p>
+
+<p>The old one was not bad. But “not bad” should never be good enough for Apple. I can’t find anyone from Apple stating so explicitly, but it seems pretty obvious that the piano chord accompanying the old fanfare was meant to evoke the Macintosh startup chime. That’s a neat idea. And no one is more a fan of the Macintosh than me. I’d argue that the Mac remains <em>the</em> definitive Apple product, the one that best exemplifies everything the company does and should stand for. So harking back to the Macintosh was an interesting idea for the Apple TV fanfare/sonic logo/mnemonic.</p>
+
+<p>But: it just wasn’t great. What makes that chord great for a computer booting up doesn’t make it great for a cinematic sonic logo. <a href="https://www.youtube.com/watch?v=GV3HUDMQ-F8">Netflix’s “tudum”</a> is so iconic that it’s <a href="https://www.netflix.com/tudum">the name of their company blog</a>. <a href="https://www.youtube.com/watch?v=O08PQRA6MLo">HBO’s static + chanted om</a> is the OG standard-setter. I suspect the new Apple TV fanfare will be seen in that class. The old one was not.</p>
+
+<p>The new one feels like a branding stroke unto itself. Sonically, it doesn’t evoke anything else. It just sounds rich and cool. Visually, with its rotating prism effect, it does evoke the classic six-color Apple logo. Thus, despite moving away from a sonic callback to the Macintosh, the overall effect feels <em>more</em> rooted to Apple’s on-the-cusp-of-a-half-century history. The change makes Apple TV original content feel more like a part of Apple, less like a possible passing fancy (which is what <a href="https://daringfireball.net/linked/2025/10/17/belloni-cue-interview">many in Hollywood fear</a>).</p>
+
+<p>That prism effect was created practically. From <a href="https://www.linkedin.com/posts/tbwamedia-arts-lab_at-mal-we-partnered-with-apple-tv-to-reimagine-activity-7391899271060582400-8OW9/">a LinkedIn post from Apple’s longtime agency partner TBWA Media Arts Lab</a> (no clue why they posted this on LinkedIn, of all places):</p>
+
+<blockquote>
+  <p>Built from real glass and captured entirely in camera, the new
+identity explores reflection, color, and light to express the
+cinematic spirit at the heart of Apple TV. Every shimmer was made
+for real, no CG shortcuts, a nod to Apple’s belief that craft
+should be felt, not faked.</p>
+
+<p>The work spans the entire platform, from a sharp five-second show
+open to a full-length cinematic version for films, paired with a
+new sonic logo composed by Oscar winner Finneas and a custom
+typeface, SF TV, developed with Apple’s design team.</p>
+</blockquote>
+
+<p>They include a very short video showing behind the scenes of its creation. It matters not to me that they photographed this practically, rather than via computer-generated graphics, but the bottom line is that it looks cool, timeless, and Apple-y.</p>
+
+<p><a href="https://variety.com/2025/music/news/finneas-discusses-apple-tv-originals-mnemonic-intro-1236568433/">Chris Willman at Variety has an interview with Finneas</a> (O’Connell) regarding the music:</p>
+
+<blockquote>
+  <p><em>Mnemonic</em>, Finneas says, “is sort of a beautiful word for a
+logo” accompanied by sound. “The things that I think of as real
+classic mnemonics are NBC — you can hear that in your head — or
+HBO has its static.” Finneas is well aware of how modern
+streaming consumption might make this especially ubiquitous,
+household by household. “If you’re binge-ing the whole season of
+<em>Ted Lasso</em> or <em>Severance</em> or <em>Disclaimer</em>” (the last of those
+being the limited series that he composed the score for himself),
+“you’re going to hear the mnemonic 10 times in one day. So it’s
+gotta be something that’s like the bite of ginger between rolls
+or something, you know?”</p>
+</blockquote>
+
+<p>See and hear for yourself. Here’s the old Apple TV mnemonic:</p>
+
+<p><video
+    width = 500
+    controls
+    src = "https://daringfireball.net/misc/2025/12/Apple-TV-Plus-Mnemonic-Old.mp4">
+</video></p>
+
+<p>Here’s the new 5-second version, shown at the beginning of each episode of Apple TV original series:</p>
+
+<p><video
+    width = 500
+    controls
+    src = "https://daringfireball.net/misc/2025/12/Apple-TV-Mnemonic-New-5s.mp4">
+</video></p>
+
+<p>And here’s the full 12-second version, shown before Apple Original Films:</p>
+
+<p><video
+    width = 500
+    controls
+    src = "https://daringfireball.net/misc/2025/12/Apple-TV-Mnemonic-New-12s.mp4">
+</video></p>
+
+<p>Bravo.&nbsp;<a class="permalink" title="Permanent link to ‘Apple TV’s New Fanfare’" href="https://daringfireball.net/2025/12/apple_tv_new_fanfare">&#9733;</a></p>
+
+</div> <!-- article -->
+
+<hr class="ookiaks" />
+
+
+<h2 class="dateline">Monday, 15 December 2025</h2>
+<dl class="linkedlist">
+<dt>
+<a href="https://typographyforlawyers.com/a-brief-history-of-times-new-roman.html">‘A Brief History of Times New Roman’</a>&nbsp;<a class="permalink" title="Permanent link to ‘‘A Brief History of Times New Roman’’" href="https://daringfireball.net/linked/2025/12/15/a-brief-history-of-timesnewroman">&#9733;</a>
+</dt>
+<dd>
+<p><a href="https://daringfireball.net/linked/2025/12/10/butterick-times-new-roman">One more</a> from Matthew Butterick, from his <em>Typography for Lawyers</em>, and a good <a href="https://daringfireball.net/linked/2025/12/15/the-scourge-of-arial">pairing</a> with Mark Simonson’s “<a href="https://www.marksimonson.com/notebook/view/the-scourge-of-arial/">The Scourge of Arial</a>”:</p>
+
+<blockquote>
+  <p>Yet it’s an open question whether its longevity is attributable to
+its quality or merely its ubiquity. Helvetica still inspires
+enough affection to have been the subject of a 2007 documentary
+feature. Times New Roman, meanwhile, has not attracted similar
+acts of homage.</p>
+
+<p>Why not? Fame has a dark side. When Times New Roman appears in a
+book, document, or advertisement, it connotes apathy. It says, “I
+submitted to the font of least resistance.” Times New Roman is not
+a font choice so much as the absence of a font choice, like the
+blackness of deep space is not a color. To look at Times New Roman
+is to gaze into the void.</p>
+</blockquote>
+
+<p>As Simonson mentions in “The Scourge of Arial”, regarding Helvetica’s enduring popularity:</p>
+
+<blockquote>
+  <p>As it spread into the mainstream in the ’70s, many designers tired
+of it and moved on to other typographic fashions, but by then it
+had become a staple of everyday design and printing. So in the
+early ’80s when Adobe developed the PostScript page description
+language, it was no surprise that they chose Helvetica as one of
+the basic four fonts to be included with every PostScript
+interpreter they licensed (along with Times, Courier, and Symbol).
+Adobe licensed its fonts from the original foundries,
+demonstrating their respect and appreciation for the integrity of
+type, type foundries and designers. They perhaps realized that if
+they had used knock-offs of popular typefaces, the professional
+graphic arts industry — a key market — would not accept them.</p>
+</blockquote>
+
+<p>To my mind, Helvetica, Times, and Courier are <em>the</em> three canonical “default” fonts. One modern sans, one modern serif, and one for “typewriter”/code. (When I see Courier in print, at display sizes, my mind immediately wonders if the printer was missing the font that the designer specified in the document file.)</p>
+
+<p><a href="https://en.wikipedia.org/wiki/Symbol_(typeface)">The Symbol font</a> is a different story. It existed and was included with PostScript as one of just four defaults because the 8-bit character encodings of the time only had space for 255 characters. You needed a special font like Symbol to access “exotic” characters like Greek letters, math symbols (e.g. × or ÷), or arrows (↑ ↓ ← →). So there were really only three regular “fonts”, for prose, included with PostScript: Helvetica, Courier, and Times.</p>
+
+<p>Courier and Times were eventually superseded in popular use by rivals that Microsoft licensed for inclusion in Windows: Courier New and Times New Roman, respectively. Times was from Linotype, Times New Roman from Monotype. Both versions of Times are legitimate digital interpretations of the 1929 hot metal design of Times Roman, and <a href="https://creativepro.com/times-roman-vs-times-new-roman/">their differences are minor</a>. Courier New, on the other hand, is <a href="http://www.identifont.com/differences?first=Courier+New&amp;second=Courier">so ugly</a> — anemically thin and weak — that it hurts my teeth whenever I encounter it.</p>
+
+</dd>
+
+
+<dt>
+<a href="https://www.marksimonson.com/notebook/view/the-scourge-of-arial/">‘The Scourge of Arial’</a>&nbsp;<a class="permalink" title="Permanent link to ‘‘The Scourge of Arial’’" href="https://daringfireball.net/linked/2025/12/15/the-scourge-of-arial">&#9733;</a>
+</dt>
+<dd>
+<p>Typographer Mark Simonson, all the way back in 2001:</p>
+
+<blockquote>
+  <p>Arial is everywhere. If you don’t know what it is, you don’t
+use a modern personal computer. Arial is a font that is
+familiar to anyone who uses Microsoft products, whether on a PC
+or a Mac. It has spread like a virus through the typographic
+landscape and illustrates the pervasiveness of Microsoft’s
+influence in the world.</p>
+
+<p>Arial’s ubiquity is not due to its beauty. It’s actually rather
+homely. Not that homeliness is necessarily a bad thing for a
+typeface. With typefaces, character and history are just as
+important. Arial, however, has a rather dubious history and not
+much character. In fact, Arial is little more than a shameless
+impostor.</p>
+</blockquote>
+
+<p>This is <em>the</em> exegesis on Arial. There’s also an exemplary illustrated sidebar, “<a href="https://www.marksimonson.com/notebook/view/how-to-spot-arial/">How to Spot Arial</a>”, which shows in detail how to tell the fucking bastard from Helvetica. If you want to be like me, cursed to notice Arial each time it appears in life, study that, and take note how every single way that it’s different from Helvetica is in the direction of making it uglier.</p>
+
+<p>I’ve <a href="https://daringfireball.net/2007/07/iphone_fonts">referenced</a> “The Scourge of Arial” a few times over the years here at DF, but the <a href="https://daringfireball.net/linked/2025/12/10/state-department-times-new-roman">recent</a> <a href="https://daringfireball.net/2025/12/full_text_of_marco_rubio_state_dept_directive_times_new_roman">contretemps</a> over Times New Roman’s return at the US State Department has the general topic of “default fonts” at top of mind. For me, at least.</p>
+
+<p>One of the old posts in which I linked to “The Scourge of Arial” was this gem from September 2007: “<a href="https://daringfireball.net/2007/09/hacking_the_iphone_notes_app">Hacking the iPhone Notes App for the Admittedly Nit-Picky Purpose of Changing the Text Font to Helvetica</a>”. This was so early in the iPhone era — just three months after the original iPhone shipped — that we were calling its operating system “mobile OS X”, and none of it was protected in any way, so you could do what I did and delete the Marker Felt font (<a href="https://daringfireball.net/linked/2007/07/11/marker-felt">Merlin Mann</a>: “Comic Sans with a shave and a breath mint”) and then use a hex editor to modify the Mobile Notes app so it would fall back to Helvetica instead of cursed Arial after Marker Felt was deleted. Good times.</p>
+
+</dd>
+
+
+<dt>
+<a href="https://daringfireball.net/linked/2025/12/15/note-on-sms-marketing">A Note on Current SMS Marketing Practices</a>&nbsp;<a class="permalink" title="Permanent link to ‘A Note on Current SMS Marketing Practices’" href="https://daringfireball.net/linked/2025/12/15/note-on-sms-marketing">&#9733;</a>
+</dt>
+<dd>
+<p>Back on November 28, I bought a new cap from <a href="https://www.neweracap.com/pages/our-story">New Era</a>’s web store. They offered a discount of some sort if I gave them a phone number and permitted them to send me marketing messages. That got me curious about what they’d do with my number, and it was a $50-some dollar cap, so I took the discount and gave them my Google Voice number. That was 17 days ago. They sent me 19 SMS marketing messages since then, before I’d seen enough today and called it quits on this experiment. (Or called “STOP”, perhaps, which was the magic word to opt out.) They didn’t send a text every day, and on some days, they sent more than one. But the overall effect was relentlessly annoying.</p>
+
+<p>I’m sure some of the people who sign up for these texts in exchange for a discount code wind up clicking at least one of the offers sent via SMS and buying more stuff, and the marketing team running this points to those sales as proof that it “works”. You can measure that. It shows up as a number. Some people in business only like arguments that can be backed by numbers. 3 is more than 2. That is indeed a fact.</p>
+
+<p>But there are an <em>infinite</em> number of things in life that cannot be assigned numeric values. Many of these things matter too. Like the fact that in my mind, after experiencing this, the New Era company smells like a sweaty hustler in a cheap polyester suit. If their brand were a man, I’d check my pants pocket for my wallet after interacting with him.</p>
+
+</dd>
+
+
+<dt>
+<a href="https://variety.com/2025/digital/news/disney-google-ai-copyright-infringement-cease-and-desist-letter-1236606429/">Disney, Immediately After Partnering With OpenAI for Sora, Sends Google a Cease-and-Desist Letter Accusing Them of Copyright Infringement on ‘Massive Scale’</a>&nbsp;<a class="permalink" title="Permanent link to ‘Disney, Immediately After Partnering With OpenAI for Sora, Sends Google a Cease-and-Desist Letter Accusing Them of Copyright Infringement on ‘Massive Scale’’" href="https://daringfireball.net/linked/2025/12/15/disney-google-cease-and-desist">&#9733;</a>
+</dt>
+<dd>
+<p>Todd Spangler, reporting last week for Variety:</p>
+
+<blockquote>
+  <p>As Disney has <a href="https://variety.com/2025/digital/news/disney-openai-deal-200-characters-to-sora-video-invests-1-billion-1236606401/">gone into business with OpenAI</a>, the Mouse
+House is accusing Google of copyright infringement on a “massive
+scale” using AI models and services to “commercially exploit and
+distribute” infringing images and videos. On Wednesday evening,
+attorneys for Disney sent a cease-and-desist letter to Google,
+demanding that Google stop the alleged infringement in its AI
+systems. [...]</p>
+
+<p>According to the letter, which Variety has reviewed, Disney
+alleges that Google’s AI systems and services infringe Disney
+characters including those from “Frozen,” “The Lion King,”
+“Moana,” “The Little Mermaid,” “Deadpool,” “Guardians of the
+Galaxy,” “Toy Story,” “Brave,” “Ratatouille,” “Monsters Inc.,”
+“Lilo &amp; Stich,” “Inside Out” and franchises such as Star Wars, the
+Simpsons, and Marvel’s Avengers and Spider-Man. In its letter,
+Disney included examples of images it claims were generated by
+text prompts in Google’s AI apps, including of Darth Vader
+(<em>pictured above</em>).</p>
+</blockquote>
+
+<p>It’s very Disney-esque to embrace a new medium. Alone among the major movie studios in the 1950s, Disney embraced television. TV <em>was</em> a threat to the cinema, but it was also an enormous opportunity. The other studios only saw the threat. Walt Disney focused on the opportunity. But Disney did this not by giving their content to television on the cheap or for free. They did it by getting paid. That’s what they’re doing with generative AI.</p>
+
+<p><a href="https://daringfireball.net/misc/2025/12/disney-google-ai-cease-and-desist-darth-vader.png">Here’s the Gemini-generated Darth Vader image</a>. Note the blood splatter — which was un-<em>Star Wars</em>-like even before Disney’s purchase of Lucasfilm. Also, even worse, his lightsaber is totally wrong.</p>
+
+</dd>
+
+
+<dt>
+<a href="https://www.wsj.com/business/roomba-maker-declares-bankruptcy-but-tries-to-ease-bricking-fears-fe73dff2?st=XATuAs">Roomba Maker iRobot Declares Bankruptcy, Falls Into Chinese Hands</a>&nbsp;<a class="permalink" title="Permanent link to ‘Roomba Maker iRobot Declares Bankruptcy, Falls Into Chinese Hands’" href="https://daringfireball.net/linked/2025/12/15/roomba-maker-irobot-declares-bankruptcy">&#9733;</a>
+</dt>
+<dd>
+<p>John Keilman, reporting for The Wall Street Journal (gift link):</p>
+
+<blockquote>
+  <p>The company that makes Roomba robotic vacuums declared bankruptcy
+Sunday but said its devices will continue to function normally
+while the company restructures.</p>
+
+<p>Massachusetts-based iRobot has struggled financially for
+years, beset by foreign competition that made cheaper and, in the
+opinion of some buyers, technologically superior autonomous
+vacuums. When a proposed sale to Amazon.com fell through in 2024
+<a href="https://www.wsj.com/business/retail/amazon-irobot-scrap-acquisition-deal-7072122f">because of regulatory concerns</a>, the company’s share price
+plummeted.</p>
+
+<p>Founded in 1990, iRobot’s autonomous vacuum cleaners helped
+pioneer robotics for consumers. Many recent versions of the Roomba
+have features that are controlled through the brand’s app. Some
+owners have worried that, similar to other products tied to the
+internet, their Roombas could “brick” — or stop working — if the
+company went under. iRobot said it anticipates no disruptions to
+its product support or app functionality.</p>
+</blockquote>
+
+<p>Matt Stoller, author of the (generally excellent) website <a href="https://www.thebignewsletter.com/">Big</a>, <a href="https://x.com/matthewstoller/status/2000567118207828114">on Twitter/X today</a>:</p>
+
+<blockquote>
+  <p>iRobot is selling itself to Chinese manufacturers, a result of
+hedge fund attack a decade ago that gutted the company. Wall
+Street is a threat to our national sovereignty.</p>
+</blockquote>
+
+<p>Matt Stoller, author of the (generally knee-jerk anti-acquisition) website Big, <a href="https://x.com/matthewstoller/status/1555530144407867392">on Twitter back in 2022</a>, when Amazon announced its intended acquisition:</p>
+
+<blockquote>
+  <p>Amazon just bought iRobot, which has immense amounts of data about
+people’s physical homes. It never ends. Congress should have
+passed <a href="https://x.com/TomCottonAR">@TomCottonAR</a>’s bill to bar big tech mergers.</p>
+
+<p>[Press release: “<a href="https://www.prnewswire.com/news-releases/amazon-and-irobot-sign-an-agreement-for-amazon-to-acquire-irobot-301600720.html">Amazon and iRobot sign an agreement for Amazon to acquire iRobot</a>”]</p>
+</blockquote>
+
+<p>You can’t have it both ways. If Amazon’s proposed acquisition would have gone through, iRobot, an American company, would now be a (small) subsidiary of Amazon, another American company. The acquisition did not go through, which is what Stoller wanted, and now here we are with iRobot — which in Stoller’s own description “has immense amounts of data about people’s physical homes” — in the hands of a Chinese company.</p>
+
+<p>iRobot’s demise wasn’t caused by hedge fund investments a decade ago. The hedge fund vultures swooped in after the Amazon acquisition collapsed in early 2024. Here’s Connie Loizos, writing yesterday for TechCrunch:</p>
+
+<blockquote>
+  <p>It seemed like a fairy tale ending — the scrappy MIT spinoff
+absorbed into the Everything Store’s sprawling empire.</p>
+
+<p>Except European regulators had other ideas. Indeed, amid threats
+they would block the deal — they believed Amazon could foreclose
+rivals by restricting or degrading access to its marketplace — Amazon and iRobot agreed to <a href="https://www.wsj.com/business/retail/amazon-irobot-scrap-acquisition-deal-7072122">kill the deal</a> in January 2024,
+with Amazon paying a $94 million breakup fee and walking away.
+Angle resigned. The company’s shares nosedived. It shed 31% of its
+workforce.</p>
+
+<p>What followed afterward was a slow-motion collapse. Earnings had
+been declining since 2021 thanks to supply chain chaos and Chinese
+competitors flooding the market with cheaper robot vacuums.</p>
+</blockquote>
+
+<p>iRobot didn’t get big enough on its own quickly enough. It was under fierce competitive pressure from Chinese robot vacuums. Roombas seemed groundbreaking and innovative at first, but technical progress stalled. Amazon’s hands aren’t exactly clean in terms of putting the squeeze on iRobot: the primary place where the cheaper Chinese robot vacuums were being sold was, of course, Amazon.</p>
+
+<p>By 2022, the Amazon acquisition was iRobot’s lifeline. <a href="https://www.wsj.com/business/retail/amazon-irobot-scrap-acquisition-deal-7072122f">EU regulators wanted it shot down</a>, and despite the fact that it was one American company trying to acquire another, the anti-big-tech Biden administration clearly preferred to let the deal collapse. The US should have told the EU to mind their own companies.</p>
+
+<p>Now iRobot is in Chinese hands, the worst possible outcome. The Amazon acquisition wasn’t anti-competitive — it was iRobot’s last chance to remain competitive.</p>
+
+</dd>
+
+
+<dt>
+<a href="https://www.jaho.com/s/df">Jaho Coffee Roaster</a>&nbsp;<a class="permalink" title="Permanent link to ‘Jaho Coffee Roaster’" href="https://daringfireball.net/linked/2025/12/15/jaho-coffee-roaster">&#9733;</a>
+</dt>
+<dd>
+<p>My thanks to Jaho Coffee Roaster for sponsoring last week at DF. Great coffee changes the day. Since 2005, Jaho’s family-owned roastery has taken the slow and careful approach, sourcing small-lot coffees, roasting in small batches and shipping every bag fresh. Award-winning coffee delivered to your home or office, shipped fresh nationwide.</p>
+
+<p>Jaho was kind enough to send me a few bags of their beans, and I can vouch that they roast <em>excellent</em> coffee — the kind of tasty beans where, when I finish my last morning cup, I’m tempted to brew a little more even though I know I’m fully caffeinated.</p>
+
+<p>Holiday gifts? Fresh coffee is a gift that never misses, easy to give, even better to receive. Give better coffee this season. Even better: DF readers get 20 percent off with code <strong>DF</strong>.</p>
+
+</dd>
+
+
+</dl>
+
+<h2 class="dateline">Sunday, 14 December 2025</h2>
+<dl class="linkedlist">
+<dt>
+<a href="https://deadline.com/2025/12/rob-reiner-two-reported-dead-at-home-lapd-1236648185/">Rob Reiner and Wife Found Stabbed to Death at Home</a>&nbsp;<a class="permalink" title="Permanent link to ‘Rob Reiner and Wife Found Stabbed to Death at Home’" href="https://daringfireball.net/linked/2025/12/14/rob-reiner-stabbed-to-death">&#9733;</a>
+</dt>
+<dd>
+<p>Deadline:</p>
+
+<blockquote>
+  <p>The bodies of Rob Reiner and his wife Michele Reiner have been found in their Brentwood home, sources confirmed to Deadline.</p>
+
+<p>It appears the acclaimed director and his wife were slain by knife wounds.</p>
+
+<p>The LAPD are on the scene, but have not issued an official confirmation yet. A press conference is expected to take place tonight.</p>
+</blockquote>
+
+<p><a href="https://people.com/rob-reiner-wife-michele-were-killed-by-son-sources-11868856">People</a>:</p>
+
+<blockquote>
+  <p>Rob Reiner and his wife, Michele Singer Reiner, were killed by their son, Nick, multiple sources confirm to People.</p>
+</blockquote>
+
+<p>So it goes.</p>
+
+</dd>
+
+
+</dl>
+
+<h2 class="dateline">Saturday, 13 December 2025</h2>
+<dl class="linkedlist">
+<dt>
+<a href="https://9to5mac.com/2025/12/12/pluribus-most-watched-show-ever-on-apple-tv/">‘Pluribus’ Becomes Apple TV’s Most Watched Show Ever</a>&nbsp;<a class="permalink" title="Permanent link to ‘‘Pluribus’ Becomes Apple TV’s Most Watched Show Ever’" href="https://daringfireball.net/linked/2025/12/13/pluribus-most-watched">&#9733;</a>
+</dt>
+<dd>
+<p>Marcus Mendes, 9to5Mac:</p>
+
+<blockquote>
+  <p>Now, on the same day that <em>F1 The Movie</em> debuted at the top of
+Apple TV’s movie rankings, the company confirmed that <em>Pluribus</em>
+has reached another, even more impressive milestone: it is the
+most watched show in the service’s history. Busy day. [...]</p>
+
+<p>Apple doesn’t share viewership numbers, so it is hard to quantify
+what exactly this means.</p>
+
+<p>However, considering that Apple TV has had quite a few hit
+shows, including <em>Ted Lasso</em>, <em>Severance</em>, <em>The Morning Show</em>,
+<em>Slow Horses</em>, and, more recently, <em>The Studio</em>, it is still
+notable that Pluribus has managed to top them all in just a few
+short weeks.</p>
+</blockquote>
+
+<p>I <a href="https://daringfireball.net/linked/2025/11/21/pluribus-carol-sturka-ama">love</a> <em>Pluribus</em>. I’d rank it behind <em>Severance</em> and <em>Slow Horses</em>, but it’s a close call between <em>Pluribus</em> and <em>The Studio</em> for third place on my Apple TV favorites list. Great shows all four of them. I don’t think there’s any question that when it comes to prestige series, Apple TV had the best 2025. Which other streamer had four shows of that caliber this year?</p>
+
+<p><a href="https://kottke.org/25/11/whats-all-the-fuss-about-pluribus">Jason Kottke is iffy on it</a>, though, because he’s not seeing the appeal of Rhea Seehorn’s protagonist Carol Sturka. Count me <a href="https://maxfrequency.net/2025/12/02/pluribus-very-good-jason-kottke">with Max Roberts</a> — I find Carol very compelling, and uncomfortably realistic. She feels to me like a real person, not a “character”. It’s one of the best cinematic explorations of loneliness since Tom Hanks in <em><a href="https://www.themoviedb.org/movie/8358-cast-away">Cast Away</a></em>, or <em><a href="https://www.themoviedb.org/movie/10681-wall-e">WALL-E</a></em>. <strong>Update:</strong> A few more that come to mind: <em><a href="https://www.themoviedb.org/movie/286217-the-martian">The Martian</a></em> and <em><a href="https://www.themoviedb.org/movie/17431-moon">Moon</a></em>.</p>
+
+</dd>
+
+
+<dt>
+<a href="https://news.ycombinator.com/item?id=46229533">Lucas de Groot, Designer of Calibri, on the State Department’s Switch Back to Times New Roman</a>&nbsp;<a class="permalink" title="Permanent link to ‘Lucas de Groot, Designer of Calibri, on the State Department’s Switch Back to Times New Roman’" href="https://daringfireball.net/linked/2025/12/13/de-groot-calibri-times-new-roman">&#9733;</a>
+</dt>
+<dd>
+<p>From the LucasFonts account, in a comment on Hacker News:</p>
+
+<blockquote>
+  <p>Professional typography can be achieved with both serif and
+sans-serif fonts. However, Times New Roman — a typeface older
+than the current president — presents unique challenges.
+Originally crafted in Great Britain for newspaper printing, Times
+was optimised for paper, with each letterform meticulously cut and
+tested for specific sizes. In the digital era, larger size
+drawings were repurposed as models, resulting in a typeface that
+appears too thin and sharp when printed at high quality.</p>
+
+<p>Serif fonts are often perceived as more traditional, but they are
+also more demanding to use effectively. While a skilled
+typographer can, in theory, produce excellent results with Times,
+using it in its default digital form is not considered
+professional practice.</p>
+</blockquote>
+
+<p>This echoes my thoughts: the State Department should use a traditional-looking serif typeface, but they should choose — or even better, commission — something far better than Times New Roman.</p>
+
+<p>Also from that Hacker News thread, comes <a href="https://news.ycombinator.com/item?id=46244661">this</a> delightful Easter egg: <a href="https://www.google.com/search?q=Lucas+de+Groot">do a Google search for “Lucas de Groot”</a>, and the results will be set in Calibri. Same thing for common fonts like, yes, <a href="https://www.google.com/search?q=Times+New+Roman">Times New Roman</a>.</p>
+
+</dd>
+
+
+<dt>
+<a href="https://www.businessinsider.com/paramount-warner-discovery-larry-ellison-saudi-arabia-qatar-wbd-deal-2025-12">Pondering Middle East Petrostates as American Media Owners</a>&nbsp;<a class="permalink" title="Permanent link to ‘Pondering Middle East Petrostates as American Media Owners’" href="https://daringfireball.net/linked/2025/12/13/pondering-middle-east-petrostates-as-american-media-owners">&#9733;</a>
+</dt>
+<dd>
+<p>Peter Kafka, writing at Business Insider:</p>
+
+<blockquote>
+  <p>And last: It’s possible that Middle Eastern countries are
+investing in an American media conglomerate solely for a financial
+return, and would have zero interest in the content that
+conglomerate makes and distributes. But that’s an assertion that
+many folks would have a hard time taking at face value. And while
+lots of American companies have sought Middle Eastern funding for
+years, there was a pause after 2018, following the murder and
+dismemberment of Washington Post contributor Jamal Khashoggi — a
+shocking act <a href="https://www.businessinsider.com/cia-assessment-mohammed-bin-salman-khashoggi-murder-trump-russia-2018-11">the CIA concluded was ordered by Saudi Arabia’s
+Crown Prince Mohammed bin Salman himself</a>. (He has denied
+involvement.)</p>
+
+<p>Now bin Salman might end up owning a piece of major American news
+outlets and other media arms. How’s that going to go over?</p>
+</blockquote>
+
+<p>David Ellison’s hostile takeover proposal <a href="https://daringfireball.net/linked/2025/12/09/paramount-hostile-takeover-warner-bros">reportedly would have these Middle East partners owning “non-voting” shares</a>, but regardless of their rights in the corporate by-laws, their mere ownership would give them influence. These are profoundly fucked-up countries, where <a href="https://en.wikipedia.org/wiki/Women%27s_rights_in_Saudi_Arabia">women are a repressed underclass</a>, <a href="https://en.wikipedia.org/wiki/LGBTQ_rights_in_the_Middle_East">LGBT activity is punishable <em>by death</em></a>, and <a href="https://en.wikipedia.org/wiki/Women%27s_rights_in_Saudi_Arabia">their word is worth nothing</a> when they promise to abide by Western norms.</p>
+
+</dd>
+
+
+<dt>
+<a href="https://www.instagram.com/reel/DRd2ldWkQYr">The Infinite Loop of One LLM Talking to Another</a>&nbsp;<a class="permalink" title="Permanent link to ‘The Infinite Loop of One LLM Talking to Another’" href="https://daringfireball.net/linked/2025/12/13/llm-infinite-loop">&#9733;</a>
+</dt>
+<dd>
+<p>This is very funny, but also a good indication of just how far away these things are from actual intelligence. First, a reasonable human being would never get caught in a loop like this. Second, only humans can not only recognize what’s going on here, but also see the humor in it.</p>
+
+</dd>
+
+
+<dt>
+<a href="https://hey.paris/posts/appleid/">Paris Buttfield-Addison’s Apple Account Is in Kafka Mode</a>&nbsp;<a class="permalink" title="Permanent link to ‘Paris Buttfield-Addison’s Apple Account Is in Kafka Mode’" href="https://daringfireball.net/linked/2025/12/13/buttfield-addison-apple-account">&#9733;</a>
+</dt>
+<dd>
+<p>Paris Buttfield-Addison:</p>
+
+<blockquote>
+  <p>A major brick-and-mortar store sold an Apple Gift Card that Apple
+seemingly took offence to, and locked out my entire Apple ID,
+effectively bricking my devices and my iCloud Account, Apple
+Developer ID, and everything associated with it, and I have no
+recourse. [...]</p>
+
+<p>I am not a casual user. I have <a href="https://hey.paris/books-and-events/books/#books">literally written the book on
+Apple development (taking over the <em>Learning Cocoa with
+Objective-C</em> series, which Apple themselves used to write, for
+O’Reilly Media, and then 20+ books following that)</a>. I
+help run the longest-running Apple developer event not run by
+Apple themselves, <a href="https://devworld.au/index.php">/dev/world</a>. I have effectively been
+an evangelist for this company’s technology for my entire
+professional life. We had an app on the App Store on Day 1 in
+every sense of the world.</p>
+
+<p>I am asking for a human at Apple to review this case. I suspect an
+automated fraud flag regarding the bad gift card triggered a
+nuclear response that frontline support cannot override. I have
+escalated this through my many friends in WWDR and SRE at Apple,
+with no success.</p>
+
+<p>I am desperate to resolve this and restore my digital life.</p>
+</blockquote>
+
+<p>The triggering event, as best he can determine, was his failed attempt to redeem a $500 Apple gift card purchased from a major retail chain. There’s <a href="https://news.ycombinator.com/item?id=46252114">a very active thread on Hacker News</a> about his plight, where Buttfield-Addison himself is <a href="https://news.ycombinator.com/threads?id=parisidau">commenting</a>. That thread pointed to <a href="https://www.ozbargain.com.au/node/937339">this description</a> of one form of gift card thievery, in which thieves tamper with the cards in-store to steal the codes, tamper with the code, and then some unsuspecting victim buys the tampered card and the thieves get the credit.</p>
+
+</dd>
+
+
+</dl>
+
+<h2 class="dateline">Friday, 12 December 2025</h2>
+<dl class="linkedlist">
+<dt>
+<a href="https://daringfireball.net/feeds/sponsors/">Daring Fireball Weekly Sponsorships, End of Year and Q1 2026</a>&nbsp;<a class="permalink" title="Permanent link to ‘Daring Fireball Weekly Sponsorships, End of Year and Q1 2026’" href="https://daringfireball.net/linked/2025/12/12/df-sponsorships-end-of-year">&#9733;</a>
+</dt>
+<dd>
+<p>Weekly sponsorships have been the top source of revenue for Daring Fireball ever since I started selling them <a href="https://daringfireball.net/feeds/sponsors/archive">back in 2007</a>. They’ve succeeded, I think, because they make everyone happy. They generate good money. There’s only one sponsor per week and the sponsors are always relevant to at least some sizable portion of the DF audience, so you, the reader, are never annoyed and hopefully often intrigued by them. And, from the sponsors’ perspective, they work. My favorite thing about them is how many sponsors <a href="https://daringfireball.net/feeds/sponsors/archive">return for subsequent weeks</a> after seeing the results.</p>
+
+<p>After a solid run in the second half of 2025 with sponsorships sold out weeks, if not months, in advance, we’ve arrived at the end of the year with the last three weeks still open — starting this coming Monday. I’m offering those weeks at a discount.</p>
+
+<ul>
+<li>December 15–21 (next week)</li>
+<li>December 22–28</li>
+<li>December 29–January 4</li>
+</ul>
+
+<p>Traffic at DF tends not to ebb over holidays, and while I slow down, I don’t stop posting. If <em>you</em> still check DF when you’re bored over the holidays, think about how many other people do too.</p>
+
+<p>I’m also booking sponsorships for Q1 2026, and six of those weeks are already sold.</p>
+
+<p>If you’ve got a product or service you think would be of interest to DF’s audience of people obsessed with high quality and good design, <a href="/cdn-cgi/l/email-protection#97e4e7f8f9e4f8e5e4d7f3f6e5fef9f0f1fee5f2f5f6fbfbb9f9f2e3a8e4e2f5fdf2f4e3aad1f2f2f3b2a5a7c4e7f8f9e4f8e5e4fffee7">get in touch</a>.</p>
+
+</dd>
+
+
+<dt>
+<a href="https://www.youtube.com/watch?v=O46695Y7ab8">Apple at the AWS re:Invent 2025 Keynote</a>&nbsp;<a class="permalink" title="Permanent link to ‘Apple at the AWS re:Invent 2025 Keynote’" href="https://daringfireball.net/linked/2025/12/12/apple-aws-reinvent-keynote">&#9733;</a>
+</dt>
+<dd>
+<p>Six-minute segment from Amazon’s AWS re:Invent keynote last week:</p>
+
+<blockquote>
+  <p>Payam Mirrashidi, VP, Cloud Systems &amp; Platforms, Apple, explains
+how AWS Graviton helps improve developer velocity at scale. Hear
+Swift’s journey from the premier programming language for the
+Apple ecosystem to adoption by millions of developers around the
+world building apps for everything from devices to data centers.</p>
+</blockquote>
+
+<p>(Graviton is AWS’s ARM-in-the-cloud initiative.)</p>
+
+<p>Nothing earth-shaking in this brief presentation, but it’s not often you see an Apple VP on stage at another company’s keynote, or see Apple so very publicly declare their reliance on someone else’s infrastructure. It speaks to Apple and Amazon being more allies than competitors amongst the big tech companies. And of course, you even less often see anyone from Apple speak live on stage at Apple’s own keynotes, which, alas, are no longer live nor on stages.</p>
+
+</dd>
+
+
+<dt>
+<a href="https://www.edutopia.org/article/do-dyslexia-fonts-actually-work">Special Dyslexia Fonts Are Based on Voodoo Pseudoscience</a>&nbsp;<a class="permalink" title="Permanent link to ‘Special Dyslexia Fonts Are Based on Voodoo Pseudoscience’" href="https://daringfireball.net/linked/2025/12/12/dyslexia-fonts-pseudoscience">&#9733;</a>
+</dt>
+<dd>
+<p>Youki Terada, writing for Edutopia in 2022 (via <a href="https://typo.social/@jenskutilek/115701215633708390">Jens Kutílek</a>):</p>
+
+<blockquote>
+  <p>Under close scrutiny, the evidence for dyslexia-friendly fonts
+falls apart. In a <a href="https://link.springer.com/article/10.1007/s11881-016-0127-1">2017 study</a>, for example, researchers tested
+whether OpenDyslexic, a popular font with thicker lines near the
+bottom of the letters, could improve the reading rate and accuracy
+for young children with dyslexia. According to the developers of
+the font, which is open-source and free of charge, the “heaviness”
+of the letters prevented them from turning upside down for readers
+with dyslexia, which they claimed would improve reading accuracy
+and speed.</p>
+
+<p>Researchers put the font to the test, comparing it with two other
+popular fonts designed for legibility — Arial and Times New Roman — and discovered that the purportedly dyslexia-friendly font
+actually reduced reading speed and accuracy. In addition, none of
+the students preferred to read material in OpenDyslexic, a
+surprising rebuke for a font specifically designed for the task.</p>
+
+<p>In a separate <a href="https://link.springer.com/article/10.1007/s11881-017-0154-6">2018 study</a>, researchers compared another popular
+dyslexia font — Dyslexie, which charges a fee for usage — with
+Arial and Times New Roman and found no benefit to reading
+accuracy and speed. As with the previous dyslexia font, children
+expressed a preference for the mainstream fonts. “All in all, the
+font Dyslexie, developed to facilitate the reading of dyslexic
+people, does not have the desired effect,” the researchers
+concluded. “Children with dyslexia do not read better when text
+is printed in the font Dyslexie than when text is printed in
+Arial or Times New Roman.”</p>
+</blockquote>
+
+<p>Quoting from the abstract of <a href="https://link.springer.com/article/10.1007/s11881-016-0127-1">the first study cited above</a>:</p>
+
+<blockquote>
+  <p>Results from this alternating treatment experiment show no
+improvement in reading rate or accuracy for individual students
+with dyslexia, as well as the group as a whole. While some
+students commented that [OpenDyslexic] was “new” or “different”,
+none of the participants reported preferring to read material
+presented in that font. These results indicate there may be no
+benefit for translating print materials to this font.</p>
+</blockquote>
+
+<p>The problem isn’t dyslexia if you don’t notice that <a href="https://opendyslexic.org/">OpenDyslexic</a> is  “different”.</p>
+
+<p>Quoting from <a href="https://link.springer.com/article/10.1007/s11881-017-0154-6">the second cited study</a>:</p>
+
+<blockquote>
+  <p>Words written in Dyslexie font were not read faster or more
+accurately. Moreover, participants showed a preference for the
+fonts Arial and Times New Roman rather than Dyslexie, and again,
+preference was not related to reading performance. These
+experiments clearly justify the conclusion that the Dyslexie font
+neither benefits nor impedes the reading process of children with
+and without dyslexia.</p>
+</blockquote>
+
+<p>OpenDyslexic’s website has <a href="https://opendyslexic.org/related-research">a “related research” page</a> but of the four articles they link to, three are 404s, and the other one only studied “extra-large letter spacing”. I chased down <a href="https://vtechworks.lib.vt.edu/server/api/core/bitstreams/d2aff585-f8a5-4152-b9c8-a177f84a3979/content">the correct link</a> to one of the other articles they cite, and the only fonts it studied were Verdana, Arial, Georgia, and Times.</p>
+
+<p>Some people claim to prefer reading text set with OpenDyslexic. Some people like Comic Sans, too. But I was unaware that these typefaces that purport to be designed specifically to benefit people with dyslexia are based on misguided beliefs that dyslexia is a visual problem, and that actual research shows <a href="https://daringfireball.net/linked/2025/12/16/debunking-special-typefaces-for-dyslexia">they do not provide the benefits they claim to</a>. They’re just ugly fonts.</p>
+
+</dd>
+
+
+<dt>
+<a href="https://support.apple.com/guide/security/how-imessage-sends-and-receives-messages-sec70e68c949/web">iMessage Doesn’t Use APNs for Attachments</a>&nbsp;<a class="permalink" title="Permanent link to ‘iMessage Doesn’t Use APNs for Attachments’" href="https://daringfireball.net/linked/2025/12/12/imessage-apns-attachments">&#9733;</a>
+</dt>
+<dd>
+<p>Small follow-up point re: <a href="https://daringfireball.net/2025/12/imessage_push_notifications_hard_to_block">my post this week</a> on iMessage’s delivery architecture being built atop the Apple Push Notification service:</p>
+
+<blockquote>
+  <p>APNs can only relay messages up to 4 or 16 KB in size, depending
+on the iOS or iPadOS version. If the message text is too long or
+if an attachment such as a photo is included, the attachment is
+encrypted using AES in CTR mode with a randomly generated 256-bit
+key and uploaded to iCloud. The AES key for the attachment, its
+Uniform Resource Identifier (URI), and an SHA-1 hash of its
+encrypted form are then sent to the recipient as the contents of
+an iMessage, with their confidentiality and integrity protected
+through normal iMessage encryption, as shown in the following
+diagram.</p>
+</blockquote>
+
+<p>This explains why you can often text, but not send or receive images, with iMessage over in-flight Wi-Fi. (<a href="https://infosec.exchange/@adamshostack/115696265565038136">Thanks to Adam Shostack</a> for flagging this detail.)</p>
+
+</dd>
+
+
+<dt>
+<a href="https://openai.com/index/introducing-gpt-5-2/">OpenAI Releases GPT-5.2</a>&nbsp;<a class="permalink" title="Permanent link to ‘OpenAI Releases GPT-5.2’" href="https://daringfireball.net/linked/2025/12/12/gpt-5-2">&#9733;</a>
+</dt>
+<dd>
+<p>OpenAI:</p>
+
+<blockquote>
+  <p>In ChatGPT, GPT‑5.2 Instant, Thinking, and Pro will begin rolling
+out today, starting with paid plans. In the API, they are
+available now to all developers.</p>
+
+<p>Overall, GPT‑5.2 brings significant improvements in general
+intelligence, long-context understanding, agentic tool-calling,
+and vision — making it better at executing complex, real-world
+tasks end-to-end than any previous model.</p>
+</blockquote>
+
+<p>5.1 was released just <a href="https://openai.com/index/gpt-5-1/">one month ago</a>, but 5.2 delivers a slew of measurable improvements across the board. Where 5.1 was <a href="https://daringfireball.net/2025/11/chatgpt_5-1_with_renamed_and_new_personalities">seemingly more about the <em>feel</em> of responses</a>, the personality, 5.2 was clearly focused on tangible and benchmarkable gains.</p>
+
+</dd>
+
+
+</dl>
+
+<h2 class="dateline">Wednesday, 10 December 2025</h2>
+<dl class="linkedlist">
+<dt>
+<a href="https://www.yahoo.com/news/articles/white-house-just-revealed-another-210003798.html">Trump’s Dogshit White House Signage Typography</a>&nbsp;<a class="permalink" title="Permanent link to ‘Trump’s Dogshit White House Signage Typography’" href="https://daringfireball.net/linked/2025/12/10/trumps-dogshit-white-house-signage-typography">&#9733;</a>
+</dt>
+<dd>
+<p>Before anyone starts patting the Trump administration on its back for <a href="https://daringfireball.net/2025/12/full_text_of_marco_rubio_state_dept_directive_times_new_roman">one good typographic decision</a>, take a gander at the hard-to-believe-this-is-real new signage at (and alas, on) the White House. This is the sort of signage that typically spells “Business Center” across from the check-in desk at a Courtyard Marriott. The Biden State Department replacing Times New Roman with Calibri was a typographic misdemeanor. Festooning the White House with signage set in gold-plated <a href="https://www.myfonts.com/collections/shelley-script-font-linotype/">Shelley Script</a> ought to land Trump in The Hague.</p>
+
+<p>(The idea that the Oval Office ought to be explicitly labeled “The Oval Office” — whatever the typeface or signage style — brings to mind <a href="https://daringfireball.net/misc/2025/12/far-side-a-few-things-around-here-mono.png">this classic <em>Far Side</em> cartoon</a>, which I think aptly illustrates the president’s mental faculties.)</p>
+
+</dd>
+
+
+<dt>
+<a href="https://practicaltypography.com/typography-in-ten-minutes.html">‘Those Fonts Are Favored Only by the Apathetic and Sloppy’</a>&nbsp;<a class="permalink" title="Permanent link to ‘‘Those Fonts Are Favored Only by the Apathetic and Sloppy’’" href="https://daringfireball.net/linked/2025/12/10/butterick-times-new-roman">&#9733;</a>
+</dt>
+<dd>
+<p>The fifth of five rules in Matthew Butterick’s “Typography in Ten Minutes”:</p>
+
+<blockquote>
+  <p>And finally, font choice. The fastest, easiest, and most visible
+improvement you can make to your typography is to ignore the fonts
+already loaded on your computer (known as <a href="https://practicaltypography.com/system-fonts.html">system fonts</a>)
+and the <a href="https://practicaltypography.com/free-fonts.html">free fonts</a> that inundate the internet. Instead,
+buy a professional font (like those found in <a href="https://practicaltypography.com/font-recommendations.html">font
+recommendations</a>). A professional font gives you the benefit
+of a professional designer’s skills without having to hire one.</p>
+
+<p>If that’s impossible, you can still make good typography with
+system fonts. But choose wisely. And never choose <a href="https://practicaltypography.com/times-new-roman-alternatives.html">Times New
+Roman</a> or <a href="https://practicaltypography.com/helvetica-and-arial-alternatives.html">Arial</a>, as those fonts are favored only by
+the apathetic and sloppy. Not by typographers. Not by you.</p>
+</blockquote>
+
+<p>(<a href="https://typo.social/@verbosus/115696232964814142">Via Antonio Cavedoni</a>.)</p>
+
+</dd>
+
+
+</dl>
+
+<hr class="ookiaks" />
+
+
+<div class="article">
+<h1><a href="https://daringfireball.net/2025/12/full_text_of_marco_rubio_state_dept_directive_times_new_roman" title="Permanent link to ‘The Full Text of Marco Rubio’s Directive on State Department Typography, Re-Establishing Times New Roman’">The Full Text of Marco Rubio’s Directive on State Department Typography, Re-Establishing Times New Roman</a></h1>
+<h6 class="dateline">Wednesday, 10 December 2025</h6>
+
+<p>I’m a big believer in reading original source material. For example, when Apple provided me, <a href="https://www.techmeme.com/250307/p12#a250307p12">alongside only a handful of other outlets</a>, with a statement regarding their decision to delay the “more personalized Siri” back in March, <a href="https://daringfireball.net/2025/03/apple_is_delaying_the_more_personalized_siri_apple_intelligence_features">I ran the full statement</a>, verbatim. I added my own commentary, but I wanted to let Apple’s own statement speak for itself first. It drives me nuts when news sites in possession of a statement or original document do not make the full original text available, even if only in a link at the bottom, and choose only to quote short excerpts.</p>
+
+<p>With regard to <a href="https://daringfireball.net/linked/2025/12/10/state-department-times-new-roman">today’s news</a> regarding Marco Rubio’s directive re-establishing Times New Roman as the default font for U.S. State Department documents (rescinding the Biden administration’s 2023 change to Calibri), I very much wanted to read the original. The New York Times broke the news, stated that they had obtained the memo, and quoted phrases and words from it, but they did not provide a copy of the original. </p>
+
+<p>The State Department has not made this document publicly available, and to my knowledge, no one else has published it. I have obtained a copy from a source, and <a href="https://daringfireball.net/misc/2025/12/state-department-return-to-tradition.text">have made it available here in plain text format</a>. The only change I’ve made is to replace non-breaking spaces (<code>U+00A0</code>) with regular spaces.<sup id="fnr1-2025-12-10"><a href="#fn1-2025-12-10">1</a></sup></p>
+
+<p>Please do <a href="https://daringfireball.net/misc/2025/12/state-department-return-to-tradition.text">read it yourself</a>, and do so with an open mind.</p>
+
+<p>It seems clear to me that The New York Times did Rubio dirty in their characterization of the directive. The Times story, credited to reporters Michael Crowley and Hamed Aleaziz, ran under the headline “<a href="https://www.nytimes.com/2025/12/09/us/politics/rubio-state-department-font.html?unlocked_article_code=1.7k8.NI-S.Il8KdkMKKnGV">At State Dept., a Typeface Falls Victim in the War Against Woke</a>”, and opens thus:</p>
+
+<blockquote>
+  <p>Secretary of State Marco Rubio waded into the surprisingly fraught
+politics of typefaces on Tuesday with an order halting the State
+Department’s official use of Calibri, reversing a 2023 Biden-era
+directive that Mr. Rubio called a “wasteful” sop to diversity.</p>
+
+<p>While mostly framed as a matter of clarity and formality in
+presentation, Mr. Rubio’s directive to all diplomatic posts around
+the world blamed “radical” diversity, equity, inclusion and
+accessibility programs for what he said was a misguided and
+ineffective switch from the serif typeface Times New Roman to sans
+serif Calibri in official department paperwork.</p>
+</blockquote>
+
+<p>Rubio’s memo ran about 950 words. Here are the full quotes the Times pulled from it, consisting of just 56 words, aside from the memo’s subject line (“Return to Tradition: Times New Roman 14-Point Font Required for All Department Paper”):</p>
+
+<blockquote>
+  <p>“wasteful”</p>
+
+<p>“radical”</p>
+
+<p>“restore decorum and professionalism to the department’s
+written work.”</p>
+
+<p>“informal”</p>
+
+<p>“clashes”</p>
+
+<p>“was not among the department’s most illegal, immoral, radical or
+wasteful instances of D.E.I.A.”</p>
+
+<p>“accessibility-based document remediation cases”</p>
+
+<p>“Switching to Calibri achieved nothing except the degradation of
+the department’s official correspondence.”</p>
+
+<p>“generally perceived to connote tradition, formality and ceremony”</p>
+</blockquote>
+
+<p>Rubio’s memo wasn’t merely “mostly framed as a matter of clarity and formality in presentation”. That’s entirely what the memo is about. Serif typefaces like Times New Roman <em>are</em> more formal. It was the Biden administration and then-Secretary of State Antony Blinken who categorized the 2023 change to Calibri as driven by accessibility. I do not have access to Blinken’s memo making that change (under the cringe-inducing subject line “The Times (New Roman) are a-Changin”), but it was <a href="https://www.washingtonpost.com/world/2023/01/18/state-department-times-new-roman-calibri/">first reported by John Hudson and Annabelle Timsit at The Washington Post</a>, where they wrote:</p>
+
+<blockquote>
+  <p>The secretary’s decision was motivated by accessibility issues and
+not aesthetics, said a senior State Department official familiar
+with the change.</p>
+</blockquote>
+
+<p>Rubio’s memo makes the argument — correctly — that aesthetics matter, and that the argument that Calibri was in any way more accessible than Times New Roman was bogus. Rubio’s memo does not lash out against accessibility as a concern or goal. He simply makes the argument that Blinken’s order mandating Calibri in the name of accessibility was an empty gesture. Purely performative, at the cost of aesthetics. Going back to that 2023 story at the Post, they quote from Blinken’s memo thus:</p>
+
+<blockquote>
+  <p>In its cable, the State Department said it was choosing to shift
+to 14-point Calibri font because serif fonts like Times New Roman
+“can introduce accessibility issues for individuals with
+disabilities who use Optical Character Recognition technology or
+screen readers. It can also cause visual recognition issues for
+individuals with learning disabilities,” it said.</p>
+</blockquote>
+
+<p>The bit here about OCR <a href="https://mastodon.social/@pesh/115696514979388477">is utter nonsense</a>, a voodoo belief. No OCR or screen-reader software in use today has any problem whatsoever with Times New Roman. That’s just made-up nonsense, and I’d like to see sources for the claim about “visual recognition issues for individuals with learning disabilities”. I don’t think it’s true, and citing it alongside a provably wrong claim about OCR software makes me even more skeptical.</p>
+
+<p>Rubio brings actual numbers to make his case, which is more than can be said for anyone I’ve found arguing that Calibri is somehow more accessible than Times New Roman. Rubio’s argument is alluded to in the Times’s article thus:</p>
+
+<blockquote>
+  <p>But Mr. Rubio called it a failure by its own standards, saying
+that “accessibility-based document remediation cases” at the
+department had not declined.</p>
+</blockquote>
+
+<p>Here’s the full passage from Rubio’s memo:</p>
+
+<blockquote>
+  <p>And although switching to Calibri was not among the Department’s
+most illegal, immoral, radical, or wasteful instances of DEIA
+(see, e.g., Executive Orders 14151, 14173, 14281, and Memorandum
+on Removing Discrimination and Discriminatory Equity Ideology From
+the Foreign Service (DCPD202500375)) it was nonetheless cosmetic:
+the switch was promised to mitigate “accessibility issues for
+individuals with disabilities,” and employees were promised, “Your
+adoption supports the Department’s commitment to create a more
+accessible workplace,” but these promises were false. In fact, the
+number of accessibility-based document remediation cases at the
+Department of State was the same in the year after adopting
+Calibri as in the year before (1,192 cases in FY2024 versus 1,193
+cases in FY2022). And the costs of remediation actually increased
+by $145,000 in that period — nearly a 20% jump. Switching to
+Calibri achieved nothing except the degradation of the
+Department’s official correspondence.</p>
+</blockquote>
+
+<p>2024 was a Biden year, not a Trump year, so there’s no reason to think the remediation numbers were counted differently. The change to Calibri was the worst kind of accessibility effort: one that was founded on nothing more than feel-good performance. It was a change everyone could see and notice, but one that had no practical benefit whatsoever. Good on Rubio for rescinding a bad decision, and even better for doing so with a fair and informative explanation.<sup id="fnr2-2025-12-10"><a href="#fn2-2025-12-10">2</a></sup> (His memo even explains, “Fonts are specific variations of a typeface....  Through common use, the word font has come to mean both typeface and font.”)&nbsp;<a class="permalink" title="Permanent link to ‘The Full Text of Marco Rubio’s Directive on State Department Typography, Re-Establishing Times New Roman’" href="https://daringfireball.net/2025/12/full_text_of_marco_rubio_state_dept_directive_times_new_roman">&#9733;</a></p>
+
+<div class="footnotes">
+<hr />
+<ol>
+
+<li id="fn1-2025-12-10">
+<p>The memo, per State Department standards perhaps, uses two spaces after sentences and colons. In the original copy I received, those double-spaces were sometimes in the sequence <em>NON-BREAK-SPACE + SPACE</em>, and other times the other way around: <em>SPACE + NON-BREAK-SPACE</em>. There were also a handful of seemingly random non-breaking space characters between words, mid-sentence. All of them, I suspect, just invisible-to-the-eye detritus from Microsoft Word. I replaced all of them with regular spaces, preserving, in plain text, two spaces wherever two spaces were intended.&nbsp;<a href="#fnr1-2025-12-10"  class="footnoteBackLink"  title="Jump back to footnote 1 in the text.">&#x21A9;&#xFE0E;</a></p>
+</li>
+
+<li id="fn2-2025-12-10">
+<p>Do I think it was “fair and informative” to describe all of the Biden State Department’s DEIA initiatives as “illegal, immoral, radical, or wasteful”? No. Did I bother reading any of the documents Rubio referenced as proving such? No. Do I think this particular memorandum, specific to changing State’s font back to Times New Roman, would have been stronger without that line, leaving his defenestration of the Calibri font change to speak for itself? Yes. But that line was just one aside in an otherwise focused, sober, and, yes, fair and informative memo.&nbsp;<a href="#fnr2-2025-12-10"  class="footnoteBackLink"  title="Jump back to footnote 2 in the text.">&#x21A9;&#xFE0E;︎</a></p>
+</li>
+
+</ol>
+</div>
+
+</div> <!-- article -->
+
+<hr class="ookiaks" />
+
+
+<h2 class="dateline">Wednesday, 10 December 2025</h2>
+<dl class="linkedlist">
+<dt>
+<a href="https://www.nytimes.com/2025/12/09/us/politics/rubio-state-department-font.html?unlocked_article_code=1.7k8.NI-S.Il8KdkMKKnGV">U.S. State Department Changes Back to Times New Roman From Calibri</a>&nbsp;<a class="permalink" title="Permanent link to ‘U.S. State Department Changes Back to Times New Roman From Calibri’" href="https://daringfireball.net/linked/2025/12/10/state-department-times-new-roman">&#9733;</a>
+</dt>
+<dd>
+<p>Michael Crowley and Hamed Aleaziz, reporting for The New York Times:</p>
+
+<blockquote>
+  <p>While mostly framed as a matter of clarity and formality in
+presentation, Mr. Rubio’s directive to all diplomatic posts around
+the world blamed “radical” diversity, equity, inclusion and
+accessibility programs for what he said was a misguided and
+ineffective switch from the serif typeface Times New Roman to sans
+serif Calibri in official department paperwork.</p>
+
+<p>In an “Action Request” memo obtained by The New York Times, Mr.
+Rubio said that switching back to the use of Times New Roman would
+“restore decorum and professionalism to the department’s written
+work.” Calibri is “informal” when compared to serif typefaces like
+Times New Roman, the order said, and “clashes” with the
+department’s official letterhead. [...]</p>
+
+<p>Then-Secretary of State Antony J. Blinken ordered the 2023
+typeface shift on the recommendation of the State Department’s
+office of diversity and inclusion, which Mr. Rubio has since
+abolished. The change was meant to improve accessibility for
+readers with disabilities, such as low vision and dyslexia,
+and people who use assistive technologies, such as screen
+readers. [...]</p>
+
+<p>But Mr. Rubio’s order rejected the grounds for the switch. The
+change, he allowed, “was not among the department’s most illegal,
+immoral, radical or wasteful instances of D.E.I.A.,” the acronym
+for diversity, equity, inclusion and accessibility. But Mr. Rubio
+called it a failure by its own standards, saying that
+“accessibility-based document remediation cases” at the department
+had not declined.</p>
+
+<p>“Switching to Calibri achieved nothing except the degradation of
+the department’s official correspondence,” Mr. Rubio said. He
+noted that Times New Roman had been the department’s official
+typeface for nearly 20 years until the 2023 change. (Before 2004,
+the State Department used Courier New.)</p>
+</blockquote>
+
+<p>When Blinken ordered the change to Calibri in 2023, <a href="https://daringfireball.net/linked/2023/01/26/state-dept-font">I wrote</a>:</p>
+
+<blockquote>
+  <p>It is correct for the State Department to have a house style for
+documents. I’m not sure what font they should use, but it wasn’t
+Times, and it shouldn’t be Calibri. Off the top of my head, I’d
+suggest Caslon — a sturdy, serious typeface <a href="https://www.mcsweeneys.net/articles/caslon-baskerville-and-franklin-revolutionary-types">that looked good 250
+years ago</a>, looks good now, and should look good 250 years
+from now.</p>
+</blockquote>
+
+<p>While neither is a good choice, between the two, Times New Roman is clearly better. Unstated in my post from 2023 is acknowledgement that the choice might be limited to the default fonts in Microsoft Office. Limited to those fonts, Times New Roman might be the best choice. I just think it’s stupid for an institution with the resources of the U.S. State Department to shrug its shoulders at the notion that they should license and install whatever fonts they want on all of their computers. Anyone making excuses that they “can’t” do that should be fired. It’s the job of IT to serve the needs of the organization, not the organization’s job to limit itself to what makes IT easiest.</p>
+
+<p>Calibri does convey a sense of casualness — and more so, modernity — that is not appropriate for the U.S. State Department. And I do not buy the argument that Calibri is somehow more accessible for those with low vision or reading disabilities. People with actual accessibility needs should be catered to, but they need more than a sans serif typeface, and their needs should not primarily motivate the choice for the default typeface. <s>Dyslexics need typefaces like OpenDyslexic.</s> [<strong>Update:</strong> Actually, <a href="https://daringfireball.net/linked/2025/12/12/dyslexia-fonts-pseudoscience">they don’t</a>.] People with low vision need font sizes much larger than 14-point. Those would make for terrible defaults for everyone.</p>
+
+</dd>
+
+
+</dl>
+
+<hr class="ookiaks" />
+
+
+<div class="article">
+<h1><a href="https://daringfireball.net/2025/12/imessage_push_notifications_hard_to_block" title="Permanent link to ‘iMessage’s Delivery Architecture Makes It Hard to Block Without Blocking All iOS Push Notifications’">iMessage’s Delivery Architecture Makes It Hard to Block Without Blocking All iOS Push Notifications</a></h1>
+<h6 class="dateline">Tuesday,  9 December 2025</h6>
+
+<p>From Apple’s <a href="https://support.apple.com/guide/security/imessage-security-overview-secd9764312f/web">iMessage Security Overview</a>:</p>
+
+<blockquote>
+  <p>Apple iMessage is a messaging service for iPhone, iPad, Mac, Apple
+Watch, and Apple Vision Pro. Relying on the Apple Push
+Notification service (APNs), iMessage lets users send texts and
+attachments like photos, contacts, locations, links, and emoji.
+Messages sync across all devices, enabling seamless conversations.
+Apple doesn’t store message content or attachments, which are all
+secured with end-to-end encryption so that no one but the sender
+and receiver can access them. Apple canʼt decrypt the data.</p>
+</blockquote>
+
+<p><a href="https://mastodon.social/@magebarf/115686285616651788">This thread on Mastodon</a>, prompted by <a href="https://daringfireball.net/linked/2025/12/07/russia-blocks-facetime-and-snapchat">my wondering why Russia is blocking FaceTime but not iMessage</a>, suggests that because iMessage messages are sent via APNs, a network (or entire nation) seeking to block iMessage could only do so by blocking all push notifications for iOS. That’s why on airplanes with “free messaging” on in-flight Wi-Fi, you usually also get all incoming push notifications, even for services that aren’t available on the free Wi-Fi. (It also explains why, on in-flight Wi-Fi and similar restricted networks, text-only messages go through, <a href="https://infosec.exchange/@adamshostack/115696265565038136">but images and other attachments do not</a>.)</p>
+
+<p><a href="https://support.gfi.com/article/107782-when-blocking-imessage-push-notifications-are-blocked">Here’s a support document from GFI Software</a>, which makes network appliances for enterprises and schools:</p>
+
+<blockquote>
+  <p>The Exinda appliance gives administrators multiple options to stop
+or throttle applications that can use a lot of bandwidth in the
+network. An application that many would consider discardable or
+able to be easily limited in bandwidth is iMessage. When blocking
+or discarding iMessage traffic, users may experience an issue
+where all push notifications on iOS devices that have traffic
+going through the Exinda, i.e., on WiFi, will stop displaying.</p>
+
+<p>Root Cause: Apple uses the Apple Push Notification Service (APNS)
+to allow application creators to push out information to iOS
+devices. This includes mail servers being able to push out
+notifications of calendar and email, or app creators to be able to
+push text-based messages straight to the device.</p>
+</blockquote>
+
+<p>Apple might have architected iMessage this way to make iMessage veto-proof with cellular carriers, who, at the time of <a href="https://www.apple.com/newsroom/2011/06/06New-Version-of-iOS-Includes-Notification-Center-iMessage-Newsstand-Twitter-Integration-Among-200-New-Features/">iMessage’s announcement in June 2011</a>, were already promoting iPhone push notifications as a reason to upgrade from a dumb phone to an iPhone with a more expensive plan. The carriers might have been tempted to block iMessage over cell networks to keep people using SMS, but they couldn’t without blocking all push notifications, which wouldn’t be tenable. But this architecture also makes iMessage hard to block in authoritarian countries where iPhones are even vaguely popular. (Maybe this helps explain why iMessage isn’t blocked in China, too?)</p>
+
+<p>Draw your own conclusions about cellular carriers and enterprise network administrators being similar to authoritarian governments.&nbsp;<a class="permalink" title="Permanent link to ‘iMessage’s Delivery Architecture Makes It Hard to Block Without Blocking All iOS Push Notifications’" href="https://daringfireball.net/2025/12/imessage_push_notifications_hard_to_block">&#9733;</a></p>
+
+</div> <!-- article -->
+
+<hr class="ookiaks" />
+
+
+<h2 class="dateline">Tuesday,  9 December 2025</h2>
+<dl class="linkedlist">
+<dt>
+<a href="https://www.harvardmagazine.com/2009/09/james-watson-edward-o-wilson-intellectual-entente">The Real Problem of Humanity</a>&nbsp;<a class="permalink" title="Permanent link to ‘The Real Problem of Humanity’" href="https://daringfireball.net/linked/2025/12/09/the-real-problem-of-humanity">&#9733;</a>
+</dt>
+<dd>
+<p>Sociobiologist Edward O. Wilson, back in 2009:</p>
+
+<blockquote>
+  <p>The real problem of humanity is the following: we have paleolithic
+emotions; medieval institutions; and god-like technology.</p>
+</blockquote>
+
+<p>A related adage I heard, and internalized, recently: “We’re not thinking creatures who feel; we’re feeling creatures who think.” (<a href="https://kottke.org/25/11/0047871-edward-o-wilson-in-2009">Via Jason Kottke</a>.)</p>
+
+</dd>
+
+
+<dt>
+<a href="https://www.propublica.org/article/trump-mortgage-fraud-florida-principal-residences">ProPublica: ‘Trump’s Own Mortgages Match His Description of Mortgage Fraud, Records Reveal’</a>&nbsp;<a class="permalink" title="Permanent link to ‘ProPublica: ‘Trump’s Own Mortgages Match His Description of Mortgage Fraud, Records Reveal’’" href="https://daringfireball.net/linked/2025/12/09/trump-mortgages">&#9733;</a>
+</dt>
+<dd>
+<p>Justin Elliott, Robert Faturechi, and Alex Mierjeski, reporting for ProPublica:</p>
+
+<blockquote>
+  <p>For months, the Trump administration has been accusing its
+political enemies of mortgage fraud for claiming more than one
+primary residence. President Donald Trump <a href="https://truthsocial.com/@realDonaldTrump/posts/115092130707196133">branded one foe who did
+so</a> “deceitful and potentially criminal.” He called another
+“<a href="https://truthsocial.com/@realDonaldTrump/posts/114857687712359546">CROOKED</a>” on Truth Social and pushed the attorney general
+to take action.</p>
+
+<p>But years earlier, Trump did the very thing he’s accusing his
+enemies of, records show.</p>
+
+<p>In 1993, Trump <a href="https://www.documentcloud.org/documents/26342753-trump-mortgage-1993/">signed a mortgage</a> for a “Bermuda style”
+home in Palm Beach, Florida, pledging that it would be his
+principal residence. Just seven weeks later, he got <a href="https://www.documentcloud.org/documents/26342754-trump-mortgage-1994/">another
+mortgage</a> for a seven-bedroom, marble-floored neighboring
+property, attesting that it too would be his principal residence.</p>
+
+<p>In reality, Trump, then a New Yorker, does not appear to have ever
+lived in either home, let alone used them as a principal
+residence.</p>
+</blockquote>
+
+<p><a href="https://slate.com/business/2022/06/wilhoits-law-conservatives-frank-wilhoit.html">Frank Wilhoit’s axiom</a> comes to mind: “Conservatism consists of exactly one proposition, to wit: There must be in-groups whom the law protects but does not bind, alongside out-groups whom the law binds but does not protect.”</p>
+
+<p>The difference between traditional conservatism — which hadn’t yet been washed away in 2018, <a href="https://crookedtimber.org/2018/03/21/liberals-against-progressives/#comment-729288">when Wilhoit wrote it</a> — and today’s MAGA Republican cult is that in Trumpism, the in-group is just Trump, and whoever he sees as serving allegiance to him personally. It’s not men, not white people, not rich people, and not even rich white men, as a class. It’s just Donald Trump and those who pay personal fealty to him. Especially rich white men who pay subservient <a href="https://daringfireball.net/linked/2025/12/09/trump-fifa-peace-prize">fealty to him</a>.</p>
+
+</dd>
+
+
+<dt>
+<a href="https://www.wsj.com/business/media/paramount-netflix-warner-bros-battle-ellisons-a86fe15c?st=gwekR4&amp;reflink=desktopwebshare_permalink">The Wall Street Journal: ‘Behind Paramount’s Relentless Campaign to Woo Warner Discovery and President Trump’</a>&nbsp;<a class="permalink" title="Permanent link to ‘The Wall Street Journal: ‘Behind Paramount’s Relentless Campaign to Woo Warner Discovery and President Trump’’" href="https://daringfireball.net/linked/2025/12/09/wsj-paramount-warner-bros-behind-the-scenes">&#9733;</a>
+</dt>
+<dd>
+<p>Joe Flint, Brian Schwartz, and Natalie Andrews, reporting for The Wall Street Journal (<a href="https://www.wsj.com/business/media/paramount-netflix-warner-bros-battle-ellisons-a86fe15c?st=gwekR4&amp;reflink=desktopwebshare_permalink">gift link</a>, also <a href="https://apple.news/ARdvLmsUMRyeLXShmkooSYQ">in News+</a>):</p>
+
+<blockquote>
+  <p>“Just tried calling you about new bid we have submitted,” Ellison
+texted Zaslav. “I heard you on all your concerns and believe we
+have addressed them in our new proposal. Please give me a call
+back when you can to discuss in detail.”</p>
+
+<p>He didn’t hear back.</p>
+
+<p>Sensing trouble, Ellison followed up, saying Paramount had offered
+a package that covered all the issues Warner had raised, including
+the need for “strong cash value” and “speed to close.”</p>
+
+<p>“It would be the honor of a lifetime to be your partner and to be
+the owner of these iconic assets,” he texted, according to a
+regulatory filing.</p>
+</blockquote>
+
+<p>Desperation is never a good look.</p>
+
+<blockquote>
+  <p>During a visit to Washington in recent days, David Ellison offered
+assurances to Trump administration officials that if he bought
+Warner, he’d make sweeping changes to CNN, a common target of
+President Trump’s ire, people familiar with the matter said. Trump
+has told people close to him that he wants new ownership of CNN as
+well as changes to CNN programming.</p>
+</blockquote>
+
+<p>Lickspittling is never a good look, either. David Ellison cuts the figure of a pathetic little man, a mere shadow of his father. (I’ll bet he gets along well with Don Jr. and Eric.) And Trump is now already <a href="https://www.wsj.com/business/media/paramount-netflix-warner-bros-battle-ellisons-a86fe15c?st=gwekR4&amp;reflink=desktopwebshare_permalink">pissed that Ellison hasn’t turned</a> <em>60 Minutes</em> into <em>Fox and Friends</em>.</p>
+
+</dd>
+
+
+<dt>
+<a href="https://www.theguardian.com/us-news/2025/dec/05/trump-peace-prize-fifa-world-cup">You’ll Never Guess Who Won the Newly Created ‘Peace Prize’ From FIFA, the World’s Most Corrupt Sports Body</a>&nbsp;<a class="permalink" title="Permanent link to ‘You’ll Never Guess Who Won the Newly Created ‘Peace Prize’ From FIFA, the World’s Most Corrupt Sports Body’" href="https://daringfireball.net/linked/2025/12/09/trump-fifa-peace-prize">&#9733;</a>
+</dt>
+<dd>
+<p>The Guardian:</p>
+
+<blockquote>
+  <p>There on a plinth, with “Donald J Trump” emblazoned on it in
+capital letters, was the uncoveted trophy: a golden globe resting
+on five golden hands big enough to compensate any tiny-handed
+recipient feeling sore about the Nobel peace prize.</p>
+
+<p>But wait, there was more. “There is also a beautiful medal for you
+that you can wear everywhere you want to go,” added Infantino,
+knowing that with Trump there is no such thing as too much.</p>
+
+<p>Glowing oranger than usual under the stage lights, Trump eagerly
+put the medal around his neck without waiting for Infantino to do
+the honours. He told the audience of 2,000 people: “This is truly
+one of the great honours of my life.”</p>
+</blockquote>
+
+<p>It’s just perfect that <a href="https://www.theguardian.com/commentisfree/2025/dec/09/donald-trump-finally-won-peace-prize-fifa-five-other-awards-he-should-win">Trump put the medal around his own neck</a>.</p>
+
+<p><a href="https://www.nytimes.com/2025/12/09/arts/television/late-night-trump-prize.html">The jokes</a> practically wrote themselves.</p>
+
+</dd>
+
+
+<dt>
+<a href="https://truthsocial.com/@realDonaldTrump/posts/115684406134734247">You Can’t Please a Madman</a>&nbsp;<a class="permalink" title="Permanent link to ‘You Can’t Please a Madman’" href="https://daringfireball.net/linked/2025/12/09/you-cant-please-a-madman">&#9733;</a>
+</dt>
+<dd>
+<p>Donald Trump, on his blog:</p>
+
+<blockquote>
+  <p>The only reason Marjorie “Traitor” Brown (Green turns Brown under
+stress!) went BAD is that she was JILTED by the President of the
+United States (Certainly not the first time she has been jilted!).
+Too much work, not enough time, and her ideas are, NOW, really BAD — She sort of reminds me of a Rotten Apple! Marjorie is not
+AMERICA FIRST or MAGA, because nobody could have changed her views
+so fast, and her new views are those of a very dumb person. That
+was proven last night when washed up, Trump hating, 60 Minutes
+“correspondent,” Lesley Stahl, who still owes me an apology from
+when she attacked me on the show (with serious conviction!), that
+Hunter Biden’s LAPTOP FROM HELL was produced by Russia, not Hunter
+himself (TOTALLY PROVEN WRONG!), interviewed a very poorly
+prepared Traitor, who in her confusion made many really stupid
+statements. My real problem with the show, however, wasn’t the low
+IQ traitor, it was that the new ownership of 60 Minutes,
+Paramount, would allow a show like this to air. THEY ARE NO BETTER
+THAN THE OLD OWNERSHIP, who just paid me millions of Dollars for
+FAKE REPORTING about your favorite President, ME! Since they
+bought it, 60 Minutes has actually gotten WORSE! Oh well, far
+worse things can happen. P.S. I hereby demand a complete and total
+APOLOGY, though far too late to be meaningful, from Lesley Stahl
+and 60 Minutes for her incorrect and Libelous statements about
+Hunter’s Laptop!!! President DJT</p>
+</blockquote>
+
+<p>Trump’s expectation isn’t that <em>60 Minutes</em>, along with the entirety of CBS News, along with <a href="https://daringfireball.net/2025/07/curse_not_the_king_cbs_colbert_trump">the entirety of CBS TV programming</a>, would tilt in Trump’s direction after its acquisition (as part of Paramount) by David Ellison’s Skydance. Trump’s expectation is that all of CBS, every minute of the broadcast day, should appeal to and appease him.</p>
+
+</dd>
+
+
+<dt>
+<a href="https://stratechery.com/2025/netflix-and-the-hollywood-end-game/">‘Netflix and the Hollywood End Game’</a>&nbsp;<a class="permalink" title="Permanent link to ‘‘Netflix and the Hollywood End Game’’" href="https://daringfireball.net/linked/2025/12/09/netflix-and-the-hollywood-end-game">&#9733;</a>
+</dt>
+<dd>
+<p>Ben Thompson at Stratechery yesterday:</p>
+
+<blockquote>
+  <p>It’s important to note that the President does not have final say
+in the matter: President Trump directed the DOJ to oppose AT&amp;T’s
+acquisition of Time Warner, but the DOJ <a href="https://stratechery.com/2018/the-need-for-neutrality/">lost in federal
+court</a>, much to AT&amp;T’s detriment. Indeed, the irony of mergers
+and regulatory review is that the success of the latter is often
+inversely correlated to the wisdom of the former: the AT&amp;T deal
+for Time Warner never made much sense, which is directly related
+to why it (correctly) was approved. It would have been
+economically destructive for AT&amp;T to, say, limit Time Warner
+content to its networks, so suing over that theoretical
+possibility was ultimately unsuccessful.</p>
+</blockquote>
+
+<p>Thompson also makes clear that Paramount itself couldn’t possibly launch a credible bid for Warner Bros.:</p>
+
+<blockquote>
+  <p>Paramount’s bid, it should be noted, was for the entire Warner
+Bros. Discovery business, including the TV and cable networks that
+will be split off next year; Netflix is only buying the Warner
+Bros. part. <a href="https://puck.news/will-paramount-challenge-netflix-wbd-deal/">Puck</a> reported that the stub Netflix is leaving
+behind is being valued at $5/share, which would mean that Netflix
+outbid Paramount.</p>
+
+<p>And, it should be noted, that Paramount money wouldn’t be from the
+actual business, which is valued at a mere $14 billion; new owner
+David Ellison is the son of Oracle founder Larry Ellison, who is
+worth $275 billion. Netflix, meanwhile, is worth $425 billion and
+generated $9 billion in cash flow over the last year. Absent
+family money this wouldn’t be anywhere close to a fair fight.</p>
+</blockquote>
+
+<p>It’s not illegal or even sketchy for an acquisition to be backed by family money from an entirely separate source (in the Ellisons’ case, Oracle), but it certainly makes more business sense for Netflix to make this acquisition than Paramount. There’s a strong argument that David Ellison doesn’t really know what the fuck he’s doing in the media racket; no one would argue that Netflix doesn’t know exactly what they’re doing.</p>
+
+</dd>
+
+
+<dt>
+<a href="https://www.wsj.com/business/media/paramount-skydance-warner-bros-hostile-takeover-bid-f03c6f3f">Paramount Skydance Makes Hostile Takeover Bid for Warner Bros. Discovery</a>&nbsp;<a class="permalink" title="Permanent link to ‘Paramount Skydance Makes Hostile Takeover Bid for Warner Bros. Discovery’" href="https://daringfireball.net/linked/2025/12/09/paramount-hostile-takeover-warner-bros">&#9733;</a>
+</dt>
+<dd>
+<p>The Wall Street Journal yesterday:</p>
+
+<blockquote>
+  <p>Paramount launched a $77.9 billion hostile takeover offer for
+Warner Bros. Discovery Monday, taking its case for acquiring the
+storied entertainment company directly to shareholders just days
+after Warner agreed to a deal with Netflix.</p>
+
+<p>Paramount, run by David Ellison, is arguing that its all-cash
+$30-a-share offer for all of Warner, owner of networks such as
+CNN, TBS and HGTV as well as the HBO Max streaming service, is
+a better deal for shareholders and more likely to pass
+regulatory muster.</p>
+
+<p>“We’re really here to finish what we started,” Ellison said on
+CNBC Monday morning.</p>
+</blockquote>
+
+<p>The “more likely to pass regulatory muster” bit is a euphemism for the Ellisons (David, and the real player here, his $250+-billion-dollar-net-worth father Larry) being on the inside of the Trump administration oligarchy. It’s so transparent that Trump’s son-in-law Jared Kushner is part of the hostile bid, along with sovereign wealth funds from Saudi Arabia, Abu Dhabi, and Qatar.</p>
+
+<p>That said, while the Executive Branch is influential in such regulatory approvals, it’s <em>not</em> completely under their control. The U.S. court system, while under duress from this administration, remains independent, and <a href="https://www.rawstory.com/jack-smith-2674262772/">with admittedly notable exceptions</a>, remains largely on the up-and-up.</p>
+
+<p>And CNN’s Brian Stelter reports that <a href="https://x.com/brianstelter/status/1998112063902691718">Netflix was prepared for this</a>:</p>
+
+<blockquote>
+  <p>“Today’s move was entirely expected,” Netflix co-CEO Ted Sarandos
+said on stage at a UBS conference just now, waving off Paramount’s
+hostile play for WBD. “We have a deal done, and we are incredibly
+happy with the deal... We’re super confident we’re going to get it
+across.”</p>
+</blockquote>
+
+</dd>
+
+
+</dl>
+
+<h2 class="dateline">Monday,  8 December 2025</h2>
+<dl class="linkedlist">
+<dt>
+<a href="https://www.cnbc.com/2025/12/08/apple-chips-johny-srouji.html">Johny Srouji, in Memo Responding to Gurman Report: ‘I Love My Team, and I Love My Job at Apple, and I Don’t Plan on Leaving Anytime Soon’</a>&nbsp;<a class="permalink" title="Permanent link to ‘Johny Srouji, in Memo Responding to Gurman Report: ‘I Love My Team, and I Love My Job at Apple, and I Don’t Plan on Leaving Anytime Soon’’" href="https://daringfireball.net/linked/2025/12/08/srouji">&#9733;</a>
+</dt>
+<dd>
+<p>CNBC:</p>
+
+<blockquote>
+  <p>Apple chip leader Johny Srouji addressed rumors of his impending
+exit in a memo to staff on Monday, saying he doesn’t plan on
+leaving the company anytime soon. “I love my team, and I love my
+job at Apple, and I don’t plan on leaving anytime soon,” he wrote.</p>
+
+<p><a href="https://www.bloomberg.com/news/articles/2025-12-06/apple-rocked-by-executive-departures-with-johny-srouji-at-risk-of-leaving-next">Bloomberg reported</a> on Saturday that Srouji had told CEO Tim
+Cook that he was considering leaving, citing people with knowledge
+of the matter.</p>
+</blockquote>
+
+<p>It wasn’t <em>rumors</em>, plural. It was one report, on Saturday, from Mark Gurman at Bloomberg, and Srouji just called bullshit on it.</p>
+
+<p>What a colossal fuck-up for Gurman and Bloomberg. There’s no possible scenario where Srouji was threatening to leave Apple for a competitor on Saturday and telling his staff (in a memo meant to leak to the press) “I love my job at Apple, and I don’t plan on leaving anytime soon” Monday morning.</p>
+
+<p>The most gracious interpretation for Gurman and Bloomberg is that Srouji <em>had</em> expressed this to Cook, at some point in the recent past, and Cook addressed whatever it took to keep Srouji on board. But even in that scenario, they ran a story Saturday that was wrong at the time it was published.</p>
+
+<p>The more likely scenario is <a href="https://x.com/neilcybart/status/1998143342786515351">the one suggested by Neil Cybart</a>:</p>
+
+<blockquote>
+  <p>If someone wanted to sow seeds of doubt among Apple employees in
+an effort to help their own poaching efforts, there are at least
+three publications who would have no problem offering an anonymous
+microphone to that person.</p>
+</blockquote>
+
+<p>I.e., the source for this story about Srouji being unhappy at Apple and considering leaving for a competitor was aligned with one of those competitors, and Gurman and his editors at Bloomberg said “Sure, we’ll print that.” Meta, of course, is the competitor that comes to mind.</p>
+
+<p>It speaks to Gurman’s personal and Bloomberg’s institutional influence that Srouji and Apple saw the need to shoot the bogus narrative down in public like this. I can’t remember the last time an Apple executive saw the need to send an intended-to-leak memo like this to shoot down one bogus story. After <a href="https://daringfireball.net/linked/2025/12/05/apple-announces-a-few-other-executive-transitions">last week</a>, though, this one couldn’t be ignored.</p>
+
+</dd>
+
+
+<dt>
+<a href="https://www.macrumors.com/2025/12/02/dutch-app-store-antitrust-case-proceeds/">EU Court Rules That Apple Must Face Dutch Antitrust Lawsuit Regarding App Store Commission Rates</a>&nbsp;<a class="permalink" title="Permanent link to ‘EU Court Rules That Apple Must Face Dutch Antitrust Lawsuit Regarding App Store Commission Rates’" href="https://daringfireball.net/linked/2025/12/08/dutch-app-store-antitrust-suit">&#9733;</a>
+</dt>
+<dd>
+<p>Juli Clover, writing at MacRumors (regarding a <a href="https://www.reuters.com/sustainability/boards-policy-regulation/eu-court-rules-dutch-courts-can-handle-anti-trust-case-against-apples-app-store-2025-12-02/">report at Reuters</a>):</p>
+
+<blockquote>
+  <p>Apple could ultimately have to pay up to an estimated 637 million
+euros to address the damage suffered by 14 million iPhone and iPad
+users in the Netherlands.</p>
+</blockquote>
+
+<p>That’s about €45/user.</p>
+
+<blockquote>
+  <p>The lawsuit dates back to 2022, when two Dutch consumer
+foundations (Right to Consumer Justice and App Store Claims)
+accused Apple of abusing its dominant market position and charging
+developers excessive fees. The lawsuit was filed on behalf of
+Dutch iPhone and iPad users, and it claimed that Apple’s 30
+percent commission inflated prices for apps and in-app purchases.</p>
+</blockquote>
+
+<p>I’m curious what these consumer foundations would consider a “fair” (and thus legal) commission rate.</p>
+
+<p>This all comes back to the argument that Apple’s App Store commission inflates prices. <a href="https://developer.apple.com/download/files/DMA-Study-Nov-2025.pdf">A recent Apple-funded (and Apple-promoted) study</a> suggests this is not true — that with lower commissions mandated by the DMA, prices paid by consumers stayed the same and the difference went to the developers. That’s <a href="https://pxlnv.com/linklog/apple-dma-commission-study/">good if you’re a developer</a>, but it’s not the argument being made by these consumer advocate groups.</p>
+
+<p>That said, <a href="https://pxlnv.com/linklog/apple-dma-commission-study/">I pointed out just the other day</a> that Tiimo, a to-do app that Apple just named as the iPhone app of the year in the 2025 App Awards, charges about 20 percent less for subscriptions on its website compared to its in-app subscriptions. An Apple-funded, Apple-promoted study showing that the App Store’s commissions don’t raise prices ought to be taken with a few grains of salt.</p>
+
+<blockquote>
+  <p>Apple argued that the Dutch court did not have jurisdiction to
+hear the case because the EU App Store is run from Ireland, and
+therefore the claims should be litigated in Ireland. Apple said
+that if the Dutch court was able to hear the case, it could lead
+to fragmentation with multiple similar cases across the EU, plus
+it argued that customers in the Netherlands could have downloaded
+apps while in other EU member states.</p>
+</blockquote>
+
+<p>I know Apple wants this litigated in Ireland because the Irish government <a href="https://en.wikipedia.org/wiki/Apple%27s_EU_tax_dispute">sees Apple as an ally, not an adversary</a>, but it does seem contrary to the idea of <a href="https://en.wikipedia.org/wiki/European_single_market">a single market</a> if a company doing business in the EU is subject to different antitrust laws from each of the EU’s 27 member states.</p>
+
+</dd>
+
+
+</dl>
+
+<h2 class="dateline">Sunday,  7 December 2025</h2>
+<dl class="linkedlist">
+<dt>
+<a href="https://workos.com/radar?utm_source=daringfireball&amp;utm_medium=RSS&amp;utm_campaign=q12025">WorkOS Radar</a>&nbsp;<a class="permalink" title="Permanent link to ‘WorkOS Radar’" href="https://daringfireball.net/linked/2025/12/07/workos-radar">&#9733;</a>
+</dt>
+<dd>
+<p>My thanks to WorkOS for sponsoring last week at DF. Does your app get fake signups, throwaway emails, or users abusing your free tier? Or worse, bot attacks and brute force attempts?</p>
+
+<p>WorkOS Radar can block all this and more. A simple API gives you advanced device fingerprinting that can detect bad actors, bots, and suspicious behavior. Your users trust you. WorkOS Radar lets you keep it that way.</p>
+
+</dd>
+
+
+<dt>
+<a href="https://apnews.com/article/russia-internet-crackdown-facetime-restrictions-06301be480510b18ae02039c6524cd80">Russia Blocks FaceTime and Snapchat</a>&nbsp;<a class="permalink" title="Permanent link to ‘Russia Blocks FaceTime and Snapchat’" href="https://daringfireball.net/linked/2025/12/07/russia-blocks-facetime-and-snapchat">&#9733;</a>
+</dt>
+<dd>
+<p>Dasha Litvinova, reporting for the AP:</p>
+
+<blockquote>
+  <p>Russian authorities said Thursday they have imposed restrictions
+on Apple’s video calling service FaceTime, the latest step in an
+effort to tighten control over the internet and communications
+online. State internet regulator Roskomnadzor alleged in a
+statement that the service is being “used to organize and conduct
+terrorist activities on the territory of the country, to recruit
+perpetrators (and) commit fraud and other crimes against our
+citizens.” Apple did not respond to an emailed request for
+comment.</p>
+
+<p>The Russian regulator also announced that it has blocked Snapchat,
+a messaging app for sharing photos, videos and text messages,
+citing the same grounds it gave for restricting FaceTime. It said
+that it took the action Oct. 10 even though it only reported the
+move on Thursday.</p>
+</blockquote>
+
+<p>I’m sure the crime rate in Russia will soon plummet. (I’m curious why iMessage isn’t blocked too.)</p>
+
+<p><strong>Update:</strong> A DF reader in Russia, who has sent me feedback before, told me that iMessage still works (and in fact told me via iMessage), but that it likely hasn’t been blocked because it isn’t widely used there. (He said that his chat with me is his one and only iMessage thread.) FaceTime, on the other hand, is quite popular in Russia. Or at least it was.</p>
+
+</dd>
+
+
+</dl>
+
+<hr class="ookiaks" />
+
+
+<div class="article">
+<h1><a href="https://daringfireball.net/2025/12/meta_says_fuck_that_metaverse_shit" title="Permanent link to ‘Meta Says Fuck That Metaverse Shit’">Meta Says Fuck That Metaverse Shit</a></h1>
+<h6 class="dateline">Sunday,  7 December 2025</h6>
+
+<p>Mike Isaac, reporting for The New York Times, “<a href="https://www.nytimes.com/2025/12/04/technology/meta-cuts-metaverse-unit.html?unlocked_article_code=1.608.XuJW.cN8SImoOdegY">Meta Weighs Cuts to Its Metaverse Unit</a>” (gift link):</p>
+
+<blockquote>
+  <p>Meta is considering making cuts to a division in its Reality Labs
+unit that works on the so-called metaverse, said three employees
+with knowledge of the matter.</p>
+
+<p>The cuts could come as soon as next month and amount to 10 to 30
+percent of employees in the Metaverse unit, which works on virtual
+reality headsets and a V.R.-based social network, the people said.
+The numbers of potential layoffs are still in flux, they said.
+Other parts of the Reality Labs division develop smart glasses,
+wristbands and other wearable devices. The total number of
+employees in Reality Labs could not be learned.</p>
+
+<p>Meta does not plan to abandon building the metaverse, the people
+said. Instead, executives expect to shift the savings from the
+cuts into investments in its augmented reality glasses, the
+people said.</p>
+</blockquote>
+
+<p>Meta confirmed the cuts <a href="https://www.wsj.com/tech/ai/meta-plans-to-shift-spending-away-from-the-metaverse-d0ac3b7f">to the Wall Street Journal</a>, and <a href="https://www.techmeme.com/251204/p27#a251204p27">Bloomberg’s Kurt Wagner broke the news Thursday</a>.</p>
+
+<p>I’m so old that I remember ... checks notes ... four years ago, when Facebook renamed itself Meta in late 2021 with <a href="https://about.fb.com/news/2021/10/facebook-company-is-now-meta/">this statement</a>: “Meta’s focus will be to bring the metaverse to life and help people connect, find communities and grow businesses.” And <a href="https://about.fb.com/news/2021/10/founders-letter/">Mark Zuckerberg, announcing the change, wrote</a>:</p>
+
+<blockquote>
+  <p>But all of our products, including our apps, now share a new
+vision: to help bring the metaverse to life. And now we have a
+name that reflects the breadth of what we do.</p>
+
+<p>From now on, we will be metaverse-first, not Facebook-first. That
+means that over time you won’t need a Facebook account to use our
+other services. As our new brand starts showing up in our
+products, I hope people around the world come to know the Meta
+brand and the future we stand for.</p>
+</blockquote>
+
+<p>Many of us never fell for this metaverse nonsense. For example, I’m also old enough to remember just one year later, near the end of Joanna Stern’s on-stage interview with Craig Federighi and Greg Joswiak at a 2022 WSJ event, seven months before Vision Pro was announced (<a href="https://youtu.be/m-ugwoEOMvg?t=1770">at the 29:30 mark</a>):</p>
+
+<blockquote>
+  <p><strong>Stern:</strong> You have to finish this sentence, both of you. The
+metaverse is...</p>
+
+<p><strong>Joz:</strong> A word I’ll never use.</p>
+</blockquote>
+
+<p>He might want to use the word now, just to make jokes.</p>
+
+<p>Om Malik, <a href="https://blog.om.co/2025/04/28/no-gruber-this-is-why-facebook-renamed-itself/">writing in April this year</a>:</p>
+
+<blockquote>
+  <p>Some of us are old enough to remember that the reason Mark renamed
+the company is because the Facebook brand was becoming toxic, and
+associated with misinformation and global-scale crap. It was
+viewed as a tired, last-generation company. Meta allowed the
+company to rebrand itself <a href="https://om.co/2021/10/31/facebook-is-now-meta/">as something amazing and fresh</a>.</p>
+</blockquote>
+
+<p>Lastly, yours truly, <a href="https://daringfireball.net/linked/2025/04/28/om-malik-facebook-rename">linking to Malik’s post</a>:</p>
+
+<blockquote>
+  <p>And so while “Meta” will never be remembered as the company that
+spearheaded the metaverse — because the metaverse never was or
+will be an actual thing — it’s in truth the perfect name for a
+company that believes in nothing other than its own success.&nbsp;<a class="permalink" title="Permanent link to ‘Meta Says Fuck That Metaverse Shit’" href="https://daringfireball.net/2025/12/meta_says_fuck_that_metaverse_shit">&#9733;</a></p>
+</blockquote>
+
+</div> <!-- article -->
+
+<hr class="ookiaks" />
+
+
+<h2 class="dateline">Sunday,  7 December 2025</h2>
+<dl class="linkedlist">
+<dt>
+<a href="https://daringfireball.net/2025/12/2025_app_store_award_winners">One Last Note on Tiimo: What’s the Deal With That Icon?</a>&nbsp;<a class="permalink" title="Permanent link to ‘One Last Note on Tiimo: What’s the Deal With That Icon?’" href="https://daringfireball.net/linked/2025/12/07/tiimo-icon">&#9733;</a>
+</dt>
+<dd>
+<p>One small update I just appended to my piece Friday taking a look at the winning apps from this year’s App Store Awards:</p>
+
+<blockquote>
+  <p>Lastly, I have questions — some really hard questions — regarding <a href="https://daringfireball.net/misc/2025/12/tiimo-icon.png">Tiimo’s app icon</a>. Such as, “What is that?”</p>
+</blockquote>
+
+<p>Perhaps it got picked because it makes <a href="https://daringfireball.net/linked/2025/11/07/tahoes-terrible-icons">Apple’s new OS 26 icons</a> look good by comparison?</p>
+
+</dd>
+
+
+</dl>
+
+<h2 class="dateline">Friday,  5 December 2025</h2>
+<dl class="linkedlist">
+<dt>
+<a href="https://dithering.passport.online/member/episode/alan-dye-leaves-apple">Dithering: ‘Alan Dye Leaves Apple’</a>&nbsp;<a class="permalink" title="Permanent link to ‘Dithering: ‘Alan Dye Leaves Apple’’" href="https://daringfireball.net/linked/2025/12/05/dithering-alan-dye">&#9733;</a>
+</dt>
+<dd>
+<p><a href="https://dithering.passport.online/member/episode/alan-dye-leaves-apple" class="noborder">
+  <img
+    src   = "https://daringfireball.net/misc/2025/12/dithering-cover-dec-2025.jpeg"
+    alt   = "The December 2025 cover art for Dithering, showing a man dressed as Santa Claus getting a kiss on the cheek under some mistletoe."
+    width = 525
+  /></a></p>
+
+<p>Dithering is my and Ben Thompson’s twice-a-week podcast — 15 minutes per episode, not a minute less, not a minute more. It’s a $7/month or $70/year subscription, and included in the Stratechery Plus bundle (a bargain). This year our CMS (<a href="https://passport.online/">Passport</a> — check it out) gained a feature that lets us make some episodes free for everyone to listen to on the website. Today’s episode, regarding Alan Dye leaving Apple for Meta, seems like a good one to do that with. (And, <a href="https://daringfireball.net/linked/2025/03/16/dithering-being-real-points">once again</a>, this month’s album art serendipitously captures my mood.)</p>
+
+<p>Give it a listen. <a href="https://dithering.fm/">Subscribe if you enjoy it</a>.</p>
+
+</dd>
+
+
+<dt>
+<a href="https://www.theinformation.com/articles/silicon-valley-buzzing-apple-ceo-succession">Apple’s Succession Intrigue Isn’t Strange at&#160;All</a>&nbsp;<a class="permalink" title="Permanent link to ‘Apple’s Succession Intrigue Isn’t Strange at All’" href="https://daringfireball.net/linked/2025/12/05/apple-succession-the-information">&#9733;</a>
+</dt>
+<dd>
+<p>Aaron Tilley and Wayne Ma, in a piece headlined “Why Silicon Valley is Buzzing About Apple CEO Succession” at the paywalled-up-the-wazoo The Information:</p>
+
+<blockquote>
+  <p>Prediction site Polymarket <a href="https://polymarket.com/event/next-ceo-of-apple">places Ternus’ odds of getting the
+job</a> at nearly 55%, ahead of other current Apple executives
+such as software head Craig Federighi, Chief Operating Officer
+Sabih Khan and marketing head Greg Joswiak. But some people close
+to Apple don’t believe Ternus is ready to take on such a
+high-profile role, and that could make a succession announcement
+unlikely anytime soon, said people familiar with the company.</p>
+</blockquote>
+
+<p>Nothing in the rest of the article backs up that “some people close
+to Apple don’t believe Ternus is ready” claim, other than this, several paragraphs later:</p>
+
+<blockquote>
+  <p>And while his fans believe Ternus has the temperament to be CEO,
+many of them say he isn’t a charismatic leader in the mold of a
+Jobs. He has also had little involvement in the geopolitical and
+government affairs issues that dominate most of Cook’s time these
+days. On a recent trip to China, for example, Apple’s new COO,
+Sabih Khan, accompanied Cook to some of his meetings.</p>
+</blockquote>
+
+<p>No one else in the history of the industry, let alone the company, has the charisma of Steve Jobs. And while I think Polymarket has the shortlist of candidates right, I also think they have them listed in the right order. Sabih Khan probably should be considered an outside-chance maybe, but the fact that he accompanied Cook to China doesn’t make me think, for a second, that it’s in preparation to name him CEO. If Khan were being groomed to become CEO, he’d have started appearing in keynotes already. It’s silly to slag Ternus for not having the charisma of Steve Jobs, when Ternus has been a strong presence in keynotes since 2018, and <em>in the same paragraph</em> suggest Khan as a better option, when Khan has never once appeared in a keynote or public appearance representing Apple.</p>
+
+<blockquote>
+  <p>Some former Apple executives hope a dark-horse candidate emerges.
+For example, Tony Fadell, a former Apple hardware executive who
+coinvented [<em>sic</em>] the iPod, has told associates recently that he
+would be open to replacing Cook as CEO, according to people who
+have heard his remarks. (Other people close to Apple consider
+Fadell an unlikely candidate, in part because he was a polarizing
+figure when he worked at the company. Fadell left Apple in 2010.)</p>
+</blockquote>
+
+<p>The parenthetical undersells the unlikelihood of Fadell returning to Apple, ever, in any role, let alone the borderline insanity of suggesting he’d come back as Cook’s successor.</p>
+
+<blockquote>
+  <p>It has become one of the strangest succession spectacles in tech.
+Typically, the kind of buzz that is swirling around Cook occurs
+when companies are performing badly or a CEO has dropped hints
+that they’re getting ready to hang up their spurs. Neither applies
+in Cook’s case, though.</p>
+</blockquote>
+
+<p>There’s nothing strange about it. Apple has a unique company culture, but <a href="https://ritholtz.com/2013/07/organizational-charts-of-amazon-apple-facebook-microsoft/">so too do its peers</a>, like Microsoft, Amazon, and Google. And just like at those companies, it’s therefore a certainty that Cook’s replacement will come from within the company’s current ranks. Polymarket doesn’t even list anyone other than Ternus, Federighi, Joswiak, and Khan.</p>
+
+<p>As for hints, there is not much need for any hint beyond the fact that Cook is now 65 years old and has been in the job since 2011. But the high-profile multi-source <a href="https://daringfireball.net/linked/2025/11/15/ft-apple-tim-cook-succession">leak to the Financial Times</a> is a pretty obvious fucking additional hint.</p>
+
+</dd>
+
+
+<dt>
+<a href="https://daringfireball.net/thetalkshow/2017/04/21/ep-188">Lisa Jackson on The Talk Show Back in 2017</a>&nbsp;<a class="permalink" title="Permanent link to ‘Lisa Jackson on The Talk Show Back in 2017’" href="https://daringfireball.net/linked/2025/12/05/lisa-jackson-the-talk-show">&#9733;</a>
+</dt>
+<dd>
+<p>This interview was both interesting and a lot of fun. Worth a listen or re-listen.</p>
+
+</dd>
+
+
+<dt>
+<a href="https://www.apple.com/newsroom/2025/12/apple-announces-executive-transitions/">Apple Announces a Few Other Executive Transitions</a>&nbsp;<a class="permalink" title="Permanent link to ‘Apple Announces a Few Other Executive Transitions’" href="https://daringfireball.net/linked/2025/12/05/apple-announces-a-few-other-executive-transitions">&#9733;</a>
+</dt>
+<dd>
+<p>Apple Newsroom, yesterday:</p>
+
+<blockquote>
+  <p>Apple today announced that Jennifer Newstead will become Apple’s
+general counsel on March 1, 2026, following a transition of duties
+from Kate Adams, who has served as Apple’s general counsel since
+2017. She will join Apple as senior vice president in January,
+reporting to CEO Tim Cook and serving on Apple’s executive team.</p>
+
+<p>In addition, Lisa Jackson, vice president for Environment, Policy,
+and Social Initiatives, will retire in late January 2026. The
+Government Affairs organization will transition to Adams, who will
+oversee the team until her retirement late next year, after which
+it will be led by Newstead. Newstead’s title will become senior
+vice president, General Counsel and Government Affairs, reflecting
+the combining of the two organizations. The Environment and Social
+Initiatives teams will report to Apple chief operating officer
+Sabih Khan. [...]</p>
+
+<p>Newstead was most recently chief legal officer at Meta and
+previously served as the legal adviser of the U.S. Department of
+State, where she led the legal team responsible for advising the
+Secretary of State on legal issues affecting the conduct of U.S.
+foreign relations.</p>
+</blockquote>
+
+<p>Monday’s announcement <a href="https://daringfireball.net/linked/2025/12/01/giannandrea-out">that AI head John Giannandrea is retiring</a> and the hierarchy for AI related projects being further reshuffled under software head Craig Federighi was significant, but not surprising, given <a href="https://daringfireball.net/2025/03/something_is_rotten_in_the_state_of_cupertino">how things went this year</a> for Apple with AI.</p>
+
+<p>Wednesday’s announcement that VP of design and Liquid Glass frontman Alan Dye is leaving Apple for Meta was a shock, both inside and outside the company. As I wrote this week, I think <a href="https://daringfireball.net/2025/12/bad_dye_job">it’s great news for Apple</a>, but <a href="https://daringfireball.net/2025/12/dye_cook_blind_spot">not by plan</a>.</p>
+
+<p>This news yesterday is just typical planned retirements. The timing is slightly unfortunate though. In the eyes of observers unfamiliar with the company, they might be misconstrued as signs of executive upheaval, occurring on the heels of the minor and major dramas of Giannandrea’s and Dye’s departures. The Jackson / Adams / Newstead transitions announced yesterday are nothing of the sort.</p>
+
+<p>Jackson had a very nice run at Apple and carved out a rather unique position within the company. Apple’s environmental efforts expanded tremendously under her leadership. I’ve never met anyone with a bad word to say about her, and <a href="https://daringfireball.net/thetalkshow/2017/04/21/ep-188">in my own interactions</a>, found her downright delightful.</p>
+
+<p>As for Adams, the responsibilities of Apple’s general counsel are generally far afield from my interests. The only two times I’ve mentioned her at DF were <a href="https://daringfireball.net/linked/2017/10/06/sewell-adams">when she got the job in 2017</a>, and a passing reference when the FBI sent <a href="https://daringfireball.net/linked/2020/01/08/fbi-apple-pensacola-shooter">a letter to Apple, addressed to Adams, in 2020</a> regarding the locked phone of a mass shooter in Pensacola, Florida. That’s a sign of a good run for a general counsel — it’s a job where no news is good news.</p>
+
+<p>Lastly, I wouldn’t read anything into Newstead coming to Apple by way of Meta. But it is a bit funny that it was announced the day after Dye left Apple <em>for</em> Meta. She seems to have <a href="https://en.wikipedia.org/wiki/Jennifer_Gillian_Newstead">an excellent wide-ranging background</a> to spearhead Apple’s government affairs. Her stint in the State Department was during the first (now seemingly sane) Trump administration, but she clerked for liberal Supreme Court Justice Stephen Breyer.</p>
+
+</dd>
+
+
+</dl>
+
+<hr class="ookiaks" />
+
+
+<div class="article">
+<h1><a href="https://daringfireball.net/2025/12/2025_app_store_award_winners" title="Permanent link to ‘2025 App Store Award Winners: Tiimo, Essayist, and Detail’">2025 App Store Award Winners: Tiimo, Essayist, and Detail</a></h1>
+<h6 class="dateline">Friday,  5 December 2025</h6>
+
+<p>Apple, today: “<a href="https://apps.apple.com/us/story/id1849728503">Announcing the 2025 App Store Awards</a>”:</p>
+
+<blockquote>
+  <p>This year’s winners represent the best-in-class apps and games
+we returned to again and again. We hope you enjoy them as much
+as we do.</p>
+</blockquote>
+
+<p>I did not enjoy all of them as much as Apple did.</p>
+
+<h2>Tiimo</h2>
+
+<p>iPhone app of the year <a href="https://www.tiimoapp.com/">Tiimo</a> bills itself as an “AI Planner &amp; To-do” app that is designed with accommodations for people with ADHD and other neurodivergences. Subscription plans cost $12/month ($144/year) or $54/year ($4.50/month). It does not offer a native Mac app, and at the end of onboarding/account setup, it suggests <a href="https://webapp.tiimoapp.com/home">their web app</a> for use on desktop computers. When I went to the web app, after signing in with the “Sign in With Apple” account I created on the iPhone app, Tiimo prompted me to sign up for an annual subscription for $42/year ($3.50/month), or monthly for $10 ($120/year). The in-app subscriptions offer a 30-day free trial; the less expensive pay-on-the-web subscriptions only offer a 7-day free trial. The web app doesn’t let you do anything without a paid account (or at least starting a trial); the iOS app offers quite a bit of basic functionality free of charge.</p>
+
+<p><a href="https://apps.apple.com/us/story/id1847760015">From Apple’s own description for why it gave Tiimo the award</a>:</p>
+
+<blockquote>
+  <p>Built to support people who are neurodivergent (and anyone
+distracted by the hum of modern life), Tiimo brought clarity to our
+busy schedules using color-coded, emoji-accented blocks. The
+calming visual approach made even the most hectic days feel
+manageable.</p>
+
+<p>It starts by syncing everything in Calendar and Reminders, pulling
+in doctor’s appointments, team meetings, and crucial prompts to
+walk the dog or stand up and stretch. Instead of dumping it all
+into a jumbled list, the app gives each item meaning by
+automatically assigning it a color and an emoji. (Tiimo gave us the
+option to change the weightlifter emoji it added to our workout
+reminders, but its pick was spot on.)</p>
+
+<p>While on the move with coffee in one hand and keys in the other,
+we sometimes talked to Tiimo with the Al chatbot feature to add new
+tasks or shift appointments. When we felt overwhelmed by our to-do
+list, Tiimo kept us laser-focused by bubbling up just high-priority
+tasks, while its built-in Focus timer (accessible from any to-do
+with a tap) saved us from the pitfalls of multitasking.</p>
+
+<p>But Tiimo really stood out when we faced a big personal project,
+like getting our Halloween decorations up before Thanksgiving.
+With the help of Al, the app suggested all the smaller tasks
+that would get us there: gathering the decorations from the
+garage, planning the layout, securing the cobwebs, and doing a
+safety check.</p>
+</blockquote>
+
+<p>Aside from the web app, <a href="https://www.tiimoapp.com/faq">Tiimo is iOS exclusive</a>, with apps only for iPhone, iPad, and Apple Watch. No Android version. It seems to do a good job with native platform integration (Calendar integration is free; Reminders integration requires a subscription). Animations in the app feel slow to me, which makes the app itself feel slow. And, personally, I find Tiimo’s emphasis on decorating everything with emoji <a href="https://daringfireball.net/2025/11/chatgpt_5-1_with_renamed_and_new_personalities">distracting and childish</a>, not clarifying.</p>
+
+<p>The app seems OK, but not award-worthy to me. But, admittedly, I’m not in the target audience for Tiimo’s ADHD/neurodivergent focus. I don’t need reminders to have coffee in the morning, start work, have dinner, or to watch TV at night, which are all things Tiimo prefilled on my Today schedule after I went through onboarding. As I write this sentence, I’ve been using Tiimo for five minutes, and it’s already prompted me twice to rate it on the App Store. Nope, wait, I just got a third prompt. That’s thirsty, and a little gross. (And, although I’m not an ADHD expert, three prompts to rate and review the app in the first 10 minutes of use strikes me as contrary to the needs of the easily distracted.)</p>
+
+<p>Lastly, I have questions — some really hard questions — regarding <a href="https://daringfireball.net/misc/2025/12/tiimo-icon.png">Tiimo’s app icon</a>. Such as, “What is that?”</p>
+
+<h2>Essayist</h2>
+
+<p>Mac app of the year <a href="https://www.essayist.app/">Essayist</a> bills itself as “The Word Processor designed for Academic Writing” (capitalization verbatim). Subscriptions cost $80/year ($6.67/month) or $10/month ($120/year). Its <em>raison d’être</em> is managing citations and references, and automatically formatting the entire document, including citations, according to a variety of standards (MLA, Chicago, etc.). Quoting from <a href="https://apps.apple.com/us/story/id1848945161">Apple’s own description of Essayist</a>:</p>
+
+<blockquote>
+  <p>Essayist gives you an easy way to organize a dizzying array of
+primary sources. Ebooks, podcasts, presentations, and even direct
+messages and emails can be cataloged with academic rigor. Using
+macOS Foundation Models, Essayist extracts all the key info needed
+to use it as a source.</p>
+
+<p>For example, paste a YouTube URL into an entry and Essayist
+automatically fills in the name of the video, its publication
+date, and the date you accessed it. Drag in an article as a PDF to
+have Essayist fill in the title, author, and more — and store the
+PDF for easy access. You can also search for the books and journal
+articles you’re citing right in the app.</p>
+</blockquote>
+
+<p>Essayist is a document-based (as opposed to library-based) app, and its custom file format is a <a href="https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFBundles/AboutBundles/AboutBundles.html">package</a> with the adorable file extension “.essay”. The default font for documents is Times New Roman, and the only other option is, of all fonts, <a href="https://daringfireball.net/search/arial">Arial</a> — and you need an active subscription to switch the font to Arial. (<em>Paying money for the privilege to use Arial... Jiminy fucking christ. I might need a drink.</em>) I appreciate the simplicity of severely limiting font choices to focus the user’s attention on the writing, but offering Times New Roman and Arial as the only options means you’re left with the choice between “the default font’s default font” and “<a href="https://daringfireball.net/linked/2020/10/02/when-the-clients-specs-arial">font crime</a>”. The Essayist app itself <a href="https://daringfireball.net/misc/2025/12/essayist-app-menu.png">has no Settings</a>; instead, it offers only <a href="https://daringfireball.net/misc/2025/12/essayist-document-window-menu.png">per-document settings</a>.</p>
+
+<p>The app carries a few whiffs of non-Mac-likeness (e.g. the aforementioned lack of Settings, and some <a href="https://daringfireball.net/misc/2025/12/essayist-alerts.png">lame-looking custom alerts</a>). The document settings window refers to a new document, even after it has been saved with a name, as “Untitled” until you close and reopen the document. Reopened documents do not remember their window size and position. But <a href="https://news.ycombinator.com/item?id=32113754">poking around with <code>otool</code></a>, it appears to be written using AppKit, not Catalyst. I suspected the app might be Catalyst because there are companion iOS apps for iPhone and iPad, which seem to offer identical feature sets as the Mac app. Essayist uses a clever system where, unless you have a subscription, documents can <a href="https://daringfireball.net/misc/2025/12/essayist-unlock-access.png">only be edited on the device on which they were created</a>, but you can open them read-only on other devices. That feels like a good way to encourage paying while giving you a generous way to evaluate Essayist free of charge. There is no Android, Windows, or web app version — it’s exclusive to Mac and iOS.</p>
+
+<p>I’ve never needed to worry about adhering to a specific format for academic papers, and that’s the one and only reason I can see to use Essayist. In all other aspects, it seems a serviceable but very basic, almost primitive, word processor. <s>There’s no support for embedding images or figures of any kind in a document, for example.</s> [Correction: <a href="https://www.essayist.app/guides/figures---tables">Essayist does support figures</a>, but I missed the UI for how to insert them.]</p>
+
+<h2>Detail</h2>
+
+<p>iPad app of the year <a href="https://detail.co/">Detail</a> bills itself, simply and to the point, as an “AI Video Editor”. The default subscription is $70/year ($5.83/month) with a 3-day free trial; the other option is to pay $12/month ($144/year) with no free trial. After a quick test drive, Detail seems like an excellent video editing app, optimized for creating formats common on social media, like reel-style vertical videos where you, the creator, appear as a cutout in the corner, in front of the video or images that you’re talking about. The iPhone version seems equally good. The iPad version of Detail will install and run on MacOS, but it’s one of those “Designed for iPad / Not verified for macOS” no-effort direct conversions. But they do offer a standalone Mac app, <a href="https://apps.apple.com/us/app/detail-video-studio/id6443923358">Detail Studio</a>, which is a real Mac app, written using AppKit, which requires a separate subscription to unlock pro features ($150/year or $22/month). Detail only offers apps for iOS and MacOS — no  Windows, Android, or web.</p>
+
+<p><a href="https://apps.apple.com/us/ipad/story/id1847760011">From Apple’s own acclaim for Detail</a>:</p>
+
+<blockquote>
+  <p>When we used Detail to record a conversation of two people sitting
+side by side, the app automatically created a cut that looked like
+it was captured with two cameras. It zoomed in on one speaker,
+then cut away to the other person’s reaction. The app also made it
+easy to unleash our inner influencer. We typed a few key points,
+and the app’s AI wrote a playful script that it loaded into its
+teleprompter so we could read straight to the camera.</p>
+
+<p>Most importantly, Detail helped us memorialize significant life
+moments all while staying present. At a birthday party, we propped
+an iPad on a table and used Detail to record with the front and
+back cameras simultaneously. The result was a split-screen video
+with everyone singing “Happy Birthday” on the left and the guest
+of honor blowing out the candles on the right. (No designated
+cameraperson needed.)</p>
+</blockquote>
+
+<p>Detail has a bunch of seemingly genuinely useful AI-based features. But putting all AI features aside, it feels like a thoughtful, richly featured <em>manual</em> video editor. I suspect that’s why the AI features might work well — they’re an ease-of-use / automation layer atop a professional-quality non-AI foundation. Basically, Detail seems like what Apple’s own Clips — <a href="https://daringfireball.net/linked/2025/10/13/clips-eol">recently end-of-life’d</a> — should have been. It turns your iPad (or iPhone) into a self-contained video studio. Cool.</p>
+
+<hr />
+
+<p>Of these three apps — Tiimo on iPhone, Essayist on Mac, and Detail on iPad — Detail appeals to me the most, and strikes me as the most deserving of this award. If I were to start making videos for modern social media, I’d strongly evaluate Detail as my primary tool.</p>
+
+<p>Apple still has no standalone category for AI apps, but all three of these apps emphasize AI features, and Apple itself calls out those AI features in its praise for them. It’s an obvious recurring theme shared by all three, along with their shared monetization strategies of being free to download with in-app subscriptions to unlock all features, and the fact that all three winners are exclusive to iOS and Mac (and, in Tiimo’s case, the web).&nbsp;<a class="permalink" title="Permanent link to ‘2025 App Store Award Winners: Tiimo, Essayist, and Detail’" href="https://daringfireball.net/2025/12/2025_app_store_award_winners">&#9733;</a></p>
+
+</div> <!-- article -->
+
+<hr class="ookiaks" />
+
+
+<h2 class="dateline">Friday,  5 December 2025</h2>
+<dl class="linkedlist">
+<dt>
+<a href="https://www.latimes.com/entertainment-arts/business/story/2025-12-05/netflix-prevails-in-warner-bros-discovery-bidding-opponents">Netflix Agrees to Buy Warner Bros., Including HBO, for $83 Billion</a>&nbsp;<a class="permalink" title="Permanent link to ‘Netflix Agrees to Buy Warner Bros., Including HBO, for $83 Billion’" href="https://daringfireball.net/linked/2025/12/05/netflix-buying-warner-bros">&#9733;</a>
+</dt>
+<dd>
+<p>Meg James, reporting for The Los Angeles Times (<a href="https://apple.news/Ak1molISkQ4GGq7cNQtPOSw">News+ link</a>):</p>
+
+<blockquote>
+  <p>The two companies announced the blockbuster deal early Friday
+morning. The takeover would give Netflix such beloved characters
+as Batman, Harry Potter and Fred Flintstone.</p>
+</blockquote>
+
+<p>Fred Flintstone?</p>
+
+<blockquote>
+  <p>“Our mission has always been to entertain the world,” Ted
+Sarandos, co-CEO of Netflix, said in a statement. “By combining
+Warner Bros.’ incredible library of shows and movies — from
+timeless classics like <em>Casablanca</em> and <em>Citizen Kane</em> to modern
+favorites like <em>Harry Potter</em> and <em>Friends</em> — with our
+culture-defining titles like <em>Stranger Things</em>, <em>KPop Demon
+Hunters</em> and <em>Squid Game</em>, we’ll be able to do that even better.”</p>
+</blockquote>
+
+<p>Not sure <em>Squid Game</em> belongs in the same comparison as <em>Citizen Kane</em>, but the Warners library is incredibly deep. Stanley Kubrick’s post-<em>2001: A Space Odyssey</em> films were all for Warner Bros.</p>
+
+<blockquote>
+  <p>Netflix’s cash and stock transaction is valued at about $27.75 per
+Warner Bros. Discovery share. Netflix also agreed to take on more
+than $10 billion in Warner Bros. debt, pushing the deal’s value to
+$82.7 billion. [...] Warner’s cable channels, including CNN, TNT
+and HGTV, are not included in the deal. They will form a new
+publicly traded company, Discovery Global, in mid-2026.</p>
+</blockquote>
+
+<p>I don’t know if this deal makes sense for Netflix, but Netflix has earned my trust. Netflix is a product-first company. They care about the quality of their content, their software, their service, and their brand. If you care about the Warner/HBO legacy, an acquisition by Netflix is a much, much better outcome than if David Ellison had bought it to merge with Paramount.</p>
+
+<p>The LA Times article goes on to cite concerns from the movie theater industry, based on Netflix’s historic antipathy toward theatrical releases for its films. Netflix is promising to keep Warner Bros.’s film studio a separate operation, maintaining the studio’s current support for theatrical releases. I hope they do. I grew up loving going to the movies. I still enjoy it, but the truth is I go far less often as the years go on. Movie theaters shouldn’t be a protected class of business just because there’s so much affection and nostalgia for them. If they continue sliding into irrelevance, so be it. That’s how disruption, progress, and competition work.</p>
+
+</dd>
+
+
+</dl>
+
+<hr class="ookiaks" />
+
+
+<div class="article">
+<h1><a href="https://daringfireball.net/2025/12/dye_cook_blind_spot" title="Permanent link to ‘Alan Dye Was in Tim Cook’s Blind Spot’">Alan Dye Was in Tim Cook’s Blind Spot</a></h1>
+<h6 class="dateline">Thursday,  4 December 2025</h6>
+
+<p><a href="https://www.nbcnews.com/tech/tech-news/apple-ceo-tim-cook-slams-facebook-privacy-human-right-it-n860816">NBC News, back in March 2018</a>:</p>
+
+<blockquote>
+  <p>Speaking at a town hall event hosted by MSNBC’s Chris Hayes and
+Recode’s Kara Swisher, Cook said Facebook put profits above all
+else when it allegedly allowed user data to be taken through
+connected apps. [...]</p>
+
+<p>When asked what he would do if he were in Zuckerberg’s position,
+Cook replied: “What would I do? I wouldn’t be in this situation.”</p>
+
+<p>“The truth is we could make a ton of money if we monetized our
+customer, if our customer was our product,” Cook said. “We’ve
+elected not to do that.”</p>
+
+<p>“Privacy to us is a human right. It’s a civil liberty, and
+something that is unique to America. This is like freedom of
+speech and freedom of the press,” Cook said. “Privacy is right up
+there with that for us.”</p>
+</blockquote>
+
+<p>Perhaps Cook now needs to define “us”.</p>
+
+<p>This was a rather memorable interview. Cook’s “What would I do? I wouldn’t be in this situation” is one of the stone-coldest lines he’s ever zinged at a rival company. (In public, that is.) That was just ice cold. Cook is a consummate diplomat. Most non-founder big company CEOs are. Satya Nadella, Sundar Pichai, Andy Jassy — none of them are known for throwing shade, let alone sharp elbows, at competitors. Cook has made an exception, <a href="https://time.com/5433499/tim-cook-apple-data-privacy/">multiple</a> <a href="https://www.reuters.com/article/technology/apples-tim-cook-criticizes-social-media-practices-intensifying-facebook-confli-idUSKBN29X2NB/">times</a>, when it comes to Facebook/Meta (and to a lesser degree, Google).</p>
+
+<p>So it’s not just that Alan Dye jumped ship from Apple for the chief designer officer role at another company.<sup id="fnr1-2025-12-04"><a href="#fn1-2025-12-04">1</a></sup> It’s not just that he left for a <em>rival</em> company. It’s that he left Apple for <em>Meta</em>, of all companies. Given what Cook has said about Meta publicly, one can only imagine what he thinks about them privately. Apple executives tend to stay at Apple. The stability of its executive team is unparalleled. But Dye is a senior leader who not only left for a rival, but the one rival that Cook and the rest of Apple’s senior leadership team consider the most antithetical to Apple’s ideals.</p>
+
+<p>It would have been surprising if Dye had jumped ship to Google or Microsoft. It would have been a little more surprising if he’d left for Amazon, if only because Amazon seemingly places no cultural value whatsoever on design, as Apple practices it. But maybe with Amazon it would have been seen as Andy Jassy deciding to get serious about design, and thus, in a way, less surprising after the fact. But leaving Apple for <em>Meta</em>, of all companies, feels shocking. How could someone who would even <em>consider</em> leaving Apple for Meta rise to a level of such prominence at Apple, including as one of the few <a href="https://www.printmag.com/podcasts/2025/design-matters-craig-federighi-and-alan-dye/">public faces of the company</a>?</p>
+
+<p>So it’s not just that Alan Dye is a fraud of a UI designer and leader, and that Apple’s senior leadership had a blind spot to the ways Dye’s leadership was steering Apple’s interface design deeply astray. That’s problem enough, as I emphasized <a href="https://daringfireball.net/2025/12/bad_dye_job">in my piece yesterday</a>. It’s also that it’s now clear that Dye’s moral compass was not aligned with Apple’s either. Tim Cook and the rest — or at least most? — of Apple’s senior leadership apparently couldn’t see that, either.&nbsp;<a class="permalink" title="Permanent link to ‘Alan Dye Was in Tim Cook’s Blind Spot’" href="https://daringfireball.net/2025/12/dye_cook_blind_spot">&#9733;</a></p>
+
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1-2025-12-04">
+<p>I’d have thrown OpenAI in that list of companies where it would have been surprising, but not shocking, for Dye to leave Apple for. But that simply wasn’t possible given Jony Ive’s relationship with Sam Altman, LoveFrom’s collaboration with OpenAI with the io project, and Ive’s utter disdain for Dye’s talent, leadership, and personality.&nbsp;<a href="#fnr1-2025-12-04"  class="footnoteBackLink"  title="Jump back to footnote 1 in the text.">&#x21A9;&#xFE0E;</a></p>
+</li>
+</ol>
+</div>
+
+</div> <!-- article -->
+
+<hr class="ookiaks" />
+
+
+<div id="Footer">
+<form id="SiteSearch" action="https://daringfireball.net/search" method="get" style="margin-bottom: 2.5em;">
+<div>
+<input name="q" type="text" value="" style="margin-right: 8px; width: 66%;" />
+<input type="submit" value="Search" />
+</div>
+</form>
+
+<p class="smallprint">
+<a href="/preferences/" title="Customize the font size and presentation options for this web site.">Display Preferences</a>
+<br /><br />
+Copyright &copy; 2002–2025 The Daring Fireball Company LLC.
+</p>
+</div>
+
+
+<!-- Google Analytics -->
+
+<!-- 
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-593949-1']);
+  _gaq.push (['_gat._anonymizeIp']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+ -->
+
+<!-- Asynchronously load Mint -->
+<!-- No, screw mint
+<script type="text/javascript">
+(function () {
+	var ma = document.createElement('script');
+	ma.type = 'text/javascript';
+	ma.src = '/mint/?js';
+	ma.async = true;
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(ma, s);
+})();
+</script>
+-->
+</div> <!-- Main -->
+
+</div> <!-- Box -->
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9af66e0a6a4050ff',t:'MTc2NTk3NDYwNg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
+<!-- 0.0097 seconds -->

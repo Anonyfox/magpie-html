@@ -1,0 +1,332 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <xmeta name="viewport" content="width=device-width, initial-scale=1">
+        
+    	<link rel="alternate" title="shapeof.com feed" type="application/json" href="https://shapeof.com/feed.json" />
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="https://shapeof.com/rss.xml" />
+        <link rel="SHORTCUT ICON" HREF="https://shapeof.com/favicon.ico" />
+        <link href="https://micro.blog/ccgus" rel="me" />
+        
+        <title>Script Debugger Retired</title>
+        
+        <style type="text/css">
+        
+        
+            body {
+                margin-top:         0px;
+                margin-left:        0px;
+                margin-right:       0px;
+                background-color:   #fff;
+                font-size:          15px;
+                font-family:        apple-system, -apple-system-font, "HelveticaNeue",  "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+                text-rendering:     optimizeLegibility;
+            }
+            
+            .main {
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 800px;
+                padding-left: 10px;
+            }
+            
+            .header {
+                font-weight: bold;
+                font-size: 2em;
+                padding: 0px;
+                padding-top: 20px;
+                padding-bottom: 40px;
+            }
+            
+            .header a {
+                color: #000;
+            }
+            
+            .headerFoot {
+                font-weight: normal;
+                font-size: 13px;
+                color: #999;
+            }
+            
+            .date {
+                color: #999;
+                font-size: .8em;
+            }
+            
+            .post {
+                padding-bottom: 40px;
+                color: #000;
+                font-size: 15px;
+                width: 660px;
+                line-height: 1.3em;
+            }
+            
+            .secondaryText {
+                color: #777;
+            }
+            
+            .secondaryTextSmall {
+                color: #777;
+                font-size: .85em;
+            }
+            
+            
+            .microPost {
+                padding: 10px;
+                margin-left: -10px;
+                margin-right: -10px;
+                font-size: 15px;
+                width: 660px;
+                
+                margin-bottom: 20px;
+                background: #fdfdfd;
+                xborder: solid 1px #ddd;
+                border-radius: 2px 25px 2px 2px;
+            }
+            
+            .postTitle {
+                font-size: 19px;
+                font-weight: bold;
+                padding-bottom: 0px;
+            }
+            
+            
+            .microPostTitle {
+                font-weight: bold;
+            }
+            
+            .microPostLink {
+                padding-bottom: 0px;
+                font-size: .8em;
+                color: #aaa;
+            }
+            
+            .microPostLink a {
+                color: #ccc;
+            }
+            
+            .postTitle a {
+                color: #000;
+                text-decoration: none;
+            }
+            
+            .postTitle a:hover, .microPostTitle a:hover {
+                color: #253253;
+                text-decoration: underline;
+            }
+            
+            
+            
+            .microPostLink a {
+                text-decoration: none;
+            }
+            
+            .microPostLink a:hover {
+                text-decoration: underline;
+            }
+            
+            
+            
+            #copyright {
+                font-size: 9pt;
+                color: #555;
+                width: 660px;
+            }
+            
+            .quote, blockquote {
+                position: relative;
+                border-radius: 8px;
+                padding: 1px 12px 1px 18px;
+                margin: 0px;
+                font-size: 1.0em;
+                color: #333;
+                background-color: #f6f6f6;
+            }
+            
+            blockquote::before {
+                content: '';
+                position: absolute;
+                left: 8px;
+                top: 8px;
+                bottom: 8px;
+                width: 1px;
+                background-color: #25325355;
+                border-radius: 0;
+            }
+            
+
+            
+            .main a {
+                color: #253253;
+                xtext-decoration: solid;
+            }
+            
+            
+            .archiveMonthHeader {
+                font-weight: bold;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                padding-bottom: 0px;
+            }
+            
+            .archiveEntry {
+                margin-top: 2px;
+                margin-bottom: 2px;
+                padding-left: 10px;
+            }
+            
+            .archiveMonthEntry {
+                margin-top: 0px;
+                margin-bottom: 20px;
+            }
+            
+            .commentsArea {
+                color: #000;
+                border-top: solid 1px #555;
+                width: 660px;
+            }
+            
+            #disqus_thread a {
+                color: black;
+            }
+            
+            .toc {
+                
+                position: sticky !important;
+                top: 60px;
+                float: left;
+                margin-left: -10px; /* Adjust based on TOC width */
+                max-width: 120px; /* Set a fixed width */
+                z-index: 100;
+                text-align: right;
+                
+                padding-top: 10px;
+                padding-right: 10px;
+                line-height: 2.2em;
+                font-size: .9em;
+                display: block;
+                
+            }
+            
+            .toc a {
+                color: #253253;
+                font-weight: 600;
+                
+            }
+            
+            code {
+            	--color: rgb(215, 44, 64);
+            	background-color: rgb(247, 247, 249);
+            	/*border: solid 1px rgb(225, 225, 232);*/
+            	border-radius: 2px; 
+            	/* padding: 2px; */
+            	/* margin: 2px;  */
+            	/*display: block; messes up inline things boo*/
+            }
+            
+            pre {
+            	background-color: rgb(247, 247, 249);
+                white-space: pre-wrap;
+                word-wrap: break-word;
+                overflow-wrap: anywhere; /* Most aggressive wrapping */
+                max-width: 100%; /* Prevents overflow */
+                overflow-x: auto; /* Horizontal scroll as fallback */
+            }
+            
+            
+            .importDisclaimer {
+                color: #999;
+            }
+            
+            .aboutSiteEntry {
+                background-color: #eee;
+                border-radius: 2px;
+                padding: 20px;
+                padding-top: 0px;
+                border: solid 1px rgb(225, 225, 232);
+                margin-bottom: 20px;
+            }
+            
+            
+            </style>
+        
+    
+    <script language="javascript">
+    /*
+    function loadDisqus() {
+        var disqus_shortname = 'shapeof';
+        (function () {
+            var s = document.createElement('script'); s.async = true;
+            s.src = 'http://disqus.com/forums/shapeof/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+
+        (function() {
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = 'http://shapeof.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    
+    }*/
+    </script>
+    
+    
+    </head>
+    <body>
+        
+        <div class="main">
+            
+            <div class="header">
+                <center>
+                    <a href="/"><img border="0" width="128" height="128" src="https://shapeof.com/images/header-256.png" /></a><br/>
+                    <a href="/" style="text-decoration: none;">The Shape of Everything</a><br/>
+                    <span class="headerFoot">A website mostly about Mac stuff, written by August "Gus" Mueller</span>
+                </center>
+            </div>
+            
+            <div class="toc">
+                » <a href="https://flyingmeat.com/acorn/">Acorn</a><br/>
+                » <a href="https://flyingmeat.com/retrobatch/">Retrobatch</a><br/>
+                » <a rel="me" href="https://mastodon.social/@ccgus">Mastodon</a><br/>
+                » <a href="https://bsky.app/profile/ccgus.bsky.social">Bluesky</a><br/>
+                » <a href="https://micro.blog/ccgus">Micro.blog</a><br/>
+                » <a href="https://www.instagram.com/ccgus/">Instagram</a><br/>
+                » <a href="https://github.com/ccgus">Github</a><br/>
+                » <a href="https://maybepizza.com/">Maybe Pizza?</a><br/>
+                » <a href="/archive.html">Archives</a><br/>
+                » <a href="https://shapeof.com/rss.xml">Feed</a><br/>
+                » <a href="https://shapeof.com/microrss.xml">Micro feed</a><br/>
+                <!--
+                » <a href="https://twitter.com/ccgus">Twitter</a><br/>
+                -->
+            </div>
+            
+            <div style="margin-left: 120px">
+            <div class="post">
+    <img src="https://shapeof.com/images/mueller-post.png" width="18" height="18" style="float: left; margin-right: 4px;" />
+    <div class="postTitle"><a href="https://shapeof.com/archives/2025/6/script_debugger_retired.html">Script Debugger Retired</a></strong></div>
+    <div class="date">June 1, 2025</div>
+    <p>Mark Alldritt: <a href="https://latenightsw.com/script-debugger-retired/">Script Debugger Retired</a>:</p>
+<blockquote>
+<p>The day has finally come. After 30 years of continuous development, Script Debugger has been retired and will no longer be available for sale. <a href="https://latenightsw.com/%5B%5D(https://forum.latenightsw.com/t/retiring-script-debugger/5071)retiring-script-debugger/">Please see this post for more information</a>.</p>
+</blockquote>
+<p>I just looked up when I made my first purchase of Script Debugger — version 4.5 in 2009 for $199, and it was worth every penny.</p>
+<p>I still use Script Debugger to this day.</p>
+<p>30 years of development is a long time, and Script Debugger is such a great app. Congrats Mark - you made something awesome.</p>
+
+</div>
+            </div>
+            
+            <div id="copyright" style="margin-left: 120px">
+                <center>
+                    &copy; August Mueller.
+                </center>
+            </div>
+            
+        </div>
+    </body>
+</html>

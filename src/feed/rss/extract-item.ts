@@ -2,11 +2,11 @@
  * Extract RSS item (article/entry) data
  */
 
-import type { RSSElement } from './xml-parser.js';
-import { querySelector, querySelectorAll, getText, getAttribute } from './xml-parser.js';
-import type { RssItem, RssEnclosure, RssGuid, RssSource } from './types.js';
 import { cleanText } from './clean-text.js';
 import { parseRSSDate } from './parse-date.js';
+import type { RssEnclosure, RssGuid, RssItem, RssSource } from './types.js';
+import type { RSSElement } from './xml-parser.js';
+import { getAttribute, getText, querySelector, querySelectorAll } from './xml-parser.js';
 
 /**
  * Extract item data from RSS feed
@@ -91,4 +91,3 @@ export function extractItems(channelElement: RSSElement): RssItem[] {
   const itemElements = querySelectorAll(channelElement, 'item');
   return itemElements.map((itemEl) => extractItem(itemEl));
 }
-

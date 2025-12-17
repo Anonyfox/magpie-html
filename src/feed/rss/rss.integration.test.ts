@@ -1,8 +1,8 @@
-import { describe, it } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
-import { parseRSS, isRSS } from './parse.js';
+import { describe, it } from 'node:test';
+import { isRSS, parseRSS } from './parse.js';
 
 const CACHE_DIR = join(process.cwd(), 'cache');
 
@@ -142,7 +142,9 @@ describe('RSS Integration Tests - Real World Feeds', () => {
       assert.ok(feed.items.length > 0);
 
       // TechCrunch likely has categories
-      const itemsWithCategories = feed.items.filter((item) => item.category && item.category.length > 0);
+      const itemsWithCategories = feed.items.filter(
+        (item) => item.category && item.category.length > 0,
+      );
       assert.ok(itemsWithCategories.length > 0, 'Should have items with categories');
     });
   });
@@ -231,8 +233,10 @@ describe('RSS Integration Tests - Real World Feeds', () => {
       );
 
       // At least one feed should have namespaces
-      assert.ok(hasNamespaces.some((has) => has), 'At least one feed should use namespaces');
+      assert.ok(
+        hasNamespaces.some((has) => has),
+        'At least one feed should use namespaces',
+      );
     });
   });
 });
-

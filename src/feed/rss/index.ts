@@ -3,32 +3,35 @@
  * Public API exports
  */
 
-// Main parser
-export { parseRSS, isRSS } from './parse.js';
-
-// Types
-export type {
-  RssFeed,
-  RssFeedExtended,
-  RssChannel,
-  RssItem,
-  RssItemExtended,
-  RssImage,
-  RssEnclosure,
-  RssGuid,
-  RssSource,
-  RssCloud,
-  RssNamespaces,
-  RssMediaContent,
-  RssMediaThumbnail,
-} from './types.js';
-
+export { cleanText, decodeEntities, normalizeWhitespace, stripCDATA } from './clean-text.js';
 // Advanced/internal exports for custom use cases
 export { extractChannel } from './extract-channel.js';
 export { extractItem, extractItems } from './extract-item.js';
 export { extractNamespaces } from './extract-namespaces.js';
-export { cleanText, stripCDATA, decodeEntities, normalizeWhitespace } from './clean-text.js';
-export { parseRSSDate, parseRFC822Date, isValidDate } from './parse-date.js';
-export { parseRSSXML, querySelector, querySelectorAll, getText, getAttribute } from './xml-parser.js';
+// Main parser
+export { isRSS, parseRSS } from './parse.js';
+export { isValidDate, parseRFC822Date, parseRSSDate } from './parse-date.js';
+// Types
+export type {
+  RssChannel,
+  RssCloud,
+  RssEnclosure,
+  RssFeed,
+  RssFeedExtended,
+  RssGuid,
+  RssImage,
+  RssItem,
+  RssItemExtended,
+  RssMediaContent,
+  RssMediaThumbnail,
+  RssNamespaces,
+  RssSource,
+} from './types.js';
 export type { RSSElement } from './xml-parser.js';
-
+export {
+  getAttribute,
+  getText,
+  parseRSSXML,
+  querySelector,
+  querySelectorAll,
+} from './xml-parser.js';

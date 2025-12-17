@@ -2,11 +2,11 @@
  * Extract RSS channel (feed-level) metadata
  */
 
-import type { RSSElement } from './xml-parser.js';
-import { querySelector, querySelectorAll, getText, getAttribute } from './xml-parser.js';
-import type { RssChannel } from './types.js';
 import { cleanText } from './clean-text.js';
 import { parseRSSDate } from './parse-date.js';
+import type { RssChannel } from './types.js';
+import type { RSSElement } from './xml-parser.js';
+import { getAttribute, getText, querySelector, querySelectorAll } from './xml-parser.js';
 
 /**
  * Extract channel metadata from RSS feed

@@ -48,4 +48,3 @@ export function parseRSSDate(dateString: string | null | undefined): string | nu
 export function isValidDate(dateString: string | null | undefined): boolean {
   return parseRFC822Date(dateString) !== null;
 }
-

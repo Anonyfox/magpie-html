@@ -3,11 +3,12 @@
  * Common namespaces: content:encoded, dc:creator, media:*, atom:link
  */
 
-import type { RSSElement } from './xml-parser.js';
-import { querySelector, querySelectorAll, getText, getAttribute } from './xml-parser.js';
-import type { RssNamespaces, RssMediaContent, RssMediaThumbnail } from './types.js';
+// import type { RssMediaContent, RssMediaThumbnail } from './types.js';
 import { cleanText } from './clean-text.js';
 import { parseRSSDate } from './parse-date.js';
+import type { RssNamespaces } from './types.js';
+import type { RSSElement } from './xml-parser.js';
+import { getAttribute, getText, querySelector, querySelectorAll } from './xml-parser.js';
 
 /**
  * Extract namespace extensions from item
@@ -87,4 +88,3 @@ export function extractNamespaces(itemElement: RSSElement): RssNamespaces {
 
   return namespaces;
 }
-

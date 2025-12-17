@@ -1,6 +1,6 @@
-import { describe, it } from 'node:test';
 import assert from 'node:assert/strict';
-import { stripCDATA, decodeEntities, normalizeWhitespace, cleanText } from './clean-text.js';
+import { describe, it } from 'node:test';
+import { cleanText, decodeEntities, normalizeWhitespace, stripCDATA } from './clean-text.js';
 
 describe('stripCDATA', () => {
   it('should strip CDATA tags from text', () => {
@@ -54,13 +54,13 @@ describe('decodeEntities', () => {
   it('should decode numeric entities', () => {
     const input = '&#39;Hello&#39;';
     const result = decodeEntities(input);
-    assert.equal(result, '\'Hello\'');
+    assert.equal(result, "'Hello'");
   });
 
   it('should decode hex entities', () => {
     const input = '&#x27;Hello&#x27;';
     const result = decodeEntities(input);
-    assert.equal(result, '\'Hello\'');
+    assert.equal(result, "'Hello'");
   });
 
   it('should decode nbsp', () => {
@@ -194,4 +194,3 @@ describe('cleanText', () => {
     assert.equal(result, 'Content with <![CDATA[nested]]> text');
   });
 });
-

@@ -9,6 +9,9 @@ Modern TypeScript library for scraping web content with isomorphic support. Work
 - 🔒 **Type-safe** - Full TypeScript support
 - 🧪 **Well-tested** - Built with Node.js native test runner
 - 🚀 **Zero dependencies** - Lightweight and fast
+- 🔄 **Multi-Format Feed Parser** - Parse RSS 2.0, Atom 1.0, and JSON Feed with automatic format detection
+- 🔗 **Smart URL Resolution** - Automatic normalization of relative URLs to absolute URLs
+- 🛡️ **Error Resilient** - Graceful handling of malformed data and edge cases
 
 ## Installation
 
@@ -50,32 +53,97 @@ console.log(getEnvironment());
 </script>
 ```
 
+## Feed Parsing
+
+### Quick Start
+
+```typescript
+import { parseFeed } from 'magpie-html';
+
+// Parse any feed format (RSS, Atom, JSON Feed)
+const result = parseFeed(feedContent);
+console.log(result.feed.title);
+console.log(result.feed.items[0].title);
+```
+
+### URL Normalization
+
+Automatically resolve relative URLs to absolute URLs:
+
+```typescript
+import { parseFeed } from 'magpie-html';
+
+const feedWithRelativeUrls = `<?xml version="1.0"?>
+<rss version="2.0">
+  <channel>
+    <title>Blog</title>
+    <link>/blog</link>
+    <description>Blog</description>
+    <item>
+      <title>Post</title>
+      <link>/blog/post-1</link>
+    </item>
+  </channel>
+</rss>`;
+
+// Without base URL - URLs remain relative
+const result1 = parseFeed(feedWithRelativeUrls);
+console.log(result1.feed.url); // "/blog"
+
+// With base URL - URLs become absolute
+const result2 = parseFeed(feedWithRelativeUrls, 'https://example.com/feed.xml');
+console.log(result2.feed.url); // "https://example.com/blog"
+console.log(result2.feed.items[0].url); // "https://example.com/blog/post-1"
+```
+
+### Supported Feed Formats
+
+- **RSS 2.0** (including common extensions like Dublin Core, Content, Media RSS)
+- **Atom 1.0**
+- **JSON Feed 1.0 and 1.1**
+
+All formats are automatically detected and normalized to a unified interface.
+
 ## API
 
-### `helloWorld(name?: string): string`
+### Feed Parsing
 
-Returns a greeting message.
+#### `parseFeed(content: string, baseUrl?: string | URL): ParseResult`
 
-- **name** (optional): The name to greet. Defaults to 'World'.
+Parse any feed format with automatic format detection.
 
-### `extractText(html: string): string`
+- **content**: Feed content as string (XML or JSON)
+- **baseUrl** (optional): Base URL for resolving relative URLs
+- Returns: `ParseResult` with normalized feed data and original format-specific data
+
+#### `parseFeedNormalized(content: string, baseUrl?: string | URL): Feed`
+
+Convenience wrapper that returns only the normalized feed data.
+
+#### `detectFormat(content: string): FeedFormat`
+
+Detect the format of a feed without parsing it.
+
+- Returns: `'rss'`, `'atom'`, `'json-feed'`, or `'unknown'`
+
+### Text Extraction
+
+#### `extractText(html: string): string`
 
 Extracts plain text content from an HTML string.
 
 - **html**: The HTML string to parse
 - Returns: The extracted text with normalized whitespace
 
-### `isBrowser(): boolean`
+### Environment Detection
+
+#### `isBrowser(): boolean`
 
 Checks if the code is running in a browser environment.
 
-- Returns: `true` if in browser, `false` otherwise
-
-### `getEnvironment(): 'browser' | 'node'`
+#### `getEnvironment(): 'browser' | 'node'`
 
 Gets the current runtime environment.
-
-- Returns: Either `'browser'` or `'node'`
 
 ## Development
 
