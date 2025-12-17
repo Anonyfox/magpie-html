@@ -1,0 +1,985 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <generator uri="https://blog.rust-lang.org/inside-rust/" version="0.1.0">Inside Rust Blog</generator>
+    <link href="https://blog.rust-lang.org/inside-rust/feed.xml" rel="self" type="application/atom+xml" />
+    <link href="https://blog.rust-lang.org/inside-rust/" rel="alternate" type="text/html" />
+    <id>https://blog.rust-lang.org/inside-rust/</id>
+    <title>Inside Rust Blog</title>
+    <subtitle>Want to follow along with Rust development? Curious how you might get involved? Take a look!</subtitle>
+    <author>
+        <name>Maintained by the Rust Teams.</name>
+        <uri>https://github.com/rust-lang/blog.rust-lang.org/</uri>
+    </author>
+    <updated>2025-12-16T22:47:32+00:00</updated>
+
+    
+    <entry>
+        <title>Please submit 2026 Project goal proposals</title>
+        <link rel="alternate" href="https://blog.rust-lang.org/inside-rust/2025/12/16/please-submit-2026-project-goal-proposals/" type="text/html" title="Please submit 2026 Project goal proposals" />
+        <published>2025-12-16T00:00:00+00:00</published>
+        <updated>2025-12-16T00:00:00+00:00</updated>
+        <id>https://blog.rust-lang.org/inside-rust/2025/12/16/please-submit-2026-project-goal-proposals/</id>
+        <content type="html" xml:base="https://blog.rust-lang.org/inside-rust/2025/12/16/please-submit-2026-project-goal-proposals/">&lt;h1 id&#x3D;&quot;please-submit-2026-project-goal-proposals&quot;&gt;&lt;a class&#x3D;&quot;anchor&quot; href&#x3D;&quot;#please-submit-2026-project-goal-proposals&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/a&gt;
+Please submit 2026 Project goal proposals&lt;/h1&gt;
+&lt;p&gt;The proposals for the 2026 goal period are open, you can submit yours right now.&lt;/p&gt;
+&lt;p&gt;We are accepting proposals &lt;strong&gt;until the end of January 2026&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Go to the &lt;a href&#x3D;&quot;https://rust-lang.github.io/rust-project-goals/how_to/propose_a_goal.html&quot;&gt;Propose a new goal&lt;/a&gt; page to learn how (tl;dr copy &lt;a href&#x3D;&quot;https://github.com/rust-lang/rust-project-goals/blob/main/src/TEMPLATE.md&quot;&gt;TEMPLATE.md&lt;/a&gt;, fill it in and open a PR for the &lt;a href&#x3D;&quot;https://github.com/rust-lang/rust-project-goals&quot;&gt;rust-project-goals&lt;/a&gt; repo). The text doen&#x27;t have to be complete. We can work with you and fill things in later.&lt;/p&gt;
+&lt;p&gt;We&#x27;re now running the whole program throughout the full year: getting the nominations and writing the RFC at the beginning, with the RFC and official start in April and publish check-ins in July and October.&lt;/p&gt;
+&lt;p&gt;But if you&#x27;re a Project member and have all the team asks (reviews, design bandwidth etc.) sorted out, you can propose and start a goal at any time.&lt;/p&gt;
+&lt;p&gt;We also simplified the &lt;a href&#x3D;&quot;https://github.com/rust-lang/rust-project-goals/blob/main/src/TEMPLATE.md&quot;&gt;template&lt;/a&gt;: the &lt;code&gt;Metadata&lt;/code&gt; section is shorter and &lt;a href&#x3D;&quot;https://github.com/rust-lang/rust-project-goals/blob/main/src/TEMPLATE.md#team-asks&quot;&gt;the &lt;code&gt;Team asks&lt;/code&gt; section&lt;/a&gt; now focuses on the &lt;em&gt;what level support you need from each team&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;There are four levels: &lt;code&gt;Vibes&lt;/code&gt; (does the team like this?), &lt;code&gt;Small&lt;/code&gt; (the team only needs to do routine activities, e.g. small reviews/approvals), &lt;code&gt;Medium&lt;/code&gt; (you need dedicated support from one person) and &lt;code&gt;Large&lt;/code&gt; (deep involvement from the entire team).&lt;/p&gt;
+&lt;p&gt;This clarifies the need for champions (only for medium/large support levels) and should make the team approval easier as they can clearly see what is actually requested here and compare it to their capacity.&lt;/p&gt;
+&lt;p&gt;Want to talk to us? Drop by our Zulip in &lt;a href&#x3D;&quot;https://rust-lang.zulipchat.com/#narrow/channel/546987-project-goals.2F2026-workshop&quot;&gt;#project-goals/2026-workshop&lt;/a&gt;. We can answer any questions you have, discuss the goal before you commit and help you put it together.&lt;/p&gt;
+</content>
+
+        <author>
+            <name>Tomas Sedovic</name>
+        </author>
+    </entry>
+    <entry>
+        <title>Leadership Council update — December 2025</title>
+        <link rel="alternate" href="https://blog.rust-lang.org/inside-rust/2025/12/10/leadership-council-update/" type="text/html" title="Leadership Council update — December 2025" />
+        <published>2025-12-10T00:00:00+00:00</published>
+        <updated>2025-12-10T00:00:00+00:00</updated>
+        <id>https://blog.rust-lang.org/inside-rust/2025/12/10/leadership-council-update/</id>
+        <content type="html" xml:base="https://blog.rust-lang.org/inside-rust/2025/12/10/leadership-council-update/">&lt;p&gt;Hello again from the Rust Leadership Council! We wanted to share an update on what the Council has been working on since &lt;a href&#x3D;&quot;https://blog.rust-lang.org/inside-rust/2025/09/10/leadership-council-update/&quot;&gt;our last update&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id&#x3D;&quot;accomplishments-so-far&quot;&gt;&lt;a class&#x3D;&quot;anchor&quot; href&#x3D;&quot;#accomplishments-so-far&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/a&gt;
+Accomplishments so far&lt;/h2&gt;
+&lt;h3 id&#x3D;&quot;welcome-jakub-beranek-to-the-council&quot;&gt;&lt;a class&#x3D;&quot;anchor&quot; href&#x3D;&quot;#welcome-jakub-beranek-to-the-council&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/a&gt;
+Welcome Jakub Beránek to the Council&lt;/h3&gt;
+&lt;p&gt;As &lt;a href&#x3D;&quot;https://blog.rust-lang.org/inside-rust/2025/09/23/leadership-council-repr-selection/&quot;&gt;announced in September&lt;/a&gt;, &lt;a href&#x3D;&quot;https://github.com/Kobzol&quot;&gt;Jakub Beránek&lt;/a&gt; joined the Council representing the Infrastructure team.&lt;/p&gt;
+&lt;h3 id&#x3D;&quot;foundation-updates&quot;&gt;&lt;a class&#x3D;&quot;anchor&quot; href&#x3D;&quot;#foundation-updates&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/a&gt;
+Foundation updates&lt;/h3&gt;
+&lt;p&gt;In October we wrapped up the election process for the Project Directors of the Rust Foundation. &lt;a href&#x3D;&quot;https://github.com/jackh726/&quot;&gt;Jack Huey&lt;/a&gt;, &lt;a href&#x3D;&quot;https://github.com/nikomatsakis/&quot;&gt;Niko Matsakis&lt;/a&gt;, and &lt;a href&#x3D;&quot;https://github.com/davidtwco/&quot;&gt;David Wood&lt;/a&gt; are our new Directors (&lt;a href&#x3D;&quot;https://rustfoundation.org/media/introducing-the-rust-foundations-newest-project-directors-october-2025/&quot;&gt;see announcement&lt;/a&gt;). We&#x27;d like to thank &lt;a href&#x3D;&quot;https://github.com/tomassedovic&quot;&gt;Tomas Sedovic&lt;/a&gt; for facilitating the election process.&lt;/p&gt;
+&lt;p&gt;We&#x27;ve been discussing the 2026 &quot;Project Priorities&quot; budget with the Foundation, which would continue the program funded by Microsoft in 2024 and 2025. We&#x27;re happy to report that we will be able to continue this program, which funds initiatives such as our travel budget, program management, compiler operations, and other maintenance support for the Rust project. The final budget will be submitted for board approval at the next meeting in December. We&#x27;ll have more to share about this in the future. &lt;a href&#x3D;&quot;https://github.com/rust-lang/leadership-council/issues/183&quot;&gt;#183&lt;/a&gt; &lt;a href&#x3D;&quot;https://github.com/rust-lang/leadership-council/issues/234&quot;&gt;#234&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;We have engaged in extensive discussions regarding the Foundation&#x27;s 3-year strategy, which is also scheduled for approval at the December board meeting. &lt;a href&#x3D;&quot;https://github.com/rust-lang/leadership-council/issues/197&quot;&gt;#197&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;After monitoring travel budget spending and addressing concerns regarding 2025 expenditure levels, we have decided to maintain our current policy for the time being. &lt;a href&#x3D;&quot;https://github.com/rust-lang/leadership-council/issues/182&quot;&gt;#182&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;We coordinated with the Foundation on the &lt;a href&#x3D;&quot;https://blog.rust-lang.org/2025/09/03/welcoming-the-rust-innovation-lab/&quot;&gt;announcement of the Rust Innovation Lab&lt;/a&gt;, and are excited to see this initiative move forward.&lt;/p&gt;
+&lt;h3 id&#x3D;&quot;shape-of-rust&quot;&gt;&lt;a class&#x3D;&quot;anchor&quot; href&#x3D;&quot;#shape-of-rust&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/a&gt;
+Shape of Rust&lt;/h3&gt;
+&lt;p&gt;We have implemented changes to the team structure to further clarify the status of teams in the Launching Pad. The following teams have been moved or archived:&lt;/p&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th style&#x3D;&quot;text-align: left&quot;&gt;Team&lt;/th&gt;&lt;th style&#x3D;&quot;text-align: left&quot;&gt;Tracking Issue&lt;/th&gt;&lt;th style&#x3D;&quot;text-align: left&quot;&gt;Outcome?&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td style&#x3D;&quot;text-align: left&quot;&gt;Community Content Team&lt;/td&gt;&lt;td style&#x3D;&quot;text-align: left&quot;&gt;&lt;a href&#x3D;&quot;https://github.com/rust-lang/leadership-council/issues/129&quot;&gt;#129&lt;/a&gt;&lt;/td&gt;&lt;td style&#x3D;&quot;text-align: left&quot;&gt;Archived&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style&#x3D;&quot;text-align: left&quot;&gt;Community Rustbridge Team&lt;/td&gt;&lt;td style&#x3D;&quot;text-align: left&quot;&gt;&lt;a href&#x3D;&quot;https://github.com/rust-lang/leadership-council/issues/132&quot;&gt;#132&lt;/a&gt;&lt;/td&gt;&lt;td style&#x3D;&quot;text-align: left&quot;&gt;Archived&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style&#x3D;&quot;text-align: left&quot;&gt;Book Team&lt;/td&gt;&lt;td style&#x3D;&quot;text-align: left&quot;&gt;&lt;a href&#x3D;&quot;https://github.com/rust-lang/leadership-council/issues/123&quot;&gt;#123&lt;/a&gt;&lt;/td&gt;&lt;td style&#x3D;&quot;text-align: left&quot;&gt;Moved to lang-docs&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style&#x3D;&quot;text-align: left&quot;&gt;Docker Team&lt;/td&gt;&lt;td style&#x3D;&quot;text-align: left&quot;&gt;&lt;a href&#x3D;&quot;https://github.com/rust-lang/leadership-council/issues/124&quot;&gt;#124&lt;/a&gt;&lt;/td&gt;&lt;td style&#x3D;&quot;text-align: left&quot;&gt;Moved to T-Infra&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style&#x3D;&quot;text-align: left&quot;&gt;Async WG&lt;/td&gt;&lt;td style&#x3D;&quot;text-align: left&quot;&gt;&lt;a href&#x3D;&quot;https://github.com/rust-lang/leadership-council/issues/137&quot;&gt;#137&lt;/a&gt;&lt;/td&gt;&lt;td style&#x3D;&quot;text-align: left&quot;&gt;Moved to T-Lang&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style&#x3D;&quot;text-align: left&quot;&gt;Rust By Example WG&lt;/td&gt;&lt;td style&#x3D;&quot;text-align: left&quot;&gt;&lt;a href&#x3D;&quot;https://github.com/rust-lang/leadership-council/issues/139&quot;&gt;#139&lt;/a&gt;&lt;/td&gt;&lt;td style&#x3D;&quot;text-align: left&quot;&gt;Moved to lang-docs&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;p&gt;The following teams have confirmed that they will stay in the Launching Pad, which will likely be rechartered in the future to cover cross-cutting teams:&lt;/p&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th style&#x3D;&quot;text-align: left&quot;&gt;Team&lt;/th&gt;&lt;th style&#x3D;&quot;text-align: left&quot;&gt;Tracking Issue&lt;/th&gt;&lt;th style&#x3D;&quot;text-align: left&quot;&gt;Outcome?&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td style&#x3D;&quot;text-align: left&quot;&gt;This Week In Rust&lt;/td&gt;&lt;td style&#x3D;&quot;text-align: left&quot;&gt;&lt;a href&#x3D;&quot;https://github.com/rust-lang/leadership-council/issues/125&quot;&gt;#125&lt;/a&gt;&lt;/td&gt;&lt;td style&#x3D;&quot;text-align: left&quot;&gt;Stay in Launching Pad&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style&#x3D;&quot;text-align: left&quot;&gt;Community Survey Team&lt;/td&gt;&lt;td style&#x3D;&quot;text-align: left&quot;&gt;&lt;a href&#x3D;&quot;https://github.com/rust-lang/leadership-council/issues/133&quot;&gt;#133&lt;/a&gt;&lt;/td&gt;&lt;td style&#x3D;&quot;text-align: left&quot;&gt;Renamed, Stay in Launching Pad&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style&#x3D;&quot;text-align: left&quot;&gt;Security Response WG&lt;/td&gt;&lt;td style&#x3D;&quot;text-align: left&quot;&gt;&lt;a href&#x3D;&quot;https://github.com/rust-lang/leadership-council/issues/141&quot;&gt;#141&lt;/a&gt;&lt;/td&gt;&lt;td style&#x3D;&quot;text-align: left&quot;&gt;Renamed, Stay in Launching Pad&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style&#x3D;&quot;text-align: left&quot;&gt;Triage WG&lt;/td&gt;&lt;td style&#x3D;&quot;text-align: left&quot;&gt;&lt;a href&#x3D;&quot;https://github.com/rust-lang/leadership-council/issues/142&quot;&gt;#142&lt;/a&gt;&lt;/td&gt;&lt;td style&#x3D;&quot;text-align: left&quot;&gt;Renamed, Stay in Launching Pad&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;p&gt;Progress has been made with other Launching Pad teams, though these efforts have not yet concluded. The following teams are still under discussion:&lt;/p&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th style&#x3D;&quot;text-align: left&quot;&gt;Team&lt;/th&gt;&lt;th style&#x3D;&quot;text-align: left&quot;&gt;Tracking Issue&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td style&#x3D;&quot;text-align: left&quot;&gt;Secure Code Working Group&lt;/td&gt;&lt;td style&#x3D;&quot;text-align: left&quot;&gt;&lt;a href&#x3D;&quot;https://github.com/rust-lang/leadership-council/issues/140&quot;&gt;#140&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style&#x3D;&quot;text-align: left&quot;&gt;Embedded Working Group&lt;/td&gt;&lt;td style&#x3D;&quot;text-align: left&quot;&gt;&lt;a href&#x3D;&quot;https://github.com/rust-lang/leadership-council/issues/127&quot;&gt;#127&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style&#x3D;&quot;text-align: left&quot;&gt;CLI Working Group&lt;/td&gt;&lt;td style&#x3D;&quot;text-align: left&quot;&gt;&lt;a href&#x3D;&quot;https://github.com/rust-lang/leadership-council/issues/138&quot;&gt;#138&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style&#x3D;&quot;text-align: left&quot;&gt;Gamedev Working Group&lt;/td&gt;&lt;td style&#x3D;&quot;text-align: left&quot;&gt;&lt;a href&#x3D;&quot;https://github.com/rust-lang/leadership-council/issues/126&quot;&gt;#126&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;p&gt;&lt;a href&#x3D;&quot;https://github.com/jamesmunns&quot;&gt;James Munns&lt;/a&gt; submitted &lt;a href&#x3D;&quot;https://github.com/rust-lang/leadership-council/issues/159#issuecomment-3237633417&quot;&gt;a proposal&lt;/a&gt; detailing the vision and operational structure of the Rust Society.&lt;/p&gt;
+&lt;h3 id&#x3D;&quot;additional-items&quot;&gt;&lt;a class&#x3D;&quot;anchor&quot; href&#x3D;&quot;#additional-items&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/a&gt;
+Additional items&lt;/h3&gt;
+&lt;p&gt;Other updates include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;We concluded a contributor survey primarily focused on understanding the balance between funded and volunteer-based contributions within the Rust Project. The results will help inform how we can better support maintainers. &lt;a href&#x3D;&quot;https://github.com/rust-lang/leadership-council/issues/222&quot;&gt;#222&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;We approved a requirement for all Project members to have a Zulip account (in addition to a GitHub account) to ensure more reliable communication. &lt;a href&#x3D;&quot;https://github.com/rust-lang/leadership-council/issues/228&quot;&gt;#228&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;We agreed to extend an invitation to the Rust for Linux contributors for the 2026 All-Hands. &lt;a href&#x3D;&quot;https://github.com/rust-lang/leadership-council/issues/236&quot;&gt;#236&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;In response to a query regarding responsibility for stable versus unstable support in stable releases, we clarified that this generally falls under the Lang team&#x27;s purview, with the Compiler team primarily responsible for implementation. &lt;a href&#x3D;&quot;https://github.com/rust-lang/leadership-council/issues/180&quot;&gt;#180&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;We agreed to delegate decisions regarding GSoC mentor rewards to the Mentorship team. &lt;a href&#x3D;&quot;https://github.com/rust-lang/leadership-council/issues/232&quot;&gt;#232&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;We considered a request to establish a Project Representative position but decided against it for the time being. &lt;a href&#x3D;&quot;https://github.com/rust-lang/leadership-council/issues/226&quot;&gt;#226&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id&#x3D;&quot;ongoing-work&quot;&gt;&lt;a class&#x3D;&quot;anchor&quot; href&#x3D;&quot;#ongoing-work&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/a&gt;
+Ongoing work&lt;/h2&gt;
+&lt;p&gt;Several projects have seen significant discussion since our last update but have not yet reached a conclusion.&lt;/p&gt;
+&lt;h3 id&#x3D;&quot;foundation&quot;&gt;&lt;a class&#x3D;&quot;anchor&quot; href&#x3D;&quot;#foundation&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/a&gt;
+Foundation&lt;/h3&gt;
+&lt;p&gt;We are excited about the development of the &lt;a href&#x3D;&quot;https://rustfoundation.org/media/announcing-the-rust-foundation-maintainers-fund/&quot;&gt;Rust Foundation Maintainers Fund&lt;/a&gt;. We are working closely with the Foundation to guide how this program will fund Rust Project maintainers. A working group is forming to define the usage of these funds (&lt;a href&#x3D;&quot;https://github.com/rust-lang/leadership-council/pull/248&quot;&gt;#248&lt;/a&gt;). We expect to have an approved plan and policy in place in January 2026. &lt;a href&#x3D;&quot;https://github.com/rust-lang/leadership-council/issues/242&quot;&gt;#242&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;David Wood has proposed a clarification of Project Director responsibilities, which we hope will improve understanding and communication between the Council, the Directors, and the Foundation. &lt;a href&#x3D;&quot;https://github.com/rust-lang/leadership-council/pull/250&quot;&gt;#250&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id&#x3D;&quot;additional-items-1&quot;&gt;&lt;a class&#x3D;&quot;anchor&quot; href&#x3D;&quot;#additional-items-1&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/a&gt;
+Additional items&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;We are following up on a request to add Graydon Hoare to the alumni section of the website.
+&lt;a href&#x3D;&quot;https://github.com/rust-lang/leadership-council/issues/231&quot;&gt;#231&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Regarding a request to link the community Discord from our website, we have deferred the decision to the website management team. &lt;a href&#x3D;&quot;https://github.com/rust-lang/leadership-council/issues/219&quot;&gt;#219&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;We received invitations to apply for funding from the Rust Ecosystem Fund. &lt;a href&#x3D;&quot;https://github.com/rust-lang/leadership-council/issues/240&quot;&gt;#240&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id&#x3D;&quot;following-our-work&quot;&gt;&lt;a class&#x3D;&quot;anchor&quot; href&#x3D;&quot;#following-our-work&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/a&gt;
+Following our work&lt;/h2&gt;
+&lt;p&gt;As you can see from the many links above, the work of the Council happens mostly in public on GitHub issues posted in &lt;a href&#x3D;&quot;https://github.com/rust-lang/leadership-council/issues&quot;&gt;our repository&lt;/a&gt;. The items on our meeting agendas are drawn from these. After discussing an item, we summarize that discussion and any shared &lt;a href&#x3D;&quot;https://aturon.github.io/tech/2018/05/25/listening-part-1/&quot;&gt;rationales&lt;/a&gt; on the issue. When we make decisions, we propose on the issue a &quot;final comment period&quot; (FCP), and as with all FCPs in the Project, we&#x27;re interested in and review any feedback that people have before or during this final comment period.&lt;/p&gt;
+&lt;p&gt;To follow our work in real time, watch our repository. You can also see meeting summaries posted on Zulip in &lt;a href&#x3D;&quot;https://rust-lang.zulipchat.com/#narrow/channel/392734-council/topic/Meeting.20minutes.20.26.20summaries/with/561198432&quot;&gt;&lt;code&gt;#council &amp;gt; Meeting minutes &amp;amp; summaries&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id&#x3D;&quot;meeting-minutes&quot;&gt;&lt;a class&#x3D;&quot;anchor&quot; href&#x3D;&quot;#meeting-minutes&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/a&gt;
+Meeting minutes&lt;/h2&gt;
+&lt;p&gt;We publish minutes from all Council meetings to the &lt;a href&#x3D;&quot;https://github.com/rust-lang/leadership-council/tree/main/minutes&quot;&gt;Leadership Council repo&lt;/a&gt;. Links to the minutes since our last update are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href&#x3D;&quot;https://github.com/rust-lang/leadership-council/blob/main/minutes/sync-meeting/2025-08-29.md&quot;&gt;August 29, 2025&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href&#x3D;&quot;https://github.com/rust-lang/leadership-council/blob/main/minutes/sync-meeting/2025-09-12.md&quot;&gt;September 12, 2025&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href&#x3D;&quot;https://github.com/rust-lang/leadership-council/blob/main/minutes/sync-meeting/2025-09-26.md&quot;&gt;September 26, 2025&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href&#x3D;&quot;https://github.com/rust-lang/leadership-council/blob/main/minutes/sync-meeting/2025-10-10.md&quot;&gt;October 10, 2025&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href&#x3D;&quot;https://github.com/rust-lang/leadership-council/blob/main/minutes/sync-meeting/2025-10-24.md&quot;&gt;October 24, 2025&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href&#x3D;&quot;https://github.com/rust-lang/leadership-council/blob/main/minutes/sync-meeting/2025-11-07.md&quot;&gt;November 7, 2025&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href&#x3D;&quot;https://github.com/rust-lang/leadership-council/blob/main/minutes/sync-meeting/2025-11-14.md&quot;&gt;November 14, 2025&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href&#x3D;&quot;https://github.com/rust-lang/leadership-council/blob/main/minutes/sync-meeting/2025-11-21.md&quot;&gt;November 21, 2025&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+
+        <author>
+            <name>Eric Huss</name>
+        </author>
+    </entry>
+    <entry>
+        <title>Want to propose a 2026 Rust project goal? We are here to help!</title>
+        <link rel="alternate" href="https://blog.rust-lang.org/inside-rust/2025/12/04/want-to-propose-a-2026-rust-project-goal-we-are-here-to-help/" type="text/html" title="Want to propose a 2026 Rust project goal? We are here to help!" />
+        <published>2025-12-04T00:00:00+00:00</published>
+        <updated>2025-12-04T00:00:00+00:00</updated>
+        <id>https://blog.rust-lang.org/inside-rust/2025/12/04/want-to-propose-a-2026-rust-project-goal-we-are-here-to-help/</id>
+        <content type="html" xml:base="https://blog.rust-lang.org/inside-rust/2025/12/04/want-to-propose-a-2026-rust-project-goal-we-are-here-to-help/">&lt;p&gt;Are there changes to Rust that you, or your organization, would like to make happen? Do you need advice in getting started with that? The Rust Project Goals team is here to help!&lt;/p&gt;
+&lt;p&gt;We are currently beginning the &quot;pre-planning&quot; for the Rust 2026 goals. &lt;strong&gt;In this &quot;pre-planning&quot; phase, we are looking for people who have ideas for things they want to do but who are not sure how to interface with the Rust org to see it happen.&lt;/strong&gt; We are particularly interested in supporting organizations and groups, which often have a harder time connecting to open source.&lt;/p&gt;
+&lt;h2 id&#x3D;&quot;what-is-the-project-goals-program&quot;&gt;&lt;a class&#x3D;&quot;anchor&quot; href&#x3D;&quot;#what-is-the-project-goals-program&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/a&gt;
+What is the Project Goals program?&lt;/h2&gt;
+&lt;p&gt;A &lt;strong&gt;project goal&lt;/strong&gt; is a kind of a contract between you and the Rust project teams. When you propose a project goal, &lt;strong&gt;you are promising to do the work you describe&lt;/strong&gt;. When the Rust teams approve your goal, &lt;strong&gt;they are committing to support you&lt;/strong&gt; (e.g., by doing reviews, giving feedback, etc). To make sure this happens, every approved Rust project goal has a &lt;strong&gt;champion&lt;/strong&gt;, a Rust team member or affiliate that will meet regularly with you and help ensure you stay unblocked.&lt;/p&gt;
+&lt;h2 id&#x3D;&quot;2026-goals-will-run-annually&quot;&gt;&lt;a class&#x3D;&quot;anchor&quot; href&#x3D;&quot;#2026-goals-will-run-annually&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/a&gt;
+2026 goals will run annually&lt;/h2&gt;
+&lt;p&gt;For 2026, we are shifting to annual project goals (though a goal doesn&#x27;t have to take the whole year). In the past, goals covered six month periods like &lt;a href&#x3D;&quot;https://rust-lang.github.io/rust-project-goals/2025h1/index.html&quot;&gt;2025H1&lt;/a&gt; and &lt;a href&#x3D;&quot;https://rust-lang.github.io/rust-project-goals/2025h2/index.html&quot;&gt;2025H2&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id&#x3D;&quot;the-goals-timeline&quot;&gt;&lt;a class&#x3D;&quot;anchor&quot; href&#x3D;&quot;#the-goals-timeline&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/a&gt;
+The goals timeline&lt;/h2&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Time period&lt;/th&gt;&lt;th&gt;Activity&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;Dec 2025 (now!)&lt;/td&gt;&lt;td&gt;We are soliciting pre-proposals and assessing which &lt;a href&#x3D;&quot;https://rust-lang.github.io/rust-project-goals/2025h2/index.html&quot;&gt;2025H2&lt;/a&gt; goals will continue into 2026&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Jan 2026&lt;/td&gt;&lt;td&gt;We will publish the first draft of the 2026 goal slate and begin discussion with Rust teams in earnest&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;(Continuing goals just continue working)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Feb 2026&lt;/td&gt;&lt;td&gt;Refinement of goals continues&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Mar 2026&lt;/td&gt;&lt;td&gt;Publish and merge the RFC with 2026 goals&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Apr 2026&lt;/td&gt;&lt;td&gt;Announce 2026 goals&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;July 2026&lt;/td&gt;&lt;td&gt;Publish Q3 check-in on goal progress&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Oct 2026&lt;/td&gt;&lt;td&gt;Publish Q4 check-in and the whole thing begins again...&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h2 id&#x3D;&quot;want-to-open-a-goal-pre-proposal&quot;&gt;&lt;a class&#x3D;&quot;anchor&quot; href&#x3D;&quot;#want-to-open-a-goal-pre-proposal&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/a&gt;
+Want to open a goal pre-proposal?&lt;/h2&gt;
+&lt;p&gt;Great! Reach out on Zulip in &lt;a href&#x3D;&quot;https://rust-lang.zulipchat.com/#narrow/channel/546987-project-goals.2F2026-workshop&quot;&gt;#project-goals/2026-workshop&lt;/a&gt;.&lt;/p&gt;
+</content>
+
+        <author>
+            <name>Niko Matsakis</name>
+        </author>
+    </entry>
+    <entry>
+        <title>Late 2025 Project Director Update</title>
+        <link rel="alternate" href="https://blog.rust-lang.org/inside-rust/2025/12/02/project-director-update/" type="text/html" title="Late 2025 Project Director Update" />
+        <published>2025-12-02T00:00:00+00:00</published>
+        <updated>2025-12-02T00:00:00+00:00</updated>
+        <id>https://blog.rust-lang.org/inside-rust/2025/12/02/project-director-update/</id>
+        <content type="html" xml:base="https://blog.rust-lang.org/inside-rust/2025/12/02/project-director-update/">&lt;p&gt;This is the seventh blog post in &lt;a href&#x3D;&quot;https://blog.rust-lang.org/inside-rust/2024/12/17/project-director-update.html&quot;&gt;the series started December 2024&lt;/a&gt; where us Rust Foundation Project Directors share the highlights from previous months’ Rust Foundation Board meeting(s). We aimed for a steady monthly cadence with this series, and reality had other plans. So here’s a catch-up edition covering the Board’s July, August, and October meetings. (No September meeting — RustConf.)
+Luckily, we have &lt;a href&#x3D;&quot;https://blog.rust-lang.org/2025/10/15/announcing-the-new-rust-project-directors-2025/&quot;&gt;three new Project Directors&lt;/a&gt;, and David Wood has volunteered to help with these posts, so we hope to have a regular cadence again going forward.&lt;/p&gt;
+&lt;p&gt;The &lt;a href&#x3D;&quot;https://rustfoundation.org/resource/july-2025-board-meeting/&quot;&gt;July meeting&lt;/a&gt;’s highlights include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Alexandru Radovici, the Silver Member board representative, is in the early stages of putting together a Rust in Industry Working Group to foster discussion among Member companies using Rust.&lt;/li&gt;
+&lt;li&gt;&lt;a href&#x3D;&quot;https://rustfoundation.org/about/#tina-krauss-program-manager&quot;&gt;Tina Krauss started in her position as Program Manager&lt;/a&gt;! In this position, Tina is involved in several key marketing, communications, and event-related initiatives. As one of her first projects, Tina is helping drive progress towards the Rust Foundation’s training initiatives; exploration into a Rust Foundation training course is now officially underway thanks to her project management work (more updates to be shared soon). Welcome, Tina!  See &lt;a href&#x3D;&quot;https://rustfoundation.org/media/welcoming-tina-krauss-the-rust-foundations-new-program-manager/&quot;&gt;the Foundation’s announcement&lt;/a&gt; for more details.&lt;/li&gt;
+&lt;li&gt;Bec presented a high-level summary of themes submitted from people in the Rust Project in response to a survey about what the Foundation’s strategy should be for the next three years. More details will be coming as the Foundation gets further along in the process of creating the strategy.&lt;/li&gt;
+&lt;li&gt;&lt;a href&#x3D;&quot;https://blog.rust-lang.org/2025/07/11/crates-io-development-update-2025-07/&quot;&gt;Trusted Publishing on crates.io was launched&lt;/a&gt;, as implemented mainly by Tobias Bienek and Marco Ieni of the Foundation with help from community members.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The &lt;a href&#x3D;&quot;https://rustfoundation.org/resource/august-2025-board-meeting/&quot;&gt;August meeting&lt;/a&gt;’s highlights include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The Foundation was concerned about recent layoffs involving Rust project members, and asked for the board’s approval and ideas to start exploring ways the Foundation could help.&lt;/li&gt;
+&lt;li&gt;Arm has increased their membership in the Foundation to the Platinum level!&lt;/li&gt;
+&lt;li&gt;&lt;a href&#x3D;&quot;https://rustfoundation.org/media/welcoming-lori-lorusso-the-rust-foundations-new-director-of-outreach/&quot;&gt;Lori Lorusso&lt;/a&gt; joined as the new Director of Outreach!&lt;/li&gt;
+&lt;li&gt;This was Paul Lenz’s last board meeting, as &lt;a href&#x3D;&quot;https://rustfoundation.org/media/a-fond-farewell-to-two-rust-foundation-colleagues/&quot;&gt;he retired in September&lt;/a&gt; from his position as Director of Finance and Funding.&lt;/li&gt;
+&lt;li&gt;The board approved the &lt;a href&#x3D;&quot;https://rustfoundation.org/media/rust-foundation-launches-rust-innovation-lab-with-rustls-as-inaugural-project/&quot;&gt;creation of the Rust Innovation Lab with rustls as the first project&lt;/a&gt;!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The &lt;a href&#x3D;&quot;https://rustfoundation.org/resource/october-2025-board-meeting/&quot;&gt;October meeting&lt;/a&gt;’s highlights include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A &lt;a href&#x3D;&quot;https://rustfoundation.org/media/rust-foundation-signs-joint-statement-on-open-source-infrastructure-stewardship/&quot;&gt;joint statement on sustainable stewardship&lt;/a&gt; was published, in tandem with OpenSSF, the Python Software Foundation, the OpenJS Foundation, the Eclipse Foundation and others. It focused on the need for sustainable funding models for package repositories.&lt;/li&gt;
+&lt;li&gt;Two phishing and one malware attack on &lt;a href&#x3D;&quot;http://crates.io&quot;&gt;crates.io&lt;/a&gt; were prevented by the Foundation’s engineers.&lt;/li&gt;
+&lt;li&gt;The board approved the Foundation &lt;a href&#x3D;&quot;https://rustfoundation.org/media/announcing-the-rust-foundation-maintainers-fund/&quot;&gt;starting the development of a Maintainer Fund&lt;/a&gt; in collaboration with the Leadership Council.&lt;/li&gt;
+&lt;li&gt;Technical papers were prepared for the upcoming WG21 meeting (the C++ standards committee) to advance C++ interop.&lt;/li&gt;
+&lt;li&gt;Recruitment started for an Infrastructure Engineer to replace Jan David Nose.&lt;/li&gt;
+&lt;li&gt;Development has started on a mechanism to surface vulnerabilities on &lt;a href&#x3D;&quot;http://crates.io&quot;&gt;crates.io&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;The Foundation will be discussing their prospective 2026-28 strategy at their offsite in Edinburgh in late October.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We’ll be back with an update after the December board meeting!&lt;/p&gt;
+</content>
+
+        <author>
+            <name>Carol Nichols and David Wood</name>
+        </author>
+    </entry>
+    <entry>
+        <title>This Development-cycle in Cargo: 1.92</title>
+        <link rel="alternate" href="https://blog.rust-lang.org/inside-rust/2025/11/24/this-development-cycle-in-cargo-1.92/" type="text/html" title="This Development-cycle in Cargo: 1.92" />
+        <published>2025-11-24T00:00:00+00:00</published>
+        <updated>2025-11-24T00:00:00+00:00</updated>
+        <id>https://blog.rust-lang.org/inside-rust/2025/11/24/this-development-cycle-in-cargo-1.92/</id>
+        <content type="html" xml:base="https://blog.rust-lang.org/inside-rust/2025/11/24/this-development-cycle-in-cargo-1.92/">&lt;h1 id&#x3D;&quot;this-development-cycle-in-cargo-1-92&quot;&gt;&lt;a class&#x3D;&quot;anchor&quot; href&#x3D;&quot;#this-development-cycle-in-cargo-1-92&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/a&gt;
+This Development-cycle in Cargo: 1.92&lt;/h1&gt;
+&lt;p&gt;This is a summary of what has been happening around Cargo development for the last 6 weeks which is approximately the merge window for Rust 1.92.&lt;/p&gt;
+&lt;!-- time period: 2025-09-18 through 2025-10-30 --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href&#x3D;&quot;https://blog.rust-lang.org/inside-rust/2025/11/24/this-development-cycle-in-cargo-1.92/#plugin-of-the-cycle&quot;&gt;Plugin of the cycle&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href&#x3D;&quot;https://blog.rust-lang.org/inside-rust/2025/11/24/this-development-cycle-in-cargo-1.92/#implementation&quot;&gt;Implementation&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href&#x3D;&quot;https://blog.rust-lang.org/inside-rust/2025/11/24/this-development-cycle-in-cargo-1.92/#build-performance-guide&quot;&gt;Build performance guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href&#x3D;&quot;https://blog.rust-lang.org/inside-rust/2025/11/24/this-development-cycle-in-cargo-1.92/#cargo-script&quot;&gt;Cargo Script&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href&#x3D;&quot;https://blog.rust-lang.org/inside-rust/2025/11/24/this-development-cycle-in-cargo-1.92/#public-dependencies&quot;&gt;Public dependencies&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href&#x3D;&quot;https://blog.rust-lang.org/inside-rust/2025/11/24/this-development-cycle-in-cargo-1.92/#build-dir-layout&quot;&gt;Build-dir layout&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href&#x3D;&quot;https://blog.rust-lang.org/inside-rust/2025/11/24/this-development-cycle-in-cargo-1.92/#misc&quot;&gt;Misc&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href&#x3D;&quot;https://blog.rust-lang.org/inside-rust/2025/11/24/this-development-cycle-in-cargo-1.92/#focus-areas-without-progress&quot;&gt;Focus areas without progress&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id&#x3D;&quot;plugin-of-the-cycle&quot;&gt;&lt;a class&#x3D;&quot;anchor&quot; href&#x3D;&quot;#plugin-of-the-cycle&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/a&gt;
+Plugin of the cycle&lt;/h2&gt;
+&lt;p&gt;Cargo can&#x27;t be everything to everyone,
+if for no other reason than the compatibility guarantees it must uphold.
+Plugins play an important part of the Cargo ecosystem and we want to celebrate them.&lt;/p&gt;
+&lt;p&gt;Our plugin for this cycle is &lt;a href&#x3D;&quot;https://github.com/Kobzol/cargo-wizard&quot;&gt;cargo-wizard&lt;/a&gt; which can optimize your project for build times, runtime performance, or binary size.&lt;/p&gt;
+&lt;p&gt;Thanks to &lt;a href&#x3D;&quot;https://github.com/Kobzol&quot;&gt;Kobzol&lt;/a&gt; for the suggestion!&lt;/p&gt;
+&lt;p&gt;&lt;a href&#x3D;&quot;https://rust-lang.zulipchat.com/#narrow/stream/246057-t-cargo/topic/Plugin.20of.20the.20Dev.20Cycle/near/420703211&quot;&gt;Please submit your suggestions for the next post.&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id&#x3D;&quot;implementation&quot;&gt;&lt;a class&#x3D;&quot;anchor&quot; href&#x3D;&quot;#implementation&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/a&gt;
+Implementation&lt;/h2&gt;
+&lt;h3 id&#x3D;&quot;build-performance-guide&quot;&gt;&lt;a class&#x3D;&quot;anchor&quot; href&#x3D;&quot;#build-performance-guide&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/a&gt;
+Build performance guide&lt;/h3&gt;
+&lt;p&gt;On &lt;a href&#x3D;&quot;https://rust-lang.zulipchat.com/#narrow/channel/246057-t-cargo/topic/Build.20performance.20section.20in.20the.20Cargo.20book/near/537596927&quot;&gt;Zulip&lt;/a&gt;,
+&lt;a href&#x3D;&quot;https://github.com/Kobzol&quot;&gt;Kobzol&lt;/a&gt;
+floated the idea of a build performance guide being added to the
+&lt;a href&#x3D;&quot;https://doc.rust-lang.org/cargo&quot;&gt;Cargo book&lt;/a&gt;.
+The first thing we needed to work out was how to handle having small reviewable chunks while having enough content to justify the document.
+We decided to hold off on merging anything until the start of this development cycle.
+The guide was introduced in
+&lt;a href&#x3D;&quot;https://github.com/rust-lang/cargo/pull/15970&quot;&gt;#15970&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Ideally, this guide wouldn&#x27;t be needed.
+In some cases,
+there are steps we can take to obsolete a section,
+like providing a meaningful unused dependency warning
+(&lt;a href&#x3D;&quot;https://github.com/rust-lang/cargo/issues/15813&quot;&gt;#15813&lt;/a&gt;)
+rather than suggesting tools that try to guess what dependencies are unused.
+In some cases,
+builds are slower by default as we try to balance several competing needs.
+However, even in those cases, we can evaluate whether we have the right balance or if there is another way to meet multiple needs
+(e.g. &lt;a href&#x3D;&quot;https://github.com/rust-lang/cargo/issues/15931&quot;&gt;#15931&lt;/a&gt;).
+We decided to link out to this content to help raise awareness of these efforts to track them or participate.&lt;/p&gt;
+&lt;p&gt;Going forward, we are going to need to figure out how to balance what optimizations to include and how to talk about them.
+How do we vet that an optimization is actually beneficial?
+How much of an improvement is worth mentioning?
+How niche or tricky of an optimization is worth including?
+We dealt a little bit with this when adding documentation about linkers (&lt;a href&#x3D;&quot;https://github.com/rust-lang/cargo/pull/15991&quot;&gt;#15991&lt;/a&gt;) because some platforms already have fast linkers and making linking slightly faster than that is very different than switching from a slow linker to a faster one.&lt;/p&gt;
+&lt;p&gt;We&#x27;re tracking further progress on this effort at
+&lt;a href&#x3D;&quot;https://github.com/rust-lang/cargo/issues/16119&quot;&gt;#16119&lt;/a&gt;.&lt;/p&gt;
+&lt;!--
+https://github.com/rust-lang/cargo/pull/16107
+https://github.com/rust-lang/cargo/pull/16108
+https://github.com/rust-lang/cargo/pull/16085
+https://github.com/rust-lang/cargo/pull/16078
+https://github.com/rust-lang/cargo/pull/15970
+https://github.com/rust-lang/cargo/pull/15924
+https://github.com/rust-lang/cargo/pull/15991
+--&gt;
+&lt;h3 id&#x3D;&quot;cargo-script&quot;&gt;&lt;a class&#x3D;&quot;anchor&quot; href&#x3D;&quot;#cargo-script&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/a&gt;
+Cargo Script&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Update from &lt;a href&#x3D;&quot;https://blog.rust-lang.org/inside-rust/2025/02/27/this-development-cycle-in-cargo-1.86/#cargo-script&quot;&gt;1.86&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href&#x3D;&quot;https://github.com/epage/&quot;&gt;epage&lt;/a&gt; posted the &lt;a href&#x3D;&quot;https://github.com/rust-lang/rust/pull/148051&quot;&gt;stabilization report&lt;/a&gt;
+for the Rust frontmatter syntax,
+the first step towards stabilizing Cargo script.
+Cargo&#x27;s frontmatter parser was also updated to better match rustc&#x27;s whitespace handling
+(&lt;a href&#x3D;&quot;https://github.com/rust-lang/cargo/pull/15975&quot;&gt;#15975&lt;/a&gt;)
+and error messages (
+&lt;a href&#x3D;&quot;https://github.com/rust-lang/cargo/pull/15952&quot;&gt;#15952&lt;/a&gt;,
+&lt;a href&#x3D;&quot;https://github.com/rust-lang/cargo/pull/15972&quot;&gt;#15972&lt;/a&gt;
+).&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;build-dir&lt;/code&gt; (&lt;a href&#x3D;&quot;https://doc.rust-lang.org/cargo/reference/build-cache.html&quot;&gt;docs&lt;/a&gt;),
+which split out of &lt;code&gt;target-dir&lt;/code&gt; in Cargo 1.91,
+was modeled off of Cargo script but implemented independently.
+In &lt;a href&#x3D;&quot;https://github.com/rust-lang/cargo/pull/16073&quot;&gt;#16073&lt;/a&gt;,
+Cargo script switched to using &lt;code&gt;build-dir &#x3D; &quot;{cargo-cache-home}/build/{workspace-path-hash}&quot;&lt;/code&gt;
+which is proposed to be the new &lt;code&gt;build-dir&lt;/code&gt; default eventually
+(&lt;a href&#x3D;&quot;https://github.com/rust-lang/cargo/issues/16147&quot;&gt;#16147&lt;/a&gt;).
+However, this did lead to issues with &lt;code&gt;memfd&lt;/code&gt;
+(&lt;a href&#x3D;&quot;https://github.com/rust-lang/cargo/issues/16110&quot;&gt;#16110&lt;/a&gt;)
+which still needs discussion.
+To match the semantics of &lt;code&gt;build-dir&lt;/code&gt; being for internals,
+Cargo script&#x27;s &lt;code&gt;Cargo.lock&lt;/code&gt; was moved into &lt;code&gt;build-dir&lt;/code&gt;
+(&lt;a href&#x3D;&quot;https://github.com/rust-lang/cargo/pull/16087&quot;&gt;#16087&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;In preparing to stabilize Cargo script,
+the Cargo team talked through some of the open questions.&lt;/p&gt;
+&lt;!-- team meeting 2025-09-30 for arg0 --&gt;
+&lt;p&gt;In &lt;a href&#x3D;&quot;https://github.com/rust-lang/cargo/issues/12870&quot;&gt;#12870&lt;/a&gt;,
+&lt;a href&#x3D;&quot;https://github.com/novafacing&quot;&gt;novafacing&lt;/a&gt; requested a way to get the script&#x27;s original path.
+&lt;code&gt;CARGO_MANIFEST_PATH&lt;/code&gt; was previously added but didn&#x27;t meet everyone&#x27;s needs.
+&lt;a href&#x3D;&quot;https://github.com/Nemo157&quot;&gt;Nemo157&lt;/a&gt; pointed out that ideally CLI parsers report the script, not the binary, in usage examples.
+There isn&#x27;t really a way for libraries like &lt;code&gt;clap&lt;/code&gt; to detect and workaround this,
+requiring hacks on the user end.
+They suggested Cargo override &lt;code&gt;arg[0]&lt;/code&gt; which is what CLI parsers use for usage examples.
+When we discussed this as a team, we were interested in people being able to get both pieces of information, the binary and the source.
+We were also concerned about platform support for setting &lt;code&gt;arg[0]&lt;/code&gt; and &lt;a href&#x3D;&quot;https://doc.rust-lang.org/std/env/fn.current_exe.html&quot;&gt;&lt;code&gt;current_exe&lt;/code&gt;&lt;/a&gt;.
+Granted, shebang support is also not supported on every platform.
+Python and Ruby report &lt;code&gt;arg[0]&lt;/code&gt; as the script but they have more control over the behavior.
+In the end, we decided on setting &lt;code&gt;arg[0]&lt;/code&gt; where possible, on a best-effort basis.
+We will leave &lt;code&gt;current_exe&lt;/code&gt; untouched to serve as the way to access the binary path.
+We would be open to people contributing support for more platforms,
+likely through contributing it to &lt;code&gt;std&lt;/code&gt;.
+Setting of &lt;code&gt;arg[0]&lt;/code&gt; was implemented in
+&lt;a href&#x3D;&quot;https://github.com/rust-lang/cargo/pull/16027&quot;&gt;#16027&lt;/a&gt;.&lt;/p&gt;
+&lt;!-- team meeting 2025-09-30 for manifest fields --&gt;
+&lt;p&gt;Cargo scripts do not support every manifest field,
+especially for the initial release.
+A long standing open question has been whether the manifest fields
+should be validated with an allowlist or a denylist.
+The concern is if a new field gets added,
+should we err on the side of it being supported or not?
+Forgetting to update the Cargo script allowlist on the release of a new feature is a poor experience.
+On the other hand, forgetting to update the denylist could mean we commit to a feature that we shouldn&#x27;t support.
+The ideal solution is to rely on the type system to ensure we exhausitvely the manifest fields.
+If that isn&#x27;t possible, we erred on the side of an allowlist.
+Thankfully, the implementation had already been updated to make it easy to rely on the type system for this.
+The validation logic was changed in
+&lt;a href&#x3D;&quot;https://github.com/rust-lang/cargo/pull/16026&quot;&gt;#16026&lt;/a&gt;.&lt;/p&gt;
+&lt;!-- team meeting 2025-10-07 for escaping package.name --&gt;
+&lt;p&gt;A cargo script&#x27;s file name gets turned into a
+&lt;a href&#x3D;&quot;https://doc.rust-lang.org/cargo/reference/manifest.html#the-name-field&quot;&gt;&lt;code&gt;package.name&lt;/code&gt;&lt;/a&gt;
+but not every script name is a valid &lt;code&gt;package.name&lt;/code&gt;.
+So far, Cargo has sanitized the file name into being a valid &lt;code&gt;package.name&lt;/code&gt;.
+But valid according to whom?
+General Cargo commands,
+&lt;code&gt;cargo new&lt;/code&gt;,
+or crates.io?
+So far, the &lt;code&gt;cargo new&lt;/code&gt; rules had been implemented.
+This is important to decide upfront because the sanitization results are visible through the binary&#x27;s name, &lt;code&gt;cargo metadata&lt;/code&gt;, and &lt;code&gt;--message-format json&lt;/code&gt;.
+As we stepped through each &lt;code&gt;cargo new&lt;/code&gt; rule,
+we found they were becoming less relevant through other efforts in Cargo, changes in Windows, etc.
+We decided to do the bare minimum sanitization needed for general Cargo commands.
+During the implementation of
+&lt;a href&#x3D;&quot;https://github.com/rust-lang/cargo/pull/16120&quot;&gt;#16120&lt;/a&gt;,
+&lt;a href&#x3D;&quot;https://github.com/epage/&quot;&gt;epage&lt;/a&gt;
+felt it was too premature to freely allow names that would collide with directory names from &lt;code&gt;build-dir&lt;/code&gt; being overlaid with &lt;code&gt;target-dir&lt;/code&gt;.
+Users can now move &lt;code&gt;build-dir&lt;/code&gt; out in Rust 1.91
+(&lt;a href&#x3D;&quot;https://github.com/rust-lang/cargo/pull/15833&quot;&gt;#15833&lt;/a&gt;).
+Changing this to be the default in Cargo is still under discussion
+(&lt;a href&#x3D;&quot;https://github.com/rust-lang/cargo/issues/16147&quot;&gt;#16147&lt;/a&gt;)
+and users could still move it back.
+Instead of sanitizing to avoid conflicts with &lt;code&gt;build-dir&lt;/code&gt; content,
+epage let this fall back to existing validation rules that will error for now.&lt;/p&gt;
+&lt;h3 id&#x3D;&quot;public-dependencies&quot;&gt;&lt;a class&#x3D;&quot;anchor&quot; href&#x3D;&quot;#public-dependencies&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/a&gt;
+Public dependencies&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Update from &lt;a href&#x3D;&quot;https://blog.rust-lang.org/inside-rust/2024/01/03/this-development-cycle-in-cargo-1-76/#rfc-3516-public-private-dependencies&quot;&gt;1.76&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;While this feature is largely blocked on the lint within rustc,
+this was further refined in Cargo.&lt;/p&gt;
+&lt;p&gt;&lt;a href&#x3D;&quot;https://github.com/jneem&quot;&gt;jneem&lt;/a&gt; experimented with Cargo rewriting the lint to provide Cargo-specific context in &lt;a href&#x3D;&quot;https://github.com/rust-lang/cargo/pull/16002&quot;&gt;#16002&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href&#x3D;&quot;https://github.com/sadmac7000&quot;&gt;sadmac7000&lt;/a&gt; changed &lt;code&gt;cargo add&lt;/code&gt;s version auto-selection to evaluate public dependencies in case the user intends to use them together
+(&lt;a href&#x3D;&quot;https://github.com/rust-lang/cargo/pull/15966&quot;&gt;#15966&lt;/a&gt;).&lt;/p&gt;
+&lt;!-- team meeting 2025-10-07 --&gt;
+&lt;p&gt;&lt;a href&#x3D;&quot;https://github.com/JohnScience&quot;&gt;JohnScience&lt;/a&gt; proposed &lt;code&gt;cargo tree --edges no-external&lt;/code&gt; as a way to see only local packages
+(&lt;a href&#x3D;&quot;https://github.com/rust-lang/cargo/issues/16043&quot;&gt;#16043&lt;/a&gt;).
+We have this today in &lt;code&gt;--depth workspace&lt;/code&gt; though maybe we could improve parts of our documentation about this.
+However, this got us to re-evaluate &lt;code&gt;--depth public&lt;/code&gt; which walks through all public public dependencies and no further
+(inspired by &lt;code&gt;--depth workspace&lt;/code&gt;).
+Would this be better served as &lt;code&gt;--edges public&lt;/code&gt;?
+The flag was originally added to help in analysing the lints current behavior
+(&lt;a href&#x3D;&quot;https://github.com/rust-lang/rust/issues/119428#issuecomment-2686384070&quot;&gt;rust#119428&lt;/a&gt;).
+Most &lt;code&gt;--edges&lt;/code&gt; opt-in specific edge types,
+while this would instead be applying a filter across edge types.
+The only other exception is &lt;code&gt;no-proc-macros&lt;/code&gt;.
+We decided that we were comfortable adding more edge filters and decided to change this (&lt;a href&#x3D;&quot;https://github.com/rust-lang/cargo/pull/16081&quot;&gt;#16081&lt;/a&gt;).&lt;/p&gt;
+&lt;h3 id&#x3D;&quot;build-dir-layout&quot;&gt;&lt;a class&#x3D;&quot;anchor&quot; href&#x3D;&quot;#build-dir-layout&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/a&gt;
+Build-dir layout&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Update from &lt;a href&#x3D;&quot;https://blog.rust-lang.org/inside-rust/2025/10/01/this-development-cycle-in-cargo-1.90/#misc&quot;&gt;1.90&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Cargo&#x27;s caches have traditionally been organized around the role they fulfil
+with &lt;code&gt;.fingerprint/&lt;/code&gt; housing the state for rebuild-detection for all packages
+while &lt;code&gt;deps/&lt;/code&gt; stores the build artifacts.
+This makes calling rustc easy, just pass it &lt;code&gt;deps/&lt;/code&gt; and it will figure out what files need to be loaded.&lt;/p&gt;
+&lt;p&gt;By mixing intermediate artifacts together like this,&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;if we were to GC the content, we&#x27;d need to track individual files for a build unit (&lt;a href&#x3D;&quot;https://github.com/rust-lang/cargo/issues/5026&quot;&gt;#5026&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;it is difficult to coordinate more granular locks (&lt;a href&#x3D;&quot;https://github.com/rust-lang/cargo/issues/4282&quot;&gt;#4282&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;it is more difficult to cache build unit artifacts across projects (&lt;a href&#x3D;&quot;https://github.com/rust-lang/cargo/issues/5931&quot;&gt;#5931&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;requires Cargo to make the file names unique (except on Windows) (&lt;a href&#x3D;&quot;https://github.com/rust-lang/cargo/issues/8332&quot;&gt;#8332&lt;/a&gt;)
+&lt;ul&gt;
+&lt;li&gt;and file collisions on Windows (&lt;a href&#x3D;&quot;https://github.com/rust-lang/cargo/issues/8794&quot;&gt;#8794&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;leads to bugs where project binaries can shadow system or Rust toolchain binaries on Windows because we have to put &lt;code&gt;deps/&lt;/code&gt; in &lt;code&gt;PATH&lt;/code&gt; for linking (&lt;a href&#x3D;&quot;https://github.com/rust-lang/cargo/issues/7919&quot;&gt;#7919&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The layout for intermediate build artifacts is an implementation detail which we can change.
+&lt;a href&#x3D;&quot;https://github.com/rust-lang/cargo/issues/15010&quot;&gt;#15010&lt;/a&gt;
+proposes changing the layout to be centered on the build unit the files belong to,
+rather than the role of the files.
+We have a single folder to track for GC, locking, and caching.
+A unique hash will be kept in the parent directory&#x27;s name,
+allowing us to reduce collisions of files and shadowing of binaries on Windows.
+This new layout was implemented in &lt;a href&#x3D;&quot;https://github.com/rust-lang/cargo/pull/15947&quot;&gt;#15947&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;There is a catch: many tools in the ecosystem depend on the layout.
+The reason &lt;a href&#x3D;&quot;https://github.com/ranger-ross&quot;&gt;ranger-ross&lt;/a&gt; added support for the new
+&lt;a href&#x3D;&quot;https://doc.rust-lang.org/cargo/reference/build-cache.html&quot;&gt;&lt;code&gt;build-dir&lt;/code&gt;&lt;/a&gt;
+was to serve as an easy for projects to test if they rely on internals of Cargo.&lt;/p&gt;
+&lt;p&gt;We can punt on finding alternative solutions to these projects,
+but that means each time we change the layout of the &lt;code&gt;build-dir&lt;/code&gt;,
+there is an ecosystem cost.
+Turns out, we might want to change it multiple times.
+The &lt;code&gt;build-dir&lt;/code&gt; is subdivided by &lt;code&gt;&amp;lt;profile&amp;gt;/&amp;lt;platform&amp;gt;/&lt;/code&gt;
+but that is mostly beneficial for locking purposes.
+If we had a new locking scheme
+(&lt;a href&#x3D;&quot;https://github.com/rust-lang/cargo/issues/4282&quot;&gt;#4282&lt;/a&gt;),
+we could reduce path lengths on Windows
+and allow intermediate artifact reuse between profiles and even platforms (e.g. build script builds).
+As I said earlier, the locking scheme is also blocked on the new layout.
+We either have to implement and stabilize them together or have two transitions.
+It doesn&#x27;t stop there.
+A new locking scheme may be benefited by us moving away from mutable intermediate artifacts
+which could balloon disk usage as each build for each edit of your source would have a distinct artifact.
+This would be benefitted by aggressive GC of the intermediate artifacts
+which is also blocked on the new layout.&lt;/p&gt;
+&lt;!-- team meeting 2025-10-21 --&gt;
+&lt;p&gt;As a team, we discussed this tricky path towards stabilization of the new layout.&lt;/p&gt;
+&lt;p&gt;After talking through the interaction between these different features,
+we leaned towards doing one layout change without blocking on any other work and evaluating how that goes to see how we should handle further layout changes.&lt;/p&gt;
+&lt;p&gt;It would be great if &lt;a href&#x3D;&quot;https://rustc-dev-guide.rust-lang.org/tests/crater.html&quot;&gt;crater&lt;/a&gt;
+could identify projects impacted by changing the layout.
+It may not help us when it is a build process extracting &lt;code&gt;build.rs&lt;/code&gt; generated artifacts or when running the tool being built.
+There may be some &lt;code&gt;-sys&lt;/code&gt; crate situations it might identify.
+Later,
+&lt;a href&#x3D;&quot;https://github.com/ehuss/&quot;&gt;ehuss&lt;/a&gt;
+posted on
+&lt;a href&#x3D;&quot;https://rust-lang.zulipchat.com/#narrow/channel/246057-t-cargo/topic/build-dir.20tool.20compatibility/near/546267015&quot;&gt;Zulip&lt;/a&gt;
+some preliminary investigations into what projects might be doing relying on the &lt;code&gt;build-dir&lt;/code&gt; layout.
+In addition to this type of inspection,
+we could change the layout on nightly-only to help identify impacted projects.&lt;/p&gt;
+&lt;p&gt;We are using &lt;code&gt;build-dir&lt;/code&gt; as an opt-in for people to evaluate both changing it itself and as a smoke test for a new layout.
+Even once we change the &lt;code&gt;build-dir&lt;/code&gt; location
+(&lt;a href&#x3D;&quot;https://github.com/rust-lang/cargo/issues/16147&quot;&gt;#16147&lt;/a&gt;),
+users will be able to opt-out.
+Should we do similar for the new layout itself?
+If we made the flag a proper &lt;a href&#x3D;&quot;https://doc.rust-lang.org/cargo/reference/config.html&quot;&gt;config&lt;/a&gt;,
+this would give the &lt;code&gt;build-dir&lt;/code&gt; layout more of a semblance of stability than is meant.
+This is also a maintenance burden.
+Supporting the two layouts already complicates things and has limited our changes to the new layout.
+Supporting the old layout for any period of time will likely require all features built on top of it to be conditioned on it until we are able to drop the old layout.
+A temporary environment variable to toggle the behavior may work.&lt;/p&gt;
+&lt;p&gt;At this point,
+it is on
+&lt;a href&#x3D;&quot;https://github.com/epage/&quot;&gt;epage&lt;/a&gt; and
+&lt;a href&#x3D;&quot;https://github.com/ranger-ross&quot;&gt;ranger-ross&lt;/a&gt;
+to come up with a concrete transition plan.&lt;/p&gt;
+&lt;h2 id&#x3D;&quot;misc&quot;&gt;&lt;a class&#x3D;&quot;anchor&quot; href&#x3D;&quot;#misc&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/a&gt;
+Misc&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href&#x3D;&quot;https://github.com/epage/&quot;&gt;epage&lt;/a&gt; continued their work on migrating existing Cargo messages to annotate-snippets (&lt;a href&#x3D;&quot;https://github.com/rust-lang/cargo/issues/15944&quot;&gt;#15944&lt;/a&gt;) in
+&lt;a href&#x3D;&quot;https://github.com/rust-lang/cargo/pull/15942&quot;&gt;#15942&lt;/a&gt;,
+&lt;a href&#x3D;&quot;https://github.com/rust-lang/cargo/pull/15943&quot;&gt;#15943&lt;/a&gt;,
+&lt;a href&#x3D;&quot;https://github.com/rust-lang/cargo/pull/15945&quot;&gt;#15945&lt;/a&gt;.
+&lt;a href&#x3D;&quot;https://github.com/jneem&quot;&gt;jneem&lt;/a&gt; joined in,
+posting
+&lt;a href&#x3D;&quot;https://github.com/rust-lang/cargo/pull/16035&quot;&gt;#16035&lt;/a&gt;,
+&lt;a href&#x3D;&quot;https://github.com/rust-lang/cargo/pull/16066&quot;&gt;#16066&lt;/a&gt;,
+&lt;a href&#x3D;&quot;https://github.com/rust-lang/cargo/pull/16113&quot;&gt;#16113&lt;/a&gt;,
+&lt;a href&#x3D;&quot;https://github.com/rust-lang/cargo/pull/16126&quot;&gt;#16126&lt;/a&gt; (&lt;em&gt;Update from &lt;a href&#x3D;&quot;https://blog.rust-lang.org/inside-rust/2025/10/01/this-development-cycle-in-cargo-1.90/#annotate-snippets&quot;&gt;1.90&lt;/a&gt;&lt;/em&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;a href&#x3D;&quot;https://github.com/weihanglo&quot;&gt;weihanglo&lt;/a&gt; posted initial support for structured, persistent logging for Cargo for performing build analysis (&lt;a href&#x3D;&quot;https://github.com/rust-lang/cargo/pull/16150&quot;&gt;#16150&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href&#x3D;&quot;https://github.com/weihanglo&quot;&gt;weihanglo&lt;/a&gt; cleaned up the config logic in preparation for &lt;a href&#x3D;&quot;https://doc.rust-lang.org/cargo/reference/unstable.html#config-include&quot;&gt;config-include&lt;/a&gt; to have an &lt;code&gt;optional&lt;/code&gt; key for not erroring on not-present configs.&lt;/li&gt;
+&lt;li&gt;&lt;a href&#x3D;&quot;https://github.com/Muscraft&quot;&gt;Muscraft&lt;/a&gt; proposed adopting &lt;code&gt;typos&lt;/code&gt; for spell checking Cargo (&lt;a href&#x3D;&quot;https://github.com/rust-lang/cargo/pull/16122&quot;&gt;#16122&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- team meeting 2025-10-21 --&gt;
+&lt;!-- config-include
+https://github.com/rust-lang/cargo/pull/16109
+https://github.com/rust-lang/cargo/pull/16105
+https://github.com/rust-lang/cargo/pull/16094
+https://github.com/rust-lang/cargo/pull/16100
+https://github.com/rust-lang/cargo/pull/16067
+https://github.com/rust-lang/cargo/pull/16084
+https://github.com/rust-lang/cargo/pull/16004
+--&gt;
+&lt;h2 id&#x3D;&quot;focus-areas-without-progress&quot;&gt;&lt;a class&#x3D;&quot;anchor&quot; href&#x3D;&quot;#focus-areas-without-progress&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/a&gt;
+Focus areas without progress&lt;/h2&gt;
+&lt;p&gt;These are areas of interest for Cargo team members with no reportable progress for this development-cycle.&lt;/p&gt;
+&lt;!--
+Project goals in need of owners
+- [Prototype Cargo build analysis](https://rust-lang.github.io/rust-project-goals/2025h2/cargo-build-analysis.html)
+- [Stabilize public/private dependencies](https://rust-lang.github.io/rust-project-goals/2025h2/pub-priv.html)
+- [Stabilize cargo-script](https://rust-lang.github.io/rust-project-goals/2025h2/cargo-script.html)
+- [Rework Cargo Build Dir Layout](https://rust-lang.github.io/rust-project-goals/2025h2/cargo-build-dir-layout.html)
+- [Prototype a new set of Cargo &quot;plumbing&quot; commands](https://rust-lang.github.io/rust-project-goals/2025h2/cargo-plumbing.html)
+- [Finish the libtest json output experiment](https://rust-lang.github.io/rust-project-goals/2025h2/libtest-json.html)
+--&gt;
+&lt;p&gt;Ready-to-develop:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href&#x3D;&quot;https://doc.rust-lang.org/nightly/cargo/reference/unstable.html#open-namespaces&quot;&gt;Open namespaces&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!--
+- [Auto-generate completions](https://github.com/rust-lang/cargo/issues/6645)
+  - See [clap-rs/clap#3166](https://github.com/clap-rs/clap/issues/3166)
+--&gt;
+&lt;!--
+Needs design and/or experimentation:
+--&gt;
+&lt;p&gt;Planning:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href&#x3D;&quot;https://github.com/rust-lang/cargo/issues/3126&quot;&gt;Disabling of default features&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href&#x3D;&quot;https://github.com/rust-lang/rfcs/pull/3416&quot;&gt;RFC #3416: &lt;code&gt;features&lt;/code&gt; metadata&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href&#x3D;&quot;https://github.com/rust-lang/rfcs/pull/3487&quot;&gt;RFC #3487: visibility&lt;/a&gt; (visibility)&lt;/li&gt;
+&lt;li&gt;&lt;a href&#x3D;&quot;https://github.com/rust-lang/rfcs/pull/3486&quot;&gt;RFC #3486: deprecation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href&#x3D;&quot;https://doc.rust-lang.org/cargo/reference/unstable.html#list-of-unstable-features&quot;&gt;Unstable features&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href&#x3D;&quot;https://internals.rust-lang.org/t/pre-rfc-mutually-excusive-global-features/19618&quot;&gt;Pre-RFC: Global, mutually exclusive features&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href&#x3D;&quot;https://github.com/rust-lang/rfcs/pull/3553&quot;&gt;RFC #3553: Cargo SBOM Fragment&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href&#x3D;&quot;https://github.com/rust-lang/cargo/issues/1734&quot;&gt;OS-native config/cache directories (ie XDG support)&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href&#x3D;&quot;https://internals.rust-lang.org/t/pre-rfc-split-cargo-home/19747&quot;&gt;Phase 1 Pre-RFC&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id&#x3D;&quot;how-you-can-help&quot;&gt;&lt;a class&#x3D;&quot;anchor&quot; href&#x3D;&quot;#how-you-can-help&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/a&gt;
+How you can help&lt;/h2&gt;
+&lt;p&gt;If you have ideas for improving cargo,
+we recommend first checking &lt;a href&#x3D;&quot;https://github.com/rust-lang/cargo/issues/&quot;&gt;our backlog&lt;/a&gt;
+and then exploring the idea on &lt;a href&#x3D;&quot;https://internals.rust-lang.org/c/tools-and-infrastructure/cargo/15&quot;&gt;Internals&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If there is a particular issue that you are wanting resolved that wasn&#x27;t discussed here,
+some steps you can take to help move it along include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Summarizing the existing conversation (example:
+&lt;a href&#x3D;&quot;https://github.com/rust-lang/cargo/issues/2644#issuecomment-1489371226&quot;&gt;Better support for docker layer caching&lt;/a&gt;,
+&lt;a href&#x3D;&quot;https://github.com/rust-lang/cargo/issues/8728#issuecomment-1610265047&quot;&gt;Change in &lt;code&gt;Cargo.lock&lt;/code&gt; policy&lt;/a&gt;,
+&lt;a href&#x3D;&quot;https://github.com/rust-lang/cargo/issues/9930#issuecomment-1489089277&quot;&gt;MSRV-aware resolver&lt;/a&gt;
+)&lt;/li&gt;
+&lt;li&gt;Document prior art from other ecosystems so we can build on the work others have done and make something familiar to users, where it makes sense&lt;/li&gt;
+&lt;li&gt;Document related problems and solutions within Cargo so we see if we are solving to the right layer of abstraction&lt;/li&gt;
+&lt;li&gt;Building on those posts, propose a solution that takes into account the above information and cargo&#x27;s compatibility requirements (&lt;a href&#x3D;&quot;https://github.com/rust-lang/cargo/issues/9930#issuecomment-1489269471&quot;&gt;example&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We are available to help mentor people for
+&lt;a href&#x3D;&quot;https://doc.crates.io/contrib/issues.html#issue-status-labels&quot;&gt;S-accepted issues&lt;/a&gt;
+on
+&lt;a href&#x3D;&quot;https://rust-lang.zulipchat.com/#narrow/stream/246057-t-cargo&quot;&gt;Zulip&lt;/a&gt;
+and you can talk to us in real-time during
+&lt;a href&#x3D;&quot;https://github.com/rust-lang/cargo/wiki/Office-Hours&quot;&gt;Contributor Office Hours&lt;/a&gt;.
+If you are looking to help with one of the bigger projects mentioned here and are just starting out,
+&lt;a href&#x3D;&quot;https://doc.crates.io/contrib/process/index.html#working-on-issues&quot;&gt;fixing some issues&lt;/a&gt;
+will help familiarize yourself with the process and expectations,
+making things go more smoothly.
+If you&#x27;d like to tackle something
+&lt;a href&#x3D;&quot;https://doc.crates.io/contrib/issues.html#issue-status-labels&quot;&gt;without a mentor&lt;/a&gt;,
+the expectations will be higher on what you&#x27;ll need to do on your own.&lt;/p&gt;
+</content>
+
+        <author>
+            <name>Ed Page</name>
+        </author>
+    </entry>
+    <entry>
+        <title>Program management update — October 2025</title>
+        <link rel="alternate" href="https://blog.rust-lang.org/inside-rust/2025/11/19/program-management-update--october-2025/" type="text/html" title="Program management update — October 2025" />
+        <published>2025-11-19T00:00:00+00:00</published>
+        <updated>2025-11-19T00:00:00+00:00</updated>
+        <id>https://blog.rust-lang.org/inside-rust/2025/11/19/program-management-update--october-2025/</id>
+        <content type="html" xml:base="https://blog.rust-lang.org/inside-rust/2025/11/19/program-management-update--october-2025/">&lt;h1 id&#x3D;&quot;program-management-update-october-2025&quot;&gt;&lt;a class&#x3D;&quot;anchor&quot; href&#x3D;&quot;#program-management-update-october-2025&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/a&gt;
+Program management update — October 2025&lt;/h1&gt;
+&lt;p&gt;Lots of things happened in October! I&#x27;ve added a new section containing things that happened throughout the broader Project. I think it&#x27;s useful to highlight these, but I don&#x27;t want to conflate them with my own work. These posts also serve as accountability to the Project, so it&#x27;s important to make that distinction.&lt;/p&gt;
+&lt;p&gt;This post also contains a long list of things I &lt;em&gt;haven&#x27;t done&lt;/em&gt;.&lt;/p&gt;
+&lt;h2 id&#x3D;&quot;leadership-council-meeting-summaries&quot;&gt;&lt;a class&#x3D;&quot;anchor&quot; href&#x3D;&quot;#leadership-council-meeting-summaries&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/a&gt;
+Leadership Council meeting summaries&lt;/h2&gt;
+&lt;p&gt;James Munns and Kobzol brought up that while having the Council minutes open is valuable, they are difficult to skim, and it takes time and effort to figure out what was discussed.&lt;/p&gt;
+&lt;p&gt;To help with this, I&#x27;ve started posting short summaries of the Council meetings to &lt;a href&#x3D;&quot;https://rust-lang.zulipchat.com/#narrow/channel/392734-council/topic/Meeting.20minutes.20.26.20summaries/with/548003969&quot;&gt;Zulip&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I&#x27;d also like to remind everyone that the meetings are generally open to anyone who&#x27;s interested (&lt;a href&#x3D;&quot;https://github.com/rust-lang/calendar/blob/main/council.toml&quot;&gt;they happen every two weeks on Fridays from 11:30 a.m. to 12:30 p.m. in the &lt;code&gt;America/New_York&lt;/code&gt; time zone&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;The topics discussed are tracked publicly as &lt;a href&#x3D;&quot;https://github.com/rust-lang/leadership-council/issues&quot;&gt;issues in the &lt;code&gt;leadership-council&lt;/code&gt; repository&lt;/a&gt;, and that&#x27;s where the &lt;a href&#x3D;&quot;https://github.com/rust-lang/leadership-council/tree/main/minutes/sync-meeting/&quot;&gt;minutes live, too&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id&#x3D;&quot;project-directors-selection-follow-up&quot;&gt;&lt;a class&#x3D;&quot;anchor&quot; href&#x3D;&quot;#project-directors-selection-follow-up&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/a&gt;
+Project Directors selection follow-up&lt;/h2&gt;
+&lt;p&gt;A month ago, the Council selected three new Project Directors to join the board:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Niko Matsakis&lt;/li&gt;
+&lt;li&gt;David Wood&lt;/li&gt;
+&lt;li&gt;Jack Huey&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;They replaced Scott McMurray, Jakob Degen, and Santiago Pastorino. You can read more &lt;a href&#x3D;&quot;https://rustfoundation.org/media/introducing-the-rust-foundations-newest-project-directors-october-2025/&quot;&gt;in the Foundation&#x27;s update post&lt;/a&gt; and the &lt;a href&#x3D;&quot;https://blog.rust-lang.org/2025/10/15/announcing-the-new-rust-project-directors-2025/&quot;&gt;announcement on the Rust Blog&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Niko, David, and Jack, congratulations!&lt;/p&gt;
+&lt;p&gt;As the facilitator of the process, I let all the candidates know right away and relayed feedback to those who weren&#x27;t selected.&lt;/p&gt;
+&lt;p&gt;I&#x27;ve started a retrospective on the selection process and collected feedback on it. I&#x27;ll put together a summary and propose updates and clarifications in the form of PRs &lt;a href&#x3D;&quot;https://github.com/rust-lang/leadership-council/&quot;&gt;against the &lt;code&gt;leadership-council&lt;/code&gt; repo&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id&#x3D;&quot;project-goals&quot;&gt;&lt;a class&#x3D;&quot;anchor&quot; href&#x3D;&quot;#project-goals&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/a&gt;
+Project Goals&lt;/h2&gt;
+&lt;p&gt;Niko wrote the &lt;a href&#x3D;&quot;https://blog.rust-lang.org/2025/10/28/project-goals-2025h2/&quot;&gt;blog post announcing the 2025 H2 goals&lt;/a&gt;, but then got busy, so I addressed the outstanding feedback and got it published. We&#x27;ve set it up so I&#x27;m a collaborator on his blog fork. Next time, I&#x27;ll be able to make edits to his goal PRs without having to wait for him. That should let us move more quickly.&lt;/p&gt;
+&lt;p&gt;Niko also added a &lt;a href&#x3D;&quot;https://rust-lang.github.io/rust-project-goals/2025h2/reports.html&quot;&gt;Reports section&lt;/a&gt; to the &lt;a href&#x3D;&quot;https://rust-lang.github.io/rust-project-goals/&quot;&gt;Rust Project Goals website&lt;/a&gt;. The reports are automatically populated from the comments in &lt;a href&#x3D;&quot;https://github.com/rust-lang/rust-project-goals/issues?q&#x3D;is%3Aissue%20state%3Aopen%20label%3AC-tracking-issue&quot;&gt;goal tracking issues&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;We&#x27;re meeting regularly and have mapped out the next steps: I&#x27;ll keep publishing the monthly updates (the September one slipped, but &lt;a href&#x3D;&quot;https://blog.rust-lang.org/2025/11/19/Project-Goals-2025-September-Update/&quot;&gt;it is now up&lt;/a&gt;), and we came up with a few ideas for running the program next year that &lt;a href&#x3D;&quot;https://rust-lang.zulipchat.com/#narrow/channel/435869-project-goals/topic/2026.20plans/with/553239242&quot;&gt;Niko will write up. We&#x27;ll then discuss it with people who are interested&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;We&#x27;re thinking about either switching to an annual cadence or shifting the goal periods to start in April and October, with planning happening six weeks prior and the RFC being opened at the beginning of April or October. We&#x27;ll bring this up to the Project and listen to its suggestions and any other feedback.&lt;/p&gt;
+&lt;p&gt;As mentioned before, I will be more directly involved in this.&lt;/p&gt;
+&lt;h3 id&#x3D;&quot;build-std-rfcs-posted&quot;&gt;&lt;a class&#x3D;&quot;anchor&quot; href&#x3D;&quot;#build-std-rfcs-posted&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/a&gt;
+&lt;code&gt;build-std&lt;/code&gt; RFCs posted!&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;build-std&lt;/code&gt; is a feature that has existed on nightly for a really long time and has been desired for even longer.&lt;/p&gt;
+&lt;p&gt;It is the ability to build the Rust standard library (std, core, etc.) on stable Rust.&lt;/p&gt;
+&lt;p&gt;This has taken a very long time, in part because many people need this but have very specific requirements, and so there have been a plethora of proposals and experiments.&lt;/p&gt;
+&lt;p&gt;Starting this year, we&#x27;ve had regular meetings and design sessions with representatives from various teams. David Wood has now posted three (out of five) RFCs outlining the first steps. If this is something you&#x27;re interested in, go take a look!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href&#x3D;&quot;https://github.com/rust-lang/rfcs/issues/3873&quot;&gt;build-std: context (rfc#3873)&lt;/a&gt; lays down the history and context of the various endeavors in this space&lt;/li&gt;
+&lt;li&gt;&lt;a href&#x3D;&quot;https://github.com/rust-lang/rfcs/issues/3874&quot;&gt;build-std: always (rfc#3874)&lt;/a&gt; adds a Cargo configuration option to trigger the rebuild of the standard libraries your code depends on&lt;/li&gt;
+&lt;li&gt;&lt;a href&#x3D;&quot;https://github.com/rust-lang/rfcs/issues/3875&quot;&gt;build-std: explicit dependencies (rfc#3875)&lt;/a&gt; allows setting standard library crates as dependencies in &lt;code&gt;Cargo.toml&lt;/code&gt; explicitly&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can also take a look at the &lt;a href&#x3D;&quot;https://rust-lang.zulipchat.com/#narrow/channel/516120-project-goals.2F2025h1.2Fbuild-std&quot;&gt;build-std Zulip channel&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id&#x3D;&quot;inaugural-fls-team-meeting&quot;&gt;&lt;a class&#x3D;&quot;anchor&quot; href&#x3D;&quot;#inaugural-fls-team-meeting&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/a&gt;
+Inaugural FLS team meeting&lt;/h2&gt;
+&lt;p&gt;In March 2025, the Project &lt;a href&#x3D;&quot;https://blog.rust-lang.org/2025/03/26/adopting-the-fls/&quot;&gt;took over the development and maintenance of the FLS&lt;/a&gt;. It is a document (originally called the Ferrocene Language Specification) that describes Rust for the purposes of safety-critical work (e.g., the automotive industry). It is used to qualify toolchains based on Rust. The FLS was developed by Ferrous Systems and AdaCore and eventually donated to the Project.&lt;/p&gt;
+&lt;p&gt;This month, a new team was &lt;a href&#x3D;&quot;https://github.com/rust-lang/fls-team/blob/main/CHARTER.md&quot;&gt;chartered with maintaining and improving the document for the benefit of the Project and the safety-critical community&lt;/a&gt;. Before this, maintenance happened as part of the Spec team. There is a desire to define a specification covering the Rust language as a whole, but the FLS is a document that&#x27;s in use today, describing Rust as it is &lt;em&gt;implemented&lt;/em&gt; today (in contrast to the &lt;em&gt;intended&lt;/em&gt; behavior, which is what a spec would typically spell out) with an eye towards safety-critical qualification.&lt;/p&gt;
+&lt;p&gt;On Friday, 2025-10-31, the team had its inaugural meeting, which I joined and took notes. We expect that at some point, a lot of the discussion will be geared towards writing and reviewing pull requests and improving the structure of the document, where my presence won&#x27;t be as valuable.&lt;/p&gt;
+&lt;p&gt;Indeed, this is how the team maintaining the Rust reference operates, and there hasn&#x27;t been a need for my involvement there yet.&lt;/p&gt;
+&lt;p&gt;But for now, I&#x27;m attending the Spec and FLS meetings, taking notes for both, and making sure things don&#x27;t get dropped on the floor while the new structures are being formed.&lt;/p&gt;
+&lt;h2 id&#x3D;&quot;t-content&quot;&gt;&lt;a class&#x3D;&quot;anchor&quot; href&#x3D;&quot;#t-content&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/a&gt;
+T-content&lt;/h2&gt;
+&lt;p&gt;We&#x27;ve started editing and publishing the RustConf interviews. We have a few out:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href&#x3D;&quot;https://www.youtube.com/watch?v&#x3D;r7i-2wHtNjw&quot;&gt;Jan David Nose on the Rust Infrastructure Team&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href&#x3D;&quot;https://www.youtube.com/watch?v&#x3D;MgGsZmBNLO0&quot;&gt;Yuri Astrakhan on Rivian VW Tech and MapLibre&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href&#x3D;&quot;https://www.youtube.com/watch?v&#x3D;8iQN49ktdBo&quot;&gt;Jack Huey and Niko Matsakis on the Rust Vision Doc team&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href&#x3D;&quot;https://www.youtube.com/watch?v&#x3D;-o8W6wcJlBY&quot;&gt;Bart Massey on Rust Embedded Working Group&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And more will be coming soon. You can check out the &lt;a href&#x3D;&quot;https://www.youtube.com/playlist?list&#x3D;PL85XCvVPmGQjYASSxbFI7tf7lts-6bDCi&quot;&gt;full playlist for the Rust Content videos on YouTube&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I haven&#x27;t done any editing myself (yet?), but I&#x27;ve listened to them and given feedback. The recordings work really well as audio-only, too, and we&#x27;ve been thinking about releasing them as podcasts as well as recording interviews remotely (the Content team encompasses far more than just conference interviews).&lt;/p&gt;
+&lt;h2 id&#x3D;&quot;fmt-write-infrastructure&quot;&gt;&lt;a class&#x3D;&quot;anchor&quot; href&#x3D;&quot;#fmt-write-infrastructure&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/a&gt;
+&lt;code&gt;fmt::Write&lt;/code&gt; infrastructure&lt;/h2&gt;
+&lt;p&gt;There have been multiple proposals (e.g., &lt;a href&#x3D;&quot;https://github.com/rust-lang/libs-team/issues/651&quot;&gt;ACP: Add API to write formatted data directly into a &lt;code&gt;Vec&amp;lt;u8&amp;gt;&lt;/code&gt; libs-team##651&lt;/a&gt; and &lt;a href&#x3D;&quot;https://github.com/rust-lang/libs-team/issues/133&quot;&gt;Add fmt::Write to io::Write adapter libs-team#133&lt;/a&gt;) to extend the write and formatting machinery.&lt;/p&gt;
+&lt;p&gt;Rust has two &lt;code&gt;Write&lt;/code&gt; traits: &lt;a href&#x3D;&quot;https://doc.rust-lang.org/std/io/trait.Write.html&quot;&gt;std::io::Write&lt;/a&gt; for writing out binary data into things like files and network devices; and &lt;a href&#x3D;&quot;https://doc.rust-lang.org/std/fmt/trait.Write.html&quot;&gt;std::fmt::Write&lt;/a&gt;, which &lt;a href&#x3D;&quot;https://doc.rust-lang.org/core/fmt/trait.Write.html&quot;&gt;also exists in &lt;code&gt;core&lt;/code&gt;&lt;/a&gt;, for writing UTF-8–encoded text. There&#x27;s clearly &lt;em&gt;some&lt;/em&gt; commonality there, but the traits accept different things and have different behaviors (e.g., &lt;code&gt;fmt::Write&lt;/code&gt; is not flushable) and error types. They&#x27;re broadly not compatible with one another.&lt;/p&gt;
+&lt;p&gt;This can get annoying if you want to write formatted UTF-8 text to a bytes interface (e.g., &lt;code&gt;io::Stdout&lt;/code&gt;, a file, or a &lt;code&gt;Vec&amp;lt;u8&amp;gt;&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;fmt::Write&lt;/code&gt; trait allows one to write individual characters, strings, and formatted strings into types that implement it. However, no such implementation exists for byte sinks. But Rust&#x27;s strings have a well-defined byte-based representation (&lt;code&gt;String&lt;/code&gt; is literally just a wrapper over &lt;code&gt;Vec&amp;lt;u8&amp;gt;&lt;/code&gt;, after all). That means you should be able to write string data into anything that accepts bytes without unnecessary ceremony.&lt;/p&gt;
+&lt;p&gt;Last month, there was an interesting discussion in the Libs-API Triage meeting on how we could substantially improve the situation, but because that got deep into the weeds, I scheduled a separate meeting where Josh Triplett and Amanieu d&#x27;Antras could talk it through.&lt;/p&gt;
+&lt;p&gt;Here&#x27;s what they came up with:&lt;/p&gt;
+&lt;p&gt;Define a new trait (tentatively named &lt;code&gt;WriteFmt&lt;/code&gt;) with a method that writes a &lt;code&gt;&amp;amp;str&lt;/code&gt; into it. It would have an &lt;em&gt;associated&lt;/em&gt; error type (i.e., the error is part of the trait definition, and when you &lt;code&gt;impl&lt;/code&gt; it, you specify the error type, too). And define a corresponding macro modeled after &lt;code&gt;write!&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;It could look something like this:&lt;/p&gt;
+&lt;pre data-lang&#x3D;&quot;rust&quot; class&#x3D;&quot;language-rust z-code&quot;&gt;&lt;code class&#x3D;&quot;language-rust&quot; data-lang&#x3D;&quot;rust&quot;&gt;&lt;span class&#x3D;&quot;z-source z-rust&quot;&gt;&lt;span class&#x3D;&quot;z-meta z-trait z-rust&quot;&gt;&lt;span class&#x3D;&quot;z-storage z-modifier z-rust&quot;&gt;pub&lt;/span&gt; &lt;span class&#x3D;&quot;z-storage z-type z-trait z-rust&quot;&gt;trait&lt;/span&gt; &lt;span class&#x3D;&quot;z-entity z-name z-trait z-rust&quot;&gt;WriteFmt&lt;/span&gt; &lt;span class&#x3D;&quot;z-meta z-block z-rust&quot;&gt;&lt;span class&#x3D;&quot;z-punctuation z-section z-block z-begin z-rust&quot;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class&#x3D;&quot;z-source z-rust&quot;&gt;&lt;span class&#x3D;&quot;z-meta z-trait z-rust&quot;&gt;&lt;span class&#x3D;&quot;z-meta z-block z-rust&quot;&gt;    &lt;span class&#x3D;&quot;z-storage z-type z-type z-rust&quot;&gt;type&lt;/span&gt; &lt;span class&#x3D;&quot;z-entity z-name z-type z-rust&quot;&gt;Error&lt;/span&gt;&lt;span class&#x3D;&quot;z-punctuation z-terminator z-rust&quot;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class&#x3D;&quot;z-source z-rust&quot;&gt;&lt;span class&#x3D;&quot;z-meta z-trait z-rust&quot;&gt;&lt;span class&#x3D;&quot;z-meta z-block z-rust&quot;&gt;    &lt;span class&#x3D;&quot;z-meta z-function z-rust&quot;&gt;&lt;span class&#x3D;&quot;z-meta z-function z-rust&quot;&gt;&lt;span class&#x3D;&quot;z-storage z-type z-function z-rust&quot;&gt;fn&lt;/span&gt; &lt;/span&gt;&lt;span class&#x3D;&quot;z-entity z-name z-function z-rust&quot;&gt;write_str&lt;/span&gt;&lt;/span&gt;&lt;span class&#x3D;&quot;z-meta z-function z-rust&quot;&gt;&lt;span class&#x3D;&quot;z-meta z-function z-parameters z-rust&quot;&gt;&lt;span class&#x3D;&quot;z-punctuation z-section z-parameters z-begin z-rust&quot;&gt;(&lt;/span&gt;&lt;span class&#x3D;&quot;z-keyword z-operator z-rust&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class&#x3D;&quot;z-storage z-modifier z-rust&quot;&gt;mut&lt;/span&gt; &lt;span class&#x3D;&quot;z-variable z-parameter z-rust&quot;&gt;self&lt;/span&gt;, &lt;span class&#x3D;&quot;z-variable z-parameter z-rust&quot;&gt;s&lt;/span&gt;&lt;span class&#x3D;&quot;z-punctuation z-separator z-rust&quot;&gt;:&lt;/span&gt; &lt;span class&#x3D;&quot;z-keyword z-operator z-rust&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class&#x3D;&quot;z-storage z-type z-rust&quot;&gt;str&lt;/span&gt;&lt;/span&gt;&lt;span class&#x3D;&quot;z-meta z-function z-rust&quot;&gt;&lt;span class&#x3D;&quot;z-meta z-function z-parameters z-rust&quot;&gt;&lt;span class&#x3D;&quot;z-punctuation z-section z-parameters z-end z-rust&quot;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class&#x3D;&quot;z-meta z-function z-rust&quot;&gt; &lt;span class&#x3D;&quot;z-meta z-function z-return-type z-rust&quot;&gt;&lt;span class&#x3D;&quot;z-punctuation z-separator z-rust&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class&#x3D;&quot;z-meta z-generic z-rust&quot;&gt;&lt;span class&#x3D;&quot;z-support z-type z-rust&quot;&gt;Result&lt;/span&gt;&lt;span class&#x3D;&quot;z-punctuation z-definition z-generic z-begin z-rust&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class&#x3D;&quot;z-punctuation z-section z-group z-begin z-rust&quot;&gt;(&lt;/span&gt;&lt;span class&#x3D;&quot;z-punctuation z-section z-group z-end z-rust&quot;&gt;)&lt;/span&gt;, &lt;span class&#x3D;&quot;z-meta z-path z-rust&quot;&gt;&lt;span class&#x3D;&quot;z-storage z-type z-rust&quot;&gt;&lt;span class&#x3D;&quot;z-storage z-type z-rust&quot;&gt;Self&lt;/span&gt;&lt;span class&#x3D;&quot;z-punctuation z-accessor z-rust&quot;&gt;::&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;Error&lt;span class&#x3D;&quot;z-punctuation z-definition z-generic z-end z-rust&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class&#x3D;&quot;z-punctuation z-terminator z-rust&quot;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class&#x3D;&quot;z-source z-rust&quot;&gt;&lt;span class&#x3D;&quot;z-meta z-trait z-rust&quot;&gt;&lt;span class&#x3D;&quot;z-meta z-block z-rust&quot;&gt;&lt;/span&gt;&lt;span class&#x3D;&quot;z-meta z-block z-rust&quot;&gt;&lt;span class&#x3D;&quot;z-punctuation z-section z-block z-end z-rust&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This would let both &lt;code&gt;io&lt;/code&gt; and &lt;code&gt;fmt&lt;/code&gt; use the same underlying trait. The associated error would let us specify that, e.g., writing to &lt;code&gt;String&lt;/code&gt; or &lt;code&gt;Vec&amp;lt;u8&amp;gt;&lt;/code&gt; would return a &lt;code&gt;Result&amp;lt;(), !&amp;gt;&lt;/code&gt;. Since such a call by definition can&#x27;t return an error, you wouldn&#x27;t have to handle the &lt;code&gt;Result&lt;/code&gt; in that case, and you wouldn&#x27;t need to handle the &quot;unused &lt;code&gt;std::result::Result&lt;/code&gt; that must be used&quot; warning.&lt;/p&gt;
+&lt;p&gt;This would require a different macro equivalent to the current &lt;code&gt;write!&lt;/code&gt;, but the hope is that we could switch from the old one to the new one over an edition.&lt;/p&gt;
+&lt;p&gt;The next step is to write an RFC.&lt;/p&gt;
+&lt;p&gt;I&#x27;m excited about this. It&#x27;s a clean proposal that unifies everything rather than adding workaround methods or adapter traits. It&#x27;s a great example of &quot;stability without stagnation.&quot;&lt;/p&gt;
+&lt;h2 id&#x3D;&quot;hiring-a-second-program-manager&quot;&gt;&lt;a class&#x3D;&quot;anchor&quot; href&#x3D;&quot;#hiring-a-second-program-manager&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/a&gt;
+Hiring a second program manager&lt;/h2&gt;
+&lt;p&gt;The Leadership Council is &lt;a href&#x3D;&quot;https://github.com/rust-lang/leadership-council/issues/234&quot;&gt;asking the Foundation to fund the Project Priorities budget in 2026&lt;/a&gt;. This is a pool of money that the Council would have at its discretion to pay for things it deems worthwhile for the Project. It is from this budget that the travel grants, program manager, and compiler ops roles are being paid.&lt;/p&gt;
+&lt;p&gt;In addition to being able to continue these initiatives, the Council is considering funding a second Program Manager.&lt;/p&gt;
+&lt;p&gt;Be aware that &lt;em&gt;this is a proposal&lt;/em&gt;; the funding has not been approved, and no role has been posted. It makes a lot of sense to me, and it might be a good idea to explain why.&lt;/p&gt;
+&lt;p&gt;Right now, this role has a bus factor of one. If I were to disappear (leave, be let go, or have a severe health issue), it would put the Project into a bind. Hiring a new person takes time, and training can be very time-consuming. For as long as the Project sees value in this role, losing its program manager would be a significant disruption.&lt;/p&gt;
+&lt;p&gt;Beyond that, even a short-ish absence can be (and has been) felt already. I will take breaks, go on holiday, attend a conference, and get sick. During those times, a lot of the work I&#x27;m doing would either not be done at all or would be done with difficulty.&lt;/p&gt;
+&lt;p&gt;Having two people helps because one of them can temporarily handle everything or at least make sure the most important things don&#x27;t get dropped.&lt;/p&gt;
+&lt;p&gt;It also means that I would be able to train the new PM without putting a burden on the teams.&lt;/p&gt;
+&lt;p&gt;If we find someone in a different time zone, even better! I&#x27;m based in Central Europe, and having someone in the Americas or East Asia to handle the American afternoons would be quite useful.&lt;/p&gt;
+&lt;p&gt;Finally, I am at capacity with my work. Between the meetings, follow-up, spending more time on Project Goals, and all the other things on my plate, I can keep going, but there are things the Project would like to get done that are becoming difficult to slot in.&lt;/p&gt;
+&lt;p&gt;Here are some of the things I&#x27;m struggling to find time for:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Regular reporting of Rust Foundation teams&#x27; work
+&lt;ul&gt;
+&lt;li&gt;The Foundation has several people working full-time on various useful initiatives: crates.io, security (code signing), infra, and C++ interop.&lt;/li&gt;
+&lt;li&gt;The Infra team posts regular updates, but the work of the other teams is less visible.&lt;/li&gt;
+&lt;li&gt;I&#x27;d like to reach out to each team and make sure regular updates are published.&lt;/li&gt;
+&lt;li&gt;Ideally, these would be regular conversations, possibly with the PM penning the updates.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Rust beginner resources
+&lt;ul&gt;
+&lt;li&gt;This is something that came from our Bevy discussions.&lt;/li&gt;
+&lt;li&gt;A lot of newcomers don&#x27;t have any programming background, much less any experience with Rust.&lt;/li&gt;
+&lt;li&gt;Conversely, a lot of even beginner-targeted resources expect the reader to be familiar with programming in general.&lt;/li&gt;
+&lt;li&gt;There may be broader interest between gamedev, Rust Edu, etc., to pool existing resources together and build more beginner-friendly education resources through the lens of building games.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;GPU support for scientific computing and machine learning
+&lt;ul&gt;
+&lt;li&gt;People are working on this, we should reach out and see if there&#x27;s any support from the Project they would want.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Rust Editions
+&lt;ul&gt;
+&lt;li&gt;Support future editions, and help with tooling, updates, calls for testing, etc.&lt;/li&gt;
+&lt;li&gt;This is a brand-new endeavor I will pick up, but I don&#x27;t have a lot of time to work on it right now.&lt;/li&gt;
+&lt;li&gt;When it comes, I&#x27;ll have to reprioritize my work to support this, but splitting the goals and editions burdens between two PMs would be really helpful.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Publish a blog post about the Style team: its history, what it does, and a call for contributions
+&lt;ul&gt;
+&lt;li&gt;The Style team has been resource-starved for a long time, and some of the rustfmt work is being blocked by it.&lt;/li&gt;
+&lt;li&gt;This needs Caleb and me to find some time to talk (scheduling this has been difficult).&lt;/li&gt;
+&lt;li&gt;After our discussions, I&#x27;ll write a blog post explaining what&#x27;s going on and hopefully drive interested people to contribute.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Deeper engagement with the Content team (interviewing, editing, and writing)&lt;/li&gt;
+&lt;li&gt;Write a post about how the Foundation, Project Directors, and Leadership Council all fit together, what they do, etc.&lt;/li&gt;
+&lt;li&gt;Write a summary of what the various Rust teams do, how they operate, and how to get involved
+&lt;ul&gt;
+&lt;li&gt;I&#x27;ve met people who think they want to contribute to the compiler, but their actual interest lies in, e.g., the libs or lang teams.&lt;/li&gt;
+&lt;li&gt;There&#x27;s been interest in clarifying the situation, giving an overview, and linking to each team&#x27;s onboarding docs, issues, etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Write a Rust Glossary and Pronunciation Guide
+&lt;ul&gt;
+&lt;li&gt;Rust has a lot of terminology that Project members are broadly familiar with but outsiders might not be.&lt;/li&gt;
+&lt;li&gt;This would be an official document that would explain that, e.g., &lt;code&gt;fn foo() -&amp;gt; Vec&amp;lt;&amp;amp;&#x27;static str&amp;gt;&lt;/code&gt; is &quot;a function foo that returns a vec of static string slices,&quot; that &lt;code&gt;&amp;amp;[(Point, Tile)]&lt;/code&gt; is a &quot;slice of tuples of Point and Tile,&quot; or that &lt;code&gt;&amp;amp;LinkedList&amp;lt;T&amp;gt;&lt;/code&gt; is a &quot;shared reference to a linked list of T.&quot;&lt;/li&gt;
+&lt;li&gt;It would also cover how these things are commonly pronounced (&lt;code&gt;VecDeque&lt;/code&gt; &#x3D; &quot;vec deck&quot;, &lt;code&gt;char&lt;/code&gt; either as in &lt;strong&gt;char&lt;/strong&gt;&lt;em&gt;acter&lt;/em&gt; or &lt;strong&gt;char&lt;/strong&gt;&lt;em&gt;coal&lt;/em&gt;), etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Others I am actively working on, but they&#x27;re going slowly:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Share the retrospective on the Project Directors election and propose clarifications in the docs.&lt;/li&gt;
+&lt;li&gt;Publish the C++ interop report from RustConf.&lt;/li&gt;
+&lt;li&gt;Improve the Rust Project Goal tooling (automation, CI, rendering/stylistic fixes, and new views into the data).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;So yes, as far as I&#x27;m concerned, having another PM would be really useful.&lt;/p&gt;
+&lt;h2 id&#x3D;&quot;worth-a-look&quot;&gt;&lt;a class&#x3D;&quot;anchor&quot; href&#x3D;&quot;#worth-a-look&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/a&gt;
+Worth a look&lt;/h2&gt;
+&lt;p&gt;There have been a few announcements that I had no direct involvement in but that may be good to be aware of.&lt;/p&gt;
+&lt;h3 id&#x3D;&quot;all-hands-2026-travel-survey-reminder&quot;&gt;&lt;a class&#x3D;&quot;anchor&quot; href&#x3D;&quot;#all-hands-2026-travel-survey-reminder&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/a&gt;
+All Hands 2026 travel survey reminder&lt;/h3&gt;
+&lt;p&gt;There&#x27;s going to be another All Hands in 2026! \o/&lt;/p&gt;
+&lt;p&gt;It will take place in Utrecht, the Netherlands, as part of RustWeek, hosted by RustNL (just like in 2025).&lt;/p&gt;
+&lt;p&gt;If you&#x27;re thinking of going, please fill out the &lt;a href&#x3D;&quot;https://forms.gle/GhkvDSfdBaYHUrRJ7&quot;&gt;Rust All Hands 2026 Interest Form&lt;/a&gt;. If you need financial support to get there, you can put that in, too. The organizers can&#x27;t make any promises now, but they&#x27;ll do their best to make sure everyone can join.&lt;/p&gt;
+&lt;p&gt;You can read more in &lt;a href&#x3D;&quot;https://blog.rust-lang.org/inside-rust/2025/09/30/all-hands-2026/&quot;&gt;Mara&#x27;s announcement post&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id&#x3D;&quot;funding-rust-maintainers&quot;&gt;&lt;a class&#x3D;&quot;anchor&quot; href&#x3D;&quot;#funding-rust-maintainers&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/a&gt;
+Funding Rust maintainers&lt;/h3&gt;
+&lt;p&gt;The question of supporting Rust maintainers in a sustainable fashion has been brought up again.&lt;/p&gt;
+&lt;p&gt;Features typically garner more attention, and they&#x27;re often what sponsors are looking to fund, but without code reviews, fixes, and general maintenance, features will become slow to impossible to land. There are several highly desirable capabilities that are waiting for the new trait solver or borrow checker capabilities, for example. There are also teams that rely on one or two people, which makes it difficult to even stay afloat, much less add things Rust engineers and companies care about.&lt;/p&gt;
+&lt;p&gt;To support people doing this work, the Rust Foundation &lt;a href&#x3D;&quot;https://rustfoundation.org/media/announcing-the-rust-foundation-maintainers-fund/&quot;&gt;announced it will set up a maintainers fund&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Similarly, &lt;a href&#x3D;&quot;https://rustnl.org/fund/&quot;&gt;RustNL is seeking sponsors to support maintainers as well&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;These efforts sprung up independently, but their timing is not a coincidence. There have recently been a few instances of long-term Rust maintainers losing their jobs (putting their ability to continue their fantastic contributions at the same level in question), and this is an ongoing topic in free and open source software in general.&lt;/p&gt;
+&lt;p&gt;I&#x27;m really excited to see this and hope that this might be something we can get sponsors to provide funds for as well (donating money can be easier than employing a person dedicated to software maintenance).&lt;/p&gt;
+&lt;h3 id&#x3D;&quot;seven-new-compiler-team-members&quot;&gt;&lt;a class&#x3D;&quot;anchor&quot; href&#x3D;&quot;#seven-new-compiler-team-members&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/a&gt;
+Seven new Compiler team members!&lt;/h3&gt;
+&lt;p&gt;The Compiler team keeps growing:&lt;/p&gt;
+&lt;p&gt;&lt;a href&#x3D;&quot;https://blog.rust-lang.org/inside-rust/2025/10/28/compiler-team-new-members/&quot;&gt;https://blog.rust-lang.org/inside-rust/2025/10/28/compiler-team-new-members/&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id&#x3D;&quot;infrastructure-team-2025-q3-recap-and-q4-plan&quot;&gt;&lt;a class&#x3D;&quot;anchor&quot; href&#x3D;&quot;#infrastructure-team-2025-q3-recap-and-q4-plan&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/a&gt;
+Infrastructure Team 2025 Q3 Recap and Q4 Plan&lt;/h3&gt;
+&lt;p&gt;The Infra team posted its quarterly update and plan:&lt;/p&gt;
+&lt;p&gt;&lt;a href&#x3D;&quot;https://blog.rust-lang.org/inside-rust/2025/10/16/infrastructure-team-q3-recap-and-q4-plan/&quot;&gt;https://blog.rust-lang.org/inside-rust/2025/10/16/infrastructure-team-q3-recap-and-q4-plan/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;There are lots of interesting bits there: the infrastructure got more robust (critical data backups on two cloud providers, alerts set up for CDN issues), developer experience improved, and &lt;a href&#x3D;&quot;https://rust-lang.org/&quot;&gt;https://rust-lang.org/&lt;/a&gt; is now a static website.&lt;/p&gt;
+&lt;p&gt;Give it a look!&lt;/p&gt;
+&lt;h2 id&#x3D;&quot;stats&quot;&gt;&lt;a class&#x3D;&quot;anchor&quot; href&#x3D;&quot;#stats&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/a&gt;
+Stats&lt;/h2&gt;
+&lt;p&gt;Total words of meeting minutes written: 224.2k (June–October)&lt;/p&gt;
+&lt;p&gt;Meetings attended: 32&lt;/p&gt;
+&lt;p&gt;Total words of meeting minutes written (October): 54.3k&lt;/p&gt;
+&lt;p&gt;Average (mean) word count per team meeting:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Cargo: 2.3k&lt;/li&gt;
+&lt;li&gt;Lang triage: 5.6k&lt;/li&gt;
+&lt;li&gt;Libs-API: 4.7k&lt;/li&gt;
+&lt;li&gt;Leadership council: 3.5k&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+
+        <author>
+            <name>Tomas Sedovic</name>
+        </author>
+    </entry>
+    <entry>
+        <title>Infrastructure announcement Zulip channel</title>
+        <link rel="alternate" href="https://blog.rust-lang.org/inside-rust/2025/11/16/infra-announcement-zulip-channel/" type="text/html" title="Infrastructure announcement Zulip channel" />
+        <published>2025-11-16T00:00:00+00:00</published>
+        <updated>2025-11-16T00:00:00+00:00</updated>
+        <id>https://blog.rust-lang.org/inside-rust/2025/11/16/infra-announcement-zulip-channel/</id>
+        <content type="html" xml:base="https://blog.rust-lang.org/inside-rust/2025/11/16/infra-announcement-zulip-channel/">&lt;p&gt;The &lt;a href&#x3D;&quot;https://rust-lang.org/governance/teams/infra/#team-infra&quot;&gt;Infrastructure Team&lt;/a&gt; is working on improving communication for
+project infrastructure changes that may impact project team members and &lt;a href&#x3D;&quot;https://forge.rust-lang.org/infra/docs/dev-desktop.html&quot;&gt;Dev
+Desktop&lt;/a&gt; users.&lt;/p&gt;
+&lt;p&gt;We are creating a new &lt;strong&gt;low traffic&lt;/strong&gt; Zulip channel, &lt;a href&#x3D;&quot;https://rust-lang.zulipchat.com/#narrow/channel/533458-t-infra.2Fannouncements&quot;&gt;&lt;code&gt;#infra/announcements&lt;/code&gt;&lt;/a&gt;,
+dedicated to infrastructure change announcements. Examples of announcement
+topics may include, but are not limited to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Commissioning/decommissioning of &lt;a href&#x3D;&quot;https://forge.rust-lang.org/infra/docs/dev-desktop.html&quot;&gt;Dev Desktops&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Significant CI changes&lt;/li&gt;
+&lt;li&gt;Significant permission changes&lt;/li&gt;
+&lt;li&gt;Significant prolonged outages of infrastructure services&lt;/li&gt;
+&lt;li&gt;... and other significant events which the Infrastructure Team anticipates may
+impact project members.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Transient outages will &lt;em&gt;not&lt;/em&gt; be posted to in this announcement channel to
+maintain a &lt;strong&gt;high signal-to-noise ratio&lt;/strong&gt; of this announcement channel.&lt;/p&gt;
+&lt;p&gt;We will subscribe:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;All project team members&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;gsoc-contributors&lt;/code&gt;, &lt;code&gt;ospp-contributors&lt;/code&gt; and &lt;code&gt;cloud-compute&lt;/code&gt; marker team
+members&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;with registered Zulip IDs to the dedicated &lt;a href&#x3D;&quot;https://rust-lang.zulipchat.com/#narrow/channel/533458-t-infra.2Fannouncements&quot;&gt;&lt;code&gt;#infra/announcements&lt;/code&gt; zulip
+channel&lt;/a&gt;.&lt;sup class&#x3D;&quot;footnote-reference&quot; id&#x3D;&quot;fr-mute-1&quot;&gt;&lt;a href&#x3D;&quot;#fn-mute&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;For project team members without registered Zulip IDs, you are encouraged to do
+so by updating your &lt;code&gt;people/&amp;lt;handle&amp;gt;.toml&lt;/code&gt; entry in the &lt;a href&#x3D;&quot;https://github.com/rust-lang/team&quot;&gt;rust-lang/team&lt;/a&gt;
+repository so that the Infrastructure Team can consistently announce project
+infrastructure changes that may impact you.&lt;/p&gt;
+&lt;section class&#x3D;&quot;footnotes&quot;&gt;
+&lt;ol class&#x3D;&quot;footnotes-list&quot;&gt;
+&lt;li id&#x3D;&quot;fn-mute&quot;&gt;
+&lt;p&gt;Note that you can mute specific topics that do not concern you
+specifically. We adopted this &quot;blanket&quot; announce approach because in our
+experience, not reaching impacted project team members and &lt;a href&#x3D;&quot;https://forge.rust-lang.org/infra/docs/dev-desktop.html&quot;&gt;Dev
+Desktop&lt;/a&gt; users is significantly more problematic. &lt;a href&#x3D;&quot;#fr-mute-1&quot;&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</content>
+
+        <author>
+            <name>Jieyou Xu</name>
+        </author>
+    </entry>
+    <entry>
+        <title>Announcing seven new members of the compiler team</title>
+        <link rel="alternate" href="https://blog.rust-lang.org/inside-rust/2025/10/28/compiler-team-new-members/" type="text/html" title="Announcing seven new members of the compiler team" />
+        <published>2025-10-28T00:00:00+00:00</published>
+        <updated>2025-10-28T00:00:00+00:00</updated>
+        <id>https://blog.rust-lang.org/inside-rust/2025/10/28/compiler-team-new-members/</id>
+        <content type="html" xml:base="https://blog.rust-lang.org/inside-rust/2025/10/28/compiler-team-new-members/">&lt;p&gt;Just &lt;a href&#x3D;&quot;https://blog.rust-lang.org/inside-rust/2025/05/30/compiler-team-new-members/&quot;&gt;a few months ago we announced five new members of the compiler team&lt;/a&gt; but now we have seven more members to announce:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href&#x3D;&quot;https://github.com/yaahc&quot;&gt;yaahc&lt;/a&gt;, team member&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Jane has been making significant progress on the &lt;a href&#x3D;&quot;https://rust-lang.github.io/rust-project-goals/2025h1/metrics-initiative.html&quot;&gt;Metrics Initiative&lt;/a&gt; compiler team project goal to help us quantify unstable feature usage, as well as the &quot;Relink Don&#x27;t Rebuild&quot; (RDR) project to speed up recompilation of dependency trees when the surface area of a crate hasn&#x27;t changed.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href&#x3D;&quot;https://github.com/GuillaumeGomez&quot;&gt;GuillameGomez&lt;/a&gt;, team member&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Guillaume has been a long time contributor to Rust and is the team lead of the Rustdoc team. In addition to his extensive work on Rustdoc, Guillame is also a frequent contributor to the GCC backend for the Rust compiler.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href&#x3D;&quot;https://github.com/Amanieu&quot;&gt;Amanieu&lt;/a&gt;, team member&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Amanieu is also a long time contributor to Rust and is the Library team lead. Amanieu often provides expertise regarding low-level language features like inline assembly and target-specific features.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href&#x3D;&quot;https://github.com/Enselic&quot;&gt;Enselic&lt;/a&gt;, team member&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Enselic has been contributing to issue triage for many years and has made lots of great contributions to throughout the compiler with a focus lately on revitalizing and improving the compiler integration test suite.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href&#x3D;&quot;https://github.com/dianne&quot;&gt;dianne&lt;/a&gt;, team member&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Dianne has been heavily involved with improvements to match ergonomics, the implementation of deref patterns and some significant bug fixes to temporary lifetime issues.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href&#x3D;&quot;https://github.com/JonathanBrouwer&quot;&gt;JonathanBrouwer&lt;/a&gt;, team member&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Jonathan has been instrumental in the ongoing effort to refactor the Rust compiler&#x27;s handling of attributes which has greatly improved the quality of the compiler&#x27;s code as well as implementing missing validation for attribute arguments.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href&#x3D;&quot;https://github.com/tiif&quot;&gt;tiif&lt;/a&gt;, team member&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Tiif has helped contribute a variety of fixes for bugs, implemented support in the compiler for unstable trait impls and improvements to const generics.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Thank you all for your contributions!&lt;/p&gt;
+</content>
+
+        <author>
+            <name>davidtwco and wesleywiser</name>
+        </author>
+    </entry>
+    <entry>
+        <title>What we learned with Clippy&#x27;s feature freeze</title>
+        <link rel="alternate" href="https://blog.rust-lang.org/inside-rust/2025/10/22/clippys-feature-warming-up/" type="text/html" title="What we learned with Clippy&#x27;s feature freeze" />
+        <published>2025-10-22T00:00:00+00:00</published>
+        <updated>2025-10-22T00:00:00+00:00</updated>
+        <id>https://blog.rust-lang.org/inside-rust/2025/10/22/clippys-feature-warming-up/</id>
+        <content type="html" xml:base="https://blog.rust-lang.org/inside-rust/2025/10/22/clippys-feature-warming-up/">&lt;p&gt;The &lt;a href&#x3D;&quot;https://blog.rust-lang.org/inside-rust/2025/06/21/announcing-the-clippy-feature-freeze/&quot;&gt;feature freeze affecting Clippy&lt;/a&gt; has reached its end date. This means that the Clippy project has been accepting pull
+requests that add new features (and new lints) for a while.&lt;/p&gt;
+&lt;p&gt;The Clippy team has reviewed the results, and we can say that it&#x27;s been a success 🎉. It has been so great that we managed
+to create an all-time peak in the number of pull requests opened in a week.&lt;/p&gt;
+&lt;p&gt;In this plot we can observe that peak (the red lines mark the start and end of the feature freeze)&lt;/p&gt;
+&lt;p&gt;&lt;img src&#x3D;&quot;https://blog.rust-lang.org/inside-rust/2025/10/22/clippys-feature-warming-up/./prs_per_week.png&quot; alt&#x3D;&quot;Plot of PRs per week, we can see an all-time peak when the feature freeze happens&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;After some data crunching of those pull requests opened after June 26th, we had 18 pull requests open in that period
+that added lints. With 326 pull requests open by both new and old contributors, we want to highlight all the new people
+that started contributing to Clippy, 47 new contributors who opened a total of 195 pull requests.&lt;/p&gt;
+&lt;p&gt;On a team meeting, we concluded that the results of the feature freeze were positive enough to warrant a future one.
+The cadence and duration of these is still being decided.&lt;/p&gt;
+&lt;p&gt;58% of all pull requests by new contributors (114 out of the total 195) were opened by the same person. We held a meeting with her (&lt;a href&#x3D;&quot;https://github.com/ada4a&quot;&gt;ada4a&lt;/a&gt; on Github) to iron out some of the details of
+the codebase and our procedures for new contributors. We are currently analyzing that meeting in order to improve
+the experience for future and current contributors.&lt;/p&gt;
+&lt;p&gt;We also asked some questions to Ada (ada4a) to include as a mini Q&amp;amp;A, here are some of the answers.&lt;/p&gt;
+&lt;h2 id&#x3D;&quot;ada-s-q-a&quot;&gt;&lt;a class&#x3D;&quot;anchor&quot; href&#x3D;&quot;#ada-s-q-a&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/a&gt;
+Ada&#x27;s Q&amp;amp;A&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Why do you like contributing to Clippy? What&#x27;s so fun about it?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I came to enjoy improving the suggestions that Clippy makes: they are
+fascinating in how they point out the exact part of code that is
+problematic, and show the (sometimes pretty complex) manipulations required to
+fix it. Also, It has been empowering to learn the machinery behind the
+compiler, and use that knowledge to refine these diagnostics even further.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Would you recommend contributing to Clippy? Why or why not?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Yes, for multiple reasons:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Rust is (in)famously hard to learn, and to me, Clippy is one of the parts of the
+toolchain most helpful for beginners, as it teaches idiomatic style and helps
+discover helpful functions from std -- thus, contributing to it helps reduce the
+entry barrier of the language.&lt;/li&gt;
+&lt;li&gt;If you, like me, wanted to learn the inner workings of the compiler and contribute
+to it some day, but were intimidated by the &lt;a href&#x3D;&quot;https://rustc-dev-guide.rust-lang.org/building/how-to-build-and-run.html&quot;&gt;development setup required for that&lt;/a&gt;,
+Clippy could be a nice stepping stone, as hacking on it doesn&#x27;t require compiling
+rustc, but it interacts with a lot of compiler&#x27;s data structures and APIs.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+
+        <author>
+            <name>blyxyas</name>
+        </author>
+    </entry>
+    <entry>
+        <title>Renaming the default branch of rust-lang/rust</title>
+        <link rel="alternate" href="https://blog.rust-lang.org/inside-rust/2025/10/16/renaming-the-default-branch-of-rust-lang-rust/" type="text/html" title="Renaming the default branch of rust-lang/rust" />
+        <published>2025-10-16T00:00:00+00:00</published>
+        <updated>2025-10-16T00:00:00+00:00</updated>
+        <id>https://blog.rust-lang.org/inside-rust/2025/10/16/renaming-the-default-branch-of-rust-lang-rust/</id>
+        <content type="html" xml:base="https://blog.rust-lang.org/inside-rust/2025/10/16/renaming-the-default-branch-of-rust-lang-rust/">&lt;blockquote&gt;
+&lt;p&gt;The rename happened on November 10, 2025. The default branch of &lt;code&gt;rust-lang/rust&lt;/code&gt; is now named &lt;code&gt;main&lt;/code&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;We will be renaming the default branch of the &lt;a href&#x3D;&quot;https://github.com/rust-lang/rust&quot;&gt;rust-lang/rust repository&lt;/a&gt; from &lt;code&gt;master&lt;/code&gt; to &lt;code&gt;main&lt;/code&gt; on 2025-11-10. We&#x27;ve chosen &lt;code&gt;main&lt;/code&gt; specifically as it&#x27;s the default for newly-created repositories &lt;a href&#x3D;&quot;https://github.blog/changelog/2020-10-01-the-default-branch-for-newly-created-repositories-is-now-main/&quot;&gt;in GitHub&lt;/a&gt; and the renaming will leverage the &lt;a href&#x3D;&quot;https://github.com/github/renaming&quot;&gt;GitHub tooling&lt;/a&gt; built to make this easier.&lt;/p&gt;
+&lt;p&gt;If you maintain a tool that currently assumes the default branch of &lt;code&gt;rust-lang/rust&lt;/code&gt; is named &lt;code&gt;master&lt;/code&gt;, using &lt;code&gt;HEAD&lt;/code&gt; instead will work both before and after the rename.&lt;/p&gt;
+&lt;p&gt;After the rename, contributors will need to run a few git commands in their local checkout of the repository to update. Note that the specific commands that should be executed might differ based on the way you use git and how your local checkout is configured. We provide a guide below that we think should work for most use-cases, but your mileage may vary.&lt;/p&gt;
+&lt;p&gt;Please try to follow the guide step-by-step, and if you run into any problems, feel free to ask in this &lt;a href&#x3D;&quot;https://rust-lang.zulipchat.com/#narrow/channel/242791-t-infra/topic/Help.20with.20updating.20rust-lang.2Frust.20default.20branch/with/554127642&quot;&gt;Zulip channel&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id&#x3D;&quot;renaming-your-fork-s-default-branch&quot;&gt;&lt;a class&#x3D;&quot;anchor&quot; href&#x3D;&quot;#renaming-your-fork-s-default-branch&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/a&gt;
+Renaming your fork&#x27;s default branch&lt;/h2&gt;
+&lt;p&gt;If you have a fork of the &lt;code&gt;rust-lang/rust&lt;/code&gt; repository on GitHub, you should first update its default branch name before continuing. If you do not rename it and later run &lt;code&gt;git checkout master&lt;/code&gt;, git will create a &lt;code&gt;master&lt;/code&gt; branch based on your fork&#x27;s outdated &lt;code&gt;master&lt;/code&gt; branch, which can be confusing. Some of the following git commands in this post might also not work as expected.&lt;/p&gt;
+&lt;p&gt;Here is how you can update your fork&#x27;s default branch:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Go to &lt;code&gt;https://github.com/&amp;lt;your-username&amp;gt;/rust/settings&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Find the default branch section, click on the &quot;Rename branch&quot; button (pencil icon) and rename the branch to &lt;code&gt;main&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id&#x3D;&quot;updating-your-local-git-checkout&quot;&gt;&lt;a class&#x3D;&quot;anchor&quot; href&#x3D;&quot;#updating-your-local-git-checkout&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/a&gt;
+Updating your local git checkout&lt;/h2&gt;
+&lt;p&gt;Execute the following git commands in your local checkout of the &lt;code&gt;rust&lt;/code&gt; repository.&lt;/p&gt;
+&lt;p&gt;Note that the instructions below make two assumptions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You have a git remote called &lt;code&gt;upstream&lt;/code&gt; that points to the &lt;code&gt;rust-lang/rust&lt;/code&gt; repository and a remote called &lt;code&gt;origin&lt;/code&gt; that points to your &lt;code&gt;&amp;lt;username&amp;gt;/rust&lt;/code&gt; fork. Please update the commands accordingly if you use a different setup.
+&lt;ul&gt;
+&lt;li&gt;You can find out which remotes you have configured using the &lt;code&gt;git remote -v&lt;/code&gt; command.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Your local &lt;code&gt;master&lt;/code&gt; branch tracks the default branch of your &lt;em&gt;fork&lt;/em&gt;, not the default branch of the &lt;em&gt;upstream&lt;/em&gt; &lt;code&gt;rust-lang/rust&lt;/code&gt; repository. If that is not the case, execute the commented &lt;code&gt;git branch&lt;/code&gt; command instead.
+&lt;ul&gt;
+&lt;li&gt;You can find which remote your local &lt;code&gt;master&lt;/code&gt; branch tracks by using &lt;code&gt;git branch -vv --contains master&lt;/code&gt; (the tracked branch should be shown in square brackets).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre data-lang&#x3D;&quot;bash&quot; class&#x3D;&quot;language-bash z-code&quot;&gt;&lt;code class&#x3D;&quot;language-bash&quot; data-lang&#x3D;&quot;bash&quot;&gt;&lt;span class&#x3D;&quot;z-source z-shell z-bash&quot;&gt;&lt;span class&#x3D;&quot;z-comment z-line z-number-sign z-shell&quot;&gt;&lt;span class&#x3D;&quot;z-punctuation z-definition z-comment z-begin z-shell&quot;&gt;#&lt;/span&gt;&lt;/span&gt;&lt;span class&#x3D;&quot;z-comment z-line z-number-sign z-shell&quot;&gt; Update the local branch name&lt;/span&gt;&lt;span class&#x3D;&quot;z-comment z-line z-number-sign z-shell&quot;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class&#x3D;&quot;z-source z-shell z-bash&quot;&gt;&lt;span class&#x3D;&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class&#x3D;&quot;z-variable z-function z-shell&quot;&gt;git&lt;/span&gt;&lt;/span&gt;&lt;span class&#x3D;&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; branch&lt;span class&#x3D;&quot;z-variable z-parameter z-option z-shell&quot;&gt;&lt;span class&#x3D;&quot;z-punctuation z-definition z-parameter z-shell&quot;&gt; --&lt;/span&gt;move&lt;/span&gt; master main&lt;/span&gt;
+&lt;/span&gt;&lt;span class&#x3D;&quot;z-source z-shell z-bash&quot;&gt;
+&lt;/span&gt;&lt;span class&#x3D;&quot;z-source z-shell z-bash&quot;&gt;&lt;span class&#x3D;&quot;z-comment z-line z-number-sign z-shell&quot;&gt;&lt;span class&#x3D;&quot;z-punctuation z-definition z-comment z-begin z-shell&quot;&gt;#&lt;/span&gt;&lt;/span&gt;&lt;span class&#x3D;&quot;z-comment z-line z-number-sign z-shell&quot;&gt; Update local references to your &amp;lt;username&amp;gt;/rust fork&lt;/span&gt;&lt;span class&#x3D;&quot;z-comment z-line z-number-sign z-shell&quot;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class&#x3D;&quot;z-source z-shell z-bash&quot;&gt;&lt;span class&#x3D;&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class&#x3D;&quot;z-variable z-function z-shell&quot;&gt;git&lt;/span&gt;&lt;/span&gt;&lt;span class&#x3D;&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; fetch origin&lt;/span&gt;
+&lt;/span&gt;&lt;span class&#x3D;&quot;z-source z-shell z-bash&quot;&gt;&lt;span class&#x3D;&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class&#x3D;&quot;z-variable z-function z-shell&quot;&gt;git&lt;/span&gt;&lt;/span&gt;&lt;span class&#x3D;&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; branch&lt;span class&#x3D;&quot;z-variable z-parameter z-option z-shell&quot;&gt;&lt;span class&#x3D;&quot;z-punctuation z-definition z-parameter z-shell&quot;&gt; --&lt;/span&gt;set-upstream-to&lt;/span&gt;&lt;span class&#x3D;&quot;z-keyword z-operator z-assignment z-option z-shell&quot;&gt;&#x3D;&lt;/span&gt;origin/main main &lt;span class&#x3D;&quot;z-comment z-line z-number-sign z-shell&quot;&gt;&lt;span class&#x3D;&quot;z-punctuation z-definition z-comment z-begin z-shell&quot;&gt;#&lt;/span&gt;&lt;/span&gt;&lt;span class&#x3D;&quot;z-comment z-line z-number-sign z-shell&quot;&gt; If your main branch tracks your fork&lt;/span&gt;&lt;span class&#x3D;&quot;z-comment z-line z-number-sign z-shell&quot;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class&#x3D;&quot;z-source z-shell z-bash&quot;&gt;&lt;span class&#x3D;&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class&#x3D;&quot;z-variable z-function z-shell&quot;&gt;git&lt;/span&gt;&lt;/span&gt;&lt;span class&#x3D;&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; remote set-head origin&lt;span class&#x3D;&quot;z-variable z-parameter z-option z-shell&quot;&gt;&lt;span class&#x3D;&quot;z-punctuation z-definition z-parameter z-shell&quot;&gt; --&lt;/span&gt;auto&lt;/span&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;span class&#x3D;&quot;z-source z-shell z-bash&quot;&gt;
+&lt;/span&gt;&lt;span class&#x3D;&quot;z-source z-shell z-bash&quot;&gt;&lt;span class&#x3D;&quot;z-comment z-line z-number-sign z-shell&quot;&gt;&lt;span class&#x3D;&quot;z-punctuation z-definition z-comment z-begin z-shell&quot;&gt;#&lt;/span&gt;&lt;/span&gt;&lt;span class&#x3D;&quot;z-comment z-line z-number-sign z-shell&quot;&gt; Update local references relevant to the upstream rust-lang/rust repository&lt;/span&gt;&lt;span class&#x3D;&quot;z-comment z-line z-number-sign z-shell&quot;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class&#x3D;&quot;z-source z-shell z-bash&quot;&gt;&lt;span class&#x3D;&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class&#x3D;&quot;z-variable z-function z-shell&quot;&gt;git&lt;/span&gt;&lt;/span&gt;&lt;span class&#x3D;&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; fetch upstream&lt;/span&gt;
+&lt;/span&gt;&lt;span class&#x3D;&quot;z-source z-shell z-bash&quot;&gt;&lt;span class&#x3D;&quot;z-comment z-line z-number-sign z-shell&quot;&gt;&lt;span class&#x3D;&quot;z-punctuation z-definition z-comment z-begin z-shell&quot;&gt;#&lt;/span&gt;&lt;/span&gt;&lt;span class&#x3D;&quot;z-comment z-line z-number-sign z-shell&quot;&gt;git branch --set-upstream-to&#x3D;upstream/main main # If your main branch tracks the upstream repo&lt;/span&gt;&lt;span class&#x3D;&quot;z-comment z-line z-number-sign z-shell&quot;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class&#x3D;&quot;z-source z-shell z-bash&quot;&gt;&lt;span class&#x3D;&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class&#x3D;&quot;z-variable z-function z-shell&quot;&gt;git&lt;/span&gt;&lt;/span&gt;&lt;span class&#x3D;&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; remote set-head upstream&lt;span class&#x3D;&quot;z-variable z-parameter z-option z-shell&quot;&gt;&lt;span class&#x3D;&quot;z-punctuation z-definition z-parameter z-shell&quot;&gt; --&lt;/span&gt;auto&lt;/span&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;span class&#x3D;&quot;z-source z-shell z-bash&quot;&gt;
+&lt;/span&gt;&lt;span class&#x3D;&quot;z-source z-shell z-bash&quot;&gt;&lt;span class&#x3D;&quot;z-comment z-line z-number-sign z-shell&quot;&gt;&lt;span class&#x3D;&quot;z-punctuation z-definition z-comment z-begin z-shell&quot;&gt;#&lt;/span&gt;&lt;/span&gt;&lt;span class&#x3D;&quot;z-comment z-line z-number-sign z-shell&quot;&gt; Remove old branch names (optional, but recommended)&lt;/span&gt;&lt;span class&#x3D;&quot;z-comment z-line z-number-sign z-shell&quot;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class&#x3D;&quot;z-source z-shell z-bash&quot;&gt;&lt;span class&#x3D;&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class&#x3D;&quot;z-variable z-function z-shell&quot;&gt;git&lt;/span&gt;&lt;/span&gt;&lt;span class&#x3D;&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; remote prune origin&lt;/span&gt;
+&lt;/span&gt;&lt;span class&#x3D;&quot;z-source z-shell z-bash&quot;&gt;&lt;span class&#x3D;&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class&#x3D;&quot;z-variable z-function z-shell&quot;&gt;git&lt;/span&gt;&lt;/span&gt;&lt;span class&#x3D;&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; remote prune upstream&lt;/span&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+</content>
+
+        <author>
+            <name>Jake Goulding</name>
+        </author>
+    </entry>
+</feed>

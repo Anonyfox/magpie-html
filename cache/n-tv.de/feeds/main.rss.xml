@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0" xmlns:spotify="http://www.spotify.com/ns/rss" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+        <channel>
+        	<atom:link href="" rel="self" type="application/rss+xml" />
+        	<title>n-tv.de - Startseite</title>
+        	<link>https://www.n-tv.de/</link>
+            <language>de-de</language>
+            <copyright>n-tv Nachrichtenfernsehen GmbH. RSS Meldungen dürfen nur unverändert wiedergegeben und ausschließlich online verwendet werden. Die eingeräumten Nutzungsrechte beinhalten ausdrücklich nicht das Recht zur Weitergabe an Dritte. Insbesondere ist es nicht gestattet, die Daten auf öffentlichen Screens oder zum Download anzubieten - weder kostenlos noch kostenpflichtig.</copyright>
+            <description>n-tv.de, Nachrichten seriös, schnell und kompetent. Artikel und Videos aus Politik, Wirtschaft, Börse, Sport und aller Welt.</description>
+            <lastBuildDate>Wed, 17 Dec 2025 11:44:37 +0100</lastBuildDate>
+            <ttl>5</ttl>
+            <image>
+                <url>https://www.n-tv.de/stat/rss/head_logo.png</url>
+                <title>n-tv.de - Startseite</title>
+                <link>https://www.n-tv.de/</link>
+            </image>
+           
+            <item>
+                <title>Sanktionen werden verschärft: Kabinett beschließt Bürgergeldreform</title>
+                <description>Das Bundeskabinett beschließt eine Sozialreform: Das bisherige Bürgergeld soll durch eine neue Grundsicherung ersetzt werden. Auch für die Bezieher der staatlichen Hilfe könnte sich einiges ändern.</description>
+                <link>https://www.n-tv.de/politik/Kabinett-beschliesst-Buergergeldreform-id30153089.html</link>
+                <guid>https://www.n-tv.de/politik/Kabinett-beschliesst-Buergergeldreform-id30153089.html</guid>
+                <category>Politik</category>
+                <pubDate>Wed, 17 Dec 2025 11:26:27 +0100</pubDate>
+                <content:encoded><![CDATA[<img src="https://www.n-tv.de/img/30152181/1765958678/Img_4_3/250/image.jpg" width="250" height="188" align="left" />Das Bundeskabinett beschließt eine Sozialreform: Das bisherige Bürgergeld soll durch eine neue Grundsicherung ersetzt werden. Auch für die Bezieher der staatlichen Hilfe könnte sich einiges ändern.]]></content:encoded>
+                <enclosure url="https://www.n-tv.de/img/30152181/1765958678/Img_4_3/250/image.jpg" length="12555" type="image/jpeg" />
+            </item>
+            <item>
+                <title>Wer bekommt wie viel?: Das bedeuten die Änderungen beim Bürgergeld</title>
+                <description>Regelmäßig kocht die Debatte um die Kosten des Bürgergelds hoch. Nun einigt sich die Koalition und verspricht ein &quot;treffsicheres und gerechteres&quot; System. Doch was bringen die Reformen? Und wen betreffen sie?</description>
+                <link>https://www.n-tv.de/politik/Das-bedeuten-die-Aenderungen-beim-Buergergeld-id30152459.html</link>
+                <guid>https://www.n-tv.de/politik/Das-bedeuten-die-Aenderungen-beim-Buergergeld-id30152459.html</guid>
+                <category>Politik</category>
+                <pubDate>Wed, 17 Dec 2025 10:31:12 +0100</pubDate>
+                <content:encoded><![CDATA[<img src="https://www.n-tv.de/img/2296783/1728706352/Img_4_3/250/484752052.jpg" width="250" height="188" align="left" />Regelmäßig kocht die Debatte um die Kosten des Bürgergelds hoch. Nun einigt sich die Koalition und verspricht ein "treffsicheres und gerechteres" System. Doch was bringen die Reformen? Und wen betreffen sie?]]></content:encoded>
+                <enclosure url="https://www.n-tv.de/img/2296783/1728706352/Img_4_3/250/484752052.jpg" length="12555" type="image/jpeg" />
+            </item>
+            <item>
+                <title>Umweltminister zu EU-Kehrtwende: Schneider sieht &quot;keine Ausreden mehr für die Autoindustrie&quot;</title>
+                <description>Der SPD-Umweltminister will im Aus vom Verbrenner-Aus keinen Rückschritt für den Klimaschutz sehen - dabei hatte er selbst noch vor wenigen Monaten darauf gepocht, am Verbrenner-Aus 2035 festzuhalten. Im ntv Frühstart kündigt Schneider mehr Geld für die Elektromobilität an.</description>
+                <link>https://www.n-tv.de/politik/Schneider-sieht-keine-Ausreden-mehr-fuer-die-Autoindustrie-id30152562.html</link>
+                <guid>https://www.n-tv.de/politik/Schneider-sieht-keine-Ausreden-mehr-fuer-die-Autoindustrie-id30152562.html</guid>
+                <category>Politik</category>
+                <pubDate>Wed, 17 Dec 2025 11:01:48 +0100</pubDate>
+                <content:encoded><![CDATA[<img src="https://www.n-tv.de/img/30152642/1765966646/Img_4_3/250/image.jpg" width="250" height="188" align="left" />Der SPD-Umweltminister will im Aus vom Verbrenner-Aus keinen Rückschritt für den Klimaschutz sehen - dabei hatte er selbst noch vor wenigen Monaten darauf gepocht, am Verbrenner-Aus 2035 festzuhalten. Im ntv Frühstart kündigt Schneider mehr Geld für die Elektromobilität an.]]></content:encoded>
+                <enclosure url="https://www.n-tv.de/img/30152642/1765966646/Img_4_3/250/image.jpg" length="12555" type="image/jpeg" />
+            </item>
+            <item>
+                <title>Handelskonflikt verschärft: USA drohen EU mit Strafen für Unternehmen</title>
+                <description>Schon länger schwelt ein Streit um die Regulierung von Digitalfirmen: Die EU verhängt hohe Geldstrafen gegen große US-Technologiekonzerne, das verärgert die US-Regierung. Nun droht diese der EU mit Sanktionen für Dienstleister. Mögliche Ziele nannte sie auch. </description>
+                <link>https://www.n-tv.de/wirtschaft/USA-drohen-EU-mit-Strafen-fuer-Unternehmen-id30152569.html</link>
+                <guid>https://www.n-tv.de/wirtschaft/USA-drohen-EU-mit-Strafen-fuer-Unternehmen-id30152569.html</guid>
+                <category>Wirtschaft</category>
+                <pubDate>Wed, 17 Dec 2025 11:07:41 +0100</pubDate>
+                <content:encoded><![CDATA[<img src="https://www.n-tv.de/img/30152659/1765966901/Img_4_3/250/Fahnen-der-Europaeischen-Union-wehen-vor-dem-Berlaymont-Gebaeude-in-Bruessel-dem-Sitz-der-EU-Kommission.jpg" width="250" height="188" align="left" />Schon länger schwelt ein Streit um die Regulierung von Digitalfirmen: Die EU verhängt hohe Geldstrafen gegen große US-Technologiekonzerne, das verärgert die US-Regierung. Nun droht diese der EU mit Sanktionen für Dienstleister. Mögliche Ziele nannte sie auch. ]]></content:encoded>
+                <enclosure url="https://www.n-tv.de/img/30152659/1765966901/Img_4_3/250/Fahnen-der-Europaeischen-Union-wehen-vor-dem-Berlaymont-Gebaeude-in-Bruessel-dem-Sitz-der-EU-Kommission.jpg" length="12555" type="image/jpeg" />
+            </item>
+            <item>
+                <title>&quot;Rechter Fanatiker&quot;: Stabschefin Wiles zündelt im Weißen Haus, aber Trump juckt es nicht</title>
+                <description>In einer ganzen Serie von Gesprächen äußert sich Trumps Stabschefin Susie Wiles ungewöhnlich offen über die Vorgänge im Weißen Haus. Ob das für die &quot;Eisjungfrau&quot; zum Problem wird, liegt nun am US-Präsidenten. Doch der gibt sich erstmal gelassen. </description>
+                <link>https://www.n-tv.de/politik/Stabschefin-Wiles-zuendelt-im-Weissen-Haus-aber-Trump-juckt-es-nicht-id30151210.html</link>
+                <guid>https://www.n-tv.de/politik/Stabschefin-Wiles-zuendelt-im-Weissen-Haus-aber-Trump-juckt-es-nicht-id30151210.html</guid>
+                <category>Politik</category>
+                <pubDate>Tue, 16 Dec 2025 20:58:26 +0100</pubDate>
+                <content:encoded><![CDATA[<img src="https://www.n-tv.de/img/30151207/1765917135/Img_4_3/250/FILE-White-House-chief-of-staff-Susie-Wiles-listens-as-President-Donald-Trump-meets-with-Israel-s-Prime-Minister-Benjamin-Netanyahu-in-the-Oval-Office-of-the-White-House-Feb-4-2025-in-Washington.jpg" width="250" height="188" align="left" />In einer ganzen Serie von Gesprächen äußert sich Trumps Stabschefin Susie Wiles ungewöhnlich offen über die Vorgänge im Weißen Haus. Ob das für die "Eisjungfrau" zum Problem wird, liegt nun am US-Präsidenten. Doch der gibt sich erstmal gelassen. ]]></content:encoded>
+                <enclosure url="https://www.n-tv.de/img/30151207/1765917135/Img_4_3/250/FILE-White-House-chief-of-staff-Susie-Wiles-listens-as-President-Donald-Trump-meets-with-Israel-s-Prime-Minister-Benjamin-Netanyahu-in-the-Oval-Office-of-the-White-House-Feb-4-2025-in-Washington.jpg" length="12555" type="image/jpeg" />
+            </item>
+            <item>
+                <title>Zustimmung sinkt: Republikaner zweifeln an Trumps Wirtschaftspolitik</title>
+                <description>Das Wahlversprechen von Donald Trump lautet, die Wirtschaft anzukurbeln. Bisher liefert er jedoch nicht die gewünschten Ergebnisse. Das sorgt auch unter seinen engen Anhängern für Skepsis, wie neue Umfragewerte zeigen. </description>
+                <link>https://www.n-tv.de/politik/Republikaner-zweifeln-an-Trumps-Wirtschaftspolitik-id30152019.html</link>
+                <guid>https://www.n-tv.de/politik/Republikaner-zweifeln-an-Trumps-Wirtschaftspolitik-id30152019.html</guid>
+                <category>Politik</category>
+                <pubDate>Wed, 17 Dec 2025 08:15:51 +0100</pubDate>
+                <content:encoded><![CDATA[<img src="https://www.n-tv.de/img/30152069/1765956252/Img_4_3/250/The-Trump-Building-is-seen-at-40-Wall-Street-in-Manhattan-New-York-City.jpg" width="250" height="188" align="left" />Das Wahlversprechen von Donald Trump lautet, die Wirtschaft anzukurbeln. Bisher liefert er jedoch nicht die gewünschten Ergebnisse. Das sorgt auch unter seinen engen Anhängern für Skepsis, wie neue Umfragewerte zeigen. ]]></content:encoded>
+                <enclosure url="https://www.n-tv.de/img/30152069/1765956252/Img_4_3/250/The-Trump-Building-is-seen-at-40-Wall-Street-in-Manhattan-New-York-City.jpg" length="12555" type="image/jpeg" />
+            </item>
+            <item>
+                <title>Neues Genehmigungsverfahren: EU-Kommission will Pestizide wie Glyphosat unbegrenzt zulassen</title>
+                <description>Bisher muss die Zulassung für Pestizide in der EU regelmäßig erneuert werden. Das will Brüssel nun ändern. Künftig sollen Genehmigungen unbegrenzt gelten. Davon betroffen wäre auch das umstrittene Bayer-Mittel Glyphosat.</description>
+                <link>https://www.n-tv.de/wirtschaft/EU-Kommission-will-Pestizide-wie-Glyphosat-unbegrenzt-zulassen-id30152488.html</link>
+                <guid>https://www.n-tv.de/wirtschaft/EU-Kommission-will-Pestizide-wie-Glyphosat-unbegrenzt-zulassen-id30152488.html</guid>
+                <category>Wirtschaft</category>
+                <pubDate>Wed, 17 Dec 2025 10:06:43 +0100</pubDate>
+                <content:encoded><![CDATA[<img src="https://www.n-tv.de/img/30152517/1765964756/Img_4_3/250/Eine-Frau-haelt-in-ihrem-Garten-eine-Flasche-des-Unkrautvernichters-Roundup-mit-dem-Wirkstoff-Glyphosat-von-Bayer-in-der-Hand-gestellte-Szene.jpg" width="250" height="188" align="left" />Bisher muss die Zulassung für Pestizide in der EU regelmäßig erneuert werden. Das will Brüssel nun ändern. Künftig sollen Genehmigungen unbegrenzt gelten. Davon betroffen wäre auch das umstrittene Bayer-Mittel Glyphosat.]]></content:encoded>
+                <enclosure url="https://www.n-tv.de/img/30152517/1765964756/Img_4_3/250/Eine-Frau-haelt-in-ihrem-Garten-eine-Flasche-des-Unkrautvernichters-Roundup-mit-dem-Wirkstoff-Glyphosat-von-Bayer-in-der-Hand-gestellte-Szene.jpg" length="12555" type="image/jpeg" />
+            </item>
+            <item>
+                <title>Schutz vor Hepatitis B: US-Gesundheitsbehörde setzt Impfempfehlung für Babys aus</title>
+                <description>Die US-Gesundheitspolitik ist unter dem ausgewiesenen Impfskeptiker Gesundheitsminister Kennedy Jr. im Wandel. Dieser lässt nun eine seit Jahrzehnten geltende Empfehlung kippen, Säuglinge gegen Hepatitis B zu impfen. Experten warnen vor den Folgen.  </description>
+                <link>https://www.n-tv.de/politik/US-Gesundheitsbehoerde-setzt-Impfempfehlung-fuer-Babys-aus-id30152134.html</link>
+                <guid>https://www.n-tv.de/politik/US-Gesundheitsbehoerde-setzt-Impfempfehlung-fuer-Babys-aus-id30152134.html</guid>
+                <category>Politik</category>
+                <pubDate>Wed, 17 Dec 2025 10:01:06 +0100</pubDate>
+                <content:encoded><![CDATA[<img src="https://www.n-tv.de/img/30152170/1765958387/Img_4_3/250/United-States-Secretary-of-Health-and-Human-Services-Robert-F-Kennedy-Jr-speaks-in-the-Oval-Office-of-the-White-House-in-Washington-DC-US-on-Thursday-Nov-6-2025-Eli-Lilly-Co-and-Novo-Nordisk-A-S-secured-deals-with-the-Trump-administration-to-slash-prices-for-their-blockbuster-weight-loss-drugs-in-exchange-for-tariff-relief-and-wider-access-for-Medicare-patients.jpg" width="250" height="188" align="left" />Die US-Gesundheitspolitik ist unter dem ausgewiesenen Impfskeptiker Gesundheitsminister Kennedy Jr. im Wandel. Dieser lässt nun eine seit Jahrzehnten geltende Empfehlung kippen, Säuglinge gegen Hepatitis B zu impfen. Experten warnen vor den Folgen.  ]]></content:encoded>
+                <enclosure url="https://www.n-tv.de/img/30152170/1765958387/Img_4_3/250/United-States-Secretary-of-Health-and-Human-Services-Robert-F-Kennedy-Jr-speaks-in-the-Oval-Office-of-the-White-House-in-Washington-DC-US-on-Thursday-Nov-6-2025-Eli-Lilly-Co-and-Novo-Nordisk-A-S-secured-deals-with-the-Trump-administration-to-slash-prices-for-their-blockbuster-weight-loss-drugs-in-exchange-for-tariff-relief-and-wider-access-for-Medicare-patients.jpg" length="12555" type="image/jpeg" />
+            </item>
+            <item>
+                <title>Mehr als zehn Millionen Kunden: Trade Republic ist nun wertvollstes deutsches Startup</title>
+                <description>Das Wachstum ist rasant: 2019 startet Trade Republic als Online-Broker, seitdem boomt die Finanzplattform. Nun überholt sie ein anderes prominentes deutsches Startup.</description>
+                <link>https://www.n-tv.de/wirtschaft/Trade-Republic-ist-nun-wertvollstes-deutsches-Startup-id30152747.html</link>
+                <guid>https://www.n-tv.de/wirtschaft/Trade-Republic-ist-nun-wertvollstes-deutsches-Startup-id30152747.html</guid>
+                <category>Wirtschaft</category>
+                <pubDate>Wed, 17 Dec 2025 11:42:14 +0100</pubDate>
+                <content:encoded><![CDATA[<img src="https://www.n-tv.de/img/30152742/1765970469/Img_4_3/250/Klingelschild-Trade-Republic-altes-Warenhaus-Jandorf-Brunnenstrasse-Bezirk-Mitte-Berlin-Deutschland.jpg" width="250" height="188" align="left" />Das Wachstum ist rasant: 2019 startet Trade Republic als Online-Broker, seitdem boomt die Finanzplattform. Nun überholt sie ein anderes prominentes deutsches Startup.]]></content:encoded>
+                <enclosure url="https://www.n-tv.de/img/30152742/1765970469/Img_4_3/250/Klingelschild-Trade-Republic-altes-Warenhaus-Jandorf-Brunnenstrasse-Bezirk-Mitte-Berlin-Deutschland.jpg" length="12555" type="image/jpeg" />
+            </item>
+            <item>
+                <title>DFB-Gegner betroffen: Trumps neue Einreisebeschränkungen haben Auswirkungen auf WM</title>
+                <description>Wer darf die Spiele der Fußball-WM 2026 besuchen? Anders als bei den Turnieren in Russland und Katar reicht eine Eintrittskarte nicht. Jetzt haben die USA die Einreisebedingungen weiter verschärft. Auch ein Gegner der DFB-Elf ist davon betroffen. </description>
+                <link>https://www.n-tv.de/sport/fussball/Trumps-neue-Einreisebeschraenkungen-haben-Auswirkungen-auf-WM-id30152438.html</link>
+                <guid>https://www.n-tv.de/sport/fussball/Trumps-neue-Einreisebeschraenkungen-haben-Auswirkungen-auf-WM-id30152438.html</guid>
+                <category>Sport</category>
+                <pubDate>Wed, 17 Dec 2025 10:34:23 +0100</pubDate>
+                <content:encoded><![CDATA[<img src="https://www.n-tv.de/img/30123676/1765962804/Img_4_3/250/FIFA-Praesident-Gianni-Infantino-l-r-macht-ein-Selfie-mit-US-Praesident-Donald-Trump-der-mexikanischen-Praesidentin-Claudia-Sheinbaum-und-dem-kanadischen-Premierminister-Mark-Carney.jpg" width="250" height="188" align="left" />Wer darf die Spiele der Fußball-WM 2026 besuchen? Anders als bei den Turnieren in Russland und Katar reicht eine Eintrittskarte nicht. Jetzt haben die USA die Einreisebedingungen weiter verschärft. Auch ein Gegner der DFB-Elf ist davon betroffen. ]]></content:encoded>
+                <enclosure url="https://www.n-tv.de/img/30123676/1765962804/Img_4_3/250/FIFA-Praesident-Gianni-Infantino-l-r-macht-ein-Selfie-mit-US-Praesident-Donald-Trump-der-mexikanischen-Praesidentin-Claudia-Sheinbaum-und-dem-kanadischen-Premierminister-Mark-Carney.jpg" length="12555" type="image/jpeg" />
+            </item>
+            <item>
+                <title>Fünf Jahrzehnte nach Panenka: Fußball-Profi erfindet neuartigen Elfmeter</title>
+                <description>Jizz Hornkamp ist in der Fußball-Geschichte bislang nur eine Fußnote, auch wenn es für den Stürmer derzeit blendend läuft. Doch mit einem Geniestreich kann sich das Standing des Niederländers schlagartig geändert haben.</description>
+                <link>https://www.n-tv.de/sport/fussball/Fussball-Profi-erfindet-neuartigen-Elfmeter-id30152491.html</link>
+                <guid>https://www.n-tv.de/sport/fussball/Fussball-Profi-erfindet-neuartigen-Elfmeter-id30152491.html</guid>
+                <category>Sport</category>
+                <pubDate>Wed, 17 Dec 2025 11:24:19 +0100</pubDate>
+                <content:encoded><![CDATA[<img src="https://www.n-tv.de/img/30152635/1765966977/Img_4_3/250/Heracles-Almelo-forwarder-Jizz-Hornkamp-scores-the-2-1-during-the-match-PSV-Eindhoven-vs-Heracles-Almelo-at-the-Philips-stadium-for-the-Dutch-Vriendenloterij-Eredivisie-season-2025-2026-in-EINDHOVEN-Netherlands-on-13-december-2025-photo-by-Marcel-van-Dorst-EYE4images-DeFodi-Images.jpg" width="250" height="188" align="left" />Jizz Hornkamp ist in der Fußball-Geschichte bislang nur eine Fußnote, auch wenn es für den Stürmer derzeit blendend läuft. Doch mit einem Geniestreich kann sich das Standing des Niederländers schlagartig geändert haben.]]></content:encoded>
+                <enclosure url="https://www.n-tv.de/img/30152635/1765966977/Img_4_3/250/Heracles-Almelo-forwarder-Jizz-Hornkamp-scores-the-2-1-during-the-match-PSV-Eindhoven-vs-Heracles-Almelo-at-the-Philips-stadium-for-the-Dutch-Vriendenloterij-Eredivisie-season-2025-2026-in-EINDHOVEN-Netherlands-on-13-december-2025-photo-by-Marcel-van-Dorst-EYE4images-DeFodi-Images.jpg" length="12555" type="image/jpeg" />
+            </item>
+            <item>
+                <title>Deutscher Handball-Kader steht: Bundestrainer schickt noch drei EM-Helden in den &quot;Albtraum&quot;</title>
+                <description>Die deutsche Handball-Nationalmannschaft steht vor einer gewaltigen Herausforderung: Die Auslosung bei der im Januar startenden EM ist ein &quot;Albtraum&quot;, wie Torwart-Titan Andreas Wolff es benennt. Bundestrainer Gislason schickt noch drei verbliebene EM-Helden von 2016 ins Rennen.</description>
+                <link>https://www.n-tv.de/sport/Bundestrainer-schickt-noch-drei-EM-Helden-in-den-Albtraum-id30152865.html</link>
+                <guid>https://www.n-tv.de/sport/Bundestrainer-schickt-noch-drei-EM-Helden-in-den-Albtraum-id30152865.html</guid>
+                <category>Sport</category>
+                <pubDate>Wed, 17 Dec 2025 11:30:56 +0100</pubDate>
+                <content:encoded><![CDATA[<img src="https://www.n-tv.de/img/30152919/1765969114/Img_4_3/250/Handball-Laenderspiel-Deutschland-GER-Island-ISL-30-10.jpg" width="250" height="188" align="left" />Die deutsche Handball-Nationalmannschaft steht vor einer gewaltigen Herausforderung: Die Auslosung bei der im Januar startenden EM ist ein "Albtraum", wie Torwart-Titan Andreas Wolff es benennt. Bundestrainer Gislason schickt noch drei verbliebene EM-Helden von 2016 ins Rennen.]]></content:encoded>
+                <enclosure url="https://www.n-tv.de/img/30152919/1765969114/Img_4_3/250/Handball-Laenderspiel-Deutschland-GER-Island-ISL-30-10.jpg" length="12555" type="image/jpeg" />
+            </item>
+            <item>
+                <title>Moderator spricht über Trennung: Daniel Aminati: &quot;Es steht mir fern, sie zu verurteilen&quot;</title>
+                <description>Seit September sind Patrice und Daniel Aminati getrennt, nun äußert sich der Moderator zum Liebes-Aus. Ausführlich berichtet er von den kräftezehrenden Monaten der Krebstherapie seiner Frau. Und er macht deutlich: Böses Blut gibt es zwischen den beiden nicht.</description>
+                <link>https://www.n-tv.de/leute/Daniel-Aminati-Es-steht-mir-fern-sie-zu-verurteilen-id30152175.html</link>
+                <guid>https://www.n-tv.de/leute/Daniel-Aminati-Es-steht-mir-fern-sie-zu-verurteilen-id30152175.html</guid>
+                <category>Unterhaltung</category>
+                <pubDate>Wed, 17 Dec 2025 08:26:34 +0100</pubDate>
+                <content:encoded><![CDATA[<img src="https://www.n-tv.de/img/30152189/1765958741/Img_4_3/250/Rust-Deutschland-15-Juni-2025-Immer-wieder-Sonntags-Europapark-Rust-15-06.jpg" width="250" height="188" align="left" />Seit September sind Patrice und Daniel Aminati getrennt, nun äußert sich der Moderator zum Liebes-Aus. Ausführlich berichtet er von den kräftezehrenden Monaten der Krebstherapie seiner Frau. Und er macht deutlich: Böses Blut gibt es zwischen den beiden nicht.]]></content:encoded>
+                <enclosure url="https://www.n-tv.de/img/30152189/1765958741/Img_4_3/250/Rust-Deutschland-15-Juni-2025-Immer-wieder-Sonntags-Europapark-Rust-15-06.jpg" length="12555" type="image/jpeg" />
+            </item>
+            <item>
+                <title>Reform der Riester-Rente: So soll das neue Altersvorsorgedepot aussehen</title>
+                <description>Wer sich Sorgen um seine Altersvorsorge macht, darf sich wohl auf das Jahr 2027 freuen. Denn dann soll es bessere Alternativen zur leidigen Riester-Rente geben. Die Bundesregierung hat Pläne, wie eine neue staatlich geförderte Altersvorsorge endlich funktionieren könnte. Hier sind sie.</description>
+                <link>https://www.n-tv.de/ratgeber/So-soll-das-neue-Altersvorsorgedepot-aussehen-id30152409.html</link>
+                <guid>https://www.n-tv.de/ratgeber/So-soll-das-neue-Altersvorsorgedepot-aussehen-id30152409.html</guid>
+                <category>Ratgeber</category>
+                <pubDate>Wed, 17 Dec 2025 10:48:55 +0100</pubDate>
+                <content:encoded><![CDATA[<img src="https://www.n-tv.de/img/4429422/1748952913/Img_4_3/250/imago302024142.jpg" width="250" height="188" align="left" />Wer sich Sorgen um seine Altersvorsorge macht, darf sich wohl auf das Jahr 2027 freuen. Denn dann soll es bessere Alternativen zur leidigen Riester-Rente geben. Die Bundesregierung hat Pläne, wie eine neue staatlich geförderte Altersvorsorge endlich funktionieren könnte. Hier sind sie.]]></content:encoded>
+                <enclosure url="https://www.n-tv.de/img/4429422/1748952913/Img_4_3/250/imago302024142.jpg" length="12555" type="image/jpeg" />
+            </item>
+            <item>
+                <title>Aktien, Anleihen, Gold: Wohin mit 25.000 Euro im Dezember?</title>
+                <description>Das Wachstum der Weltwirtschaft könnte sich im kommenden Jahr leicht beschleunigen. Die hohen Bewertungen und die Zweifel an den enorm hohen Investitionen in Künstliche Intelligenz werden jedoch den Spielraum für höhere Aktienkurse begrenzen.</description>
+                <link>https://www.n-tv.de/ratgeber/Wohin-mit-25-000-Euro-im-Dezember-id30144494.html</link>
+                <guid>https://www.n-tv.de/ratgeber/Wohin-mit-25-000-Euro-im-Dezember-id30144494.html</guid>
+                <category>Ratgeber</category>
+                <pubDate>Wed, 17 Dec 2025 10:28:00 +0100</pubDate>
+                <content:encoded><![CDATA[<img src="https://www.n-tv.de/img/2783218/1651495578/Img_4_3/250/251187500.jpg" width="250" height="188" align="left" />Das Wachstum der Weltwirtschaft könnte sich im kommenden Jahr leicht beschleunigen. Die hohen Bewertungen und die Zweifel an den enorm hohen Investitionen in Künstliche Intelligenz werden jedoch den Spielraum für höhere Aktienkurse begrenzen.]]></content:encoded>
+                <enclosure url="https://www.n-tv.de/img/2783218/1651495578/Img_4_3/250/251187500.jpg" length="12555" type="image/jpeg" />
+            </item>
+            <item>
+                <title>Noch mehr Druck auf Venezuela: Trump ordnet &quot;totale&quot; Blockade sanktionierter Öltanker an</title>
+                <description>Donald Trump übt seit Monaten massiven Druck auf Venezuela aus. Dabei geht es ihm jetzt nicht mehr nur um Drogen, sondern auch um Öl und Land. Die Maduro-Regierung stuft der US-Präsident als ausländische Terrororganisation ein.</description>
+                <link>https://www.n-tv.de/politik/Trump-ordnet-totale-Blockade-sanktionierter-Oeltanker-an-id30151616.html</link>
+                <guid>https://www.n-tv.de/politik/Trump-ordnet-totale-Blockade-sanktionierter-Oeltanker-an-id30151616.html</guid>
+                <category>Politik</category>
+                <pubDate>Wed, 17 Dec 2025 04:17:47 +0100</pubDate>
+                <content:encoded><![CDATA[<img src="https://www.n-tv.de/img/30152067/1765956157/Img_4_3/250/Dieses-Bild-aus-einem-Video-das-auf-dem-X-Account-von-Generalstaatsanwaeltin-Pam-Bondi-gepostet-und-von-der-Quelle-teilweise-unkenntlich-gemacht-wurde-zeigt-einen-Oeltanker-der-von-den-US-Streitkraeften-vor-der-Kueste-Venezuelas-beschlagnahmt-wird.jpg" width="250" height="188" align="left" />Donald Trump übt seit Monaten massiven Druck auf Venezuela aus. Dabei geht es ihm jetzt nicht mehr nur um Drogen, sondern auch um Öl und Land. Die Maduro-Regierung stuft der US-Präsident als ausländische Terrororganisation ein.]]></content:encoded>
+                <enclosure url="https://www.n-tv.de/img/30152067/1765956157/Img_4_3/250/Dieses-Bild-aus-einem-Video-das-auf-dem-X-Account-von-Generalstaatsanwaeltin-Pam-Bondi-gepostet-und-von-der-Quelle-teilweise-unkenntlich-gemacht-wurde-zeigt-einen-Oeltanker-der-von-den-US-Streitkraeften-vor-der-Kueste-Venezuelas-beschlagnahmt-wird.jpg" length="12555" type="image/jpeg" />
+            </item>
+            <item>
+                <title>USA maßgeblich verantwortlich: Weltweiter Kohleverbrauch klettert auf Rekordhoch</title>
+                <description>Kohle bleibt weltweit ein wichtiger Energielieferant. Die Internationale Energieagentur prognostiziert für dieses Jahr einen gestiegenen Verbrauch - und eine Stagnation in den kommenden Jahren. Maßgeblichen Einfluss auf die Bilanz haben demnach die USA.</description>
+                <link>https://www.n-tv.de/wirtschaft/Weltweiter-Kohleverbrauch-klettert-auf-Rekordhoch-id30152821.html</link>
+                <guid>https://www.n-tv.de/wirtschaft/Weltweiter-Kohleverbrauch-klettert-auf-Rekordhoch-id30152821.html</guid>
+                <category>Wirtschaft</category>
+                <pubDate>Wed, 17 Dec 2025 11:23:19 +0100</pubDate>
+                <content:encoded><![CDATA[<img src="https://www.n-tv.de/img/30152771/1765967817/Img_4_3/250/Aerial-photo-shows-the-ship-unloading-coals-at-Lianyungang-Port-in-Lianyungang-City-east-China-s-Jiangsu-Province-5-December-2025.jpg" width="250" height="188" align="left" />Kohle bleibt weltweit ein wichtiger Energielieferant. Die Internationale Energieagentur prognostiziert für dieses Jahr einen gestiegenen Verbrauch - und eine Stagnation in den kommenden Jahren. Maßgeblichen Einfluss auf die Bilanz haben demnach die USA.]]></content:encoded>
+                <enclosure url="https://www.n-tv.de/img/30152771/1765967817/Img_4_3/250/Aerial-photo-shows-the-ship-unloading-coals-at-Lianyungang-Port-in-Lianyungang-City-east-China-s-Jiangsu-Province-5-December-2025.jpg" length="12555" type="image/jpeg" />
+            </item>
+            <item>
+                <title>&quot;Wenn es so weit kommen sollte&quot;: Koalition lässt Beteiligung an Ukraine-Truppe offen</title>
+                <description>Der Nato-Schirm bleibt der Ukraine verwehrt, dafür sagt Europa Kiew die Schaffung einer internationalen Schutztruppe zu. Doch was ist das Versprechen von Berlin wert? Aus der Koalition verlautet hierzu wenig Konkretes. </description>
+                <link>https://www.n-tv.de/politik/Koalition-laesst-Beteiligung-an-Ukraine-Truppe-offen-id30152200.html</link>
+                <guid>https://www.n-tv.de/politik/Koalition-laesst-Beteiligung-an-Ukraine-Truppe-offen-id30152200.html</guid>
+                <category>Politik</category>
+                <pubDate>Wed, 17 Dec 2025 09:51:06 +0100</pubDate>
+                <content:encoded><![CDATA[<img src="https://www.n-tv.de/img/30152282/1765960334/Img_4_3/250/Soldaten-des-Panzergrenadierbataillons-122-aus-Oberviechtach-stehen-waehrend-der-Uebergabe-des-Sturmgewehrs-G95-von-Heckler-Koch-auf-dem-Truppenuebungsplatz-Grafenwoehr-Die-Bundeswehr-erhaelt-erste-Modelle-des-neuen-Sturmgewehrs-G95-Das-neue-Standardgewehr-ist-der-Nachfolger-des-G36-Die-Waffen-werden-auf-dem-Truppenuebungsplatz-Grafenwoehr-an-Soldaten-des-Panzergrenadierbataillon-122-uebergeben.jpg" width="250" height="188" align="left" />Der Nato-Schirm bleibt der Ukraine verwehrt, dafür sagt Europa Kiew die Schaffung einer internationalen Schutztruppe zu. Doch was ist das Versprechen von Berlin wert? Aus der Koalition verlautet hierzu wenig Konkretes. ]]></content:encoded>
+                <enclosure url="https://www.n-tv.de/img/30152282/1765960334/Img_4_3/250/Soldaten-des-Panzergrenadierbataillons-122-aus-Oberviechtach-stehen-waehrend-der-Uebergabe-des-Sturmgewehrs-G95-von-Heckler-Koch-auf-dem-Truppenuebungsplatz-Grafenwoehr-Die-Bundeswehr-erhaelt-erste-Modelle-des-neuen-Sturmgewehrs-G95-Das-neue-Standardgewehr-ist-der-Nachfolger-des-G36-Die-Waffen-werden-auf-dem-Truppenuebungsplatz-Grafenwoehr-an-Soldaten-des-Panzergrenadierbataillon-122-uebergeben.jpg" length="12555" type="image/jpeg" />
+            </item>
+            <item>
+                <title>Sorge vor Kreml-Spielchen: Ischinger sieht Waffenstillstand in weiter Ferne</title>
+                <description>Nach den Ukraine-Gesprächen in Berlin droht die Ernüchterung. Der Chef der Münchner Sicherheitskonferenz erwartet nicht, dass der Kreml den Plänen zustimmt. Und dann gibt es ja noch den wankelmütigen US-Präsidenten.</description>
+                <link>https://www.n-tv.de/politik/Ischinger-sieht-Waffenstillstand-in-weiter-Ferne-id30151941.html</link>
+                <guid>https://www.n-tv.de/politik/Ischinger-sieht-Waffenstillstand-in-weiter-Ferne-id30151941.html</guid>
+                <category>Politik</category>
+                <pubDate>Wed, 17 Dec 2025 07:32:41 +0100</pubDate>
+                <content:encoded><![CDATA[<img src="https://www.n-tv.de/img/30151945/1765953267/Img_4_3/250/LVIV-REGION-UKRAINE-DECEMBER-16-Funeral-of-unidentified-Ukrainian-military-personnel-of-the-Armed-Forces-of-Ukraine-is-held-in-the-village-of-Ivano-Frankove-Lviv-region-Ukraine-on-December-16-2025-It-is-only-known-about-the-deceased-that-they-were-killed-in-the-Bakhmut-district-of-Donetsk-region.jpg" width="250" height="188" align="left" />Nach den Ukraine-Gesprächen in Berlin droht die Ernüchterung. Der Chef der Münchner Sicherheitskonferenz erwartet nicht, dass der Kreml den Plänen zustimmt. Und dann gibt es ja noch den wankelmütigen US-Präsidenten.]]></content:encoded>
+                <enclosure url="https://www.n-tv.de/img/30151945/1765953267/Img_4_3/250/LVIV-REGION-UKRAINE-DECEMBER-16-Funeral-of-unidentified-Ukrainian-military-personnel-of-the-Armed-Forces-of-Ukraine-is-held-in-the-village-of-Ivano-Frankove-Lviv-region-Ukraine-on-December-16-2025-It-is-only-known-about-the-deceased-that-they-were-killed-in-the-Bakhmut-district-of-Donetsk-region.jpg" length="12555" type="image/jpeg" />
+            </item>
+            <item>
+                <title>Mogelpackung &quot;Full Self-Driving&quot;: Tesla droht einmonatiger Verkaufsstopp in Kalifornien</title>
+                <description>&quot;Full Self-Driving&quot; nennt Tesla den Autopiloten, der Fahrer unterstützen soll. Einem kalifornischen Gericht zufolge geht diese Bezeichnung zu weit. Denn zu viele Kunden verließen sich darauf, dass das Fahrzeug weitgehend von allein fahre. </description>
+                <link>https://www.n-tv.de/wirtschaft/Tesla-droht-einmonatiger-Verkaufsstopp-in-Kalifornien-id30152014.html</link>
+                <guid>https://www.n-tv.de/wirtschaft/Tesla-droht-einmonatiger-Verkaufsstopp-in-Kalifornien-id30152014.html</guid>
+                <category>Wirtschaft</category>
+                <pubDate>Wed, 17 Dec 2025 09:41:58 +0100</pubDate>
+                <content:encoded><![CDATA[<img src="https://www.n-tv.de/img/30152064/1765955967/Img_4_3/250/FILE-Tesla-vehicles-line-a-parking-area-at-the-company-s-Fremont-Calif-factory-Aug-5-2025.jpg" width="250" height="188" align="left" />"Full Self-Driving" nennt Tesla den Autopiloten, der Fahrer unterstützen soll. Einem kalifornischen Gericht zufolge geht diese Bezeichnung zu weit. Denn zu viele Kunden verließen sich darauf, dass das Fahrzeug weitgehend von allein fahre. ]]></content:encoded>
+                <enclosure url="https://www.n-tv.de/img/30152064/1765955967/Img_4_3/250/FILE-Tesla-vehicles-line-a-parking-area-at-the-company-s-Fremont-Calif-factory-Aug-5-2025.jpg" length="12555" type="image/jpeg" />
+            </item>
+            <item>
+                <title>&quot;Jahrelang Riesenspaß gemacht&quot;: Thomas Müller vermisst &quot;die absolute Drucksituation&quot; beim FC Bayern</title>
+                <description>Vieles ganz anders, manches wie immer: Thomas Müller hat auf seiner ersten Auslandsstation für Begeisterung gesorgt - und fühlt sich sehr wohl. Manchem aber trauert er hinterher.</description>
+                <link>https://www.n-tv.de/sport/fussball/Thomas-Mueller-vermisst-die-absolute-Drucksituation-beim-FC-Bayern-id30152302.html</link>
+                <guid>https://www.n-tv.de/sport/fussball/Thomas-Mueller-vermisst-die-absolute-Drucksituation-beim-FC-Bayern-id30152302.html</guid>
+                <category>Sport</category>
+                <pubDate>Wed, 17 Dec 2025 09:40:41 +0100</pubDate>
+                <content:encoded><![CDATA[<img src="https://www.n-tv.de/img/30076805/1764245729/Img_4_3/250/MLS-Fussball-Herren-USA-Vancouver-Whitecaps-FC-at-Orlando-City-Oct-11-2025-Orlando-Florida-USA-Vancouver-Whitecaps-forward-Thomas-Mueller-13-reacts-to-head-referee-Sergii-Boiko-during-a-match-against-Orlando-City-in-the-second-half-at-Inter-Co-Stadium.jpg" width="250" height="188" align="left" />Vieles ganz anders, manches wie immer: Thomas Müller hat auf seiner ersten Auslandsstation für Begeisterung gesorgt - und fühlt sich sehr wohl. Manchem aber trauert er hinterher.]]></content:encoded>
+                <enclosure url="https://www.n-tv.de/img/30076805/1764245729/Img_4_3/250/MLS-Fussball-Herren-USA-Vancouver-Whitecaps-FC-at-Orlando-City-Oct-11-2025-Orlando-Florida-USA-Vancouver-Whitecaps-forward-Thomas-Mueller-13-reacts-to-head-referee-Sergii-Boiko-during-a-match-against-Orlando-City-in-the-second-half-at-Inter-Co-Stadium.jpg" length="12555" type="image/jpeg" />
+            </item>
+            <item>
+                <title>Abdrücke, Zehen, Krallen: Fotograf entdeckt Tausende Dinosaurier-Spuren in den Alpen</title>
+                <description>In Norditalien machen Forscher einen unglaublichen Fund: Über Hunderte Meter erstrecken sich mehr als 200 Millionen Jahre alte Spuren aus der Zeit der Dinosaurier. Sie verraten bestimmte Verhaltensweisen der Giganten.</description>
+                <link>https://www.n-tv.de/wissen/Fotograf-entdeckt-Tausende-Dinosaurier-Spuren-in-den-Alpen-id30151894.html</link>
+                <guid>https://www.n-tv.de/wissen/Fotograf-entdeckt-Tausende-Dinosaurier-Spuren-in-den-Alpen-id30151894.html</guid>
+                <category>Wissen</category>
+                <pubDate>Wed, 17 Dec 2025 08:18:03 +0100</pubDate>
+                <content:encoded><![CDATA[<img src="https://www.n-tv.de/img/30151923/1765952589/Img_4_3/250/Dinosaurierspuren-Felsturzgebiet-Biotop-Marocche-di-Dro-bei-Dro-Sarca-Tal-Trentino-Italien-Europa-Modellfreigabe-vorhanden.jpg" width="250" height="188" align="left" />In Norditalien machen Forscher einen unglaublichen Fund: Über Hunderte Meter erstrecken sich mehr als 200 Millionen Jahre alte Spuren aus der Zeit der Dinosaurier. Sie verraten bestimmte Verhaltensweisen der Giganten.]]></content:encoded>
+                <enclosure url="https://www.n-tv.de/img/30151923/1765952589/Img_4_3/250/Dinosaurierspuren-Felsturzgebiet-Biotop-Marocche-di-Dro-bei-Dro-Sarca-Tal-Trentino-Italien-Europa-Modellfreigabe-vorhanden.jpg" length="12555" type="image/jpeg" />
+            </item>
+            <item>
+                <title>Terrorermittlungen eingeleitet: Sydney-Attentäter wegen 15-fachen Mordes angeklagt</title>
+                <description>15-facher Mord, Terrorismus, Sprengstoffeinsatz - dem überlebenden Sydney-Attentäter werden 59 Tatbestände zur Last gelegt. Untersucht wird auch der IS-Hintergrund der beiden Schützen. Die philippinische Regierung weist hierzu Vorwürfe aus Australien zurück.</description>
+                <link>https://www.n-tv.de/politik/Sydney-Attentaeter-wegen-15-fachen-Mordes-angeklagt-id30152557.html</link>
+                <guid>https://www.n-tv.de/politik/Sydney-Attentaeter-wegen-15-fachen-Mordes-angeklagt-id30152557.html</guid>
+                <category>Politik</category>
+                <pubDate>Wed, 17 Dec 2025 11:06:58 +0100</pubDate>
+                <content:encoded><![CDATA[<img src="https://www.n-tv.de/img/30152710/1765969234/Img_4_3/250/17-12-2025-Australien-Sydney-Ein-Sarg-wird-in-Sydney-Australien-vor-der-Beerdigung-von-Rabbi-Eli-Schlanger-einem-Opfer-der-Massenschiesserei-in-Bondi-Beach-in-eine-Synagoge-in-Bondi-gerollt.jpg" width="250" height="188" align="left" />15-facher Mord, Terrorismus, Sprengstoffeinsatz - dem überlebenden Sydney-Attentäter werden 59 Tatbestände zur Last gelegt. Untersucht wird auch der IS-Hintergrund der beiden Schützen. Die philippinische Regierung weist hierzu Vorwürfe aus Australien zurück.]]></content:encoded>
+                <enclosure url="https://www.n-tv.de/img/30152710/1765969234/Img_4_3/250/17-12-2025-Australien-Sydney-Ein-Sarg-wird-in-Sydney-Australien-vor-der-Beerdigung-von-Rabbi-Eli-Schlanger-einem-Opfer-der-Massenschiesserei-in-Bondi-Beach-in-eine-Synagoge-in-Bondi-gerollt.jpg" length="12555" type="image/jpeg" />
+            </item>
+            <item>
+                <title>Thomas Tuchel sieht Kane vorn: So stimmten Nagelsmann und Kimmich bei Weltfußballerwahl ab</title>
+                <description>In Doha werden am Dienstag die Weltfußballer des Jahres in der FIFA-Version gekürt. Abgestimmt haben unter anderem die Trainer und Kapitäne der Nationalmannschaft. Die deutschen Vertreter, Julian Nagelsmann und Joshua Kimmich, entscheiden sich beide gegen den Sieger Ousamane Dembélé.</description>
+                <link>https://www.n-tv.de/sport/fussball/So-stimmten-Nagelsmann-und-Kimmich-bei-Weltfussballerwahl-ab-id30151928.html</link>
+                <guid>https://www.n-tv.de/sport/fussball/So-stimmten-Nagelsmann-und-Kimmich-bei-Weltfussballerwahl-ab-id30151928.html</guid>
+                <category>Sport</category>
+                <pubDate>Wed, 17 Dec 2025 08:48:45 +0100</pubDate>
+                <content:encoded><![CDATA[<img src="https://www.n-tv.de/img/30151918/1765952484/Img_4_3/250/Joshua-Kimmich-Deutschland-Germany-klatscht-mit-Bundestrainer-Julian-Nagelsmann-Deutschland-Germany-ab-nach-der-Auswechslung-Leipzig-17-11-2025-Deutschland-vs-Slowakei-WM-Qualifikation-6.jpg" width="250" height="188" align="left" />In Doha werden am Dienstag die Weltfußballer des Jahres in der FIFA-Version gekürt. Abgestimmt haben unter anderem die Trainer und Kapitäne der Nationalmannschaft. Die deutschen Vertreter, Julian Nagelsmann und Joshua Kimmich, entscheiden sich beide gegen den Sieger Ousamane Dembélé.]]></content:encoded>
+                <enclosure url="https://www.n-tv.de/img/30151918/1765952484/Img_4_3/250/Joshua-Kimmich-Deutschland-Germany-klatscht-mit-Bundestrainer-Julian-Nagelsmann-Deutschland-Germany-ab-nach-der-Auswechslung-Leipzig-17-11-2025-Deutschland-vs-Slowakei-WM-Qualifikation-6.jpg" length="12555" type="image/jpeg" />
+            </item>
+            <item>
+                <title>Neue Website geplant: Musks X verklagt Startup wegen des Namens Twitter</title>
+                <description>Vor rund drei Jahren kauft Elon Musk Twitter. Später benennt er die Plattform um und sagt öffentlich Adieu zum Vogel im Logo. Nun will sich ein Startup den abgelegten Namen sichern. X zieht deswegen vor Gericht und wirft der &quot;Operation Bluebird&quot; Diebstahl vor.</description>
+                <link>https://www.n-tv.de/wirtschaft/Musks-X-verklagt-Startup-wegen-des-Namens-Twitter-id30152153.html</link>
+                <guid>https://www.n-tv.de/wirtschaft/Musks-X-verklagt-Startup-wegen-des-Namens-Twitter-id30152153.html</guid>
+                <category>Wirtschaft</category>
+                <pubDate>Wed, 17 Dec 2025 09:31:43 +0100</pubDate>
+                <content:encoded><![CDATA[<img src="https://www.n-tv.de/img/3612227/1430259757/Img_4_3/250/57858082.jpg" width="250" height="188" align="left" />Vor rund drei Jahren kauft Elon Musk Twitter. Später benennt er die Plattform um und sagt öffentlich Adieu zum Vogel im Logo. Nun will sich ein Startup den abgelegten Namen sichern. X zieht deswegen vor Gericht und wirft der "Operation Bluebird" Diebstahl vor.]]></content:encoded>
+                <enclosure url="https://www.n-tv.de/img/3612227/1430259757/Img_4_3/250/57858082.jpg" length="12555" type="image/jpeg" />
+            </item>
+            <item>
+                <title>Fährt jetzt auch mit Benzin: Mercedes CLA Hybrid im Fahrbericht - gegen Reichweitenangst</title>
+                <description>Obwohl die MMA-Plattform, auf der der CLA basiert, ursprünglich ausschließlich für elektrische Antriebe vorgesehen war, bringt Mercedes letztlich doch Verbrenner-Versionen. Nur zur Sicherheit, damit der Kunde nicht von der Stange geht. Erste Fahrt.</description>
+                <link>https://www.n-tv.de/auto/Mercedes-CLA-Hybrid-im-Fahrbericht-gegen-Reichweitenangst-id30152027.html</link>
+                <guid>https://www.n-tv.de/auto/Mercedes-CLA-Hybrid-im-Fahrbericht-gegen-Reichweitenangst-id30152027.html</guid>
+                <category>Auto</category>
+                <pubDate>Wed, 17 Dec 2025 08:24:04 +0100</pubDate>
+                <content:encoded><![CDATA[<img src="https://www.n-tv.de/img/30152040/1765955515/Img_4_3/250/Test-Drive-Mercedes-Benz-CLA-HYBRID-Hochgurgl-2025-Exterieur-Farbe-Aquamint-uni-Interieur-Farbe-Leder-schwarz-Mercedes-Benz-CLA-200-4MATIC-Energieverbrauch-kombiniert-5-7-5-2-l-100-km-CO-Emissionen-kombiniert-130-119-g-km-CO-Klasse-D-Mercedes-Benz-CLA-220-4MATIC-Energieverbrauch-kombiniert-5-8-5-3-l-100-km-CO-Emissionen-kombiniert-132-120-g-km-CO-Klasse-D-Test-Drive-Mercedes-Benz-CLA-HYBRID-Hochgurgl-2025-Exterior-color-Aquamint-non-metallic-Interior-color-Leather-black-Mercedes-Benz-CLA-200-4MATIC-Combined-fuel-consumption-5-7-5-2-l-100-km-Combined-CO-emissions-130-119-g-km-CO-class-D-Mercedes-Benz-CLA-220-4MATIC-Combined-fuel-consumption-5-8-5.jpg" width="250" height="188" align="left" />Obwohl die MMA-Plattform, auf der der CLA basiert, ursprünglich ausschließlich für elektrische Antriebe vorgesehen war, bringt Mercedes letztlich doch Verbrenner-Versionen. Nur zur Sicherheit, damit der Kunde nicht von der Stange geht. Erste Fahrt.]]></content:encoded>
+                <enclosure url="https://www.n-tv.de/img/30152040/1765955515/Img_4_3/250/Test-Drive-Mercedes-Benz-CLA-HYBRID-Hochgurgl-2025-Exterieur-Farbe-Aquamint-uni-Interieur-Farbe-Leder-schwarz-Mercedes-Benz-CLA-200-4MATIC-Energieverbrauch-kombiniert-5-7-5-2-l-100-km-CO-Emissionen-kombiniert-130-119-g-km-CO-Klasse-D-Mercedes-Benz-CLA-220-4MATIC-Energieverbrauch-kombiniert-5-8-5-3-l-100-km-CO-Emissionen-kombiniert-132-120-g-km-CO-Klasse-D-Test-Drive-Mercedes-Benz-CLA-HYBRID-Hochgurgl-2025-Exterior-color-Aquamint-non-metallic-Interior-color-Leather-black-Mercedes-Benz-CLA-200-4MATIC-Combined-fuel-consumption-5-7-5-2-l-100-km-Combined-CO-emissions-130-119-g-km-CO-class-D-Mercedes-Benz-CLA-220-4MATIC-Combined-fuel-consumption-5-8-5.jpg" length="12555" type="image/jpeg" />
+            </item>
+            <item>
+                <title>Ehefrau Nina Anhan berichtet: Rapper Haftbefehl lässt sich die Nase operieren</title>
+                <description>Seit seine erfolgreiche und erschreckende Netflix-Doku erschienen ist, steht Haftbefehl noch stärker im Scheinwerferlicht der Öffentlichkeit. Seine Nase bleibt jedoch bei Auftritten immer verdeckt. Seine Frau erklärt nun, warum - und wie es weitergehen soll.   </description>
+                <link>https://www.n-tv.de/leute/Rapper-Haftbefehl-laesst-sich-die-Nase-operieren-id30151957.html</link>
+                <guid>https://www.n-tv.de/leute/Rapper-Haftbefehl-laesst-sich-die-Nase-operieren-id30151957.html</guid>
+                <category>Unterhaltung</category>
+                <pubDate>Wed, 17 Dec 2025 07:31:15 +0100</pubDate>
+                <content:encoded><![CDATA[<img src="https://www.n-tv.de/img/30151934/1765952953/Img_4_3/250/ARCHIV-16-11-2025-Hessen-Giessen-Der-Rapper-Haftbefehl-tritt-im-La-Louve-in-Giessen-auf-zu-dpa-Haftbefehl-veroeffentlicht-ersten-rein-tuerkischen-Track-Foto-Hannes-P.jpg" width="250" height="188" align="left" />Seit seine erfolgreiche und erschreckende Netflix-Doku erschienen ist, steht Haftbefehl noch stärker im Scheinwerferlicht der Öffentlichkeit. Seine Nase bleibt jedoch bei Auftritten immer verdeckt. Seine Frau erklärt nun, warum - und wie es weitergehen soll.   ]]></content:encoded>
+                <enclosure url="https://www.n-tv.de/img/30151934/1765952953/Img_4_3/250/ARCHIV-16-11-2025-Hessen-Giessen-Der-Rapper-Haftbefehl-tritt-im-La-Louve-in-Giessen-auf-zu-dpa-Haftbefehl-veroeffentlicht-ersten-rein-tuerkischen-Track-Foto-Hannes-P.jpg" length="12555" type="image/jpeg" />
+            </item>
+            <item>
+                <title>&quot;Bauer sucht Frau&quot;: Liebesfrust am Nordseestrand</title>
+                <description>Kurz vor dem Hofwochenende sucht Gurkenmacher Jörg verzweifelt nach dem Schlüssel zu seinem Herzen. Über allen anderen Höfen hängt der Himmel voller Geigen.</description>
+                <link>https://www.n-tv.de/leute/tv/Liebesfrust-am-Nordseestrand-id30149708.html</link>
+                <guid>https://www.n-tv.de/leute/tv/Liebesfrust-am-Nordseestrand-id30149708.html</guid>
+                <category>Unterhaltung</category>
+                <pubDate>Tue, 16 Dec 2025 22:35:44 +0100</pubDate>
+                <content:encoded><![CDATA[<img src="https://www.n-tv.de/img/30149718/1765894794/Img_4_3/250/Bei-einem-Wattspaziergang-erzaehlt-Kristin-Joerg-von-ihrem-Leben-als-alleinerziehende-Mutter-Die-Verwendung-des-sendungsbezogenen-Materials-ist-nur-mit-dem-Hinweis-und-Verlinkung-auf-RTL-gestattet.jpg" width="250" height="188" align="left" />Kurz vor dem Hofwochenende sucht Gurkenmacher Jörg verzweifelt nach dem Schlüssel zu seinem Herzen. Über allen anderen Höfen hängt der Himmel voller Geigen.]]></content:encoded>
+                <enclosure url="https://www.n-tv.de/img/30149718/1765894794/Img_4_3/250/Bei-einem-Wattspaziergang-erzaehlt-Kristin-Joerg-von-ihrem-Leben-als-alleinerziehende-Mutter-Die-Verwendung-des-sendungsbezogenen-Materials-ist-nur-mit-dem-Hinweis-und-Verlinkung-auf-RTL-gestattet.jpg" length="12555" type="image/jpeg" />
+            </item>
+            <item>
+                <title>Glamour-Stil von Marilyn Monroe: Sydney Sweeney strahlt ganz in Weiß</title>
+                <description>Bei einer Filmpremiere weckt Hollywood-Star Sydney Sweeney Erinnerungen an Marilyn Monroe. Der &quot;Euphoria&quot;-Star trägt ein weißes Kleid, das Monroes Robe aus &quot;Das verflixte 7. Jahr&quot; stark ähnelt. Es ist nicht das erste Mal, dass die 28-Jährige mit der Ikone wetteifert. </description>
+                <link>https://www.n-tv.de/leute/Sydney-Sweeney-strahlt-ganz-in-Weiss-id30151290.html</link>
+                <guid>https://www.n-tv.de/leute/Sydney-Sweeney-strahlt-ganz-in-Weiss-id30151290.html</guid>
+                <category>Unterhaltung</category>
+                <pubDate>Tue, 16 Dec 2025 21:23:44 +0100</pubDate>
+                <content:encoded><![CDATA[<img src="https://www.n-tv.de/img/30151295/1765918417/Img_4_3/250/Cast-member-Sydney-Sweeney-attends-the-premiere-of-the-motion-picture-thriller-The-Housemaid-the-TCL-Chinese-Theatre-in-the-Hollywood-section-of-Los-Angeles-on-Monday-December-15-2025-Storyline-A-struggling-woman-is-happy-to-start-over-as-a-housemaid-for-an-affluent-elite-couple.jpg" width="250" height="188" align="left" />Bei einer Filmpremiere weckt Hollywood-Star Sydney Sweeney Erinnerungen an Marilyn Monroe. Der "Euphoria"-Star trägt ein weißes Kleid, das Monroes Robe aus "Das verflixte 7. Jahr" stark ähnelt. Es ist nicht das erste Mal, dass die 28-Jährige mit der Ikone wetteifert. ]]></content:encoded>
+                <enclosure url="https://www.n-tv.de/img/30151295/1765918417/Img_4_3/250/Cast-member-Sydney-Sweeney-attends-the-premiere-of-the-motion-picture-thriller-The-Housemaid-the-TCL-Chinese-Theatre-in-the-Hollywood-section-of-Los-Angeles-on-Monday-December-15-2025-Storyline-A-struggling-woman-is-happy-to-start-over-as-a-housemaid-for-an-affluent-elite-couple.jpg" length="12555" type="image/jpeg" />
+            </item>
+            <item>
+                <title>Weihnachtszeit in München: Thomas Müller teilt süßes Selfie mit Ehefrau - und Hund</title>
+                <description>Verheiratet sind sie seit über 16 Jahren. Doch seit seinem Wechsel nach Kanada leben Thomas Müller und seine Frau Lisa aus beruflichen Gründen in getrennten Wohnungen. Nun ist der Fußballstar auf Heimatbesuch in Bayern und hält seine Fans in Müllermanier auf dem Laufenden. </description>
+                <link>https://www.n-tv.de/leute/Thomas-Mueller-teilt-suesses-Selfie-mit-Ehefrau-und-Hund-id30151371.html</link>
+                <guid>https://www.n-tv.de/leute/Thomas-Mueller-teilt-suesses-Selfie-mit-Ehefrau-und-Hund-id30151371.html</guid>
+                <category>Unterhaltung</category>
+                <pubDate>Tue, 16 Dec 2025 22:10:36 +0100</pubDate>
+                <content:encoded><![CDATA[<img src="https://www.n-tv.de/img/30151359/1765923644/Img_4_3/250/Thomas-Mueller-teilt-Foto-mit-seiner-Frau-Lisa.jpg" width="250" height="188" align="left" />Verheiratet sind sie seit über 16 Jahren. Doch seit seinem Wechsel nach Kanada leben Thomas Müller und seine Frau Lisa aus beruflichen Gründen in getrennten Wohnungen. Nun ist der Fußballstar auf Heimatbesuch in Bayern und hält seine Fans in Müllermanier auf dem Laufenden. ]]></content:encoded>
+                <enclosure url="https://www.n-tv.de/img/30151359/1765923644/Img_4_3/250/Thomas-Mueller-teilt-Foto-mit-seiner-Frau-Lisa.jpg" length="12555" type="image/jpeg" />
+            </item>
+            <item>
+                <title>&quot;Schlankester Sauger der Welt&quot;: Der Dyson PencilVac ist auf Hartböden ein Vergnügen</title>
+                <description>Wenn der Dyson PencilVac richtig eingesetzt wird, ist es ein wahres Vergnügen, mit ihm zu arbeiten. Denn obwohl er extrem dünn und leicht ist, reinigt er glatte Böden nicht nur gründlich, sondern begeistert dabei auch durch seine enorme Wendigkeit und unkomplizierte Handhabung.</description>
+                <link>https://www.n-tv.de/technik/Der-Dyson-PencilVac-ist-auf-Hartboeden-ein-Vergnuegen-id30149512.html</link>
+                <guid>https://www.n-tv.de/technik/Der-Dyson-PencilVac-ist-auf-Hartboeden-ein-Vergnuegen-id30149512.html</guid>
+                <category>Technik</category>
+                <pubDate>Tue, 16 Dec 2025 19:33:09 +0100</pubDate>
+                <content:encoded><![CDATA[<img src="https://www.n-tv.de/img/30150548/1765904728/Img_4_3/250/image.jpg" width="250" height="188" align="left" />Wenn der Dyson PencilVac richtig eingesetzt wird, ist es ein wahres Vergnügen, mit ihm zu arbeiten. Denn obwohl er extrem dünn und leicht ist, reinigt er glatte Böden nicht nur gründlich, sondern begeistert dabei auch durch seine enorme Wendigkeit und unkomplizierte Handhabung.]]></content:encoded>
+                <enclosure url="https://www.n-tv.de/img/30150548/1765904728/Img_4_3/250/image.jpg" length="12555" type="image/jpeg" />
+            </item>
+            <item>
+                <title>Das sollten Sie jetzt tun: Hilfe, mein Arbeitgeber ist insolvent</title>
+                <description>Was passiert mit Gehalt, Urlaub und Kündigungsfristen, wenn der Arbeitgeber pleite ist? Expertinnen geben Antworten auf die wichtigsten Fragen für Beschäftigte.</description>
+                <link>https://www.n-tv.de/ratgeber/Hilfe-mein-Arbeitgeber-ist-insolvent-id30143482.html</link>
+                <guid>https://www.n-tv.de/ratgeber/Hilfe-mein-Arbeitgeber-ist-insolvent-id30143482.html</guid>
+                <category>Ratgeber</category>
+                <pubDate>Wed, 17 Dec 2025 06:14:45 +0100</pubDate>
+                <content:encoded><![CDATA[<img src="https://www.n-tv.de/img/30142498/1765757116/Img_4_3/250/Schluss-aus-Ende-Geht-der-Arbeitgeber-in-Insolvenz-haben-Betroffene-viele-Fragen.jpg" width="250" height="188" align="left" />Was passiert mit Gehalt, Urlaub und Kündigungsfristen, wenn der Arbeitgeber pleite ist? Expertinnen geben Antworten auf die wichtigsten Fragen für Beschäftigte.]]></content:encoded>
+                <enclosure url="https://www.n-tv.de/img/30142498/1765757116/Img_4_3/250/Schluss-aus-Ende-Geht-der-Arbeitgeber-in-Insolvenz-haben-Betroffene-viele-Fragen.jpg" length="12555" type="image/jpeg" />
+            </item>
+            <item>
+                <title>Auch Eugenie und Beatrice dabei: Britische Royals treffen sich ohne Andrew zum Weihnachtsessen</title>
+                <description>Ein Großteil der britischen Königsfamilie versammelt sich zu einem Weihnachtsessen im Buckingham-Palast. Ex-Prinz Andrew fehlt. Er soll im strömenden Regen einen Ausritt unternommen haben. Seine beiden Töchter sind jedoch eingeladen. </description>
+                <link>https://www.n-tv.de/leute/Britische-Royals-treffen-sich-ohne-Andrew-zum-Weihnachtsessen-id30151367.html</link>
+                <guid>https://www.n-tv.de/leute/Britische-Royals-treffen-sich-ohne-Andrew-zum-Weihnachtsessen-id30151367.html</guid>
+                <category>Unterhaltung</category>
+                <pubDate>Wed, 17 Dec 2025 04:58:32 +0100</pubDate>
+                <content:encoded><![CDATA[<img src="https://www.n-tv.de/img/30151368/1765921598/Img_4_3/250/Royal-family-christmas-lunch-at-Buckingham-Palace-Featuring-Princess-Beatrice-and-Princess-Eugenie-Where-London-United-Kingdom-When-16-Dec-2025-Credit-Cover-Images-NOT-AVAILABLE-FOR-HELLO-MAGAZINE.jpg" width="250" height="188" align="left" />Ein Großteil der britischen Königsfamilie versammelt sich zu einem Weihnachtsessen im Buckingham-Palast. Ex-Prinz Andrew fehlt. Er soll im strömenden Regen einen Ausritt unternommen haben. Seine beiden Töchter sind jedoch eingeladen. ]]></content:encoded>
+                <enclosure url="https://www.n-tv.de/img/30151368/1765921598/Img_4_3/250/Royal-family-christmas-lunch-at-Buckingham-Palace-Featuring-Princess-Beatrice-and-Princess-Eugenie-Where-London-United-Kingdom-When-16-Dec-2025-Credit-Cover-Images-NOT-AVAILABLE-FOR-HELLO-MAGAZINE.jpg" length="12555" type="image/jpeg" />
+            </item>
+            <item>
+                <title>Härtere Sanktionen, neuer Name: Schwarz-Rot setzt dem Bürgergeld heute ein Ende</title>
+                <description>Kurz vor Jahresende bringt Schwarz-Rot noch eines der zentralen Vorhaben ins Ziel: Das Kabinett beschließt heute die Reform des Bürgergelds. Empfänger, die nicht mitmachen, bekommen in Zukunft größere Probleme. Neu ist auch der Name der staatlichen Leistung.</description>
+                <link>https://www.n-tv.de/politik/Schwarz-Rot-setzt-dem-Buergergeld-heute-ein-Ende-id30151913.html</link>
+                <guid>https://www.n-tv.de/politik/Schwarz-Rot-setzt-dem-Buergergeld-heute-ein-Ende-id30151913.html</guid>
+                <category>Politik</category>
+                <pubDate>Wed, 17 Dec 2025 07:00:17 +0100</pubDate>
+                <content:encoded><![CDATA[<img src="https://www.n-tv.de/img/30151932/1765952897/Img_4_3/250/Bundeskanzler-Friedrich-Merz-CDU-und-Baerbel-Bas-SPD-Bundesministerin-fuer-Arbeit-und-Soziales-und-SPD-Parteivorsitzende-geben-eine-Pressekonferenz-nach-dem-Koalitionsausschuss-im-Bundeskanzleramt.jpg" width="250" height="188" align="left" />Kurz vor Jahresende bringt Schwarz-Rot noch eines der zentralen Vorhaben ins Ziel: Das Kabinett beschließt heute die Reform des Bürgergelds. Empfänger, die nicht mitmachen, bekommen in Zukunft größere Probleme. Neu ist auch der Name der staatlichen Leistung.]]></content:encoded>
+                <enclosure url="https://www.n-tv.de/img/30151932/1765952897/Img_4_3/250/Bundeskanzler-Friedrich-Merz-CDU-und-Baerbel-Bas-SPD-Bundesministerin-fuer-Arbeit-und-Soziales-und-SPD-Parteivorsitzende-geben-eine-Pressekonferenz-nach-dem-Koalitionsausschuss-im-Bundeskanzleramt.jpg" length="12555" type="image/jpeg" />
+            </item>
+            <item>
+                <title>Syrer kommen nicht mehr rein : Trump weitet Einreiseverbote für Ausländer aus</title>
+                <description>Schon seit dem Sommer dürfen Angehörige bestimmter Staaten nicht mehr in die USA einreisen. Jetzt landen noch mehr Länder auf der Schwarzen Liste. Trump begründet das mit mangelnder Kontrolle bei der Passausstellung. </description>
+                <link>https://www.n-tv.de/politik/Trump-weitet-Einreiseverbote-fuer-Auslaender-aus-id30151526.html</link>
+                <guid>https://www.n-tv.de/politik/Trump-weitet-Einreiseverbote-fuer-Auslaender-aus-id30151526.html</guid>
+                <category>Politik</category>
+                <pubDate>Wed, 17 Dec 2025 00:53:29 +0100</pubDate>
+                <content:encoded><![CDATA[<img src="https://www.n-tv.de/img/30151527/1765932259/Img_4_3/250/President-Donald-Trump-speaks-during-a-Mexican-Border-Defense-Medal-presentation-in-the-Oval-Office-of-the-White-House-Monday-Dec-15-2025-in-Washington.jpg" width="250" height="188" align="left" />Schon seit dem Sommer dürfen Angehörige bestimmter Staaten nicht mehr in die USA einreisen. Jetzt landen noch mehr Länder auf der Schwarzen Liste. Trump begründet das mit mangelnder Kontrolle bei der Passausstellung. ]]></content:encoded>
+                <enclosure url="https://www.n-tv.de/img/30151527/1765932259/Img_4_3/250/President-Donald-Trump-speaks-during-a-Mexican-Border-Defense-Medal-presentation-in-the-Oval-Office-of-the-White-House-Monday-Dec-15-2025-in-Washington.jpg" length="12555" type="image/jpeg" />
+            </item>
+            <item>
+                <title>Umgehung der Schuldenbremse: Sachsen-Anhalt verlängert Corona-Notlage - Opposition empört</title>
+                <description>Während alle anderen Bundesländer spätestens 2024 die Corona-Notlage für beendet erklärten, verlängert Sachsen-Anhalt die Ausnahmesituation erneut. Damit kann die Regierung in Magdeburg weiterhin auf das Pandemie-Sondervermögen zugreifen. Die Opposition reagiert mit Kritik und Häme.</description>
+                <link>https://www.n-tv.de/politik/Sachsen-Anhalt-verlaengert-Corona-Notlage-Opposition-empoert-id30151383.html</link>
+                <guid>https://www.n-tv.de/politik/Sachsen-Anhalt-verlaengert-Corona-Notlage-Opposition-empoert-id30151383.html</guid>
+                <category>Politik</category>
+                <pubDate>Wed, 17 Dec 2025 01:19:42 +0100</pubDate>
+                <content:encoded><![CDATA[<img src="https://www.n-tv.de/img/30151365/1765921395/Img_4_3/250/Michael-Richter-l-CDU-Finanzminister-des-Landes-Sachsen-Anhalt-und-Reiner-Haseloff-r-CDU-Ministerpraesident-von-Sachsen-Anhalt-sitzen-im-Plenarsaal-des-Landtages-an-der-Regierungsbank-nebeneinander-und-unterhalten-sich-waehrend-der-Haushaltsdebatte-Die-Abgeordneten-debattierten-in-der-Sitzung-ueber-das-Haushaltsbegleitgesetz-fuer-die-Jahre-2025-und-2026.jpg" width="250" height="188" align="left" />Während alle anderen Bundesländer spätestens 2024 die Corona-Notlage für beendet erklärten, verlängert Sachsen-Anhalt die Ausnahmesituation erneut. Damit kann die Regierung in Magdeburg weiterhin auf das Pandemie-Sondervermögen zugreifen. Die Opposition reagiert mit Kritik und Häme.]]></content:encoded>
+                <enclosure url="https://www.n-tv.de/img/30151365/1765921395/Img_4_3/250/Michael-Richter-l-CDU-Finanzminister-des-Landes-Sachsen-Anhalt-und-Reiner-Haseloff-r-CDU-Ministerpraesident-von-Sachsen-Anhalt-sitzen-im-Plenarsaal-des-Landtages-an-der-Regierungsbank-nebeneinander-und-unterhalten-sich-waehrend-der-Haushaltsdebatte-Die-Abgeordneten-debattierten-in-der-Sitzung-ueber-das-Haushaltsbegleitgesetz-fuer-die-Jahre-2025-und-2026.jpg" length="12555" type="image/jpeg" />
+            </item>
+            <item>
+                <title>Übernahmeschlacht mit Netflix: Trump-Schwiegersohn zieht sich aus Warner-Gebot zurück</title>
+                <description>Paramount will den Konkurrenten Warner Brothers inklusive CNN übernehmen - und das auch mit Geld aus der Trump-Familie finanzieren. Nicht nur an der Wall Street sieht man das kritisch. Jetzt gibt es eine überraschende Wende. </description>
+                <link>https://www.n-tv.de/wirtschaft/Trump-Schwiegersohn-zieht-sich-aus-Warner-Gebot-zurueck-id30151545.html</link>
+                <guid>https://www.n-tv.de/wirtschaft/Trump-Schwiegersohn-zieht-sich-aus-Warner-Gebot-zurueck-id30151545.html</guid>
+                <category>Wirtschaft</category>
+                <pubDate>Wed, 17 Dec 2025 02:32:36 +0100</pubDate>
+                <content:encoded><![CDATA[<img src="https://www.n-tv.de/img/30151550/1765938473/Img_4_3/250/Jared-Kushner-Berater-und-Schwiegersohn-des-US-Praesidenten-aufgenommen-im-Rahmen-eines-ersten-Aufeinandertreffens-mit-dem-Bundeskanzler-nicht-im-Bild-im-Bundeskanzleramt-in-Berlin-15-12-2025-Der-Bundeskanzler-kommt-am-Abend-nach-dem-bilateralen-Treffen-mit-dem-ukrainischen-Praesidenten-zusammen-mit-weiteren-europaeischen-Staats-und-Regierungschefinnen-und-chefs-sowie-den-Spitzen-von-EU-und-NATO.jpg" width="250" height="188" align="left" />Paramount will den Konkurrenten Warner Brothers inklusive CNN übernehmen - und das auch mit Geld aus der Trump-Familie finanzieren. Nicht nur an der Wall Street sieht man das kritisch. Jetzt gibt es eine überraschende Wende. ]]></content:encoded>
+                <enclosure url="https://www.n-tv.de/img/30151550/1765938473/Img_4_3/250/Jared-Kushner-Berater-und-Schwiegersohn-des-US-Praesidenten-aufgenommen-im-Rahmen-eines-ersten-Aufeinandertreffens-mit-dem-Bundeskanzler-nicht-im-Bild-im-Bundeskanzleramt-in-Berlin-15-12-2025-Der-Bundeskanzler-kommt-am-Abend-nach-dem-bilateralen-Treffen-mit-dem-ukrainischen-Praesidenten-zusammen-mit-weiteren-europaeischen-Staats-und-Regierungschefinnen-und-chefs-sowie-den-Spitzen-von-EU-und-NATO.jpg" length="12555" type="image/jpeg" />
+            </item>
+            <item>
+                <title>Dow schließt im Minus: US-Jobdaten sorgen bei Anlegern für Verunsicherung </title>
+                <description>Nach dem langen Shutdown kommen diverse Konjunkturdaten erst verspätet an die Öffentlichkeit. Vor allem die Arbeitsmarktdaten enthalten Licht und Schatten. An der Wall Street hält sich die Kauflaune in Grenzen. </description>
+                <link>https://www.n-tv.de/wirtschaft/US-Jobdaten-sorgen-bei-Anlegern-fuer-Verunsicherung-id30151440.html</link>
+                <guid>https://www.n-tv.de/wirtschaft/US-Jobdaten-sorgen-bei-Anlegern-fuer-Verunsicherung-id30151440.html</guid>
+                <category>Wirtschaft</category>
+                <pubDate>Tue, 16 Dec 2025 23:39:08 +0100</pubDate>
+                <content:encoded><![CDATA[<img src="https://www.n-tv.de/img/30151441/1765928113/Img_4_3/250/A-trader-works-on-the-floor-at-the-New-York-Stock-Exchange-NYSE-in-New-York-City-U-S-December-15-2025.jpg" width="250" height="188" align="left" />Nach dem langen Shutdown kommen diverse Konjunkturdaten erst verspätet an die Öffentlichkeit. Vor allem die Arbeitsmarktdaten enthalten Licht und Schatten. An der Wall Street hält sich die Kauflaune in Grenzen. ]]></content:encoded>
+                <enclosure url="https://www.n-tv.de/img/30151441/1765928113/Img_4_3/250/A-trader-works-on-the-floor-at-the-New-York-Stock-Exchange-NYSE-in-New-York-City-U-S-December-15-2025.jpg" length="12555" type="image/jpeg" />
+            </item>
+            <item>
+                <title>Komplettfertigung ab 2027: Brandenburger Teslawerk wird zur Batteriefabrik ausgebaut</title>
+                <description>Von Anfang an wollte Elon Musk in seiner Tesla-Fabrik in Grünheide auch die Batteriezellen fertigen lassen. Der Ausbau soll nun mit Verspätung nachgeholt werden. Zeitgleich kündigt die EU-Kommission Subventionen für die europäische Herstellung an.   </description>
+                <link>https://www.n-tv.de/wirtschaft/Brandenburger-Teslawerk-wird-zur-Batteriefabrik-ausgebaut-id30151098.html</link>
+                <guid>https://www.n-tv.de/wirtschaft/Brandenburger-Teslawerk-wird-zur-Batteriefabrik-ausgebaut-id30151098.html</guid>
+                <category>Wirtschaft</category>
+                <pubDate>Tue, 16 Dec 2025 19:31:01 +0100</pubDate>
+                <content:encoded><![CDATA[<img src="https://www.n-tv.de/img/30151120/1765911612/Img_4_3/250/Kisten-mit-Batteriezellen-stehen-in-der-Tesla-Gigafactory-Berlin-Brandenburg-an-der-Station-ab-der-die-Zellen-in-die-Produktion-fuer-die-Batteriemodule-und-packs-gebracht-werden.jpg" width="250" height="188" align="left" />Von Anfang an wollte Elon Musk in seiner Tesla-Fabrik in Grünheide auch die Batteriezellen fertigen lassen. Der Ausbau soll nun mit Verspätung nachgeholt werden. Zeitgleich kündigt die EU-Kommission Subventionen für die europäische Herstellung an.   ]]></content:encoded>
+                <enclosure url="https://www.n-tv.de/img/30151120/1765911612/Img_4_3/250/Kisten-mit-Batteriezellen-stehen-in-der-Tesla-Gigafactory-Berlin-Brandenburg-an-der-Station-ab-der-die-Zellen-in-die-Produktion-fuer-die-Batteriemodule-und-packs-gebracht-werden.jpg" length="12555" type="image/jpeg" />
+            </item>
+            <item>
+                <title>&quot;Es ist ziemlich unglaublich …&quot;: Leon Draisaitl schreibt NHL-Geschichte</title>
+                <description>Leon Draisaitl ist längst der deutsche Rekord-Profi in der NHL - und hat nun als Erster auch die Marke von mindestens 1.000 Scorerpunkten erreicht. Und kurz danach sofort übertroffen. Wie weit kann er in diesem Ranking noch klettern?</description>
+                <link>https://www.n-tv.de/sport/Leon-Draisaitl-schreibt-NHL-Geschichte-id30151886.html</link>
+                <guid>https://www.n-tv.de/sport/Leon-Draisaitl-schreibt-NHL-Geschichte-id30151886.html</guid>
+                <category>Sport</category>
+                <pubDate>Wed, 17 Dec 2025 06:42:29 +0100</pubDate>
+                <content:encoded><![CDATA[<img src="https://www.n-tv.de/img/30151880/1765951462/Img_4_3/250/NHL-Eishockey-Herren-USA-Edmonton-Oilers-at-Pittsburgh-Penguins-Dec-16-2025-Pittsburgh-Pennsylvania-USA-Edmonton-Oilers-left-wing-Zach-Hyman-18-congratulates-center-Leon-Draisaitl-29-on-his-1000th-career-NHL-point-which-was-an-assist-against-the-Pittsburgh-Penguins-during-the-first-period-at-PPG-Paints-Arena.jpg" width="250" height="188" align="left" />Leon Draisaitl ist längst der deutsche Rekord-Profi in der NHL - und hat nun als Erster auch die Marke von mindestens 1.000 Scorerpunkten erreicht. Und kurz danach sofort übertroffen. Wie weit kann er in diesem Ranking noch klettern?]]></content:encoded>
+                <enclosure url="https://www.n-tv.de/img/30151880/1765951462/Img_4_3/250/NHL-Eishockey-Herren-USA-Edmonton-Oilers-at-Pittsburgh-Penguins-Dec-16-2025-Pittsburgh-Pennsylvania-USA-Edmonton-Oilers-left-wing-Zach-Hyman-18-congratulates-center-Leon-Draisaitl-29-on-his-1000th-career-NHL-point-which-was-an-assist-against-the-Pittsburgh-Penguins-during-the-first-period-at-PPG-Paints-Arena.jpg" length="12555" type="image/jpeg" />
+            </item>
+            <item>
+                <title>Zukunft weiter unsicher : DFB-Keeper ter Stegen feiert Comeback bei Barcelona</title>
+                <description>Sein letztes Pflichtspiel für die Katalanen absolviert der Deutsche vor mehr als einem halben Jahr. Bei seinem Comeback hat ter Stegen lange nichts zu tun, seine Mannschaft hält sich auch zurück. Am Ende wird es ein Sieg, ter Stegens letzter mit Barça?</description>
+                <link>https://www.n-tv.de/sport/fussball/DFB-Keeper-ter-Stegen-feiert-Comeback-bei-Barcelona-id30151828.html</link>
+                <guid>https://www.n-tv.de/sport/fussball/DFB-Keeper-ter-Stegen-feiert-Comeback-bei-Barcelona-id30151828.html</guid>
+                <category>Sport</category>
+                <pubDate>Wed, 17 Dec 2025 05:36:32 +0100</pubDate>
+                <content:encoded><![CDATA[<img src="https://www.n-tv.de/img/30151821/1765949630/Img_4_3/250/December-16-2025-Guadalajara-Guadalajara-SPAIN-Marc-Andre-ter-Stegen-of-FC-Barcelona-Barca-Javier-Ablanque-of-CD-Guadalajara-and-Cesar-Soto-referee-of-the-match-pose-for-photoduring-the-Spanish-Cup-Copa-del-Rey-Round-of-16-football-match-played-between-CD-Guadalajara-and-FC-Barcelona-at-Estadio-Pedro-Escartin-Stadium-on-December-16-2025-in-Guadalajara-Spain-Guadalajara-SPAIN-ZUMAa181-20251216-zaa-a181-116-Copyright-xIrinaxR.jpg" width="250" height="188" align="left" />Sein letztes Pflichtspiel für die Katalanen absolviert der Deutsche vor mehr als einem halben Jahr. Bei seinem Comeback hat ter Stegen lange nichts zu tun, seine Mannschaft hält sich auch zurück. Am Ende wird es ein Sieg, ter Stegens letzter mit Barça?]]></content:encoded>
+                <enclosure url="https://www.n-tv.de/img/30151821/1765949630/Img_4_3/250/December-16-2025-Guadalajara-Guadalajara-SPAIN-Marc-Andre-ter-Stegen-of-FC-Barcelona-Barca-Javier-Ablanque-of-CD-Guadalajara-and-Cesar-Soto-referee-of-the-match-pose-for-photoduring-the-Spanish-Cup-Copa-del-Rey-Round-of-16-football-match-played-between-CD-Guadalajara-and-FC-Barcelona-at-Estadio-Pedro-Escartin-Stadium-on-December-16-2025-in-Guadalajara-Spain-Guadalajara-SPAIN-ZUMAa181-20251216-zaa-a181-116-Copyright-xIrinaxR.jpg" length="12555" type="image/jpeg" />
+            </item>
+            <item>
+                <title>Niko Springer überraschend raus: &quot;Größter Schock der WM&quot;: Deutsche Darts-Hoffnung scheitert an Außenseiter</title>
+                <description>Ein Auftritt voller Frust: Niko Springer scheitert völlig überraschend in der 1. Runde der Darts-WM. Im Londoner Alexandra Palace verliert der Deutsche 1:3 gegen Außenseiter Joe Comito aus Australien.</description>
+                <link>https://www.n-tv.de/sport/Groesster-Schock-der-WM-Deutsche-Darts-Hoffnung-scheitert-an-Aussenseiter-id30151515.html</link>
+                <guid>https://www.n-tv.de/sport/Groesster-Schock-der-WM-Deutsche-Darts-Hoffnung-scheitert-an-Aussenseiter-id30151515.html</guid>
+                <category>Sport</category>
+                <pubDate>Wed, 17 Dec 2025 01:40:53 +0100</pubDate>
+                <content:encoded><![CDATA[<img src="https://www.n-tv.de/img/30151533/1765934443/Img_4_3/250/Paddy-Power-World-Darts-Championship-Day-Six-Alexandra-Palace-Niko-Springer-reacts-on-day-six-of-the-Paddy-Power-World-Darts-Championship-at-the-Alexandra-Palace-London-Picture-date-Tuesday-December-16-2025-See-PA-story-DARTS-World-Photo-credit-should-read-Bradley-Collyer-PA-Wire-RESTRICTIONS-Use-subject-to-restrictions-Editorial-use-only-no-commercial-use-without-prior-consent-from-rights-holder.jpg" width="250" height="188" align="left" />Ein Auftritt voller Frust: Niko Springer scheitert völlig überraschend in der 1. Runde der Darts-WM. Im Londoner Alexandra Palace verliert der Deutsche 1:3 gegen Außenseiter Joe Comito aus Australien.]]></content:encoded>
+                <enclosure url="https://www.n-tv.de/img/30151533/1765934443/Img_4_3/250/Paddy-Power-World-Darts-Championship-Day-Six-Alexandra-Palace-Niko-Springer-reacts-on-day-six-of-the-Paddy-Power-World-Darts-Championship-at-the-Alexandra-Palace-London-Picture-date-Tuesday-December-16-2025-See-PA-story-DARTS-World-Photo-credit-should-read-Bradley-Collyer-PA-Wire-RESTRICTIONS-Use-subject-to-restrictions-Editorial-use-only-no-commercial-use-without-prior-consent-from-rights-holder.jpg" length="12555" type="image/jpeg" />
+            </item>
+            <item>
+                <title>Aicher begeistert, Dürr im Pech: Slalom-Queen Shiffrin zaubert Flutlichtshow in den Schnee</title>
+                <description>Mit einer starken Leistung auf dem dritten Platz: Im Nachtslalom von Courchevel holt Emma Aicher ihr nächstes Podium. Lena Dürr verpasst das &quot;Stockerl&quot; dramatisch. Und Skikönigin Mikaela Shiffrin begeistert.</description>
+                <link>https://www.n-tv.de/sport/Slalom-Queen-Shiffrin-zaubert-Flutlichtshow-in-den-Schnee-id30151358.html</link>
+                <guid>https://www.n-tv.de/sport/Slalom-Queen-Shiffrin-zaubert-Flutlichtshow-in-den-Schnee-id30151358.html</guid>
+                <category>Sport</category>
+                <pubDate>Tue, 16 Dec 2025 21:51:21 +0100</pubDate>
+                <content:encoded><![CDATA[<img src="https://www.n-tv.de/img/30151360/1765921193/Img_4_3/250/Mikaela-Shiffrin-USA-in-Aktion-im-ersten-Durchgang-beim-alpinen-Skiweltcup-Slalom-der-Damen.jpg" width="250" height="188" align="left" />Mit einer starken Leistung auf dem dritten Platz: Im Nachtslalom von Courchevel holt Emma Aicher ihr nächstes Podium. Lena Dürr verpasst das "Stockerl" dramatisch. Und Skikönigin Mikaela Shiffrin begeistert.]]></content:encoded>
+                <enclosure url="https://www.n-tv.de/img/30151360/1765921193/Img_4_3/250/Mikaela-Shiffrin-USA-in-Aktion-im-ersten-Durchgang-beim-alpinen-Skiweltcup-Slalom-der-Damen.jpg" length="12555" type="image/jpeg" />
+            </item>
+            <item>
+                <title>&quot;Pikachu&quot; besiegt &quot;Special One&quot;: &quot;Schwarz vor Augen&quot;: Ricardo Pietreczko übersteht harten Auftakt bei Darts-WM</title>
+                <description>Ricardo Pietreczko steht als vierter Deutscher in Runde 2 der Darts-WM. &quot;Pikachu&quot; besiegt den portugiesischen Altmeister José de Sousa mit 3:1-Sätzen - und behält seine makellose Bilanz trotz besonderer Umstände.</description>
+                <link>https://www.n-tv.de/sport/Schwarz-vor-Augen-Ricardo-Pietreczko-uebersteht-harten-Auftakt-bei-Darts-WM-id30151320.html</link>
+                <guid>https://www.n-tv.de/sport/Schwarz-vor-Augen-Ricardo-Pietreczko-uebersteht-harten-Auftakt-bei-Darts-WM-id30151320.html</guid>
+                <category>Sport</category>
+                <pubDate>Tue, 16 Dec 2025 21:33:07 +0100</pubDate>
+                <content:encoded><![CDATA[<img src="https://www.n-tv.de/img/30151340/1765919892/Img_4_3/250/Paddy-Power-World-Darts-Championship-Day-Six-Alexandra-Palace-Ricardo-Pietreczko-reacts-on-day-six-of-the-Paddy-Power-World-Darts-Championship-at-the-Alexandra-Palace-London-Picture-date-Tuesday-December-16-2025-See-PA-story-DARTS-World-Photo-credit-should-read-Bradley-Collyer-PA-Wire-RESTRICTIONS-Use-subject-to-restrictions-Editorial-use-only-no-commercial-use-without-prior-consent-from-rights-holder.jpg" width="250" height="188" align="left" />Ricardo Pietreczko steht als vierter Deutscher in Runde 2 der Darts-WM. "Pikachu" besiegt den portugiesischen Altmeister José de Sousa mit 3:1-Sätzen - und behält seine makellose Bilanz trotz besonderer Umstände.]]></content:encoded>
+                <enclosure url="https://www.n-tv.de/img/30151340/1765919892/Img_4_3/250/Paddy-Power-World-Darts-Championship-Day-Six-Alexandra-Palace-Ricardo-Pietreczko-reacts-on-day-six-of-the-Paddy-Power-World-Darts-Championship-at-the-Alexandra-Palace-London-Picture-date-Tuesday-December-16-2025-See-PA-story-DARTS-World-Photo-credit-should-read-Bradley-Collyer-PA-Wire-RESTRICTIONS-Use-subject-to-restrictions-Editorial-use-only-no-commercial-use-without-prior-consent-from-rights-holder.jpg" length="12555" type="image/jpeg" />
+            </item>
+            <item>
+                <title>Frauen-Team bekommt neue Heimat: FC Bayern zurrt Stadionkauf in Unterhaching fest</title>
+                <description>Der Campus wurde zu klein, da musste schnell Ersatz her: Die Frauen von Bayern München bekommen ein neues Zuhause. Der Fußballklub kauft das Stadion in Unterhaching - und teilt ihn sich.</description>
+                <link>https://www.n-tv.de/sport/fussball/FC-Bayern-zurrt-Stadionkauf-in-Unterhaching-fest-id30151311.html</link>
+                <guid>https://www.n-tv.de/sport/fussball/FC-Bayern-zurrt-Stadionkauf-in-Unterhaching-fest-id30151311.html</guid>
+                <category>Sport</category>
+                <pubDate>Tue, 16 Dec 2025 21:25:17 +0100</pubDate>
+                <content:encoded><![CDATA[<img src="https://www.n-tv.de/img/6839707/1761586022/Img_4_3/250/imago1059515241.jpg" width="250" height="188" align="left" />Der Campus wurde zu klein, da musste schnell Ersatz her: Die Frauen von Bayern München bekommen ein neues Zuhause. Der Fußballklub kauft das Stadion in Unterhaching - und teilt ihn sich.]]></content:encoded>
+                <enclosure url="https://www.n-tv.de/img/6839707/1761586022/Img_4_3/250/imago1059515241.jpg" length="12555" type="image/jpeg" />
+            </item>
+            <item>
+                <title>Neue Kategorie für &quot;treue Fans&quot;: FIFA reagiert auf Ticket-Wut vor der WM</title>
+                <description>Bei den Ticketpreisen für die Fußball-Weltmeisterschaft reiben sich viele Fans verwundert die Augen. Auch der DFB zeigt sich irritiert. Die FIFA reagiert auf die Kritik - und bastelt kurzerhand eine neue Ticketkategorie.</description>
+                <link>https://www.n-tv.de/sport/fussball/FIFA-reagiert-auf-Ticket-Wut-vor-der-WM-id30151169.html</link>
+                <guid>https://www.n-tv.de/sport/fussball/FIFA-reagiert-auf-Ticket-Wut-vor-der-WM-id30151169.html</guid>
+                <category>Sport</category>
+                <pubDate>Tue, 16 Dec 2025 20:54:12 +0100</pubDate>
+                <content:encoded><![CDATA[<img src="https://www.n-tv.de/img/30151165/1765913545/Img_4_3/250/firo-05-12.jpg" width="250" height="188" align="left" />Bei den Ticketpreisen für die Fußball-Weltmeisterschaft reiben sich viele Fans verwundert die Augen. Auch der DFB zeigt sich irritiert. Die FIFA reagiert auf die Kritik - und bastelt kurzerhand eine neue Ticketkategorie.]]></content:encoded>
+                <enclosure url="https://www.n-tv.de/img/30151165/1765913545/Img_4_3/250/firo-05-12.jpg" length="12555" type="image/jpeg" />
+            </item>
+            <item>
+                <title>Deutsche allesamt chancenlos: FIFA kürt Ousmane Dembele zum Weltfußballer</title>
+                <description>In einer überraschend kurzen Veranstaltung zeichnet die FIFA in Katar ihre Besten aus. Die deutschen Fußballerinnen und Fußballer sind chancenlos, immerhin Hansi Flick schafft es unter die Top drei der Trainer. Paris St. Germain, das am Mittwoch in Doha spielt, räumt dagegen ab.</description>
+                <link>https://www.n-tv.de/sport/fussball/FIFA-kuert-Ousmane-Dembele-zum-Weltfussballer-id30151053.html</link>
+                <guid>https://www.n-tv.de/sport/fussball/FIFA-kuert-Ousmane-Dembele-zum-Weltfussballer-id30151053.html</guid>
+                <category>Sport</category>
+                <pubDate>Tue, 16 Dec 2025 18:42:54 +0100</pubDate>
+                <content:encoded><![CDATA[<img src="https://www.n-tv.de/img/30151049/1765910356/Img_4_3/250/Ousmane-Dembele-of-Paris-Saint-Germain-plays-during-the-French-L1-football-match-between-Paris-Saint-Germain-PSG-and-Stade-Rennais-FC-at-the-Parc-des-Princes-stadium-in-Paris.jpg" width="250" height="188" align="left" />In einer überraschend kurzen Veranstaltung zeichnet die FIFA in Katar ihre Besten aus. Die deutschen Fußballerinnen und Fußballer sind chancenlos, immerhin Hansi Flick schafft es unter die Top drei der Trainer. Paris St. Germain, das am Mittwoch in Doha spielt, räumt dagegen ab.]]></content:encoded>
+                <enclosure url="https://www.n-tv.de/img/30151049/1765910356/Img_4_3/250/Ousmane-Dembele-of-Paris-Saint-Germain-plays-during-the-French-L1-football-match-between-Paris-Saint-Germain-PSG-and-Stade-Rennais-FC-at-the-Parc-des-Princes-stadium-in-Paris.jpg" length="12555" type="image/jpeg" />
+            </item>
+            <item>
+                <title>Chinesische Ikone im Saarland: Bizarrer Hype erfasst deutschen Tischtennis-Klub</title>
+                <description>Tausende Kilometer Anreise, Tausende Euro Kosten: Um ein Spiel in der Deutschen Bundesliga zu sehen, nehmen chinesische Tischtennis-Fans viel auf sich. Ausgelöst hat diesen Hype ein Transfercoup.</description>
+                <link>https://www.n-tv.de/sport/Bizarrer-Hype-erfasst-deutschen-Tischtennis-Klub-id30150477.html</link>
+                <guid>https://www.n-tv.de/sport/Bizarrer-Hype-erfasst-deutschen-Tischtennis-Klub-id30150477.html</guid>
+                <category>Sport</category>
+                <pubDate>Tue, 16 Dec 2025 19:32:44 +0100</pubDate>
+                <content:encoded><![CDATA[<img src="https://www.n-tv.de/img/30150494/1765903840/Img_4_3/250/Tischtennis-Mannschaft-Maenner-Bundesliga-Werder-Bremen-1-FC-Saarbruecken-Hauptrunde-5-Spieltag-Klaus-Dieter-Fischer-Halle-Zhendong-Fan-vom-1-FC-Saarbruecken-beim-Aufschlag-in-seinem-Spiel-gegen-Marcelo-Aguirre-von-Werder-Bremen.jpg" width="250" height="188" align="left" />Tausende Kilometer Anreise, Tausende Euro Kosten: Um ein Spiel in der Deutschen Bundesliga zu sehen, nehmen chinesische Tischtennis-Fans viel auf sich. Ausgelöst hat diesen Hype ein Transfercoup.]]></content:encoded>
+                <enclosure url="https://www.n-tv.de/img/30150494/1765903840/Img_4_3/250/Tischtennis-Mannschaft-Maenner-Bundesliga-Werder-Bremen-1-FC-Saarbruecken-Hauptrunde-5-Spieltag-Klaus-Dieter-Fischer-Halle-Zhendong-Fan-vom-1-FC-Saarbruecken-beim-Aufschlag-in-seinem-Spiel-gegen-Marcelo-Aguirre-von-Werder-Bremen.jpg" length="12555" type="image/jpeg" />
+            </item>
+            <item>
+                <title>Haarscharf am Rekord vorbei: Feuerwehrmann übersteht bei Darts-WM irres Matchdart-Drama</title>
+                <description>Ein starker Start, viele ausgelassene Chancen, dann das Happy End: Dartsprofi Alan Soutar hat bei der WM in London nach einer wilden Achterbahnfahrt die zweite Runde erreicht. Und fast einen historischen Rekord gebrochen.</description>
+                <link>https://www.n-tv.de/sport/Feuerwehrmann-uebersteht-bei-Darts-WM-irres-Matchdart-Drama-id30150255.html</link>
+                <guid>https://www.n-tv.de/sport/Feuerwehrmann-uebersteht-bei-Darts-WM-irres-Matchdart-Drama-id30150255.html</guid>
+                <category>Sport</category>
+                <pubDate>Tue, 16 Dec 2025 17:22:25 +0100</pubDate>
+                <content:encoded><![CDATA[<img src="https://www.n-tv.de/img/30150412/1765902819/Img_4_3/250/TL_2026WCR1_Soutar4.jpg" width="250" height="188" align="left" />Ein starker Start, viele ausgelassene Chancen, dann das Happy End: Dartsprofi Alan Soutar hat bei der WM in London nach einer wilden Achterbahnfahrt die zweite Runde erreicht. Und fast einen historischen Rekord gebrochen.]]></content:encoded>
+                <enclosure url="https://www.n-tv.de/img/30150412/1765902819/Img_4_3/250/TL_2026WCR1_Soutar4.jpg" length="12555" type="image/jpeg" />
+            </item>
+            <item>
+                <title>Gericht gibt Reporter recht: Verkäufer des Schabowski-Zettels verlieren Anonymität</title>
+                <description>Mit einem Satz löste Schabowski den Mauerfall aus. Sein Sprechzettel bei der berühmten Pressekonferenz vom 9. November 1989 wurde seitdem zwei Mal verkauft. Das Haus der Geschichte in Bonn hält die Namen der Verkäufer geheim, verliert aber jetzt vor Gericht. </description>
+                <link>https://www.n-tv.de/panorama/Verkaeufer-des-Schabowski-Zettels-verlieren-Anonymitaet-id30151214.html</link>
+                <guid>https://www.n-tv.de/panorama/Verkaeufer-des-Schabowski-Zettels-verlieren-Anonymitaet-id30151214.html</guid>
+                <category>Panorama</category>
+                <pubDate>Tue, 16 Dec 2025 21:21:35 +0100</pubDate>
+                <content:encoded><![CDATA[<img src="https://www.n-tv.de/img/30151235/1765916314/Img_4_3/250/Blick-auf-die-handschriftlichen-Notizen-vom-damaligen-Mitglied-des-Politbueros-des-Zentralkomitees-der-SED-Guenter-Schabowski-die-er-bei-der-Pressekonferenz-am-9-November-1989-zu-der-neuen-Regelung-fuer-Reisen-ins-westliche-Ausland-fuer-DDR-Buerger-nutzte-Vom-8-November-an-ist-der-Zettel-im-Berliner-Traenenpalast-zu-sehen.jpg" width="250" height="188" align="left" />Mit einem Satz löste Schabowski den Mauerfall aus. Sein Sprechzettel bei der berühmten Pressekonferenz vom 9. November 1989 wurde seitdem zwei Mal verkauft. Das Haus der Geschichte in Bonn hält die Namen der Verkäufer geheim, verliert aber jetzt vor Gericht. ]]></content:encoded>
+                <enclosure url="https://www.n-tv.de/img/30151235/1765916314/Img_4_3/250/Blick-auf-die-handschriftlichen-Notizen-vom-damaligen-Mitglied-des-Politbueros-des-Zentralkomitees-der-SED-Guenter-Schabowski-die-er-bei-der-Pressekonferenz-am-9-November-1989-zu-der-neuen-Regelung-fuer-Reisen-ins-westliche-Ausland-fuer-DDR-Buerger-nutzte-Vom-8-November-an-ist-der-Zettel-im-Berliner-Traenenpalast-zu-sehen.jpg" length="12555" type="image/jpeg" />
+            </item>
+    </channel>
+    </rss>

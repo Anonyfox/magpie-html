@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>TechCrunch</title>
+	<atom:link href="https://techcrunch.com/feed/" rel="self" type="application/rss+xml" />
+	<link>https://techcrunch.com/</link>
+	<description>Startup and Technology News</description>
+	<lastBuildDate>Wed, 17 Dec 2025 10:00:00 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.8.3</generator>
+
+<image>
+	<url>https://techcrunch.com/wp-content/uploads/2015/02/cropped-cropped-favicon-gradient.png?w=32</url>
+	<title>TechCrunch</title>
+	<link>https://techcrunch.com/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Google deepens consumer credit push in India with UPI-linked card</title>
+		<link>https://techcrunch.com/2025/12/17/google-deepens-consumer-credit-push-in-india-with-upi-linked-card/</link>
+		
+		<dc:creator><![CDATA[Jagmeet Singh]]></dc:creator>
+		<pubDate>Wed, 17 Dec 2025 10:00:00 +0000</pubDate>
+				<category><![CDATA[Fintech]]></category>
+		<category><![CDATA[Apps]]></category>
+		<category><![CDATA[Google]]></category>
+		<category><![CDATA[Google Pay]]></category>
+		<category><![CDATA[Axis Bank]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3076592</guid>
+
+					<description><![CDATA[Google has entered India's growing co-branded credit card market by partnering with Axis Bank.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Weeks after raising $100M, investors pump another $180M into hot Indian startup MoEngage</title>
+		<link>https://techcrunch.com/2025/12/16/weeks-after-raising-100m-investors-pump-another-180m-into-hot-indian-startup-moengage/</link>
+		
+		<dc:creator><![CDATA[Jagmeet Singh]]></dc:creator>
+		<pubDate>Wed, 17 Dec 2025 05:20:00 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[Enterprise]]></category>
+		<category><![CDATA[Startups]]></category>
+		<category><![CDATA[b capital]]></category>
+		<category><![CDATA[ChrysCapital]]></category>
+		<category><![CDATA[Dragon Funds]]></category>
+		<category><![CDATA[MoEngage]]></category>
+		<category><![CDATA[Schroders Capital]]></category>
+		<category><![CDATA[tr capital]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3076449</guid>
+
+					<description><![CDATA[The deal valued MoEngage at "well over" $900 million post-money.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Monzo board reportedly pushed out CEO Anil over IPO timing</title>
+		<link>https://techcrunch.com/2025/12/16/monzo-board-reportedly-pushed-out-ceo-anil-over-ipo-timing/</link>
+		
+		<dc:creator><![CDATA[Connie Loizos]]></dc:creator>
+		<pubDate>Wed, 17 Dec 2025 03:06:17 +0000</pubDate>
+				<category><![CDATA[Fintech]]></category>
+		<category><![CDATA[monzo]]></category>
+		<category><![CDATA[TS Anil]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3076787</guid>
+
+					<description><![CDATA[A key issue, reportedly, was IPO timing.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Tesla engaged in deceptive marketing for Autopilot and Full Self-Driving, judge rules</title>
+		<link>https://techcrunch.com/2025/12/16/tesla-engaged-in-deceptive-marketing-for-autopilot-and-full-self-driving-judge-rules/</link>
+		
+		<dc:creator><![CDATA[Sean O'Kane]]></dc:creator>
+		<pubDate>Wed, 17 Dec 2025 01:14:59 +0000</pubDate>
+				<category><![CDATA[Transportation]]></category>
+		<category><![CDATA[Elon Musk]]></category>
+		<category><![CDATA[Tesla]]></category>
+		<category><![CDATA[autonomous vehicles]]></category>
+		<category><![CDATA[avs]]></category>
+		<category><![CDATA[Tesla Autopilot]]></category>
+		<category><![CDATA[full self-driving]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3076757</guid>
+
+					<description><![CDATA[The judge ruled Tesla should have to suspend manufacturing and sales in California for 30 days, but the DMV stayed those rulings for 90 days to allow Tesla to comply.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>How Luminar&#8217;s doomed Volvo deal helped drag the company into bankruptcy</title>
+		<link>https://techcrunch.com/2025/12/16/how-luminars-doomed-volvo-deal-helped-drag-the-company-into-bankruptcy/</link>
+		
+		<dc:creator><![CDATA[Sean O'Kane]]></dc:creator>
+		<pubDate>Tue, 16 Dec 2025 22:43:00 +0000</pubDate>
+				<category><![CDATA[Transportation]]></category>
+		<category><![CDATA[volvo]]></category>
+		<category><![CDATA[Lidar]]></category>
+		<category><![CDATA[Austin Russell]]></category>
+		<category><![CDATA[Luminar]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3076392</guid>
+
+					<description><![CDATA[Luminar says trouble with Volvo started as early as 2022, and that the Swedish automaker made -- but then backed away from -- large orders of its lidar sensors.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>WikiFlix shows us what Netflix would have been like 100 years ago</title>
+		<link>https://techcrunch.com/2025/12/16/wikiflix-shows-us-what-netflix-would-have-been-like-100-years-ago/</link>
+		
+		<dc:creator><![CDATA[Amanda Silberling]]></dc:creator>
+		<pubDate>Tue, 16 Dec 2025 21:58:32 +0000</pubDate>
+				<category><![CDATA[Media & Entertainment]]></category>
+		<category><![CDATA[Wikipedia]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3076595</guid>
+
+					<description><![CDATA[On WikiFlix, a Netflix-inspired archive of public domain films, you can watch movies like "It's a Wonderful Life" and "Nosferatu" for free.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>X updates its terms, files countersuit to lay claim to the &#8216;Twitter&#8217; trademark after newcomer&#8217;s challenge</title>
+		<link>https://techcrunch.com/2025/12/16/x-updates-its-terms-files-countersuit-to-lay-claim-to-the-twitter-trademark-after-newcomers-challenge/</link>
+		
+		<dc:creator><![CDATA[Sarah Perez]]></dc:creator>
+		<pubDate>Tue, 16 Dec 2025 21:11:48 +0000</pubDate>
+				<category><![CDATA[Startups]]></category>
+		<category><![CDATA[Apps]]></category>
+		<category><![CDATA[Social]]></category>
+		<category><![CDATA[lawsuit]]></category>
+		<category><![CDATA[Twitter]]></category>
+		<category><![CDATA[X]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3076669</guid>
+
+					<description><![CDATA[X's new terms of service say that no one can use the Twitter name, trademarks, logos, and more without written consent. ]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Study shows Instacart may be charging some shoppers 20% more for the same product</title>
+		<link>https://techcrunch.com/2025/12/16/study-shows-instacart-may-be-charging-some-shoppers-20-more-for-the-same-product/</link>
+		
+		<dc:creator><![CDATA[Lucas Ropek]]></dc:creator>
+		<pubDate>Tue, 16 Dec 2025 20:56:18 +0000</pubDate>
+				<category><![CDATA[Commerce]]></category>
+		<category><![CDATA[Amazon]]></category>
+		<category><![CDATA[e-commerce]]></category>
+		<category><![CDATA[Instacart]]></category>
+		<category><![CDATA[dynamic pricing]]></category>
+		<category><![CDATA[In Brief]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3076612</guid>
+
+					<description><![CDATA[The delivery app has claimed that price testing is part of a longstanding practice in retail sales.  ]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Slate crosses 150,000 reservations despite waning EV truck enthusiasm</title>
+		<link>https://techcrunch.com/2025/12/16/slate-crosses-150000-reservations-despite-waning-ev-truck-enthusiasm/</link>
+		
+		<dc:creator><![CDATA[Sean O'Kane]]></dc:creator>
+		<pubDate>Tue, 16 Dec 2025 20:05:49 +0000</pubDate>
+				<category><![CDATA[Startups]]></category>
+		<category><![CDATA[Transportation]]></category>
+		<category><![CDATA[electric vehicles]]></category>
+		<category><![CDATA[EVs]]></category>
+		<category><![CDATA[slate auto]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3076618</guid>
+
+					<description><![CDATA[It took Slate Auto about seven months to grow its customer list by 50%, but new reservations appear to be outpacing any cancelations. ]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>DoorDash rolls out Zesty, an AI social app for discovering new restaurants</title>
+		<link>https://techcrunch.com/2025/12/16/doordash-rolls-out-zesty-an-ai-social-app-for-discovering-new-restaurants/</link>
+		
+		<dc:creator><![CDATA[Aisha Malik]]></dc:creator>
+		<pubDate>Tue, 16 Dec 2025 18:48:43 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[Apps]]></category>
+		<category><![CDATA[Social]]></category>
+		<category><![CDATA[dining]]></category>
+		<category><![CDATA[DoorDash]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3076512</guid>
+
+					<description><![CDATA[Users can view and share photos and comments about restaurants they’ve visited, discover content from others, and follow people just like on any social network. ]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Meta&#8217;s AI glasses can now help you hear conversations better</title>
+		<link>https://techcrunch.com/2025/12/16/metas-ai-glasses-can-now-help-you-hear-conversations-better/</link>
+		
+		<dc:creator><![CDATA[Sarah Perez]]></dc:creator>
+		<pubDate>Tue, 16 Dec 2025 18:30:55 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[Gadgets]]></category>
+		<category><![CDATA[Hardware]]></category>
+		<category><![CDATA[Meta]]></category>
+		<category><![CDATA[smartglasses]]></category>
+		<category><![CDATA[ai glasses]]></category>
+		<category><![CDATA[ray ban met]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3076502</guid>
+
+					<description><![CDATA[Conversation focus uses the AI glasses' open-ear speakers to amplify the voice of the person you're talking to, says Meta. ]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>OpenAI continues on its &#8216;code red&#8217; warpath with new image generation model</title>
+		<link>https://techcrunch.com/2025/12/16/openai-continues-on-its-code-red-warpath-with-new-image-generation-model/</link>
+		
+		<dc:creator><![CDATA[Rebecca Bellan]]></dc:creator>
+		<pubDate>Tue, 16 Dec 2025 18:22:50 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[OpenAI]]></category>
+		<category><![CDATA[image generation]]></category>
+		<category><![CDATA[gpt-image-1.5]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3076519</guid>
+
+					<description><![CDATA[OpenAI rolls out GPT Image 1.5 for ChatGPT, promising 4x faster generation, better instruction-following, and precise edits. The launch  escalates its rivalry with Google Gemini.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Uber Eats alum lands $14M seed from a16z to fix WhatsApp chaos for LatAm&#8217;s doctors</title>
+		<link>https://techcrunch.com/2025/12/16/uber-eats-alum-lands-14m-seed-from-a16z-to-fix-whatsapp-chaos-for-latams-doctors/</link>
+		
+		<dc:creator><![CDATA[Marina Temkin]]></dc:creator>
+		<pubDate>Tue, 16 Dec 2025 18:11:58 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[Biotech & Health]]></category>
+		<category><![CDATA[Startups]]></category>
+		<category><![CDATA[a16z]]></category>
+		<category><![CDATA[LATAM]]></category>
+		<category><![CDATA[Rappi]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3076487</guid>
+
+					<description><![CDATA[Leona Health built an AI co-pilot to manage the flood of patient messages Latin American doctors receive on WhatsApp.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Google tests an email-based productivity assistant</title>
+		<link>https://techcrunch.com/2025/12/16/google-tests-an-email-based-productivity-assistant/</link>
+		
+		<dc:creator><![CDATA[Ivan Mehta]]></dc:creator>
+		<pubDate>Tue, 16 Dec 2025 18:00:00 +0000</pubDate>
+				<category><![CDATA[TC]]></category>
+		<category><![CDATA[AI]]></category>
+		<category><![CDATA[Apps]]></category>
+		<category><![CDATA[AI assistant]]></category>
+		<category><![CDATA[gmail]]></category>
+		<category><![CDATA[Google]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3076345</guid>
+
+					<description><![CDATA[Google's new email-based assistant will be available to AI Pro and Ultra plan users over the age of 18 in North America.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Whole Foods to install smart food waste bins from Mill starting in 2027</title>
+		<link>https://techcrunch.com/2025/12/16/whole-foods-to-install-smart-food-waste-bins-from-mill-starting-in-2027/</link>
+		
+		<dc:creator><![CDATA[Tim De Chant]]></dc:creator>
+		<pubDate>Tue, 16 Dec 2025 17:22:25 +0000</pubDate>
+				<category><![CDATA[Climate]]></category>
+		<category><![CDATA[Hardware]]></category>
+		<category><![CDATA[Startups]]></category>
+		<category><![CDATA[Amazon]]></category>
+		<category><![CDATA[Amazon Climate Pledge Fund]]></category>
+		<category><![CDATA[food waste]]></category>
+		<category><![CDATA[Grocery store]]></category>
+		<category><![CDATA[In Brief]]></category>
+		<category><![CDATA[Matt Rogers]]></category>
+		<category><![CDATA[Mill]]></category>
+		<category><![CDATA[whole foods]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3076420</guid>
+
+					<description><![CDATA[The food waste startup founded by Nest alumnus Matt Rogers also received an investment from Amazon's Climate Pledge Fund.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Netflix doubles down on video podcasts with iHeartMedia deal</title>
+		<link>https://techcrunch.com/2025/12/16/netflix-doubles-down-on-video-podcasts-with-iheartmedia-deal/</link>
+		
+		<dc:creator><![CDATA[Lauren Forristal]]></dc:creator>
+		<pubDate>Tue, 16 Dec 2025 17:13:24 +0000</pubDate>
+				<category><![CDATA[Media & Entertainment]]></category>
+		<category><![CDATA[iheartmedia]]></category>
+		<category><![CDATA[Netflix]]></category>
+		<category><![CDATA[podcast]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3076457</guid>
+
+					<description><![CDATA[As part of the agreement, Netflix will get a diverse range of shows spanning comedy, crime, history, sports, and more.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Canadian peer-to-peer clothing rental company Rax is expanding to the US</title>
+		<link>https://techcrunch.com/2025/12/16/canadian-peer-to-peer-clothing-rental-company-rax-is-expanding-to-the-u-s/</link>
+		
+		<dc:creator><![CDATA[Dominic-Madori Davis]]></dc:creator>
+		<pubDate>Tue, 16 Dec 2025 16:11:16 +0000</pubDate>
+				<category><![CDATA[Startups]]></category>
+		<category><![CDATA[consumer]]></category>
+		<category><![CDATA[Disrupt]]></category>
+		<category><![CDATA[Fashion]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3076414</guid>
+
+					<description><![CDATA[Rax is a peer-to-peer clothing rental company that won top consumer pitch at Disrupt this year. ]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Instagram brings Reels to the big screen, starting with Amazon Fire TV</title>
+		<link>https://techcrunch.com/2025/12/16/instagram-brings-reels-to-the-big-screen-starting-with-amazon-fire-tv/</link>
+		
+		<dc:creator><![CDATA[Aisha Malik]]></dc:creator>
+		<pubDate>Tue, 16 Dec 2025 16:00:00 +0000</pubDate>
+				<category><![CDATA[Media & Entertainment]]></category>
+		<category><![CDATA[Apps]]></category>
+		<category><![CDATA[Social]]></category>
+		<category><![CDATA[Instagram]]></category>
+		<category><![CDATA[Amazon Fire TV]]></category>
+		<category><![CDATA[reels]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3076382</guid>
+
+					<description><![CDATA[By bringing Reels to TVs, Instagram can better compete with YouTube, which largely dominates the TV space. ]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Apple TV adds support for Google Cast even as Netflix ditches the feature</title>
+		<link>https://techcrunch.com/2025/12/16/apple-tv-adds-support-for-google-cast-even-as-netflix-ditches-the-feature/</link>
+		
+		<dc:creator><![CDATA[Sarah Perez]]></dc:creator>
+		<pubDate>Tue, 16 Dec 2025 15:45:54 +0000</pubDate>
+				<category><![CDATA[Apps]]></category>
+		<category><![CDATA[Media & Entertainment]]></category>
+		<category><![CDATA[apple tv]]></category>
+		<category><![CDATA[streaming]]></category>
+		<category><![CDATA[android app]]></category>
+		<category><![CDATA[Google Cast]]></category>
+		<category><![CDATA[casting]]></category>
+		<category><![CDATA[In Brief]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3076389</guid>
+
+					<description><![CDATA[The tech giant's adoption of Google Cast signals its interest in making Apple TV a more competitive streaming service at a time when the market is seeing increased consolidation. ]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Hacking group says it&#8217;s extorting Pornhub after stealing users’ viewing data</title>
+		<link>https://techcrunch.com/2025/12/16/hacking-group-says-its-extorting-pornhub-after-stealing-users-viewing-data/</link>
+		
+		<dc:creator><![CDATA[Lorenzo Franceschi-Bicchierai]]></dc:creator>
+		<pubDate>Tue, 16 Dec 2025 15:41:13 +0000</pubDate>
+				<category><![CDATA[Security]]></category>
+		<category><![CDATA[cybercrime]]></category>
+		<category><![CDATA[cybersecurity]]></category>
+		<category><![CDATA[data breach]]></category>
+		<category><![CDATA[hackers]]></category>
+		<category><![CDATA[hacking]]></category>
+		<category><![CDATA[Mixpanel]]></category>
+		<category><![CDATA[pornhub]]></category>
+		<category><![CDATA[Scattered Lapsus$ Hunters]]></category>
+		<category><![CDATA[Scattered Spider]]></category>
+		<category><![CDATA[shinyhunters]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3076390</guid>
+
+					<description><![CDATA[The Scattered Lapsus$ Hunters hacking collective stole Pornhub premium users’ data, including email addresses and viewing history.]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

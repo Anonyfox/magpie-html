@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title><![CDATA[React Blog]]></title>
+        <description><![CDATA[This blog is the official source for the updates from the React team. Anything important, including release notes or deprecation notices, will be posted here first.]]></description>
+        <link>https://react.dev/</link>
+        <generator>react.dev rss module</generator>
+        <lastBuildDate>Fri, 12 Dec 2025 01:08:35 GMT</lastBuildDate>
+        <atom:link href="https://react.dev/rss.xml" rel="self" type="application/rss+xml"/>
+        <pubDate>Fri, 12 Dec 2025 01:08:35 GMT</pubDate>
+        <language><![CDATA[en]]></language>
+        <item>
+            <title><![CDATA[Denial of Service and Source Code Exposure in React Server Components]]></title>
+            <description><![CDATA[Security researchers have found and disclosed two additional vulnerabilities in React Server Components while attempting to exploit the patches in last week’s critical vulnerability. High vulnerability Denial of Service (CVE-2025-55184), and medium vulnerability Source Code Exposure (CVE-2025-55183)]]></description>
+            <link>https://react.dev/blog/2025/12/11/denial-of-service-and-source-code-exposure-in-react-server-components</link>
+            <guid isPermaLink="true">https://react.dev/blog/2025/12/11/denial-of-service-and-source-code-exposure-in-react-server-components</guid>
+            <dc:creator><![CDATA[The React Team]]></dc:creator>
+            <pubDate>Thu, 11 Dec 2025 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Critical Security Vulnerability in React Server Components]]></title>
+            <description><![CDATA[There is an unauthenticated remote code execution vulnerability in React Server Components. A fix has been published in versions 19.0.1, 19.1.2, and 19.2.1. We recommend upgrading immediately.]]></description>
+            <link>https://react.dev/blog/2025/12/03/critical-security-vulnerability-in-react-server-components</link>
+            <guid isPermaLink="true">https://react.dev/blog/2025/12/03/critical-security-vulnerability-in-react-server-components</guid>
+            <dc:creator><![CDATA[The React Team]]></dc:creator>
+            <pubDate>Wed, 03 Dec 2025 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[React Conf 2025 Recap]]></title>
+            <description><![CDATA[Last week we hosted React Conf 2025, in this post, we summarize the talks and announcements from the event...]]></description>
+            <link>https://react.dev/blog/2025/10/16/react-conf-2025-recap</link>
+            <guid isPermaLink="true">https://react.dev/blog/2025/10/16/react-conf-2025-recap</guid>
+            <dc:creator><![CDATA[Matt Carroll and Ricky Hanlon]]></dc:creator>
+            <pubDate>Thu, 16 Oct 2025 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[React Compiler v1.0]]></title>
+            <description><![CDATA[We are releasing the compiler's first stable release today.]]></description>
+            <link>https://react.dev/blog/2025/10/07/react-compiler-1</link>
+            <guid isPermaLink="true">https://react.dev/blog/2025/10/07/react-compiler-1</guid>
+            <dc:creator><![CDATA[Lauren Tan, Joe Savona, and Mofei Zhang]]></dc:creator>
+            <pubDate>Tue, 07 Oct 2025 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Introducing the React Foundation]]></title>
+            <description><![CDATA[Today, we're announcing our plans to create the React Foundation a new technical governance structure]]></description>
+            <link>https://react.dev/blog/2025/10/07/introducing-the-react-foundation</link>
+            <guid isPermaLink="true">https://react.dev/blog/2025/10/07/introducing-the-react-foundation</guid>
+            <dc:creator><![CDATA[Seth Webster, Matt Carroll, Joe Savona]]></dc:creator>
+            <pubDate>Tue, 07 Oct 2025 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[React 19.2]]></title>
+            <description><![CDATA[React 19.2 adds new features like Activity, React Performance Tracks, useEffectEvent, and more.]]></description>
+            <link>https://react.dev/blog/2025/10/01/react-19-2</link>
+            <guid isPermaLink="true">https://react.dev/blog/2025/10/01/react-19-2</guid>
+            <dc:creator><![CDATA[The React Team]]></dc:creator>
+            <pubDate>Wed, 01 Oct 2025 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[React Labs: View Transitions, Activity, and more]]></title>
+            <description><![CDATA[In React Labs posts, we write about projects in active research and development. In this post, we're sharing two new experimental features that are ready to try today, and updates on other areas we're working on now.]]></description>
+            <link>https://react.dev/blog/2025/04/23/react-labs-view-transitions-activity-and-more</link>
+            <guid isPermaLink="true">https://react.dev/blog/2025/04/23/react-labs-view-transitions-activity-and-more</guid>
+            <dc:creator><![CDATA[Ricky Hanlon]]></dc:creator>
+            <pubDate>Wed, 23 Apr 2025 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Sunsetting Create React App]]></title>
+            <description><![CDATA[Today, we’re deprecating Create React App for new apps, and encouraging existing apps to migrate to a framework, or to migrate to a build tool like Vite, Parcel, or RSBuild. We’re also providing docs for when a framework isn’t a good fit for your project, you want to build your own framework, or you just want to learn how React works by building a React app from scratch.]]></description>
+            <link>https://react.dev/blog/2025/02/14/sunsetting-create-react-app</link>
+            <guid isPermaLink="true">https://react.dev/blog/2025/02/14/sunsetting-create-react-app</guid>
+            <dc:creator><![CDATA[Matt Carroll and Ricky Hanlon]]></dc:creator>
+            <pubDate>Fri, 14 Feb 2025 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[React v19]]></title>
+            <description><![CDATA[React 19 is now available on npm! In this post, we'll give an overview of the new features in React 19, and how you can adopt them.]]></description>
+            <link>https://react.dev/blog/2024/12/05/react-19</link>
+            <guid isPermaLink="true">https://react.dev/blog/2024/12/05/react-19</guid>
+            <dc:creator><![CDATA[The React Team]]></dc:creator>
+            <pubDate>Thu, 05 Dec 2024 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[React Compiler Beta Release]]></title>
+            <description><![CDATA[At React Conf 2024, we announced the experimental release of React Compiler, a build-time tool that optimizes your React app through automatic memoization. In this post, we want to share what's next for open source, and our progress on the compiler.]]></description>
+            <link>https://react.dev/blog/2024/10/21/react-compiler-beta-release</link>
+            <guid isPermaLink="true">https://react.dev/blog/2024/10/21/react-compiler-beta-release</guid>
+            <dc:creator><![CDATA[Lauren Tan]]></dc:creator>
+            <pubDate>Mon, 21 Oct 2024 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[React Conf 2024 Recap]]></title>
+            <description><![CDATA[Last week we hosted React Conf 2024, a two-day conference in Henderson, Nevada where 700+ attendees gathered in-person to discuss the latest in UI engineering. In this post, we'll summarize the talks and announcements from the event.]]></description>
+            <link>https://react.dev/blog/2024/05/22/react-conf-2024-recap</link>
+            <guid isPermaLink="true">https://react.dev/blog/2024/05/22/react-conf-2024-recap</guid>
+            <dc:creator><![CDATA[Ricky Hanlon]]></dc:creator>
+            <pubDate>Wed, 22 May 2024 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[React 19 Upgrade Guide]]></title>
+            <description><![CDATA[The improvements added to React 19 require some breaking changes, but we've worked to make the upgrade as smooth as possible and we don't expect the changes to impact most apps. In this post, we will guide you through the steps for upgrading apps and libraries to React 19.]]></description>
+            <link>https://react.dev/blog/2024/04/25/react-19-upgrade-guide</link>
+            <guid isPermaLink="true">https://react.dev/blog/2024/04/25/react-19-upgrade-guide</guid>
+            <dc:creator><![CDATA[Ricky Hanlon]]></dc:creator>
+            <pubDate>Thu, 25 Apr 2024 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[React Labs: What We've Been Working On – February 2024]]></title>
+            <description><![CDATA[In React Labs posts, we write about projects in active research and development. We’ve made significant progress since our last update, and we’d like to share our progress.]]></description>
+            <link>https://react.dev/blog/2024/02/15/react-labs-what-we-have-been-working-on-february-2024</link>
+            <guid isPermaLink="true">https://react.dev/blog/2024/02/15/react-labs-what-we-have-been-working-on-february-2024</guid>
+            <dc:creator><![CDATA[Joseph Savona, Ricky Hanlon, Andrew Clark, Matt Carroll, and Dan Abramov]]></dc:creator>
+            <pubDate>Thu, 15 Feb 2024 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[React Canaries: Enabling Incremental Feature Rollout Outside Meta]]></title>
+            <description><![CDATA[We'd like to offer the React community an option to adopt individual new features as soon as their design is close to final, before they're released in a stable version--similar to how Meta has long used bleeding-edge versions of React internally. We are introducing a new officially supported [Canary release channel](/community/versioning-policy#canary-channel). It lets curated setups like frameworks decouple adoption of individual React features from the React release schedule.]]></description>
+            <link>https://react.dev/blog/2023/05/03/react-canaries</link>
+            <guid isPermaLink="true">https://react.dev/blog/2023/05/03/react-canaries</guid>
+            <dc:creator><![CDATA[Dan Abramov, Sophie Alpert, Rick Hanlon, Sebastian Markbage, and Andrew Clark]]></dc:creator>
+            <pubDate>Wed, 03 May 2023 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[React Labs: What We've Been Working On – March 2023]]></title>
+            <description><![CDATA[In React Labs posts, we write about projects in active research and development. We've made significant progress on them since our last update, and we'd like to share what we learned.]]></description>
+            <link>https://react.dev/blog/2023/03/22/react-labs-what-we-have-been-working-on-march-2023</link>
+            <guid isPermaLink="true">https://react.dev/blog/2023/03/22/react-labs-what-we-have-been-working-on-march-2023</guid>
+            <dc:creator><![CDATA[Joseph Savona, Josh Story, Lauren Tan, Mengdi Chen, Samuel Susla, Sathya Gunasekaran, Sebastian Markbage, and Andrew Clark]]></dc:creator>
+            <pubDate>Wed, 22 Mar 2023 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Introducing react.dev]]></title>
+            <description><![CDATA[Today we are thrilled to launch react.dev, the new home for React and its documentation. In this post, we would like to give you a tour of the new site.]]></description>
+            <link>https://react.dev/blog/2023/03/16/introducing-react-dev</link>
+            <guid isPermaLink="true">https://react.dev/blog/2023/03/16/introducing-react-dev</guid>
+            <dc:creator><![CDATA[Dan Abramov and Rachel Nabors]]></dc:creator>
+            <pubDate>Thu, 16 Mar 2023 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[React Labs: What We've Been Working On – June 2022]]></title>
+            <description><![CDATA[React 18 was years in the making, and with it brought valuable lessons for the React team. Its release was the result of many years of research and exploring many paths. Some of those paths were successful; many more were dead-ends that led to new insights. One lesson we’ve learned is that it’s frustrating for the community to wait for new features without having insight into these paths that we’re exploring.]]></description>
+            <link>https://react.dev/blog/2022/06/15/react-labs-what-we-have-been-working-on-june-2022</link>
+            <guid isPermaLink="true">https://react.dev/blog/2022/06/15/react-labs-what-we-have-been-working-on-june-2022</guid>
+            <dc:creator><![CDATA[Andrew Clark, Dan Abramov, Jan Kassens, Joseph Savona, Josh Story, Lauren Tan, Luna Ruan, Mengdi Chen, Rick Hanlon, Robert Zhang, Sathya Gunasekaran, Sebastian Markbage, and Xuan Huang]]></dc:creator>
+            <pubDate>Wed, 15 Jun 2022 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[React v18.0]]></title>
+            <description><![CDATA[React 18 is now available on npm! In our last post, we shared step-by-step instructions for upgrading your app to React 18. In this post, we'll give an overview of what's new in React 18, and what it means for the future.]]></description>
+            <link>https://react.dev/blog/2022/03/29/react-v18</link>
+            <guid isPermaLink="true">https://react.dev/blog/2022/03/29/react-v18</guid>
+            <dc:creator><![CDATA[The React Team]]></dc:creator>
+            <pubDate>Tue, 08 Mar 2022 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[How to Upgrade to React 18]]></title>
+            <description><![CDATA[As we shared in the release post, React 18 introduces features powered by our new concurrent renderer, with a gradual adoption strategy for existing applications. In this post, we will guide you through the steps for upgrading to React 18.]]></description>
+            <link>https://react.dev/blog/2022/03/08/react-18-upgrade-guide</link>
+            <guid isPermaLink="true">https://react.dev/blog/2022/03/08/react-18-upgrade-guide</guid>
+            <dc:creator><![CDATA[Rick Hanlon]]></dc:creator>
+            <pubDate>Tue, 08 Mar 2022 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[React Conf 2021 Recap]]></title>
+            <description><![CDATA[Last week we hosted our 6th React Conf. In previous years, we've used the React Conf stage to deliver industry changing announcements such as React Native and React Hooks. This year, we shared our multi-platform vision for React, starting with the release of React 18 and gradual adoption of concurrent features.]]></description>
+            <link>https://react.dev/blog/2021/12/17/react-conf-2021-recap</link>
+            <guid isPermaLink="true">https://react.dev/blog/2021/12/17/react-conf-2021-recap</guid>
+            <dc:creator><![CDATA[Jesslyn Tannady and Rick Hanlon]]></dc:creator>
+            <pubDate>Fri, 17 Dec 2021 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[The Plan for React 18]]></title>
+            <description><![CDATA[The React team is excited to share a few updates. We’ve started work on the React 18 release, which will be our next major version. We’ve created a Working Group to prepare the community for gradual adoption of new features in React 18. We’ve published a React 18 Alpha so that library authors can try it and provide feedback...]]></description>
+            <link>https://react.dev/blog/2021/06/08/the-plan-for-react-18</link>
+            <guid isPermaLink="true">https://react.dev/blog/2021/06/08/the-plan-for-react-18</guid>
+            <dc:creator><![CDATA[Andrew Clark, Brian Vaughn, Christine Abernathy, Dan Abramov, Rachel Nabors, Rick Hanlon, Sebastian Markbage, and Seth Webster]]></dc:creator>
+            <pubDate>Tue, 08 Jun 2021 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Introducing Zero-Bundle-Size React Server Components]]></title>
+            <description><![CDATA[2020 has been a long year. As it comes to an end we wanted to share a special Holiday Update on our research into zero-bundle-size React Server Components.]]></description>
+            <link>https://react.dev/blog/2020/12/21/data-fetching-with-react-server-components</link>
+            <guid isPermaLink="true">https://react.dev/blog/2020/12/21/data-fetching-with-react-server-components</guid>
+            <dc:creator><![CDATA[Dan Abramov, Lauren Tan, Joseph Savona, and Sebastian Markbage]]></dc:creator>
+            <pubDate>Mon, 21 Dec 2020 00:00:00 GMT</pubDate>
+        </item>
+    </channel>
+</rss>

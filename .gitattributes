@@ -1,0 +1,4 @@
+# Exclude cache directory from language statistics
+cache/** linguist-vendored
+cache/** linguist-documentation=false
+

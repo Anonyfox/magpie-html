@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="FeedCreator 1.6" -->
+<feed xmlns="http://www.w3.org/2005/Atom"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xml:lang="de">
+    <title type="html">Golem.de</title>
+    <subtitle type="html">IT-News fuer Profis</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://rss.golem.de/rss.php?feed=ATOM1.0"/>
+    <link rel="alternate" type="text/html" href="https://www.golem.de/"/>
+    <id>https://www.golem.de/</id>
+    <logo>https://www.golem.de/staticrl/images/Golem-Logo-black-small.png</logo>
+    <icon>https://www.golem.de/assets/icons/favicon.ico</icon>
+    <updated>2025-12-17T11:43:02+01:00</updated>
+    <generator>FeedCreator 1.6</generator>
+    <link rel="hub" href="http://golem.superfeedr.com/" />
+    <entry>
+        <title type="html">Anzeige: Schnelles Internet und Cashback mit Kabeltarif von Vodafone</title>
+        <link rel="alternate" type="text/html" href="https://www.golem.de/news/anzeige-schnelles-internet-und-cashback-mit-kabeltarif-von-vodafone-2512-203353.html"/>
+        <published>2025-12-17T11:42:05+01:00</published>
+        <updated>2025-12-17T11:42:05+01:00</updated>
+        <id>https://www.golem.de/news/anzeige-schnelles-internet-und-cashback-mit-kabeltarif-von-vodafone-2512-203353.html</id>
+        <author>
+            <name>Simon Krebs</name>
+        </author>
+        <summary type="html">Bei Vodafone gibt es auf Tarife mit schnellem Kabelinternet derzeit 120 Euro Cashback. Die schnellste Option bietet auch kostenloses TV. (&lt;a href=&quot;https://www.golem.de/specials/vodafone/&quot;&gt;Vodafone&lt;/a&gt;, &lt;a href=&quot;https://www.golem.de/specials/kabelnetz/&quot;&gt;Kabelnetz&lt;/a&gt;) &lt;img src=&quot;https://cpx.golem.de/cpx.php?class=17&amp;amp;aid=203353&amp;amp;page=1&amp;amp;ts=1765968122&quot; alt=&quot;&quot; width=&quot;1&quot; height=&quot;1&quot; /&gt;</summary>
+    </entry>
+    <entry>
+        <title type="html">Mozilla: Firefox soll vertrauenswürdiger KI-Browser werden</title>
+        <link rel="alternate" type="text/html" href="https://www.golem.de/news/mozilla-firefox-soll-vertrauenswuerdiger-ki-browser-werden-2512-203348.html"/>
+        <published>2025-12-17T11:37:10+01:00</published>
+        <updated>2025-12-17T11:37:10+01:00</updated>
+        <id>https://www.golem.de/news/mozilla-firefox-soll-vertrauenswuerdiger-ki-browser-werden-2512-203348.html</id>
+        <author>
+            <name>Mike Faust</name>
+        </author>
+        <summary type="html">Der Fokus auf Vertrauen soll laut Mozilla CEO Anthony Enzor-DeMeo dabei helfen, Relevanz, Widerstandsfähigkeit und neue Zielgruppen zu gewinnen. (&lt;a href=&quot;https://www.golem.de/specials/mozilla/&quot;&gt;Mozilla&lt;/a&gt;, &lt;a href=&quot;https://www.golem.de/specials/firefox/&quot;&gt;Firefox&lt;/a&gt;) &lt;img src=&quot;https://cpx.golem.de/cpx.php?class=17&amp;amp;aid=203348&amp;amp;page=1&amp;amp;ts=1765967822&quot; alt=&quot;&quot; width=&quot;1&quot; height=&quot;1&quot; /&gt;</summary>
+    </entry>
+    <entry>
+        <title type="html">Amateurhafte Malware: Santastealer sammelt Weihnachtsgeschenke für Cyberkriminelle</title>
+        <link rel="alternate" type="text/html" href="https://www.golem.de/news/amateurhafte-malware-santastealer-sammelt-weihnachtsgeschenke-fuer-cyberkriminelle-2512-203346.html"/>
+        <published>2025-12-17T11:25:08+01:00</published>
+        <updated>2025-12-17T11:25:08+01:00</updated>
+        <id>https://www.golem.de/news/amateurhafte-malware-santastealer-sammelt-weihnachtsgeschenke-fuer-cyberkriminelle-2512-203346.html</id>
+        <author>
+            <name>Marc Stöckel</name>
+        </author>
+        <summary type="html">Ein Malware-Entwickler eröffnet die Weihnachtssaison für Cyberkriminelle. Doch sein Santastealer ist längst nicht so gut, wie er verspricht. (&lt;a href=&quot;https://www.golem.de/specials/malware/&quot;&gt;Malware&lt;/a&gt;, &lt;a href=&quot;https://www.golem.de/specials/virus/&quot;&gt;Virus&lt;/a&gt;) &lt;img src=&quot;https://cpx.golem.de/cpx.php?class=17&amp;amp;aid=203346&amp;amp;page=1&amp;amp;ts=1765967102&quot; alt=&quot;&quot; width=&quot;1&quot; height=&quot;1&quot; /&gt;</summary>
+    </entry>
+    <entry>
+        <title type="html">Anzeige: Autostaubsauger mit Zubehör jetzt unter 64 Euro bei Amazon</title>
+        <link rel="alternate" type="text/html" href="https://www.golem.de/news/anzeige-autostaubsauger-mit-zubehoer-jetzt-unter-64-euro-bei-amazon-2512-203347.html"/>
+        <published>2025-12-17T11:12:08+01:00</published>
+        <updated>2025-12-17T11:12:08+01:00</updated>
+        <id>https://www.golem.de/news/anzeige-autostaubsauger-mit-zubehoer-jetzt-unter-64-euro-bei-amazon-2512-203347.html</id>
+        <author>
+            <name>Boris Connemann</name>
+        </author>
+        <summary type="html">Der Fanttik-Autostaubsauger V8 Apex ist für Auto und Haushalt geeignet und jetzt kurzzeitig deutlich reduziert erhältlich. (&lt;a href=&quot;https://www.golem.de/specials/technik-und-hardware/&quot;&gt;Technik/Hardware&lt;/a&gt;) &lt;img src=&quot;https://cpx.golem.de/cpx.php?class=17&amp;amp;aid=203347&amp;amp;page=1&amp;amp;ts=1765966321&quot; alt=&quot;&quot; width=&quot;1&quot; height=&quot;1&quot; /&gt;</summary>
+    </entry>
+    <entry>
+        <title type="html">Larian Studios: Divinity soll im Early Access starten - ohne KI</title>
+        <link rel="alternate" type="text/html" href="https://www.golem.de/news/larian-studios-divinity-soll-im-early-access-starten-ohne-ki-2512-203344.html"/>
+        <published>2025-12-17T11:10:06+01:00</published>
+        <updated>2025-12-17T11:10:06+01:00</updated>
+        <id>https://www.golem.de/news/larian-studios-divinity-soll-im-early-access-starten-ohne-ki-2512-203344.html</id>
+        <author>
+            <name>Peter Steinlechner</name>
+        </author>
+        <summary type="html">Mit Bemerkungen rund um KI handelt sich Larian Studios viel Ärger bei der Community ein, die neue Infos über Divinity fast überschatten. (&lt;a href=&quot;https://www.golem.de/specials/divinity/&quot;&gt;Divinity&lt;/a&gt;, &lt;a href=&quot;https://www.golem.de/specials/ki/&quot;&gt;KI&lt;/a&gt;) &lt;img src=&quot;https://cpx.golem.de/cpx.php?class=17&amp;amp;aid=203344&amp;amp;page=1&amp;amp;ts=1765966202&quot; alt=&quot;&quot; width=&quot;1&quot; height=&quot;1&quot; /&gt;</summary>
+    </entry>
+    <entry>
+        <title type="html">Aerogel: Fensterscheiben so isolierend wie Dämmplatten</title>
+        <link rel="alternate" type="text/html" href="https://www.golem.de/news/aerogel-fensterscheiben-so-isolierend-wie-daemmplatten-2512-203343.html"/>
+        <published>2025-12-17T10:57:04+01:00</published>
+        <updated>2025-12-17T10:57:04+01:00</updated>
+        <id>https://www.golem.de/news/aerogel-fensterscheiben-so-isolierend-wie-daemmplatten-2512-203343.html</id>
+        <author>
+            <name>Mario Petzold</name>
+        </author>
+        <summary type="html">Ein mesoporöses Material ist fast so transparent wie Fensterglas, bietet aber die gleiche Wärmeisolierung wie eine Fassadendämmung. (&lt;a href=&quot;https://www.golem.de/specials/energiewende/&quot;&gt;Energiewende&lt;/a&gt;, &lt;a href=&quot;https://www.golem.de/specials/klima/&quot;&gt;Klima&lt;/a&gt;) &lt;img src=&quot;https://cpx.golem.de/cpx.php?class=17&amp;amp;aid=203343&amp;amp;page=1&amp;amp;ts=1765965421&quot; alt=&quot;&quot; width=&quot;1&quot; height=&quot;1&quot; /&gt;</summary>
+    </entry>
+    <entry>
+        <title type="html">Speicher: Zehnjähriger zerbricht 50 SSDs im Wert von 3.200 Euro</title>
+        <link rel="alternate" type="text/html" href="https://www.golem.de/news/speicher-zehnjaehriger-zerbricht-50-ssds-im-wert-von-3-200-euro-2512-203342.html"/>
+        <published>2025-12-17T10:43:04+01:00</published>
+        <updated>2025-12-17T10:43:04+01:00</updated>
+        <id>https://www.golem.de/news/speicher-zehnjaehriger-zerbricht-50-ssds-im-wert-von-3-200-euro-2512-203342.html</id>
+        <author>
+            <name>Oliver Nickel</name>
+        </author>
+        <summary type="html">Ein Vater in Vietnam ist gar nicht erfreut gewesen, als er seine Kiste mit verbogenen SSDs vorfand. Sein Sohn wollte sie auf Stabilität testen. (&lt;a href=&quot;https://www.golem.de/specials/samsung/&quot;&gt;Samsung&lt;/a&gt;, &lt;a href=&quot;https://www.golem.de/specials/speichermedien/&quot;&gt;Speichermedien&lt;/a&gt;) &lt;img src=&quot;https://cpx.golem.de/cpx.php?class=17&amp;amp;aid=203342&amp;amp;page=1&amp;amp;ts=1765964582&quot; alt=&quot;&quot; width=&quot;1&quot; height=&quot;1&quot; /&gt;</summary>
+    </entry>
+    <entry>
+        <title type="html">Interview mit Pirsch.io-Entwicklern: &quot;Wie ein Google Analytics ohne Stress mit Datenschutz&quot;</title>
+        <link rel="alternate" type="text/html" href="https://www.golem.de/news/interview-mit-pirsch-io-entwicklern-wie-ein-google-analytics-ohne-stress-mit-datenschutz-2512-203228.html"/>
+        <published>2025-12-17T10:30:10+01:00</published>
+        <updated>2025-12-17T10:30:10+01:00</updated>
+        <id>https://www.golem.de/news/interview-mit-pirsch-io-entwicklern-wie-ein-google-analytics-ohne-stress-mit-datenschutz-2512-203228.html</id>
+        <author>
+            <name> Golem.de</name>
+        </author>
+        <summary type="html"> Daniel Schramm und Marvin Blum bieten mit Pirsch.io ein Analytics-Produkt für alle an, die &quot;das Biest&quot; Google Analytics nicht mehr füttern wollen. (&lt;a href=&quot;https://www.golem.de/specials/wirtschaft/&quot;&gt;Wirtschaft&lt;/a&gt;, &lt;a href=&quot;https://www.golem.de/specials/cloud-computing/&quot;&gt;Cloud Computing&lt;/a&gt;) &lt;img src=&quot;https://cpx.golem.de/cpx.php?class=17&amp;amp;aid=203228&amp;amp;page=1&amp;amp;ts=1765963802&quot; alt=&quot;&quot; width=&quot;1&quot; height=&quot;1&quot; /&gt;</summary>
+    </entry>
+    <entry>
+        <title type="html">Science-Fiction: Universal bringt KI-Thriller Soulm8te nicht ins Kino</title>
+        <link rel="alternate" type="text/html" href="https://www.golem.de/news/science-fiction-universal-bringt-ki-thriller-soulm8te-nicht-ins-kino-2512-203341.html"/>
+        <published>2025-12-17T10:23:02+01:00</published>
+        <updated>2025-12-17T10:23:02+01:00</updated>
+        <id>https://www.golem.de/news/science-fiction-universal-bringt-ki-thriller-soulm8te-nicht-ins-kino-2512-203341.html</id>
+        <author>
+            <name>Peter Osteried</name>
+        </author>
+        <summary type="html">Soulm8te sollte im selben Universum wie die M3GAN-Filme spielen, doch Universal hat kein Interesse mehr, den Film ins Kino zu bringen. (&lt;a href=&quot;https://www.golem.de/specials/science-fiction/&quot;&gt;Science-Fiction&lt;/a&gt;, &lt;a href=&quot;https://www.golem.de/specials/film/&quot;&gt;Film&lt;/a&gt;) &lt;img src=&quot;https://cpx.golem.de/cpx.php?class=17&amp;amp;aid=203341&amp;amp;page=1&amp;amp;ts=1765963381&quot; alt=&quot;&quot; width=&quot;1&quot; height=&quot;1&quot; /&gt;</summary>
+    </entry>
+    <entry>
+        <title type="html">Tech-Milliardäre: Rechenzentren im All sind eine dumme Idee, Elon Musk!</title>
+        <link rel="alternate" type="text/html" href="https://www.golem.de/news/obwohl-elon-musk-sie-toll-findet-rechenzentren-im-all-bleiben-eine-dumme-idee-2512-203319.html"/>
+        <published>2025-12-17T09:58:10+01:00</published>
+        <updated>2025-12-17T09:58:10+01:00</updated>
+        <id>https://www.golem.de/news/obwohl-elon-musk-sie-toll-findet-rechenzentren-im-all-bleiben-eine-dumme-idee-2512-203319.html</id>
+        <author>
+            <name>Johannes Hiltscher</name>
+        </author>
+        <summary type="html">Kann Elon Musk dumme Ideen toll finden? Offensichtlich, sonst wüsste er, dass Rechenzentren im All so realistisch sind wie der effiziente Verbrenner. Ein IMHO von Johannes Hiltscher (&lt;a href=&quot;https://www.golem.de/specials/weltall/&quot;&gt;Weltall&lt;/a&gt;, &lt;a href=&quot;https://www.golem.de/specials/google/&quot;&gt;Google&lt;/a&gt;) &lt;img src=&quot;https://cpx.golem.de/cpx.php?class=17&amp;amp;aid=203319&amp;amp;page=1&amp;amp;ts=1765961881&quot; alt=&quot;&quot; width=&quot;1&quot; height=&quot;1&quot; /&gt;</summary>
+    </entry>
+    <entry>
+        <title type="html">Staffel 2 gestartet: Im Ödland von Fallout droht der Bürgerkrieg</title>
+        <link rel="alternate" type="text/html" href="https://www.golem.de/news/staffel-2-gestartet-im-oedland-von-fallout-droht-der-buergerkrieg-2512-203339.html"/>
+        <published>2025-12-17T09:23:11+01:00</published>
+        <updated>2025-12-17T09:23:11+01:00</updated>
+        <id>https://www.golem.de/news/staffel-2-gestartet-im-oedland-von-fallout-droht-der-buergerkrieg-2512-203339.html</id>
+        <author>
+            <name>Peter Osteried</name>
+        </author>
+        <summary type="html">In Staffel 2 zeigt sich Fallout größer als zuvor. Außerdem kommt erstmals eine Hauptfigur aus den Spielen vor. Eine Rezension von Peter Osteried (&lt;a href=&quot;https://www.golem.de/specials/fallout/&quot;&gt;Fallout&lt;/a&gt;, &lt;a href=&quot;https://www.golem.de/specials/disney/&quot;&gt;Disney&lt;/a&gt;) &lt;img src=&quot;https://cpx.golem.de/cpx.php?class=17&amp;amp;aid=203339&amp;amp;page=1&amp;amp;ts=1765959782&quot; alt=&quot;&quot; width=&quot;1&quot; height=&quot;1&quot; /&gt;</summary>
+    </entry>
+    <entry>
+        <title type="html">Festnahmen in der Ukraine: Betrügerring stiehlt europäischen Opfern Millionen</title>
+        <link rel="alternate" type="text/html" href="https://www.golem.de/news/festnahmen-in-der-ukraine-betruegerring-stiehlt-europaeischen-opfern-millionen-2512-203340.html"/>
+        <published>2025-12-17T09:10:02+01:00</published>
+        <updated>2025-12-17T09:10:02+01:00</updated>
+        <id>https://www.golem.de/news/festnahmen-in-der-ukraine-betruegerring-stiehlt-europaeischen-opfern-millionen-2512-203340.html</id>
+        <author>
+            <name>Marc Stöckel</name>
+        </author>
+        <summary type="html">Mitarbeiter mehrerer Callcenter in der Ukraine haben Europäer am Telefon um ihr Geld gebracht. Nach der jüngsten Razzia ist damit nun Schluss. (&lt;a href=&quot;https://www.golem.de/specials/cybercrime/&quot;&gt;Cybercrime&lt;/a&gt;, &lt;a href=&quot;https://www.golem.de/specials/security/&quot;&gt;Security&lt;/a&gt;) &lt;img src=&quot;https://cpx.golem.de/cpx.php?class=17&amp;amp;aid=203340&amp;amp;page=1&amp;amp;ts=1765959002&quot; alt=&quot;&quot; width=&quot;1&quot; height=&quot;1&quot; /&gt;</summary>
+    </entry>
+    <entry>
+        <title type="html">Tech-Offensive: MI6-Chefin setzt auf Python statt Pistolen</title>
+        <link rel="alternate" type="text/html" href="https://www.golem.de/news/tech-offensive-mi6-chefin-setzt-auf-python-statt-pistolen-2512-203335.html"/>
+        <published>2025-12-17T08:46:07+01:00</published>
+        <updated>2025-12-17T08:46:07+01:00</updated>
+        <id>https://www.golem.de/news/tech-offensive-mi6-chefin-setzt-auf-python-statt-pistolen-2512-203335.html</id>
+        <author>
+            <name>Andreas Donath</name>
+        </author>
+        <summary type="html">Die neue Leiterin des britischen Auslandsgeheimdienstes SIS kündigt eine Tech-Offensive an und will Spione zu Programmierern machen. (&lt;a href=&quot;https://www.golem.de/specials/geheimdienste/&quot;&gt;Geheimdienste&lt;/a&gt;, &lt;a href=&quot;https://www.golem.de/specials/cyberwar/&quot;&gt;Cyberwar&lt;/a&gt;) &lt;img src=&quot;https://cpx.golem.de/cpx.php?class=17&amp;amp;aid=203335&amp;amp;page=1&amp;amp;ts=1765957562&quot; alt=&quot;&quot; width=&quot;1&quot; height=&quot;1&quot; /&gt;</summary>
+    </entry>
+    <entry>
+        <title type="html">Handelskrieg: USA drohen EU-Konzernen mit Vergeltung im X-Streit</title>
+        <link rel="alternate" type="text/html" href="https://www.golem.de/news/handelskrieg-usa-drohen-eu-konzernen-mit-vergeltung-im-x-streit-2512-203336.html"/>
+        <published>2025-12-17T08:14:07+01:00</published>
+        <updated>2025-12-17T08:14:07+01:00</updated>
+        <id>https://www.golem.de/news/handelskrieg-usa-drohen-eu-konzernen-mit-vergeltung-im-x-streit-2512-203336.html</id>
+        <author>
+            <name>Andreas Donath</name>
+        </author>
+        <summary type="html">Die USA kündigen Gegenmaßnahmen an, nachdem die EU eine Millionenstrafe gegen X verhängt hat. Siemens, SAP und Spotify könnten zu Opfern werden. (&lt;a href=&quot;https://www.golem.de/specials/europaeische-union/&quot;&gt;EU&lt;/a&gt;, &lt;a href=&quot;https://www.golem.de/specials/sap/&quot;&gt;SAP&lt;/a&gt;) &lt;img src=&quot;https://cpx.golem.de/cpx.php?class=17&amp;amp;aid=203336&amp;amp;page=1&amp;amp;ts=1765955641&quot; alt=&quot;&quot; width=&quot;1&quot; height=&quot;1&quot; /&gt;</summary>
+    </entry>
+    <entry>
+        <title type="html">100, 86 und 75 Zoll: LG bringt Fernseher mit mikroskopisch kleinen RGB-LEDs</title>
+        <link rel="alternate" type="text/html" href="https://www.golem.de/news/100-86-und-75-zoll-lg-bringt-fernseher-mit-mikroskopisch-kleinen-rgb-leds-2512-203337.html"/>
+        <published>2025-12-17T07:43:09+01:00</published>
+        <updated>2025-12-17T07:43:09+01:00</updated>
+        <id>https://www.golem.de/news/100-86-und-75-zoll-lg-bringt-fernseher-mit-mikroskopisch-kleinen-rgb-leds-2512-203337.html</id>
+        <author>
+            <name>Andreas Donath</name>
+        </author>
+        <summary type="html">Zur CES 2026 stellt LG einen Fernseher vor, der mit winzigen, einzeln ansteuerbaren RGB-Leuchtdioden arbeitet und damit OLED-Qualität erreicht. (&lt;a href=&quot;https://www.golem.de/specials/tv-und-monitore/&quot;&gt;TV &amp; Monitore&lt;/a&gt;, &lt;a href=&quot;https://www.golem.de/specials/oled/&quot;&gt;OLED&lt;/a&gt;) &lt;img src=&quot;https://cpx.golem.de/cpx.php?class=17&amp;amp;aid=203337&amp;amp;page=1&amp;amp;ts=1765953782&quot; alt=&quot;&quot; width=&quot;1&quot; height=&quot;1&quot; /&gt;</summary>
+    </entry>
+    <entry>
+        <title type="html">Leak: Apple-Prototyp enthüllt Produktpläne bis 2027</title>
+        <link rel="alternate" type="text/html" href="https://www.golem.de/news/leak-apple-prototyp-enthuellt-produktplaene-bis-2027-2512-203338.html"/>
+        <published>2025-12-17T07:26:09+01:00</published>
+        <updated>2025-12-17T07:26:09+01:00</updated>
+        <id>https://www.golem.de/news/leak-apple-prototyp-enthuellt-produktplaene-bis-2027-2512-203338.html</id>
+        <author>
+            <name>Andreas Donath</name>
+        </author>
+        <summary type="html">Ein Hardware-Prototyp mit iOS 26 verweist auf rund 40 neue Apple-Geräte - darunter faltbare iPhones, günstige Macbooks und neue Smart-Home-Produkte. (&lt;a href=&quot;https://www.golem.de/specials/apple/&quot;&gt;Apple&lt;/a&gt;, &lt;a href=&quot;https://www.golem.de/specials/iphone/&quot;&gt;iPhone&lt;/a&gt;) &lt;img src=&quot;https://cpx.golem.de/cpx.php?class=17&amp;amp;aid=203338&amp;amp;page=1&amp;amp;ts=1765952761&quot; alt=&quot;&quot; width=&quot;1&quot; height=&quot;1&quot; /&gt;</summary>
+    </entry>
+    <entry>
+        <title type="html">Neue Klimaschutzauflagen: Autoindustrie unzufrieden mit Aus für Verbrennerverbot</title>
+        <link rel="alternate" type="text/html" href="https://www.golem.de/news/neue-klimaschutzauflagen-autoindustrie-unzufrieden-mit-aus-fuer-verbrennerverbot-2512-203321.html"/>
+        <published>2025-12-16T20:48:02+01:00</published>
+        <updated>2025-12-16T20:48:02+01:00</updated>
+        <id>https://www.golem.de/news/neue-klimaschutzauflagen-autoindustrie-unzufrieden-mit-aus-fuer-verbrennerverbot-2512-203321.html</id>
+        <author>
+            <name>Friedhelm Greis</name>
+        </author>
+        <summary type="html">Wie erwartet nimmt Brüssel das Verbrennerverbot teilweise zurück. Die Autoindustrie kündigt dennoch Widerstand gegen die Pläne an. (&lt;a href=&quot;https://www.golem.de/specials/verbrennerverbot/&quot;&gt;Verbrennerverbot&lt;/a&gt;, &lt;a href=&quot;https://www.golem.de/specials/elektroauto/&quot;&gt;Elektroauto&lt;/a&gt;) &lt;img src=&quot;https://cpx.golem.de/cpx.php?class=17&amp;amp;aid=203321&amp;amp;page=1&amp;amp;ts=1765914481&quot; alt=&quot;&quot; width=&quot;1&quot; height=&quot;1&quot; /&gt;</summary>
+    </entry>
+    <entry>
+        <title type="html">Science-Fiction: Steven Spielbergs Film Disclosure Day kommt im Juni</title>
+        <link rel="alternate" type="text/html" href="https://www.golem.de/news/science-fiction-steven-spielbergs-film-disclosure-day-kommt-im-juni-2512-203334.html"/>
+        <published>2025-12-16T18:26:06+01:00</published>
+        <updated>2025-12-16T18:26:06+01:00</updated>
+        <id>https://www.golem.de/news/science-fiction-steven-spielbergs-film-disclosure-day-kommt-im-juni-2512-203334.html</id>
+        <author>
+            <name>Peter Osteried</name>
+        </author>
+        <summary type="html">Steven Spielberg kehrt zu seinen Wurzeln zurück - im Juni 2026 startet sein neuer Sci-Fi-Film Disclosure Day. (&lt;a href=&quot;https://www.golem.de/specials/science-fiction/&quot;&gt;Science-Fiction&lt;/a&gt;, &lt;a href=&quot;https://www.golem.de/specials/film/&quot;&gt;Film&lt;/a&gt;) &lt;img src=&quot;https://cpx.golem.de/cpx.php?class=17&amp;amp;aid=203334&amp;amp;page=1&amp;amp;ts=1765905962&quot; alt=&quot;&quot; width=&quot;1&quot; height=&quot;1&quot; /&gt;</summary>
+    </entry>
+    <entry>
+        <title type="html">Arduino Uno Q im Test: Dies ist kein Arduino</title>
+        <link rel="alternate" type="text/html" href="https://www.golem.de/news/arduino-uno-q-im-test-dies-ist-kein-arduino-2512-203309.html"/>
+        <published>2025-12-16T18:00:14+01:00</published>
+        <updated>2025-12-16T18:00:14+01:00</updated>
+        <id>https://www.golem.de/news/arduino-uno-q-im-test-dies-ist-kein-arduino-2512-203309.html</id>
+        <author>
+            <name>Johannes Hiltscher</name>
+        </author>
+        <summary type="html">Mikrocontroller und ein Linux-fähiges SoC zusammen verändern das Arduino-Konzept grundlegend. Der Uno Q ist kein klassischer Arduino - was nicht unbedingt schlimm ist. Ein Test von Johannes Hiltscher (&lt;a href=&quot;https://www.golem.de/specials/arduino/&quot;&gt;Arduino&lt;/a&gt;, &lt;a href=&quot;https://www.golem.de/specials/embedded-systems/&quot;&gt;Embedded Systems&lt;/a&gt;) &lt;img src=&quot;https://cpx.golem.de/cpx.php?class=17&amp;amp;aid=203309&amp;amp;page=1&amp;amp;ts=1765904405&quot; alt=&quot;&quot; width=&quot;1&quot; height=&quot;1&quot; /&gt;</summary>
+    </entry>
+    <entry>
+        <title type="html">Energiewende: 1,2 Billionen Euro für das Energienetz</title>
+        <link rel="alternate" type="text/html" href="https://www.golem.de/news/energiewende-1-2-billionen-euro-fuer-das-energienetz-2512-203333.html"/>
+        <published>2025-12-16T17:31:04+01:00</published>
+        <updated>2025-12-16T17:31:04+01:00</updated>
+        <id>https://www.golem.de/news/energiewende-1-2-billionen-euro-fuer-das-energienetz-2512-203333.html</id>
+        <author>
+            <name>Mario Petzold</name>
+        </author>
+        <summary type="html">Um mehr Unabhängigkeit zu erreichen, Strom besser zu verteilen und Strompreise zu senken, sind bis 2040 große Investitionen nötig. (&lt;a href=&quot;https://www.golem.de/specials/energiewende/&quot;&gt;Energiewende&lt;/a&gt;, &lt;a href=&quot;https://www.golem.de/specials/europaeische-union/&quot;&gt;EU&lt;/a&gt;) &lt;img src=&quot;https://cpx.golem.de/cpx.php?class=17&amp;amp;aid=203333&amp;amp;page=1&amp;amp;ts=1765902661&quot; alt=&quot;&quot; width=&quot;1&quot; height=&quot;1&quot; /&gt;</summary>
+    </entry>
+    <entry>
+        <title type="html">Anzeige: Apple, Samsung, Playstation &amp; Co. bei Back Market im Angebot</title>
+        <link rel="alternate" type="text/html" href="https://www.golem.de/news/anzeige-apple-samsung-playstation-co-bei-back-market-im-angebot-2512-203332.html"/>
+        <published>2025-12-16T16:59:07+01:00</published>
+        <updated>2025-12-16T16:59:07+01:00</updated>
+        <id>https://www.golem.de/news/anzeige-apple-samsung-playstation-co-bei-back-market-im-angebot-2512-203332.html</id>
+        <author>
+            <name>Simon Krebs</name>
+        </author>
+        <summary type="html">Kurz vor Weihnachten können sich Interessenten noch einmal bei Back Market diverse spannende Deals im Christmas Flash Sale sichern. (&lt;a href=&quot;https://www.golem.de/specials/apple-airpods/&quot;&gt;Airpods&lt;/a&gt;, &lt;a href=&quot;https://www.golem.de/specials/apple/&quot;&gt;Apple&lt;/a&gt;) &lt;img src=&quot;https://cpx.golem.de/cpx.php?class=17&amp;amp;aid=203332&amp;amp;page=1&amp;amp;ts=1765900745&quot; alt=&quot;&quot; width=&quot;1&quot; height=&quot;1&quot; /&gt;</summary>
+    </entry>
+    <entry>
+        <title type="html">Anzeige: Multitool mit Hammer und Säge für nur 15,29 Euro bei Amazon</title>
+        <link rel="alternate" type="text/html" href="https://www.golem.de/news/anzeige-multitool-mit-hammer-und-saege-fuer-nur-15-29-euro-bei-amazon-2512-203331.html"/>
+        <published>2025-12-16T16:47:02+01:00</published>
+        <updated>2025-12-16T16:47:02+01:00</updated>
+        <id>https://www.golem.de/news/anzeige-multitool-mit-hammer-und-saege-fuer-nur-15-29-euro-bei-amazon-2512-203331.html</id>
+        <author>
+            <name>Antje Lüth</name>
+        </author>
+        <summary type="html">Ein handliches Multitool mit zwölf Funktionen inklusive Hammer, Säge und Schraubendreher gibt es bei Amazon zum Schnäppchenpreis. (&lt;a href=&quot;https://www.golem.de/specials/technik-und-hardware/&quot;&gt;Technik/Hardware&lt;/a&gt;) &lt;img src=&quot;https://cpx.golem.de/cpx.php?class=17&amp;amp;aid=203331&amp;amp;page=1&amp;amp;ts=1765900021&quot; alt=&quot;&quot; width=&quot;1&quot; height=&quot;1&quot; /&gt;</summary>
+    </entry>
+    <entry>
+        <title type="html">Codex Mortis: Komplett mit KI produziertes Steam-Spiel löst Kritik aus</title>
+        <link rel="alternate" type="text/html" href="https://www.golem.de/news/codex-mortis-komplett-mit-ki-produziertes-steam-spiel-sorgt-fuer-kritik-2512-203330.html"/>
+        <published>2025-12-16T16:22:08+01:00</published>
+        <updated>2025-12-16T16:22:08+01:00</updated>
+        <id>https://www.golem.de/news/codex-mortis-komplett-mit-ki-produziertes-steam-spiel-sorgt-fuer-kritik-2512-203330.html</id>
+        <author>
+            <name>Peter Steinlechner</name>
+        </author>
+        <summary type="html">Das komplett mit KI produzierte Codex Mortis sorgt für Diskussionen über die Zukunft der Spieleentwicklung. (&lt;a href=&quot;https://www.golem.de/specials/ki/&quot;&gt;KI&lt;/a&gt;, &lt;a href=&quot;https://www.golem.de/specials/steam/&quot;&gt;Steam&lt;/a&gt;) &lt;img src=&quot;https://cpx.golem.de/cpx.php?class=17&amp;amp;aid=203330&amp;amp;page=1&amp;amp;ts=1765898528&quot; alt=&quot;&quot; width=&quot;1&quot; height=&quot;1&quot; /&gt;</summary>
+    </entry>
+    <entry>
+        <title type="html">RC4 in Active Directory: Microsoft ersetzt seit Jahren obsolete Verschlüsselung</title>
+        <link rel="alternate" type="text/html" href="https://www.golem.de/news/rc4-in-active-directory-microsoft-ersetzt-seit-jahren-obsolete-verschluesselung-2512-203328.html"/>
+        <published>2025-12-16T15:40:16+01:00</published>
+        <updated>2025-12-16T15:40:16+01:00</updated>
+        <id>https://www.golem.de/news/rc4-in-active-directory-microsoft-ersetzt-seit-jahren-obsolete-verschluesselung-2512-203328.html</id>
+        <author>
+            <name>Oliver Nickel</name>
+        </author>
+        <summary type="html">Schon 1994 ist RC4 an die Öffentlichkeit gelangt und wird seitdem für Angriffe auf Active-Directory-Netzwerke genutzt. Das soll sich ändern. (&lt;a href=&quot;https://www.golem.de/specials/microsoft/&quot;&gt;Microsoft&lt;/a&gt;, &lt;a href=&quot;https://www.golem.de/specials/serverapps/&quot;&gt;Server-Applikationen&lt;/a&gt;) &lt;img src=&quot;https://cpx.golem.de/cpx.php?class=17&amp;amp;aid=203328&amp;amp;page=1&amp;amp;ts=1765896008&quot; alt=&quot;&quot; width=&quot;1&quot; height=&quot;1&quot; /&gt;</summary>
+    </entry>
+    <entry>
+        <title type="html">Anzeige: Smartes Heizkörperthermostat mit Matter für nur 33 Euro</title>
+        <link rel="alternate" type="text/html" href="https://www.golem.de/news/anzeige-smartes-heizkoerperthermostat-mit-matter-fuer-nur-33-euro-2512-203329.html"/>
+        <published>2025-12-16T15:28:11+01:00</published>
+        <updated>2025-12-16T15:28:11+01:00</updated>
+        <id>https://www.golem.de/news/anzeige-smartes-heizkoerperthermostat-mit-matter-fuer-nur-33-euro-2512-203329.html</id>
+        <author>
+            <name>Antje Lüth</name>
+        </author>
+        <summary type="html">Amazon hat ein Heizkörperthermostat im Angebot, das mit Alexa, Siri und Google Assistent kompatibel ist und beim Energiesparen hilft. (&lt;a href=&quot;https://www.golem.de/specials/tp-link/&quot;&gt;TP-Link&lt;/a&gt;, &lt;a href=&quot;https://www.golem.de/specials/technik-und-hardware/&quot;&gt;Technik/Hardware&lt;/a&gt;) &lt;img src=&quot;https://cpx.golem.de/cpx.php?class=17&amp;amp;aid=203329&amp;amp;page=1&amp;amp;ts=1765895282&quot; alt=&quot;&quot; width=&quot;1&quot; height=&quot;1&quot; /&gt;</summary>
+    </entry>
+    <entry>
+        <title type="html">Larian Studios: Divinity - Original Sin 2 erhält Update für neuere Konsolen</title>
+        <link rel="alternate" type="text/html" href="https://www.golem.de/news/larian-studios-divinity-original-sin-2-erhaelt-update-fuer-neuere-konsolen-2512-203325.html"/>
+        <published>2025-12-16T15:15:06+01:00</published>
+        <updated>2025-12-16T15:15:06+01:00</updated>
+        <id>https://www.golem.de/news/larian-studios-divinity-original-sin-2-erhaelt-update-fuer-neuere-konsolen-2512-203325.html</id>
+        <author>
+            <name>Peter Steinlechner</name>
+        </author>
+        <summary type="html">Kurz nach der Ankündigung des neuen Divinity hat Larian Studios Divinity - Original Sin 2 technisch an die aktuellen Konsolen angepasst. (&lt;a href=&quot;https://www.golem.de/specials/divinity/&quot;&gt;Divinity&lt;/a&gt;, &lt;a href=&quot;https://www.golem.de/specials/rollenspiel/&quot;&gt;Rollenspiel&lt;/a&gt;) &lt;img src=&quot;https://cpx.golem.de/cpx.php?class=17&amp;amp;aid=203325&amp;amp;page=1&amp;amp;ts=1765894501&quot; alt=&quot;&quot; width=&quot;1&quot; height=&quot;1&quot; /&gt;</summary>
+    </entry>
+    <entry>
+        <title type="html">Avatar 3: Das teuerste Selbstplagiat der Filmgeschichte</title>
+        <link rel="alternate" type="text/html" href="https://www.golem.de/news/avatar-3-das-teuerste-selbstplagiat-der-filmgeschichte-2512-203229.html"/>
+        <published>2025-12-16T15:00:17+01:00</published>
+        <updated>2025-12-16T15:00:17+01:00</updated>
+        <id>https://www.golem.de/news/avatar-3-das-teuerste-selbstplagiat-der-filmgeschichte-2512-203229.html</id>
+        <author>
+            <name>Daniel Pook</name>
+        </author>
+        <summary type="html">James Camerons Avatar-Filme werden immer länger, ähneln einander aber immer einfallsloser. Fire and Ash ist kaum mehr als eine teure Kopie von Teil 2. Eine Rezension von Daniel Pook (&lt;a href=&quot;https://www.golem.de/specials/avatar/&quot;&gt;Avatar&lt;/a&gt;, &lt;a href=&quot;https://www.golem.de/specials/film/&quot;&gt;Film&lt;/a&gt;) &lt;img src=&quot;https://cpx.golem.de/cpx.php?class=17&amp;amp;aid=203229&amp;amp;page=1&amp;amp;ts=1765893608&quot; alt=&quot;&quot; width=&quot;1&quot; height=&quot;1&quot; /&gt;</summary>
+    </entry>
+    <entry>
+        <title type="html">Handelsgespräche: USA setzen Technologieabkommen mit Großbritannien aus</title>
+        <link rel="alternate" type="text/html" href="https://www.golem.de/news/handelsgespraeche-usa-setzen-technologieabkommen-mit-grossbritannien-aus-2512-203326.html"/>
+        <published>2025-12-16T14:36:14+01:00</published>
+        <updated>2025-12-16T14:36:14+01:00</updated>
+        <id>https://www.golem.de/news/handelsgespraeche-usa-setzen-technologieabkommen-mit-grossbritannien-aus-2512-203326.html</id>
+        <author>
+            <name>Mike Faust</name>
+        </author>
+        <summary type="html">Die USA zeigen sich verärgert darüber, dass Großbritannien keine Vorschriften für Lebensmittel und Technologien abbauen möchte. (&lt;a href=&quot;https://www.golem.de/specials/usa/&quot;&gt;USA&lt;/a&gt;, &lt;a href=&quot;https://www.golem.de/specials/politik-recht/&quot;&gt;Politik&lt;/a&gt;) &lt;img src=&quot;https://cpx.golem.de/cpx.php?class=17&amp;amp;aid=203326&amp;amp;page=1&amp;amp;ts=1765892168&quot; alt=&quot;&quot; width=&quot;1&quot; height=&quot;1&quot; /&gt;</summary>
+    </entry>
+    <entry>
+        <title type="html">Anzeige: Externe SSD mit 4 TB von Crucial 62 Euro günstiger</title>
+        <link rel="alternate" type="text/html" href="https://www.golem.de/news/anzeige-externe-ssd-mit-4-tb-von-crucial-62-euro-guenstiger-2512-203324.html"/>
+        <published>2025-12-16T14:27:15+01:00</published>
+        <updated>2025-12-16T14:27:15+01:00</updated>
+        <id>https://www.golem.de/news/anzeige-externe-ssd-mit-4-tb-von-crucial-62-euro-guenstiger-2512-203324.html</id>
+        <author>
+            <name>Erik Körner</name>
+        </author>
+        <summary type="html">Trotz steigender Kosten für Speichermedien: Amazon verkauft die externe SSD X9 von Crucial mit 4 TByte nur kurz zum Sparpreis. (&lt;a href=&quot;https://www.golem.de/specials/solidstatedrive/&quot;&gt;Solid State Drive&lt;/a&gt;, &lt;a href=&quot;https://www.golem.de/specials/speichermedien/&quot;&gt;Speichermedien&lt;/a&gt;) &lt;img src=&quot;https://cpx.golem.de/cpx.php?class=17&amp;amp;aid=203324&amp;amp;page=1&amp;amp;ts=1765891631&quot; alt=&quot;&quot; width=&quot;1&quot; height=&quot;1&quot; /&gt;</summary>
+    </entry>
+    <entry>
+        <title type="html">Pennywise: In Welcome to Derry spielt Wahrnehmung von Zeit eine Rolle</title>
+        <link rel="alternate" type="text/html" href="https://www.golem.de/news/pennywise-in-welcome-to-derry-spielt-wahrnehmung-von-zeit-eine-rolle-2512-203310.html"/>
+        <published>2025-12-16T13:52:02+01:00</published>
+        <updated>2025-12-16T13:52:02+01:00</updated>
+        <id>https://www.golem.de/news/pennywise-in-welcome-to-derry-spielt-wahrnehmung-von-zeit-eine-rolle-2512-203310.html</id>
+        <author>
+            <name>Peter Osteried</name>
+        </author>
+        <summary type="html">Zeit ist relativ - für den Horrorclown Pennywise gilt das besonders, wie das Finale der ersten Staffel von ES: Welcome to Derry zeigt. (&lt;a href=&quot;https://www.golem.de/specials/filme-und-serien/&quot;&gt;Filme &amp; Serien&lt;/a&gt;, &lt;a href=&quot;https://www.golem.de/specials/sekunde/&quot;&gt;Sekunde&lt;/a&gt;) &lt;img src=&quot;https://cpx.golem.de/cpx.php?class=17&amp;amp;aid=203310&amp;amp;page=1&amp;amp;ts=1765889522&quot; alt=&quot;&quot; width=&quot;1&quot; height=&quot;1&quot; /&gt;</summary>
+    </entry>
+    <entry>
+        <title type="html">Anzeige: Bluetooth-Lautsprecher von Anker für unter 30 Euro sichern</title>
+        <link rel="alternate" type="text/html" href="https://www.golem.de/news/anzeige-bluetooth-lautsprecher-von-anker-fuer-unter-30-euro-sichern-2512-203322.html"/>
+        <published>2025-12-16T13:37:04+01:00</published>
+        <updated>2025-12-16T13:37:04+01:00</updated>
+        <id>https://www.golem.de/news/anzeige-bluetooth-lautsprecher-von-anker-fuer-unter-30-euro-sichern-2512-203322.html</id>
+        <author>
+            <name>Noemi Sinka</name>
+        </author>
+        <summary type="html">Der kabellose Over-Ear-Kopfhörer von Anker kommt mit Hybrid-ANC, bis zu 40 Stunden Laufzeit im ANC-Modus, Hi-Res-Audio und App-Anpassung. (&lt;a href=&quot;https://www.golem.de/specials/technik-und-hardware/&quot;&gt;Technik/Hardware&lt;/a&gt;, &lt;a href=&quot;https://www.golem.de/specials/bluetooth/&quot;&gt;Bluetooth&lt;/a&gt;) &lt;img src=&quot;https://cpx.golem.de/cpx.php?class=17&amp;amp;aid=203322&amp;amp;page=1&amp;amp;ts=1765888622&quot; alt=&quot;&quot; width=&quot;1&quot; height=&quot;1&quot; /&gt;</summary>
+    </entry>
+    <entry>
+        <title type="html">(g+) Softwareentwicklung: Weshalb die Wahl des richtigen API-Typs so wichtig ist</title>
+        <link rel="alternate" type="text/html" href="https://www.golem.de/news/softwareentwicklung-weshalb-die-wahl-des-richtigen-api-typs-so-wichtig-ist-2512-203314.html"/>
+        <published>2025-12-16T13:30:06+01:00</published>
+        <updated>2025-12-16T13:30:06+01:00</updated>
+        <id>https://www.golem.de/news/softwareentwicklung-weshalb-die-wahl-des-richtigen-api-typs-so-wichtig-ist-2512-203314.html</id>
+        <author>
+            <name>Martin Krause</name>
+        </author>
+        <summary type="html">
+Zum Ende unserer Reihe implementieren wir SOAP-, gRPC- und MQTT-APIs und sehen uns noch einmal alle API-Typen mit ihren Eigenheiten an. Eine Anleitung von Martin Krause (&lt;a href=&quot;https://www.golem.de/specials/api-programmierung/&quot;&gt;API-Programmierung&lt;/a&gt;, &lt;a href=&quot;https://www.golem.de/specials/api/&quot;&gt;API&lt;/a&gt;) &lt;img src=&quot;https://cpx.golem.de/cpx.php?class=17&amp;amp;aid=203314&amp;amp;page=1&amp;amp;ts=1765888202&quot; alt=&quot;&quot; width=&quot;1&quot; height=&quot;1&quot; /&gt;</summary>
+    </entry>
+    <entry>
+        <title type="html">Wo bleibt die Rendite?: KI-Anleger werden ungeduldig</title>
+        <link rel="alternate" type="text/html" href="https://www.golem.de/news/wo-bleibt-die-rendite-ki-anleger-werden-ungeduldig-2512-203320.html"/>
+        <published>2025-12-16T13:04:02+01:00</published>
+        <updated>2025-12-16T13:04:02+01:00</updated>
+        <id>https://www.golem.de/news/wo-bleibt-die-rendite-ki-anleger-werden-ungeduldig-2512-203320.html</id>
+        <author>
+            <name>Mike Faust</name>
+        </author>
+        <summary type="html">Trotz guter Quartalsberichte und Umsatzprognosen sinken die Börsenwerte von Broadcom, Coreweave und Oracle rapide. (&lt;a href=&quot;https://www.golem.de/specials/wirtschaft/&quot;&gt;Wirtschaft&lt;/a&gt;, &lt;a href=&quot;https://www.golem.de/specials/oracle/&quot;&gt;Oracle&lt;/a&gt;) &lt;img src=&quot;https://cpx.golem.de/cpx.php?class=17&amp;amp;aid=203320&amp;amp;page=1&amp;amp;ts=1765886642&quot; alt=&quot;&quot; width=&quot;1&quot; height=&quot;1&quot; /&gt;</summary>
+    </entry>
+    <entry>
+        <title type="html">Angriff via Kindle: Amazon-Konto über verseuchtes Hörbuch gekapert</title>
+        <link rel="alternate" type="text/html" href="https://www.golem.de/news/angriff-via-kindle-amazon-konto-ueber-verseuchtes-hoerbuch-gekapert-2512-203318.html"/>
+        <published>2025-12-16T12:15:09+01:00</published>
+        <updated>2025-12-16T12:15:09+01:00</updated>
+        <id>https://www.golem.de/news/angriff-via-kindle-amazon-konto-ueber-verseuchtes-hoerbuch-gekapert-2512-203318.html</id>
+        <author>
+            <name>Marc Stöckel</name>
+        </author>
+        <summary type="html">Ein Forscher warnt vor gefährlichen Sicherheitslücken in Kindle-Geräten. Angreifer könnten Amazon-Konten kapern und Kreditkartendaten abgreifen. (&lt;a href=&quot;https://www.golem.de/specials/sicherheitsluecke/&quot;&gt;Sicherheitslücke&lt;/a&gt;, &lt;a href=&quot;https://www.golem.de/specials/e-book/&quot;&gt;E-Book&lt;/a&gt;) &lt;img src=&quot;https://cpx.golem.de/cpx.php?class=17&amp;amp;aid=203318&amp;amp;page=1&amp;amp;ts=1765883701&quot; alt=&quot;&quot; width=&quot;1&quot; height=&quot;1&quot; /&gt;</summary>
+    </entry>
+    <entry>
+        <title type="html">Microsoft: Bereits die Einrichtung von Windows 11 lässt uns verzweifeln</title>
+        <link rel="alternate" type="text/html" href="https://www.golem.de/news/microsoft-bereits-die-einrichtung-von-windows-11-laesst-uns-verzweifeln-2512-203295.html"/>
+        <published>2025-12-16T12:00:07+01:00</published>
+        <updated>2025-12-16T12:00:07+01:00</updated>
+        <id>https://www.golem.de/news/microsoft-bereits-die-einrichtung-von-windows-11-laesst-uns-verzweifeln-2512-203295.html</id>
+        <author>
+            <name>Oliver Nickel</name>
+        </author>
+        <summary type="html">Internetzwang, ewig lange Updates und überall Fallen: Wir haben Windows 11 noch nicht einmal fertig installiert - und schon nervt es uns. Ein IMHO von Oliver Nickel (&lt;a href=&quot;https://www.golem.de/specials/windows-11/&quot;&gt;Windows 11&lt;/a&gt;, &lt;a href=&quot;https://www.golem.de/specials/ki/&quot;&gt;KI&lt;/a&gt;) &lt;img src=&quot;https://cpx.golem.de/cpx.php?class=17&amp;amp;aid=203295&amp;amp;page=1&amp;amp;ts=1765882802&quot; alt=&quot;&quot; width=&quot;1&quot; height=&quot;1&quot; /&gt;</summary>
+    </entry>
+    <entry>
+        <title type="html">Star Trek: Paul Giamatti für Schurkenrolle von DS9-Figur inspiriert</title>
+        <link rel="alternate" type="text/html" href="https://www.golem.de/news/star-trek-paul-giamatti-fuer-schurkenrolle-von-ds9-figur-inspiriert-2512-203307.html"/>
+        <published>2025-12-16T11:58:08+01:00</published>
+        <updated>2025-12-16T11:58:08+01:00</updated>
+        <id>https://www.golem.de/news/star-trek-paul-giamatti-fuer-schurkenrolle-von-ds9-figur-inspiriert-2512-203307.html</id>
+        <author>
+            <name>Peter Osteried</name>
+        </author>
+        <summary type="html">Paul Giamatti ist ein Trekkie. Für seine Rolle des Schurken Nus Braka hat er sich eine Figur aus Deep Space Nine zum Vorbild genommen. (&lt;a href=&quot;https://www.golem.de/specials/star-trek/&quot;&gt;Star Trek&lt;/a&gt;, &lt;a href=&quot;https://www.golem.de/specials/klingonen/&quot;&gt;Klingonen&lt;/a&gt;) &lt;img src=&quot;https://cpx.golem.de/cpx.php?class=17&amp;amp;aid=203307&amp;amp;page=1&amp;amp;ts=1765882681&quot; alt=&quot;&quot; width=&quot;1&quot; height=&quot;1&quot; /&gt;</summary>
+    </entry>
+    <entry>
+        <title type="html">Actionspiel: Microsoft stoppt Halo-3-Mod für Counter-Strike 2</title>
+        <link rel="alternate" type="text/html" href="https://www.golem.de/news/actionspiel-microsoft-stoppt-halo-3-mod-fuer-counter-strike-2-2512-203317.html"/>
+        <published>2025-12-16T11:51:09+01:00</published>
+        <updated>2025-12-16T11:51:09+01:00</updated>
+        <id>https://www.golem.de/news/actionspiel-microsoft-stoppt-halo-3-mod-fuer-counter-strike-2-2512-203317.html</id>
+        <author>
+            <name>Peter Steinlechner</name>
+        </author>
+        <summary type="html">Microsoft lässt Halo-3-Mod für Counter-Strike 2 entfernen. Der Fall entfacht erneut die Debatte um Urheberrecht und Fan-Mods. (&lt;a href=&quot;https://www.golem.de/specials/counter-strike-2/&quot;&gt;Counter-Strike 2&lt;/a&gt;, &lt;a href=&quot;https://www.golem.de/specials/urheberrecht/&quot;&gt;Urheberrecht&lt;/a&gt;) &lt;img src=&quot;https://cpx.golem.de/cpx.php?class=17&amp;amp;aid=203317&amp;amp;page=1&amp;amp;ts=1765882262&quot; alt=&quot;&quot; width=&quot;1&quot; height=&quot;1&quot; /&gt;</summary>
+    </entry>
+    <entry>
+        <title type="html">Nach Doge-Entlassungen: US-Regierung sucht händeringend IT-Experten</title>
+        <link rel="alternate" type="text/html" href="https://www.golem.de/news/nach-doge-entlassungen-us-regierung-sucht-haenderingend-it-experten-2512-203315.html"/>
+        <published>2025-12-16T11:42:07+01:00</published>
+        <updated>2025-12-16T11:42:07+01:00</updated>
+        <id>https://www.golem.de/news/nach-doge-entlassungen-us-regierung-sucht-haenderingend-it-experten-2512-203315.html</id>
+        <author>
+            <name>Friedhelm Greis</name>
+        </author>
+        <summary type="html">Durch die Stellenkürzungen von Elon Musks Doge fehlen offenbar IT-Experten in der US-Regierung. 30 IT-Firmen wollen nun Mitarbeiter bereitstellen. (&lt;a href=&quot;https://www.golem.de/specials/usa/&quot;&gt;USA&lt;/a&gt;, &lt;a href=&quot;https://www.golem.de/specials/ibm/&quot;&gt;IBM&lt;/a&gt;) &lt;img src=&quot;https://cpx.golem.de/cpx.php?class=17&amp;amp;aid=203315&amp;amp;page=1&amp;amp;ts=1765881722&quot; alt=&quot;&quot; width=&quot;1&quot; height=&quot;1&quot; /&gt;</summary>
+    </entry>
+    <entry>
+        <title type="html">Anzeige: Soundbar für Fernseher und PC für unter 70 Euro bei Amazon</title>
+        <link rel="alternate" type="text/html" href="https://www.golem.de/news/anzeige-soundbar-fuer-fernseher-und-pc-fuer-unter-70-euro-bei-amazon-2512-203316.html"/>
+        <published>2025-12-16T11:35:11+01:00</published>
+        <updated>2025-12-16T11:35:11+01:00</updated>
+        <id>https://www.golem.de/news/anzeige-soundbar-fuer-fernseher-und-pc-fuer-unter-70-euro-bei-amazon-2512-203316.html</id>
+        <author>
+            <name>Antje Lüth</name>
+        </author>
+        <summary type="html">Eine flexibel aufstellbare Soundbar mit kraftvollen 100 W für Heimkino und Gaming-Setup gibt es bei Amazon zum günstigen Aktionspreis. (&lt;a href=&quot;https://www.golem.de/specials/soundbar/&quot;&gt;Soundbar&lt;/a&gt;, &lt;a href=&quot;https://www.golem.de/specials/technik-und-hardware/&quot;&gt;Technik/Hardware&lt;/a&gt;) &lt;img src=&quot;https://cpx.golem.de/cpx.php?class=17&amp;amp;aid=203316&amp;amp;page=1&amp;amp;ts=1765881305&quot; alt=&quot;&quot; width=&quot;1&quot; height=&quot;1&quot; /&gt;</summary>
+    </entry>
+    <entry>
+        <title type="html">Mini-Actioncams im Vergleich: Insta360 Go Ultra gegen DJI Osmo Nano</title>
+        <link rel="alternate" type="text/html" href="https://www.golem.de/news/mini-actioncams-im-vergleich-insta360-go-ultra-gegen-dji-osmo-nano-2512-203110.html"/>
+        <published>2025-12-16T11:30:02+01:00</published>
+        <updated>2025-12-16T11:30:02+01:00</updated>
+        <id>https://www.golem.de/news/mini-actioncams-im-vergleich-insta360-go-ultra-gegen-dji-osmo-nano-2512-203110.html</id>
+        <author>
+            <name>Peter Steinlechner</name>
+        </author>
+        <summary type="html">Mini-Actioncams von Insta360 und DJI liefern trotz winziger Abmessungen erstaunlich viel Bildqualität und praktische Fernsteuerung per Dock. Ein Test von Peter Steinlechner (&lt;a href=&quot;https://www.golem.de/specials/actioncam/&quot;&gt;Actioncam&lt;/a&gt;, &lt;a href=&quot;https://www.golem.de/specials/digitalkamera/&quot;&gt;Kameras&lt;/a&gt;) &lt;img src=&quot;https://cpx.golem.de/cpx.php?class=17&amp;amp;aid=203110&amp;amp;page=1&amp;amp;ts=1765881002&quot; alt=&quot;&quot; width=&quot;1&quot; height=&quot;1&quot; /&gt;</summary>
+    </entry>
+</feed>

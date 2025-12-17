@@ -1,0 +1,7 @@
+# Biome ignore patterns (legacy support, mainly using biome.json includes)
+node_modules/
+dist/
+cache/
+*.log
+package-lock.json
+
