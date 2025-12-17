@@ -44,6 +44,8 @@ export type {
 } from './feed/index.js';
 // Feed Parser - Main API
 export { detectFormat, isAtom, isFeed, isJSONFeed, isRSS, parseFeed } from './feed/index.js';
+// High-level gathering - Convenience methods combining fetch + parse
+export { gatherFeed } from './gather/index.js';
 // Metadata Extraction - Types and Functions
 export type {
   AlternateLink,
