@@ -12,6 +12,15 @@ import { parseHTML } from 'linkedom';
 import type { ContentExtractionOptions } from './types.js';
 
 /**
+ * Input type for content extraction - either HTML string or pre-parsed Document.
+ *
+ * @remarks
+ * Accepting a pre-parsed Document allows sharing a single parsed document
+ * between metadata and content extraction for better performance.
+ */
+export type HTMLInput = string | Document;
+
+/**
  * Readability result from Mozilla's library.
  */
 export interface ReadabilityResult {
@@ -34,26 +43,36 @@ export interface ReadabilityResult {
  * Quick check to determine if content extraction is likely to succeed.
  * This is a heuristic check and may produce false positives/negatives.
  *
- * @param html - HTML string to check
+ * Accepts either an HTML string or a pre-parsed Document for performance.
+ *
+ * @param input - HTML string or pre-parsed Document to check
  * @param options - Readability check options
  * @returns True if content appears to be an article
  *
  * @example
  * ```typescript
+ * // With HTML string
  * if (isProbablyReaderable(html)) {
  *   const result = extractContent(html);
+ * }
+ *
+ * // With pre-parsed document
+ * const doc = parseHTML(html);
+ * if (isProbablyReaderable(doc)) {
+ *   const result = extractContent(doc);
  * }
  * ```
  */
 export function isProbablyReaderable(
-  html: string,
+  input: HTMLInput,
   options?: {
     minContentLength?: number;
     minScore?: number;
   },
 ): boolean {
   try {
-    const { document } = parseHTML(html);
+    // Use provided document or parse HTML string
+    const document = typeof input === 'string' ? parseHTML(input).document : input;
 
     // Simple heuristic: check for common article indicators
     const hasArticleTag = !!document.querySelector('article');
@@ -82,18 +101,28 @@ export function isProbablyReaderable(
  * Creates a DOM document with linkedom and runs Readability extraction.
  * The original HTML is not modified (uses cloned document).
  *
- * @param html - HTML string to extract from
+ * Accepts either an HTML string or a pre-parsed Document for performance.
+ * Using a pre-parsed Document allows sharing between metadata and content extraction.
+ *
+ * @param input - HTML string or pre-parsed Document to extract from
  * @param options - Extraction options
  * @returns Readability result or null if extraction failed
  *
- * @throws Error if HTML parsing fails
+ * @throws Error if HTML parsing fails (only when input is a string)
  *
  * @example
  * ```typescript
+ * // With HTML string
  * const result = extractWithReadability(html, {
  *   baseUrl: 'https://example.com/article',
  *   charThreshold: 500,
  * });
+ *
+ * // With pre-parsed document (recommended for performance)
+ * import { parseHTML } from './utils/html-parser.js';
+ * const doc = parseHTML(html);
+ * const metadata = extractSEO(doc);
+ * const content = extractWithReadability(doc, { baseUrl: 'https://example.com' });
  *
  * if (result) {
  *   console.log(result.title);
@@ -102,13 +131,14 @@ export function isProbablyReaderable(
  * ```
  */
 export function extractWithReadability(
-  html: string,
+  input: HTMLInput,
   options: ContentExtractionOptions = {},
 ): ReadabilityResult | null {
-  // Parse HTML with linkedom
-  const { document } = parseHTML(html, {
-    url: options.baseUrl || 'https://example.com',
-  });
+  // Use provided document or parse HTML string
+  const document =
+    typeof input === 'string'
+      ? parseHTML(input, { url: options.baseUrl || 'https://example.com' }).document
+      : input;
 
   // Clone document to avoid mutations
   const documentClone = document.cloneNode(true) as Document;

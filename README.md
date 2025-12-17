@@ -60,6 +60,49 @@ Detect feed format without parsing. Returns `'rss'`, `'atom'`, `'json-feed'`, or
 
 Extract plain text from HTML. Removes tags, scripts, styles and normalizes whitespace.
 
+### `extractContent(input: string | Document, options?: ContentExtractionOptions)`
+
+Extract article content from HTML. Accepts either an HTML string or a pre-parsed Document for performance.
+
+### `parseHTML(html: string)`
+
+Parse HTML into a Document object (from `linkedom`). Use this to parse once and share the document between metadata and content extraction for optimal performance.
+
+### Metadata Extractors
+
+All metadata extractors accept a `Document` object (from `parseHTML`):
+
+- `extractSEO(doc)` - SEO meta tags
+- `extractOpenGraph(doc)` - OpenGraph metadata
+- `extractTwitterCard(doc)` - Twitter Card metadata
+- `extractCanonical(doc)` - Canonical URLs and alternates
+- `extractSchemaOrg(doc)` - Schema.org / JSON-LD data
+- ...and 15 more specialized extractors
+
+See TypeDoc documentation for complete API reference.
+
+## Performance Tips
+
+**Best Practice:** Parse HTML once and reuse the document:
+
+```typescript
+import { parseHTML } from "magpie-html/utils/html-parser";
+import { extractSEO, extractContent } from "magpie-html";
+
+const doc = parseHTML(html);
+const metadata = extractSEO(doc); // Fast: <5ms
+const content = extractContent(doc); // Fast: ~500ms
+// Total: One parse + ~500ms
+```
+
+**Slower Alternative:** Parsing multiple times:
+
+```typescript
+// ❌ Don't do this - parses HTML twice
+const metadata = extractSEO(parseHTML(html));
+const content = extractContent(html); // Parses again internally
+```
+
 ## Development
 
 ### Setup

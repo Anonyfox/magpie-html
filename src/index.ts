@@ -26,6 +26,7 @@ export type {
   ExtractedContent,
   ExtractionErrorType,
   ExtractionFailure,
+  HTMLInput,
 } from './content/index.js';
 export {
   assessContentQuality,

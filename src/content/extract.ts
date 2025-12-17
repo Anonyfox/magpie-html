@@ -9,7 +9,11 @@
  */
 
 import { calculateReadingTime } from './quality.js';
-import { extractWithReadability, isProbablyReaderable } from './readability.js';
+import {
+  type HTMLInput,
+  extractWithReadability,
+  isProbablyReaderable,
+} from './readability.js';
 import type {
   ContentExtractionOptions,
   ContentResult,
@@ -68,22 +72,32 @@ function createFailure(
  * Uses Mozilla Readability with linkedom to extract clean article content.
  * This function never throws exceptions - always returns a ContentResult.
  *
+ * Accepts either an HTML string or a pre-parsed Document for performance.
+ * Using a pre-parsed Document allows sharing between metadata and content extraction.
+ *
  * Error handling:
  * - Returns success: false for any extraction failure
  * - Categorizes errors by type for better handling
  * - Includes extraction time even for failures
  *
- * @param html - HTML string to extract content from
+ * @param input - HTML string or pre-parsed Document to extract content from
  * @param options - Extraction options
  * @returns Extraction result (success or failure)
  *
  * @example
  * ```typescript
+ * // With HTML string
  * const result = extractContent(htmlString, {
  *   baseUrl: 'https://example.com/article',
  *   charThreshold: 300,
  *   checkReadability: true,
  * });
+ *
+ * // With pre-parsed document (recommended for performance)
+ * import { parseHTML } from './utils/html-parser.js';
+ * const doc = parseHTML(htmlString);
+ * const metadata = extractSEO(doc);
+ * const content = extractContent(doc, { baseUrl: 'https://example.com' });
  *
  * if (result.success) {
  *   console.log(result.title);
@@ -95,30 +109,40 @@ function createFailure(
  * ```
  */
 export function extractContent(
-  html: string,
+  input: HTMLInput,
   options: ContentExtractionOptions = {},
 ): ContentResult {
   const startTime = Date.now();
 
   // Validate input
-  if (!html || typeof html !== 'string') {
+  if (!input) {
     return createFailure(
       'INVALID_HTML',
-      'HTML must be a non-empty string',
+      'Input must be a non-empty string or Document',
       false,
       Date.now() - startTime,
     );
   }
 
-  if (html.trim().length === 0) {
-    return createFailure('INVALID_HTML', 'HTML string is empty', false, Date.now() - startTime);
+  // Validate string input
+  if (typeof input === 'string') {
+    if (input.trim().length === 0) {
+      return createFailure('INVALID_HTML', 'HTML string is empty', false, Date.now() - startTime);
+    }
+  } else if (typeof input !== 'object' || !input.documentElement) {
+    return createFailure(
+      'INVALID_HTML',
+      'Input must be a string or Document object',
+      false,
+      Date.now() - startTime,
+    );
   }
 
   // Check readability if requested
   let readerable = false;
   if (options.checkReadability) {
     try {
-      readerable = isProbablyReaderable(html);
+      readerable = isProbablyReaderable(input);
       if (!readerable) {
         return createFailure(
           'NOT_READERABLE',
@@ -138,7 +162,7 @@ export function extractContent(
   // Extract content with Readability
   let article: ReturnType<typeof extractWithReadability> | null;
   try {
-    article = extractWithReadability(html, options);
+    article = extractWithReadability(input, options);
   } catch (error) {
     const errorMessage = error instanceof Error ? error.message : String(error);
     return createFailure(
