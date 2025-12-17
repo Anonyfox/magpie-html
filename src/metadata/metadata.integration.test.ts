@@ -34,8 +34,8 @@ describe('Metadata Integration Tests - Real World HTML', () => {
       // Extract all metadata types
       const seo = extractSEO(doc);
       const og = extractOpenGraph(doc);
-      const twitter = extractTwitterCard(doc);
-      const canonical = extractCanonical(doc);
+      const _twitter = extractTwitterCard(doc);
+      const _canonical = extractCanonical(doc);
       const icons = extractIcons(doc);
 
       // Should have basic SEO metadata
@@ -56,7 +56,7 @@ describe('Metadata Integration Tests - Real World HTML', () => {
 
       const seo = extractSEO(doc);
       const og = extractOpenGraph(doc);
-      const canonical = extractCanonical(doc);
+      const _canonical = extractCanonical(doc);
 
       // React.dev should have comprehensive metadata
       assert.ok(seo.title, 'Should have title');
@@ -96,7 +96,7 @@ describe('Metadata Integration Tests - Real World HTML', () => {
 
       const seo = extractSEO(doc);
       const og = extractOpenGraph(doc);
-      const twitter = extractTwitterCard(doc);
+      const _twitter = extractTwitterCard(doc);
       const schemaOrg = extractSchemaOrg(doc);
 
       // Articles should have rich metadata
@@ -116,7 +116,7 @@ describe('Metadata Integration Tests - Real World HTML', () => {
       const doc = parseHTML(article.content);
 
       const seo = extractSEO(doc);
-      const og = extractOpenGraph(doc);
+      const _og = extractOpenGraph(doc);
       const canonical = extractCanonical(doc);
 
       assert.ok(seo.title, 'Should have title');
@@ -320,7 +320,7 @@ describe('Metadata Integration Tests - Real World HTML', () => {
         // Try extracting basic metadata (should not throw)
         const seo = extractSEO(doc);
         const og = extractOpenGraph(doc);
-        const canonical = extractCanonical(doc);
+        const _canonical = extractCanonical(doc);
 
         // Every modern site should have at least title
         const hasTitle = seo.title || og.title;

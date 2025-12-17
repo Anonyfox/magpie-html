@@ -3,11 +3,11 @@ import { describe, it } from 'node:test';
 import type { AtomDocument } from './atom/types.js';
 import type { JSONFeedDocument } from './json-feed/types.js';
 import { normalizeAtom, normalizeJSONFeed, normalizeRSS } from './normalize.js';
-import type { RSSDocument } from './rss/types.js';
+import type { RssFeedExtended } from './rss/types.js';
 
 describe('normalizeRSS', () => {
   it('should normalize minimal RSS feed', () => {
-    const rss: RSSDocument = {
+    const rss: RssFeedExtended = {
       version: '2.0',
       channel: {
         title: 'Test RSS',
@@ -27,7 +27,7 @@ describe('normalizeRSS', () => {
   });
 
   it('should normalize RSS feed with items', () => {
-    const rss: RSSDocument = {
+    const rss: RssFeedExtended = {
       version: '2.0',
       channel: {
         title: 'Test RSS',
@@ -55,7 +55,7 @@ describe('normalizeRSS', () => {
   });
 
   it('should use link as id fallback', () => {
-    const rss: RSSDocument = {
+    const rss: RssFeedExtended = {
       version: '2.0',
       channel: { title: 'Test', link: 'http://example.com', description: 'Test' },
       items: [{ title: 'Item', link: 'http://example.com/1' }],
@@ -66,14 +66,16 @@ describe('normalizeRSS', () => {
   });
 
   it('should handle content:encoded', () => {
-    const rss: RSSDocument = {
+    const rss: RssFeedExtended = {
       version: '2.0',
       channel: { title: 'Test', link: 'http://example.com', description: 'Test' },
       items: [
         {
           title: 'Item',
           description: 'Summary',
-          contentEncoded: '<p>Full content</p>',
+          namespaces: {
+            contentEncoded: '<p>Full content</p>',
+          },
         },
       ],
     };

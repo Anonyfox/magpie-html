@@ -33,8 +33,8 @@ describe('stripCDATA', () => {
   });
 
   it('should handle null/undefined gracefully', () => {
-    assert.equal(stripCDATA(null as any), null);
-    assert.equal(stripCDATA(undefined as any), undefined);
+    assert.equal(stripCDATA(null as unknown as string), null);
+    assert.equal(stripCDATA(undefined as unknown as string), undefined);
   });
 });
 
@@ -177,7 +177,7 @@ describe('cleanText', () => {
   });
 
   it('should handle non-string input', () => {
-    const result = cleanText(123 as any);
+    const result = cleanText(123 as unknown as string);
     assert.equal(result, '');
   });
 

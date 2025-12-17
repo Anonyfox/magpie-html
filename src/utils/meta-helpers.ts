@@ -77,7 +77,7 @@ export function getAllMetaByName(doc: Document, namePrefix: string): Map<string,
   const result = new Map<string, string>();
   const elements = doc.querySelectorAll(`meta[name^="${namePrefix}"]`);
 
-  for (const element of elements) {
+  for (const element of Array.from(elements)) {
     const name = element.getAttribute('name');
     const content = element.getAttribute('content');
     if (name && content) {
@@ -107,14 +107,11 @@ export function getAllMetaByName(doc: Document, namePrefix: string): Map<string,
  * // Map { 'og:title' => 'Page Title', 'og:image' => 'https://...', ... }
  * ```
  */
-export function getAllMetaByProperty(
-  doc: Document,
-  propertyPrefix: string,
-): Map<string, string> {
+export function getAllMetaByProperty(doc: Document, propertyPrefix: string): Map<string, string> {
   const result = new Map<string, string>();
   const elements = doc.querySelectorAll(`meta[property^="${propertyPrefix}"]`);
 
-  for (const element of elements) {
+  for (const element of Array.from(elements)) {
     const property = element.getAttribute('property');
     const content = element.getAttribute('content');
     if (property && content) {
@@ -146,7 +143,7 @@ export function getAllMetaPropertyValues(doc: Document, property: string): strin
   const elements = doc.querySelectorAll(`meta[property="${property}"]`);
   const values: string[] = [];
 
-  for (const element of elements) {
+  for (const element of Array.from(elements)) {
     const content = element.getAttribute('content');
     if (content) {
       values.push(content);

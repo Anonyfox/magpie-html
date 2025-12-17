@@ -10,7 +10,6 @@
 import { Readability } from '@mozilla/readability';
 import type { ContentExtractionOptions } from './types.js';
 
-
 /**
  * Readability result from Mozilla's library.
  */
@@ -59,8 +58,7 @@ export function isProbablyReaderable(
     // Simple heuristic: check for common article indicators
     const hasArticleTag = !!doc.querySelector('article');
     const hasMainTag = !!doc.querySelector('main');
-    const hasContentDivs =
-      doc.querySelectorAll('div.content, div.article, div.post').length > 0;
+    const hasContentDivs = doc.querySelectorAll('div.content, div.article, div.post').length > 0;
     const hasParagraphs = doc.querySelectorAll('p').length >= 3;
 
     // Calculate rough content length

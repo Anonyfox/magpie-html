@@ -55,9 +55,9 @@ export interface TwitterPlayer {
 export interface TwitterCardMetadata {
   /** Card type (summary, summary_large_image, app, player) */
   card?: 'summary' | 'summary_large_image' | 'app' | 'player' | string;
-  /** Twitter @username of website */
+  /** Twitter username of website (with or without @ symbol) */
   site?: string;
-  /** Twitter @username of content creator */
+  /** Twitter username of content creator (with or without @ symbol) */
   creator?: string;
   /** Content title (max 70 chars) */
   title?: string;

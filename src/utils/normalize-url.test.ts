@@ -201,7 +201,7 @@ describe('normalizeUrls', () => {
   });
 
   it('should return empty array for non-array', () => {
-    const result = normalizeUrls(baseUrl, 'not an array' as any);
+    const result = normalizeUrls(baseUrl, 'not an array' as unknown as string[]);
     assert.deepEqual(result, []);
   });
 });

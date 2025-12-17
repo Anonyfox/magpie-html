@@ -80,7 +80,7 @@ export function getAllLinks(doc: Document, rel: string): LinkData[] {
   const elements = doc.querySelectorAll(`link[rel="${rel}"]`);
   const links: LinkData[] = [];
 
-  for (const element of elements) {
+  for (const element of Array.from(elements)) {
     const href = element.getAttribute('href');
     if (!href) continue;
 
@@ -145,7 +145,7 @@ export function getAllLinksByPrefix(doc: Document, relPrefix: string): LinkData[
   const elements = doc.querySelectorAll(`link[rel^="${relPrefix}"]`);
   const links: LinkData[] = [];
 
-  for (const element of elements) {
+  for (const element of Array.from(elements)) {
     const href = element.getAttribute('href');
     if (!href) continue;
 

@@ -4,7 +4,7 @@
 
 import type { AtomDocument } from './atom/types.js';
 import type { JSONFeedDocument } from './json-feed/types.js';
-import type { RssFeedExtended } from './rss/types.js';
+import type { RssFeedExtended, RssItemExtended } from './rss/types.js';
 import type { Feed, FeedAuthor, FeedEnclosure, FeedItem } from './types.js';
 
 /**
@@ -25,19 +25,21 @@ export function normalizeRSS(rss: RssFeedExtended): Feed {
       ? [{ name: channel.managingEditor, email: channel.managingEditor }]
       : undefined,
     updated: channel.lastBuildDate || channel.pubDate,
-    items: items.map((item: any): FeedItem => {
+    items: items.map((item: RssItemExtended): FeedItem => {
       return {
         id: item.guid?.value || item.link || item.title || '',
         title: item.title,
         url: item.link,
-        contentHtml: item.contentEncoded || item.description,
-        contentText: item.contentEncoded ? undefined : item.description,
+        contentHtml: item.namespaces?.contentEncoded || item.description,
+        contentText: item.namespaces?.contentEncoded ? undefined : item.description,
         summary: item.description,
         published: item.pubDate,
         authors:
-          item.author || item.dcCreator ? [{ name: item.author || item.dcCreator }] : undefined,
-        tags: item.categories,
-        image: item.mediaThumbnail?.url,
+          item.author || item.namespaces?.dcCreator
+            ? [{ name: item.author || item.namespaces?.dcCreator || '' }]
+            : undefined,
+        tags: item.category,
+        image: item.namespaces?.mediaThumbnail?.[0]?.url,
         enclosures: item.enclosure
           ? [
               {

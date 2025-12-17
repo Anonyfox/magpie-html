@@ -20,7 +20,7 @@ export interface JsonLdBlock {
   /** @type field(s) from the JSON-LD */
   type?: string | string[];
 
-  /** @context field */
+  /** JSON-LD context field */
   context?: string | unknown;
 }
 
