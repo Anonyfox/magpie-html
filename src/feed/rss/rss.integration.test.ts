@@ -1,20 +1,17 @@
 import assert from 'node:assert/strict';
-import { readFileSync } from 'node:fs';
-import { join } from 'node:path';
 import { describe, it } from 'node:test';
+import { getFeed } from '../../test-helpers.js';
 import { isRSS, parseRSS } from './parse.js';
-
-const CACHE_DIR = join(process.cwd(), 'cache');
 
 describe('RSS Integration Tests - Real World Feeds', () => {
   describe('RND.de RSS Feed', () => {
     it('should parse wirtschaft category feed', () => {
-      const feedPath = join(CACHE_DIR, 'rnd.de/feeds/wirtschaft-category.rss.xml');
-      const feedContent = readFileSync(feedPath, 'utf-8');
+      const feedFile = getFeed('rnd.de', 'wirtschaft-category.rss.xml');
+      assert.ok(feedFile, 'Should find RND feed');
 
-      assert.ok(isRSS(feedContent), 'Should be detected as RSS');
+      assert.ok(isRSS(feedFile.content), 'Should be detected as RSS');
 
-      const feed = parseRSS(feedContent);
+      const feed = parseRSS(feedFile.content);
 
       // Verify structure
       assert.ok(feed.version);
@@ -42,9 +39,10 @@ describe('RSS Integration Tests - Real World Feeds', () => {
     });
 
     it('should extract specific content from known item', () => {
-      const feedPath = join(CACHE_DIR, 'rnd.de/feeds/wirtschaft-category.rss.xml');
-      const feedContent = readFileSync(feedPath, 'utf-8');
-      const feed = parseRSS(feedContent);
+      const feedFile = getFeed('rnd.de', 'wirtschaft-category.rss.xml');
+      assert.ok(feedFile, 'Should find RND feed');
+
+      const feed = parseRSS(feedFile.content);
 
       // Find item about Ifo-Index (if it exists in our snapshot)
       const ifoItem = feed.items.find((item) => item.title?.includes('Ifo-Index'));
@@ -61,10 +59,10 @@ describe('RSS Integration Tests - Real World Feeds', () => {
 
   describe('FAZ.net RSS Feed', () => {
     it('should parse aktuell feed', () => {
-      const feedPath = join(CACHE_DIR, 'faz.net/feeds/aktuell.rss.xml');
-      const feedContent = readFileSync(feedPath, 'utf-8');
+      const feedFile = getFeed('faz.net', 'aktuell.rss.xml');
+      assert.ok(feedFile, 'Should find FAZ feed');
 
-      const feed = parseRSS(feedContent);
+      const feed = parseRSS(feedFile.content);
 
       assert.ok(feed.channel.title);
       assert.ok(feed.items.length > 0);
@@ -85,10 +83,10 @@ describe('RSS Integration Tests - Real World Feeds', () => {
 
   describe('Süddeutsche Zeitung RSS Feed', () => {
     it('should parse alles feed', () => {
-      const feedPath = join(CACHE_DIR, 'sueddeutsche.de/feeds/alles.rss.xml');
-      const feedContent = readFileSync(feedPath, 'utf-8');
+      const feedFile = getFeed('sueddeutsche.de', 'alles.rss.xml');
+      assert.ok(feedFile, 'Should find Süddeutsche feed');
 
-      const feed = parseRSS(feedContent);
+      const feed = parseRSS(feedFile.content);
 
       assert.ok(feed.channel);
       assert.ok(feed.items.length > 0);
@@ -101,10 +99,10 @@ describe('RSS Integration Tests - Real World Feeds', () => {
 
   describe('n-tv.de RSS Feed', () => {
     it('should parse main feed', () => {
-      const feedPath = join(CACHE_DIR, 'n-tv.de/feeds/main.rss.xml');
-      const feedContent = readFileSync(feedPath, 'utf-8');
+      const feedFile = getFeed('n-tv.de', 'main.rss.xml');
+      assert.ok(feedFile, 'Should find n-tv feed');
 
-      const feed = parseRSS(feedContent);
+      const feed = parseRSS(feedFile.content);
 
       assert.ok(feed.channel.title);
       assert.ok(feed.items.length > 0);
@@ -118,10 +116,10 @@ describe('RSS Integration Tests - Real World Feeds', () => {
 
   describe('LTO.de RSS Feed', () => {
     it('should parse legal news feed', () => {
-      const feedPath = join(CACHE_DIR, 'lto.de/feeds/main.rss.xml');
-      const feedContent = readFileSync(feedPath, 'utf-8');
+      const feedFile = getFeed('lto.de', 'main.rss.xml');
+      assert.ok(feedFile, 'Should find LTO feed');
 
-      const feed = parseRSS(feedContent);
+      const feed = parseRSS(feedFile.content);
 
       assert.ok(feed.channel.title);
       assert.ok(feed.items.length > 0);
@@ -133,10 +131,10 @@ describe('RSS Integration Tests - Real World Feeds', () => {
 
   describe('TechCrunch RSS Feed', () => {
     it('should parse tech news feed', () => {
-      const feedPath = join(CACHE_DIR, 'techcrunch.com/feeds/main.rss.xml');
-      const feedContent = readFileSync(feedPath, 'utf-8');
+      const feedFile = getFeed('techcrunch.com', 'main.rss.xml');
+      assert.ok(feedFile, 'Should find TechCrunch feed');
 
-      const feed = parseRSS(feedContent);
+      const feed = parseRSS(feedFile.content);
 
       assert.ok(feed.channel.title);
       assert.ok(feed.items.length > 0);
@@ -151,10 +149,10 @@ describe('RSS Integration Tests - Real World Feeds', () => {
 
   describe('GoodNews.eu RSS Feed', () => {
     it('should parse positive news feed', () => {
-      const feedPath = join(CACHE_DIR, 'goodnews.eu/feeds/main.rss.xml');
-      const feedContent = readFileSync(feedPath, 'utf-8');
+      const feedFile = getFeed('goodnews.eu', 'main.rss.xml');
+      assert.ok(feedFile, 'Should find GoodNews feed');
 
-      const feed = parseRSS(feedContent);
+      const feed = parseRSS(feedFile.content);
 
       assert.ok(feed.channel.title);
       assert.ok(feed.items.length > 0);
@@ -163,10 +161,10 @@ describe('RSS Integration Tests - Real World Feeds', () => {
 
   describe('React.dev RSS Feed', () => {
     it('should parse React blog feed', () => {
-      const feedPath = join(CACHE_DIR, 'react.dev/feeds/blog.rss.xml');
-      const feedContent = readFileSync(feedPath, 'utf-8');
+      const feedFile = getFeed('react.dev', 'blog.rss.xml');
+      assert.ok(feedFile, 'Should find React blog feed');
 
-      const feed = parseRSS(feedContent);
+      const feed = parseRSS(feedFile.content);
 
       assert.ok(feed.channel.title);
       assert.ok(feed.channel.link);
@@ -180,46 +178,40 @@ describe('RSS Integration Tests - Real World Feeds', () => {
   });
 
   describe('Cross-feed consistency', () => {
-    it('should parse all RSS feeds without errors', () => {
-      const feeds = [
-        'rnd.de/feeds/wirtschaft-category.rss.xml',
-        'faz.net/feeds/aktuell.rss.xml',
-        'sueddeutsche.de/feeds/alles.rss.xml',
-        'n-tv.de/feeds/main.rss.xml',
-        'lto.de/feeds/main.rss.xml',
-        'techcrunch.com/feeds/main.rss.xml',
-        'goodnews.eu/feeds/main.rss.xml',
-        'react.dev/feeds/blog.rss.xml',
-      ];
+    it('should parse all RSS feeds without errors', async () => {
+      const { getRSSFeeds } = await import('../../test-helpers.js');
+      const rssFeeds = getRSSFeeds();
 
-      for (const feedPath of feeds) {
-        const fullPath = join(CACHE_DIR, feedPath);
-        const content = readFileSync(fullPath, 'utf-8');
+      assert.ok(rssFeeds.length > 0, 'Should have RSS feeds in cache');
 
+      for (const feedFile of rssFeeds) {
         // Should parse without throwing
-        const feed = parseRSS(content);
+        const feed = parseRSS(feedFile.content);
 
         // All feeds should have basic structure
-        assert.ok(feed.version, `${feedPath}: should have version`);
-        assert.ok(feed.channel, `${feedPath}: should have channel`);
-        assert.ok(feed.channel.title, `${feedPath}: should have channel title`);
-        assert.ok(feed.channel.link, `${feedPath}: should have channel link`);
-        assert.ok(feed.channel.description, `${feedPath}: should have channel description`);
-        assert.ok(Array.isArray(feed.items), `${feedPath}: should have items array`);
+        assert.ok(feed.version, `${feedFile.relativePath}: should have version`);
+        assert.ok(feed.channel, `${feedFile.relativePath}: should have channel`);
+        assert.ok(feed.channel.title, `${feedFile.relativePath}: should have channel title`);
+        assert.ok(feed.channel.link, `${feedFile.relativePath}: should have channel link`);
+        assert.ok(
+          feed.channel.description,
+          `${feedFile.relativePath}: should have channel description`,
+        );
+        assert.ok(Array.isArray(feed.items), `${feedFile.relativePath}: should have items array`);
       }
     });
 
     it('should handle varying RSS structures gracefully', () => {
-      const feeds = [
-        'rnd.de/feeds/wirtschaft-category.rss.xml',
-        'faz.net/feeds/aktuell.rss.xml',
-        'react.dev/feeds/blog.rss.xml',
+      const testFeeds = [
+        { domain: 'rnd.de', name: 'wirtschaft-category.rss.xml' },
+        { domain: 'faz.net', name: 'aktuell.rss.xml' },
+        { domain: 'react.dev', name: 'blog.rss.xml' },
       ];
 
-      const parsedFeeds = feeds.map((feedPath) => {
-        const fullPath = join(CACHE_DIR, feedPath);
-        const content = readFileSync(fullPath, 'utf-8');
-        return parseRSS(content);
+      const parsedFeeds = testFeeds.map(({ domain, name }) => {
+        const feedFile = getFeed(domain, name);
+        assert.ok(feedFile, `Should find feed: ${domain}/${name}`);
+        return parseRSS(feedFile.content);
       });
 
       // All should have items
