@@ -33,7 +33,9 @@
     "format": "biome format --write .",
     "check": "npm run typecheck && npm run lint",
     "prepublishOnly": "npm run check && npm run build",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "docs": "typedoc",
+    "docs:serve": "npx serve docs"
   },
   "keywords": [
     "scraping",
@@ -54,6 +56,7 @@
     "@types/node": "^22.10.2",
     "tsup": "^8.3.5",
     "tsx": "^4.19.2",
+    "typedoc": "^0.28.15",
     "typescript": "^5.7.2"
   },
   "engines": {
@@ -66,8 +69,5 @@
   "bugs": {
     "url": "https://github.com/Anonyfox/magpie-html/issues"
   },
-  "homepage": "https://github.com/Anonyfox/magpie-html#readme",
-  "dependencies": {
-    "node-html-parser": "^7.0.1"
-  }
+  "homepage": "https://github.com/Anonyfox/magpie-html#readme"
 }

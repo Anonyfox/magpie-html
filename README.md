@@ -24,11 +24,11 @@ npm install magpie-html
 ### Feed Parsing
 
 ```typescript
-import { parseFeed } from 'magpie-html';
+import { parseFeed } from "magpie-html";
 
 // Auto-detect and parse any feed format (RSS, Atom, JSON Feed)
-const feed = await fetch('https://example.com/feed.xml').then(r => r.text());
-const result = parseFeed(feed, 'https://example.com/feed.xml');
+const feed = await fetch("https://example.com/feed.xml").then((r) => r.text());
+const result = parseFeed(feed, "https://example.com/feed.xml");
 
 console.log(result.feed.title);
 console.log(result.feed.items[0].title);
@@ -40,9 +40,9 @@ Supports RSS 2.0, Atom 1.0, and JSON Feed with automatic format detection and UR
 ### HTML Text Extraction
 
 ```typescript
-import { extractText } from 'magpie-html';
+import { extractText } from "magpie-html";
 
-const html = '<div><h1>Title</h1><p>Content</p></div>';
+const html = "<div><h1>Title</h1><p>Content</p></div>";
 const text = extractText(html); // "Title Content"
 ```
 
@@ -131,6 +131,19 @@ npm publish
 ```
 
 The `prepublishOnly` script automatically builds the package before publishing.
+
+## Documentation
+
+Full API documentation is available at:
+
+- **[https://anonyfox.github.io/magpie-html](https://anonyfox.github.io/magpie-html)** (once repo is published)
+
+Or generate locally:
+
+```bash
+npm run docs
+npm run docs:serve
+```
 
 ## License
 

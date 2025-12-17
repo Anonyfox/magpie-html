@@ -5,8 +5,12 @@ src/
 # Config files
 tsconfig.json
 tsup.config.ts
+typedoc.json
+typedoc-custom.css
 .gitignore
 .npmignore
+biome.json
+.biomeignore
 
 # Development
 .vscode/
@@ -24,6 +28,8 @@ coverage/
 
 # Documentation (keep README.md)
 docs/
+*.md
+!README.md
 
 # Misc
 *.log

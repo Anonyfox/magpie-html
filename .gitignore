@@ -37,3 +37,6 @@ coverage/
 *.tmp
 .cache/
 
+
+# Documentation (generated, do not commit)
+docs/

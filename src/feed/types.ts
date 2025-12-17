@@ -112,9 +112,9 @@ export interface Feed {
  * Parse result containing both normalized and original data.
  *
  * @remarks
- * Returned by {@link parseFeed} and {@link parseFeedAs}. Contains both the
- * normalized feed data (recommended for most use cases) and the original
- * format-specific data (for advanced use cases requiring format-specific fields).
+ * Returned by {@link parseFeed}. Contains both the normalized feed data
+ * (recommended for most use cases) and the original format-specific data
+ * (for advanced use cases requiring format-specific fields).
  */
 export interface ParseResult {
   /** Normalized feed data (recommended) */
