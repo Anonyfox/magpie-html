@@ -9,6 +9,7 @@
  * @packageDocumentation
  */
 
+export { gatherArticle } from './article/index.js';
 export { gatherFeed } from './feed.js';
-export type { Website } from './types.js';
+export type { Article, Website } from './types.js';
 export { gatherWebsite } from './website/index.js';

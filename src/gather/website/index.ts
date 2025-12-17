@@ -95,7 +95,7 @@ export async function gatherWebsite(url: string | URL): Promise<Website> {
   // Extract best title, description, image, icon, and language from multiple sources
   const title = extractBestTitle(doc);
   const description = extractBestDescription(doc);
-  const imageUrl = extractBestImage(doc);
+  const imageUrl = extractBestImage(doc, pageUrl);
   const iconUrl = extractBestIcon(doc);
   const { language, region } = extractBestLanguage(doc);
 

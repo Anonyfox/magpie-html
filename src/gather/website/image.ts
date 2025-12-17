@@ -9,6 +9,7 @@ import { extractOpenGraph } from '../../metadata/opengraph/index.js';
 import { extractSchemaOrg } from '../../metadata/schema-org/index.js';
 import { extractTwitterCard } from '../../metadata/twitter-card/index.js';
 import type { HTMLDocument as Document } from '../../utils/html-parser.js';
+import { normalizeUrl } from '../../utils/normalize-url.js';
 
 /**
  * Extract best keyvisual/image from multiple sources with smart fallbacks.
@@ -25,23 +26,24 @@ import type { HTMLDocument as Document } from '../../utils/html-parser.js';
  * prioritizing social media images over generic icons.
  *
  * @param doc - Parsed HTML document
- * @returns Best available image URL or undefined if none found
+ * @param baseUrl - Base URL for resolving relative URLs
+ * @returns Best available image URL (absolute) or undefined if none found
  *
  * @example
  * ```typescript
  * const doc = parseHTML(html);
- * const image = extractBestImage(doc);
- * console.log(image); // URL of best available image
+ * const image = extractBestImage(doc, 'https://example.com/page');
+ * console.log(image); // Absolute URL of best available image
  * ```
  */
-export function extractBestImage(doc: Document): string | undefined {
+export function extractBestImage(doc: Document, baseUrl: string): string | undefined {
   // 1. Try Schema.org Article/NewsArticle image (largest if array)
   const schema = extractSchemaOrg(doc);
   if (schema.articles && schema.articles.length > 0) {
     for (const article of schema.articles) {
       const imageUrl = extractSchemaImage(article);
       if (imageUrl?.trim()) {
-        return imageUrl.trim();
+        return normalizeUrl(baseUrl, imageUrl.trim());
       }
     }
   }
@@ -49,13 +51,13 @@ export function extractBestImage(doc: Document): string | undefined {
   // 2. Try OpenGraph image (social media optimized)
   const og = extractOpenGraph(doc);
   if (og.image?.trim()) {
-    return og.image.trim();
+    return normalizeUrl(baseUrl, og.image.trim());
   }
 
   // 3. Try Twitter Card image
   const twitter = extractTwitterCard(doc);
   if (twitter.image?.trim()) {
-    return twitter.image.trim();
+    return normalizeUrl(baseUrl, twitter.image.trim());
   }
 
   // 4. Fall back to largest Apple Touch Icon
@@ -64,13 +66,13 @@ export function extractBestImage(doc: Document): string | undefined {
     // Find the largest icon by parsing sizes
     const largest = findLargestIcon(icons.appleTouchIcons);
     if (largest?.url) {
-      return largest.url;
+      return normalizeUrl(baseUrl, largest.url);
     }
   }
 
   // 5. Fall back to standard favicon
   if (icons.favicon?.trim()) {
-    return icons.favicon.trim();
+    return normalizeUrl(baseUrl, icons.favicon.trim());
   }
 
   // No image found

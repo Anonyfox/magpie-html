@@ -31,6 +31,7 @@ export type {
 export {
   assessContentQuality,
   calculateReadingTime,
+  countWords,
   extractContent,
   htmlToText,
   isProbablyReaderable,
@@ -47,8 +48,8 @@ export type {
 // Feed Parser - Main API
 export { detectFormat, isAtom, isFeed, isJSONFeed, isRSS, parseFeed } from './feed/index.js';
 // High-level gathering - Convenience methods combining fetch + parse
-export type { Website } from './gather/index.js';
-export { gatherFeed, gatherWebsite } from './gather/index.js';
+export type { Article, Website } from './gather/index.js';
+export { gatherArticle, gatherFeed, gatherWebsite } from './gather/index.js';
 // Metadata Extraction - Types and Functions
 export type {
   AlternateLink,

@@ -24,7 +24,7 @@ describe('extractBestImage', () => {
       </html>
     `;
     const doc = parseHTML(html);
-    const image = extractBestImage(doc);
+    const image = extractBestImage(doc, 'https://example.com/page');
     assert.strictEqual(image, 'https://example.com/schema-image.jpg');
   });
 
@@ -48,7 +48,7 @@ describe('extractBestImage', () => {
       </html>
     `;
     const doc = parseHTML(html);
-    const image = extractBestImage(doc);
+    const image = extractBestImage(doc, 'https://example.com/page');
     assert.strictEqual(image, 'https://example.com/image-object.jpg');
   });
 
@@ -86,7 +86,7 @@ describe('extractBestImage', () => {
       </html>
     `;
     const doc = parseHTML(html);
-    const image = extractBestImage(doc);
+    const image = extractBestImage(doc, 'https://example.com/page');
     // Should pick the largest (1200x800 = 960000 pixels)
     assert.strictEqual(image, 'https://example.com/large.jpg');
   });
@@ -115,7 +115,7 @@ describe('extractBestImage', () => {
       </html>
     `;
     const doc = parseHTML(html);
-    const image = extractBestImage(doc);
+    const image = extractBestImage(doc, 'https://example.com/page');
     // Should prefer Article over WebPage
     assert.strictEqual(image, 'https://example.com/article-image.jpg');
   });
@@ -130,7 +130,7 @@ describe('extractBestImage', () => {
       </html>
     `;
     const doc = parseHTML(html);
-    const image = extractBestImage(doc);
+    const image = extractBestImage(doc, 'https://example.com/page');
     assert.strictEqual(image, 'https://example.com/og-image.jpg');
   });
 
@@ -144,7 +144,7 @@ describe('extractBestImage', () => {
       </html>
     `;
     const doc = parseHTML(html);
-    const image = extractBestImage(doc);
+    const image = extractBestImage(doc, 'https://example.com/page');
     assert.strictEqual(image, 'https://example.com/twitter-image.jpg');
   });
 
@@ -159,7 +159,7 @@ describe('extractBestImage', () => {
       </html>
     `;
     const doc = parseHTML(html);
-    const image = extractBestImage(doc);
+    const image = extractBestImage(doc, 'https://example.com/page');
     assert.strictEqual(image, 'https://example.com/og-image.jpg');
   });
 
@@ -173,8 +173,8 @@ describe('extractBestImage', () => {
       </html>
     `;
     const doc = parseHTML(html);
-    const image = extractBestImage(doc);
-    assert.strictEqual(image, '/apple-icon.png');
+    const image = extractBestImage(doc, 'https://example.com/page');
+    assert.strictEqual(image, 'https://example.com/apple-icon.png');
   });
 
   it('should pick largest Apple Touch Icon', () => {
@@ -189,8 +189,8 @@ describe('extractBestImage', () => {
       </html>
     `;
     const doc = parseHTML(html);
-    const image = extractBestImage(doc);
-    assert.strictEqual(image, '/icon-180.png');
+    const image = extractBestImage(doc, 'https://example.com/page');
+    assert.strictEqual(image, 'https://example.com/icon-180.png');
   });
 
   it('should fall back to favicon', () => {
@@ -203,8 +203,8 @@ describe('extractBestImage', () => {
       </html>
     `;
     const doc = parseHTML(html);
-    const image = extractBestImage(doc);
-    assert.strictEqual(image, '/favicon.ico');
+    const image = extractBestImage(doc, 'https://example.com/page');
+    assert.strictEqual(image, 'https://example.com/favicon.ico');
   });
 
   it('should prefer social images over favicon', () => {
@@ -218,7 +218,7 @@ describe('extractBestImage', () => {
       </html>
     `;
     const doc = parseHTML(html);
-    const image = extractBestImage(doc);
+    const image = extractBestImage(doc, 'https://example.com/page');
     assert.strictEqual(image, 'https://example.com/social.jpg');
   });
 
@@ -233,7 +233,7 @@ describe('extractBestImage', () => {
       </html>
     `;
     const doc = parseHTML(html);
-    const image = extractBestImage(doc);
+    const image = extractBestImage(doc, 'https://example.com/page');
     assert.strictEqual(image, 'https://example.com/twitter.jpg');
   });
 
@@ -245,7 +245,7 @@ describe('extractBestImage', () => {
       </html>
     `;
     const doc = parseHTML(html);
-    const image = extractBestImage(doc);
+    const image = extractBestImage(doc, 'https://example.com/page');
     assert.strictEqual(image, undefined);
   });
 
@@ -259,7 +259,7 @@ describe('extractBestImage', () => {
       </html>
     `;
     const doc = parseHTML(html);
-    const image = extractBestImage(doc);
+    const image = extractBestImage(doc, 'https://example.com/page');
     assert.strictEqual(image, undefined);
   });
 
@@ -273,7 +273,7 @@ describe('extractBestImage', () => {
       </html>
     `;
     const doc = parseHTML(html);
-    const image = extractBestImage(doc);
+    const image = extractBestImage(doc, 'https://example.com/page');
     assert.strictEqual(image, 'https://example.com/image.jpg');
   });
 
@@ -287,8 +287,8 @@ describe('extractBestImage', () => {
       </html>
     `;
     const doc = parseHTML(html);
-    const image = extractBestImage(doc);
-    assert.strictEqual(image, '/icon.png');
+    const image = extractBestImage(doc, 'https://example.com/page');
+    assert.strictEqual(image, 'https://example.com/icon.png');
   });
 
   it('should handle "any" size for Apple Touch Icon', () => {
@@ -302,9 +302,9 @@ describe('extractBestImage', () => {
       </html>
     `;
     const doc = parseHTML(html);
-    const image = extractBestImage(doc);
+    const image = extractBestImage(doc, 'https://example.com/page');
     // "any" should be treated as largest
-    assert.strictEqual(image, '/icon-any.svg');
+    assert.strictEqual(image, 'https://example.com/icon-any.svg');
   });
 
   it('should handle complete priority chain', () => {
@@ -318,8 +318,8 @@ describe('extractBestImage', () => {
       </html>
     `;
     const doc = parseHTML(html);
-    const image = extractBestImage(doc);
+    const image = extractBestImage(doc, 'https://example.com/page');
     // Should prefer Apple Touch Icon over favicon
-    assert.strictEqual(image, '/apple-icon.png');
+    assert.strictEqual(image, 'https://example.com/apple-icon.png');
   });
 });

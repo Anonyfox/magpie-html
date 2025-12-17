@@ -15,7 +15,7 @@ import type { ContentQuality, ExtractedContent } from './types.js';
  * @param text - Text to count words in
  * @returns Number of words
  */
-function countWords(text: string): number {
+export function countWords(text: string): number {
   // Remove extra whitespace and split on word boundaries
   const words = text.trim().split(/\s+/).filter(Boolean);
   return words.length;

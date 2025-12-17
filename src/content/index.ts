@@ -12,7 +12,7 @@
 export { extractContent } from './extract.js';
 export type { HtmlToTextOptions } from './html-to-text/index.js';
 export { htmlToText } from './html-to-text/index.js';
-export { assessContentQuality, calculateReadingTime } from './quality.js';
+export { assessContentQuality, calculateReadingTime, countWords } from './quality.js';
 export { isProbablyReaderable } from './readability.js';
 export type {
   ContentExtractionOptions,
