@@ -95,7 +95,6 @@ export type {
   TwitterCardMetadata,
   TwitterPlayer,
   VerificationMetadata,
-  WebsiteMetadata,
 } from './metadata/index.js';
 export {
   extractAnalytics,

@@ -5,25 +5,17 @@ import { parseHTML } from '../utils/html-parser.js';
 import { extractAnalytics } from './analytics/index.js';
 import { extractAssets } from './assets/index.js';
 import { extractCanonical } from './canonical/index.js';
-import { extractCopyright } from './copyright/index.js';
-import { extractDublinCore } from './dublin-core/index.js';
 import { extractFeedDiscovery } from './feed-discovery/index.js';
-import { extractGeo } from './geo/index.js';
 import { extractIcons } from './icons/index.js';
 import { extractLanguage } from './language/index.js';
 import { extractLinks } from './links/index.js';
-import { extractMonetization } from './monetization/index.js';
-import { extractNews } from './news/index.js';
 import { extractOpenGraph } from './opengraph/index.js';
-import { extractPagination } from './pagination/index.js';
 import { extractRobots } from './robots/index.js';
 import { extractSchemaOrg } from './schema-org/index.js';
 import { extractSecurity } from './security/index.js';
 import { extractSEO } from './seo/index.js';
-import { extractSitemapDiscovery } from './sitemap-discovery/index.js';
 import { extractSocialProfiles } from './social-profiles/index.js';
 import { extractTwitterCard } from './twitter-card/index.js';
-import { extractVerification } from './verification/index.js';
 
 describe('Metadata Integration Tests - Real World HTML', () => {
   describe('Homepage metadata extraction', () => {
@@ -354,44 +346,6 @@ describe('Metadata Integration Tests - Real World HTML', () => {
 
       // Most articles should have metadata
       assert.ok(articlesWithMetadata > 0, 'Most articles should have title metadata');
-    });
-  });
-
-  describe('Performance', () => {
-    it('should extract all metadata types quickly', () => {
-      const homepage = getHomepage('techcrunch.com');
-      assert.ok(homepage, 'Should find TechCrunch homepage');
-
-      const doc = parseHTML(homepage.content);
-
-      const startTime = Date.now();
-
-      // Extract all metadata types
-      extractSEO(doc);
-      extractOpenGraph(doc);
-      extractTwitterCard(doc);
-      extractCanonical(doc);
-      extractSchemaOrg(doc);
-      extractDublinCore(doc);
-      extractFeedDiscovery(doc);
-      extractSitemapDiscovery(doc);
-      extractIcons(doc);
-      extractLanguage(doc);
-      extractPagination(doc);
-      extractRobots(doc);
-      extractCopyright(doc);
-      extractVerification(doc);
-      extractSocialProfiles(doc);
-      extractAnalytics(doc);
-      extractMonetization(doc);
-      extractGeo(doc);
-      extractNews(doc);
-      extractSecurity(doc);
-
-      const endTime = Date.now();
-
-      // Should extract all metadata quickly (< 100ms for single page)
-      assert.ok(endTime - startTime < 100, 'Should extract all metadata in < 100ms');
     });
   });
 

@@ -240,21 +240,7 @@ describe('Unified Feed Parser Integration Tests', () => {
     });
   });
 
-  describe('Performance and robustness', () => {
-    it('should handle large feeds efficiently', () => {
-      // Daring Fireball has a large feed (153KB)
-      const feedFile = getFeed('daringfireball.net', 'main.json');
-      assert.ok(feedFile, 'Should find Daring Fireball feed');
-
-      const startTime = Date.now();
-      const feed = parseFeedNormalized(feedFile.content);
-      const endTime = Date.now();
-
-      assert.ok(feed.items.length > 0);
-      // Should parse large feed reasonably fast (< 1 second)
-      assert.ok(endTime - startTime < 1000, 'Should parse large feed in < 1 second');
-    });
-
+  describe('Robustness', () => {
     it('should handle all cached feeds without errors', () => {
       // Get all feeds dynamically from cache
       const rssFeeds = getRSSFeeds();

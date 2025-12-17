@@ -77,7 +77,5 @@ export type {
   TwitterPlayer,
 } from './twitter-card/index.js';
 export { extractTwitterCard } from './twitter-card/index.js';
-// Unified types
-export type { WebsiteMetadata } from './types.js';
 export type { VerificationMetadata } from './verification/index.js';
 export { extractVerification } from './verification/index.js';

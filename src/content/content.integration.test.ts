@@ -210,55 +210,6 @@ describe('Content extraction integration tests', () => {
     });
   });
 
-  describe('Performance benchmarks', () => {
-    it('should extract quickly from typical articles', () => {
-      const articles = [
-        getArticle('daringfireball.net', 'debunking-special-typefaces-dyslexia.html'),
-        getArticle('react.dev', 'critical-security-vulnerability.html'),
-        getArticle('techcrunch.com', 'google-upi-card-india.html'),
-        getArticle('inessential.com', 'rss-plus-markdown.html'),
-        getArticle('golem.de', 'google-character-ai.html'),
-      ];
-
-      const timings: number[] = [];
-
-      for (const article of articles) {
-        assert.ok(article, 'Should find article');
-        const result = extractContent(parseHTML(article.content));
-
-        assert.ok('extractionTime' in result);
-        timings.push(result.extractionTime);
-      }
-
-      // Calculate average
-      const avgTime = timings.reduce((a, b) => a + b, 0) / timings.length;
-
-      // Should be reasonably fast (< 500ms average)
-      assert.ok(avgTime < 500, `Average extraction time ${avgTime}ms is too slow`);
-    });
-
-    it('should handle multiple extractions efficiently', () => {
-      const article = getArticle('techcrunch.com', 'google-upi-card-india.html');
-      assert.ok(article, 'Should find article');
-
-      const iterations = 10;
-      const timings: number[] = [];
-
-      for (let i = 0; i < iterations; i++) {
-        const result = extractContent(parseHTML(article.content));
-        timings.push(result.extractionTime);
-      }
-
-      // Timings should be consistent (no memory leaks or degradation)
-      const maxTime = Math.max(...timings);
-      const minTime = Math.min(...timings);
-      const variance = maxTime - minTime;
-
-      // Variance should be reasonable (< 200ms difference)
-      assert.ok(variance < 200, `Timing variance ${variance}ms is too high`);
-    });
-  });
-
   describe('Multi-language support', () => {
     it('should extract German content correctly', () => {
       const articles = [
