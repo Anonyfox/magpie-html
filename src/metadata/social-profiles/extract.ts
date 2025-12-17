@@ -7,7 +7,7 @@
  * @packageDocumentation
  */
 
-import type { HTMLElement } from '../../utils/html-parser.js';
+import type { HTMLDocument as Document } from '../../utils/html-parser.js';
 import { getMetaContent } from '../../utils/meta-helpers.js';
 import type { SocialProfilesMetadata } from './types.js';
 
@@ -28,7 +28,7 @@ import type { SocialProfilesMetadata } from './types.js';
  * console.log(profiles.facebook);
  * ```
  */
-export function extractSocialProfiles(doc: HTMLElement): SocialProfilesMetadata {
+export function extractSocialProfiles(doc: Document): SocialProfilesMetadata {
   const metadata: SocialProfilesMetadata = {};
 
   // Twitter - extract from multiple sources
@@ -122,7 +122,7 @@ export function extractSocialProfiles(doc: HTMLElement): SocialProfilesMetadata 
  * @returns Meta content or undefined
  */
 function extractFromProperty(
-  doc: HTMLElement,
+  doc: Document,
   property: string,
   mustContain?: string,
 ): string | undefined {
@@ -152,13 +152,13 @@ function extractFromProperty(
  * @param doc - Parsed HTML document
  * @returns Array of profile URLs
  */
-function extractSchemaOrgSameAs(doc: HTMLElement): string[] {
+function extractSchemaOrgSameAs(doc: Document): string[] {
   const profiles: string[] = [];
 
   // Look for JSON-LD scripts
   const scripts = doc.querySelectorAll('script[type="application/ld+json"]');
 
-  for (const script of scripts) {
+  for (const script of Array.from(scripts)) {
     try {
       const data = JSON.parse(script.textContent || '{}');
 

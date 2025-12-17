@@ -7,7 +7,7 @@
  * @packageDocumentation
  */
 
-import type { HTMLElement } from '../../utils/html-parser.js';
+import type { HTMLDocument as Document } from '../../utils/html-parser.js';
 import { getLinkHref } from '../../utils/link-helpers.js';
 import type { PaginationMetadata } from './types.js';
 
@@ -29,7 +29,7 @@ import type { PaginationMetadata } from './types.js';
  * console.log(pagination.next); // Next page URL
  * ```
  */
-export function extractPagination(doc: HTMLElement): PaginationMetadata {
+export function extractPagination(doc: Document): PaginationMetadata {
   const metadata: PaginationMetadata = {};
 
   // Extract prev/previous (both rel values are valid)

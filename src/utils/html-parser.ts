@@ -1,44 +1,43 @@
 /**
- * HTML parsing utilities using node-html-parser.
+ * HTML parsing utilities using linkedom.
  *
  * @remarks
- * This module provides a simple wrapper around node-html-parser for consistent
+ * This module provides a simple wrapper around linkedom for consistent
  * HTML parsing across all metadata extraction modules. Parsing should happen
  * once at the top level and the parsed document passed to all extractors.
  *
  * @packageDocumentation
  */
 
-import { type HTMLElement, parse } from 'node-html-parser';
+import { parseHTML as linkedomParseHTML } from 'linkedom';
 
 /**
- * Parse HTML string into a document tree.
+ * Parse HTML string into a DOM document.
  *
  * @remarks
- * Parses HTML using node-html-parser. This should be called once per document,
- * with the result passed to all metadata extractors for performance.
+ * Parses HTML using linkedom, providing a standards-compliant DOM implementation.
+ * This should be called once per document, with the result passed to all metadata
+ * extractors for performance.
  *
  * Never throws - returns a document even for malformed HTML.
  *
  * @param html - HTML string to parse
- * @returns Parsed HTML document tree
+ * @param baseUrl - Optional base URL for resolving relative URLs
+ * @returns Parsed DOM document
  *
  * @example
  * ```typescript
  * const doc = parseHTML('<html><head><title>Test</title></head></html>');
- * const title = doc.querySelector('title')?.text;
+ * const title = doc.querySelector('title')?.textContent;
  * ```
  */
-export function parseHTML(html: string): HTMLElement {
-  return parse(html, {
-    comment: false, // Ignore comments for performance
-    blockTextElements: {
-      script: true, // Preserve script content (needed for JSON-LD extraction)
-      style: false, // Don't preserve style content
-      noscript: false, // Don't preserve noscript content
-    },
+export function parseHTML(html: string, baseUrl?: string): Document {
+  const { document } = linkedomParseHTML(html, {
+    url: baseUrl || 'https://example.com',
   });
+  return document;
 }
 
-// Re-export HTMLElement type for convenience
-export type { HTMLElement };
+// Export Document type alias for convenience
+// Note: This is the standard DOM Document type from linkedom
+export type HTMLDocument = Document;

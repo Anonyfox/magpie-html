@@ -3,12 +3,12 @@
  *
  * @remarks
  * Generic utilities for extracting data from <link> tags in parsed HTML documents.
- * These helpers work with parsed HTMLElement from node-html-parser.
+ * These helpers work with parsed HTMLElement from linkedom.
  *
  * @packageDocumentation
  */
 
-import type { HTMLElement } from 'node-html-parser';
+import type { HTMLDocument as Document } from '../utils/html-parser.js';
 
 /**
  * Link element data extracted from a <link> tag.
@@ -49,7 +49,7 @@ export interface LinkData {
  * const icon = getLinkHref(doc, 'icon');
  * ```
  */
-export function getLinkHref(doc: HTMLElement, rel: string): string | undefined {
+export function getLinkHref(doc: Document, rel: string): string | undefined {
   const element = doc.querySelector(`link[rel="${rel}"]`);
   return element?.getAttribute('href') || undefined;
 }
@@ -76,7 +76,7 @@ export function getLinkHref(doc: HTMLElement, rel: string): string | undefined {
  * // ]
  * ```
  */
-export function getAllLinks(doc: HTMLElement, rel: string): LinkData[] {
+export function getAllLinks(doc: Document, rel: string): LinkData[] {
   const elements = doc.querySelectorAll(`link[rel="${rel}"]`);
   const links: LinkData[] = [];
 
@@ -115,7 +115,7 @@ export function getAllLinks(doc: HTMLElement, rel: string): LinkData[] {
  * const icons = getAllLinksByRels(doc, ['icon', 'shortcut icon']);
  * ```
  */
-export function getAllLinksByRels(doc: HTMLElement, rels: string[]): LinkData[] {
+export function getAllLinksByRels(doc: Document, rels: string[]): LinkData[] {
   const links: LinkData[] = [];
 
   for (const rel of rels) {
@@ -141,7 +141,7 @@ export function getAllLinksByRels(doc: HTMLElement, rels: string[]): LinkData[] 
  * const appLinks = getAllLinksByPrefix(doc, 'apple-');
  * ```
  */
-export function getAllLinksByPrefix(doc: HTMLElement, relPrefix: string): LinkData[] {
+export function getAllLinksByPrefix(doc: Document, relPrefix: string): LinkData[] {
   const elements = doc.querySelectorAll(`link[rel^="${relPrefix}"]`);
   const links: LinkData[] = [];
 

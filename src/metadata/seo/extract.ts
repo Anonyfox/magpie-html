@@ -7,7 +7,7 @@
  * @packageDocumentation
  */
 
-import type { HTMLElement } from '../../utils/html-parser.js';
+import type { HTMLDocument as Document } from '../../utils/html-parser.js';
 import { getMetaContent } from '../../utils/meta-helpers.js';
 import type { SEOMetadata } from './types.js';
 
@@ -29,13 +29,13 @@ import type { SEOMetadata } from './types.js';
  * console.log(seo.description); // Meta description
  * ```
  */
-export function extractSEO(doc: HTMLElement): SEOMetadata {
+export function extractSEO(doc: Document): SEOMetadata {
   const metadata: SEOMetadata = {};
 
   // Extract <title> tag
   const titleElement = doc.querySelector('title');
-  if (titleElement?.text) {
-    metadata.title = titleElement.text.trim();
+  if (titleElement?.textContent) {
+    metadata.title = titleElement.textContent.trim();
   }
 
   // Extract meta tags

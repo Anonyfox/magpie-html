@@ -7,7 +7,7 @@
  * @packageDocumentation
  */
 
-import type { HTMLElement } from '../../utils/html-parser.js';
+import type { HTMLDocument as Document } from '../../utils/html-parser.js';
 import { getMetaContent } from '../../utils/meta-helpers.js';
 import type { DublinCoreMetadata } from './types.js';
 
@@ -30,7 +30,7 @@ import type { DublinCoreMetadata } from './types.js';
  * console.log(dc.creator);
  * ```
  */
-export function extractDublinCore(doc: HTMLElement): DublinCoreMetadata {
+export function extractDublinCore(doc: Document): DublinCoreMetadata {
   const metadata: DublinCoreMetadata = {};
 
   // Extract single-value fields (try DC. first, then dcterms.)
@@ -68,12 +68,12 @@ export function extractDublinCore(doc: HTMLElement): DublinCoreMetadata {
  * Dublin Core fields can appear multiple times. This function collects all values.
  * Tries both DC. and dcterms. prefixes.
  */
-function extractMultiValue(doc: HTMLElement, field: string): string[] | undefined {
+function extractMultiValue(doc: Document, field: string): string[] | undefined {
   const values: string[] = [];
 
   // Try DC. prefix
   const dcElements = doc.querySelectorAll(`meta[name="DC.${field}"]`);
-  for (const element of dcElements) {
+  for (const element of Array.from(dcElements)) {
     const content = element.getAttribute('content');
     if (content) {
       values.push(content);
@@ -82,7 +82,7 @@ function extractMultiValue(doc: HTMLElement, field: string): string[] | undefine
 
   // Try dcterms. prefix
   const dctermsElements = doc.querySelectorAll(`meta[name="dcterms.${field}"]`);
-  for (const element of dctermsElements) {
+  for (const element of Array.from(dctermsElements)) {
     const content = element.getAttribute('content');
     if (content) {
       values.push(content);

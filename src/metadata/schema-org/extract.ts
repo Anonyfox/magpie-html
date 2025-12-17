@@ -7,9 +7,9 @@
  * @packageDocumentation
  */
 
-import type { HTMLElement } from '../../utils/html-parser.js';
+import type { HTMLDocument as Document } from '../../utils/html-parser.js';
 import { extractGraphItems, matchesAnyType, parseJsonLd } from './parse-json-ld.js';
-import type { JsonLdBlock, SchemaOrgMetadata } from './types.js';
+import type { SchemaOrgMetadata } from './types.js';
 
 /**
  * Extract Schema.org metadata from parsed HTML document.
@@ -29,7 +29,7 @@ import type { JsonLdBlock, SchemaOrgMetadata } from './types.js';
  * console.log(schema.articles);
  * ```
  */
-export function extractSchemaOrg(doc: HTMLElement): SchemaOrgMetadata {
+export function extractSchemaOrg(doc: Document): SchemaOrgMetadata {
   const metadata: SchemaOrgMetadata = {
     jsonLd: [],
   };
@@ -38,9 +38,9 @@ export function extractSchemaOrg(doc: HTMLElement): SchemaOrgMetadata {
   const scripts = doc.querySelectorAll('script[type="application/ld+json"]');
 
   // Parse each script
-  for (const script of scripts) {
+  for (const script of Array.from(scripts)) {
     // Try different ways to get script content
-    const content = script.text || script.textContent || script.innerHTML;
+    const content = script.textContent || script.innerHTML;
     if (!content) continue;
 
     const block = parseJsonLd(content);

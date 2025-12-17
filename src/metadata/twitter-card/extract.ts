@@ -7,7 +7,7 @@
  * @packageDocumentation
  */
 
-import type { HTMLElement } from '../../utils/html-parser.js';
+import type { HTMLDocument as Document } from '../../utils/html-parser.js';
 import { getMetaContent } from '../../utils/meta-helpers.js';
 import type { TwitterApp, TwitterCardMetadata, TwitterPlayer } from './types.js';
 
@@ -29,7 +29,7 @@ import type { TwitterApp, TwitterCardMetadata, TwitterPlayer } from './types.js'
  * console.log(twitter.title);
  * ```
  */
-export function extractTwitterCard(doc: HTMLElement): TwitterCardMetadata {
+export function extractTwitterCard(doc: Document): TwitterCardMetadata {
   const metadata: TwitterCardMetadata = {};
 
   // Basic Twitter Card properties
@@ -62,7 +62,7 @@ export function extractTwitterCard(doc: HTMLElement): TwitterCardMetadata {
 /**
  * Extract app card metadata.
  */
-function extractApp(doc: HTMLElement): TwitterApp {
+function extractApp(doc: Document): TwitterApp {
   const app: TwitterApp = {};
 
   // iPhone
@@ -105,7 +105,7 @@ function extractApp(doc: HTMLElement): TwitterApp {
 /**
  * Extract player card metadata.
  */
-function extractPlayer(doc: HTMLElement): TwitterPlayer {
+function extractPlayer(doc: Document): TwitterPlayer {
   const player: TwitterPlayer = {};
 
   player.url = getMetaContent(doc, 'twitter:player');

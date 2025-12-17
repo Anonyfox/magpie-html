@@ -7,7 +7,7 @@
  * @packageDocumentation
  */
 
-import type { HTMLElement } from '../../utils/html-parser.js';
+import type { HTMLDocument as Document } from '../../utils/html-parser.js';
 import { getAllLinksByPrefix, getAllLinksByRels, getLinkHref } from '../../utils/link-helpers.js';
 import { getMetaContent } from '../../utils/meta-helpers.js';
 import type { AppleTouchIcon, IconsMetadata, MaskIcon, MSTile } from './types.js';
@@ -30,7 +30,7 @@ import type { AppleTouchIcon, IconsMetadata, MaskIcon, MSTile } from './types.js
  * console.log(icons.appleTouchIcons);
  * ```
  */
-export function extractIcons(doc: HTMLElement): IconsMetadata {
+export function extractIcons(doc: Document): IconsMetadata {
   const metadata: IconsMetadata = {};
 
   // Extract standard favicons
@@ -74,7 +74,7 @@ export function extractIcons(doc: HTMLElement): IconsMetadata {
 /**
  * Extract Apple touch icons.
  */
-function extractAppleTouchIcons(doc: HTMLElement): AppleTouchIcon[] {
+function extractAppleTouchIcons(doc: Document): AppleTouchIcon[] {
   const icons: AppleTouchIcon[] = [];
 
   // Get all apple-touch-icon related links
@@ -105,7 +105,7 @@ function extractAppleTouchIcons(doc: HTMLElement): AppleTouchIcon[] {
 /**
  * Extract Safari mask icon.
  */
-function extractMaskIcon(doc: HTMLElement): MaskIcon | undefined {
+function extractMaskIcon(doc: Document): MaskIcon | undefined {
   const url = getLinkHref(doc, 'mask-icon');
   if (!url) {
     return undefined;
@@ -113,7 +113,7 @@ function extractMaskIcon(doc: HTMLElement): MaskIcon | undefined {
 
   // Get color attribute
   const linkElement = doc.querySelector('link[rel="mask-icon"]');
-  const color = linkElement?.getAttribute('color');
+  const color = linkElement?.getAttribute('color') || undefined;
 
   const maskIcon: MaskIcon = { url, color };
 
@@ -125,7 +125,7 @@ function extractMaskIcon(doc: HTMLElement): MaskIcon | undefined {
 /**
  * Extract Microsoft tile metadata.
  */
-function extractMSTile(doc: HTMLElement): MSTile {
+function extractMSTile(doc: Document): MSTile {
   const tile: MSTile = {};
 
   tile.image = getMetaContent(doc, 'msapplication-TileImage');

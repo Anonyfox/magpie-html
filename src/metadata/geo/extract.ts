@@ -7,7 +7,7 @@
  * @packageDocumentation
  */
 
-import type { HTMLElement } from '../../utils/html-parser.js';
+import type { HTMLDocument as Document } from '../../utils/html-parser.js';
 import { getMetaContent } from '../../utils/meta-helpers.js';
 import type { GeoMetadata, GeoPosition } from './types.js';
 
@@ -29,7 +29,7 @@ import type { GeoMetadata, GeoPosition } from './types.js';
  * console.log(geo.placename);
  * ```
  */
-export function extractGeo(doc: HTMLElement): GeoMetadata {
+export function extractGeo(doc: Document): GeoMetadata {
   const metadata: GeoMetadata = {};
 
   // Extract position from geo.position (semicolon-separated lat;long)

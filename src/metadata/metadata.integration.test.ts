@@ -155,10 +155,7 @@ describe('Metadata Integration Tests - Real World HTML', () => {
 
           // German sites should have German language metadata
           if (language.htmlLang) {
-            assert.ok(
-              language.htmlLang.startsWith('de'),
-              `${domain}: Should have German language`,
-            );
+            assert.ok(language.htmlLang.startsWith('de'), `${domain}: Should have German language`);
           }
         }
       }
@@ -258,7 +255,11 @@ describe('Metadata Integration Tests - Real World HTML', () => {
         const doc = parseHTML(homepage.content);
         const analytics = extractAnalytics(doc);
 
-        if (analytics.googleAnalytics || analytics.googleTagManager || Object.keys(analytics).length > 0) {
+        if (
+          analytics.googleAnalytics ||
+          analytics.googleTagManager ||
+          Object.keys(analytics).length > 0
+        ) {
           sitesWithAnalytics++;
         }
       }
@@ -350,10 +351,7 @@ describe('Metadata Integration Tests - Real World HTML', () => {
       }
 
       // Most articles should have metadata
-      assert.ok(
-        articlesWithMetadata > 0,
-        'Most articles should have title metadata',
-      );
+      assert.ok(articlesWithMetadata > 0, 'Most articles should have title metadata');
     });
   });
 
@@ -421,4 +419,3 @@ describe('Metadata Integration Tests - Real World HTML', () => {
     });
   });
 });
-

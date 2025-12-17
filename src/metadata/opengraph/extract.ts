@@ -7,7 +7,7 @@
  * @packageDocumentation
  */
 
-import type { HTMLElement } from '../../utils/html-parser.js';
+import type { HTMLDocument as Document } from '../../utils/html-parser.js';
 import { getAllMetaPropertyValues, getMetaProperty } from '../../utils/meta-helpers.js';
 import type {
   OpenGraphArticle,
@@ -38,7 +38,7 @@ import type {
  * console.log(og.article?.publishedTime);
  * ```
  */
-export function extractOpenGraph(doc: HTMLElement): OpenGraphMetadata {
+export function extractOpenGraph(doc: Document): OpenGraphMetadata {
   const metadata: OpenGraphMetadata = {};
 
   // Extract basic OpenGraph properties
@@ -101,7 +101,7 @@ export function extractOpenGraph(doc: HTMLElement): OpenGraphMetadata {
 /**
  * Extract article-specific metadata.
  */
-function extractArticle(doc: HTMLElement): OpenGraphArticle {
+function extractArticle(doc: Document): OpenGraphArticle {
   const article: OpenGraphArticle = {};
 
   article.publishedTime = getMetaProperty(doc, 'article:published_time');
@@ -129,7 +129,7 @@ function extractArticle(doc: HTMLElement): OpenGraphArticle {
 /**
  * Extract video metadata.
  */
-function extractVideo(doc: HTMLElement): OpenGraphVideo {
+function extractVideo(doc: Document): OpenGraphVideo {
   const video: OpenGraphVideo = {};
 
   video.url = getMetaProperty(doc, 'og:video') || getMetaProperty(doc, 'og:video:url');
@@ -167,7 +167,7 @@ function extractVideo(doc: HTMLElement): OpenGraphVideo {
 /**
  * Extract audio metadata.
  */
-function extractAudio(doc: HTMLElement): OpenGraphAudio {
+function extractAudio(doc: Document): OpenGraphAudio {
   const audio: OpenGraphAudio = {};
 
   audio.url = getMetaProperty(doc, 'og:audio') || getMetaProperty(doc, 'og:audio:url');
@@ -182,7 +182,7 @@ function extractAudio(doc: HTMLElement): OpenGraphAudio {
 /**
  * Extract all images with full metadata.
  */
-function extractImages(doc: HTMLElement): OpenGraphImage[] {
+function extractImages(doc: Document): OpenGraphImage[] {
   const images: OpenGraphImage[] = [];
 
   // Get all og:image values (can be multiple)
@@ -224,7 +224,7 @@ function extractImages(doc: HTMLElement): OpenGraphImage[] {
 /**
  * Extract book metadata.
  */
-function extractBook(doc: HTMLElement): OpenGraphBook {
+function extractBook(doc: Document): OpenGraphBook {
   const book: OpenGraphBook = {};
 
   book.isbn = getMetaProperty(doc, 'book:isbn');
@@ -250,7 +250,7 @@ function extractBook(doc: HTMLElement): OpenGraphBook {
 /**
  * Extract profile metadata.
  */
-function extractProfile(doc: HTMLElement): OpenGraphProfile {
+function extractProfile(doc: Document): OpenGraphProfile {
   const profile: OpenGraphProfile = {};
 
   profile.firstName = getMetaProperty(doc, 'profile:first_name');

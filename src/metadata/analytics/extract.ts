@@ -8,7 +8,7 @@
  * @packageDocumentation
  */
 
-import type { HTMLElement } from '../../utils/html-parser.js';
+import type { HTMLDocument as Document } from '../../utils/html-parser.js';
 import type { AnalyticsMetadata } from './types.js';
 
 /**
@@ -29,7 +29,7 @@ import type { AnalyticsMetadata } from './types.js';
  * console.log(analytics.googleTagManager);
  * ```
  */
-export function extractAnalytics(doc: HTMLElement): AnalyticsMetadata {
+export function extractAnalytics(doc: Document): AnalyticsMetadata {
   const metadata: AnalyticsMetadata = {};
 
   // Get all script tags
@@ -44,7 +44,7 @@ export function extractAnalytics(doc: HTMLElement): AnalyticsMetadata {
   const cloudflare = new Set<string>();
   const fathom = new Set<string>();
 
-  for (const script of scripts) {
+  for (const script of Array.from(scripts)) {
     const src = script.getAttribute('src') || '';
     const content = script.textContent || '';
     const combined = `${src} ${content}`;

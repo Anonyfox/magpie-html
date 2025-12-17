@@ -7,7 +7,7 @@
  * @packageDocumentation
  */
 
-import type { HTMLElement } from '../../utils/html-parser.js';
+import type { HTMLDocument as Document } from '../../utils/html-parser.js';
 import { getAllLinks } from '../../utils/link-helpers.js';
 import { generateFeedSuggestions } from './heuristics.js';
 import type { DiscoveredFeed, FeedDiscoveryMetadata } from './types.js';
@@ -32,7 +32,7 @@ import type { DiscoveredFeed, FeedDiscoveryMetadata } from './types.js';
  * ```
  */
 export function extractFeedDiscovery(
-  doc: HTMLElement,
+  doc: Document,
   documentUrl?: string | URL,
 ): FeedDiscoveryMetadata {
   const metadata: FeedDiscoveryMetadata = {

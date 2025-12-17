@@ -7,7 +7,7 @@
  * @packageDocumentation
  */
 
-import type { HTMLElement } from '../../utils/html-parser.js';
+import type { HTMLDocument as Document } from '../../utils/html-parser.js';
 import { getAllLinks, getLinkHref } from '../../utils/link-helpers.js';
 import { getMetaProperty } from '../../utils/meta-helpers.js';
 import type { AlternateLink, AppLinks, CanonicalMetadata } from './types.js';
@@ -30,7 +30,7 @@ import type { AlternateLink, AppLinks, CanonicalMetadata } from './types.js';
  * console.log(canonical.alternates);
  * ```
  */
-export function extractCanonical(doc: HTMLElement): CanonicalMetadata {
+export function extractCanonical(doc: Document): CanonicalMetadata {
   const metadata: CanonicalMetadata = {};
 
   // Extract canonical URL
@@ -39,19 +39,17 @@ export function extractCanonical(doc: HTMLElement): CanonicalMetadata {
   // Extract alternate links (language versions, feeds, etc.)
   const alternateLinks = getAllLinks(doc, 'alternate');
   if (alternateLinks.length > 0) {
-    metadata.alternates = alternateLinks
-      .map((link) => ({
+    metadata.alternates = alternateLinks.map((link): AlternateLink => {
+      const alt: AlternateLink = {
         href: link.href,
-        hreflang: link.hreflang,
-        type: link.type,
-        title: link.title,
-      }))
-      .map(
-        (alt) =>
-          Object.fromEntries(
-            Object.entries(alt).filter(([_, value]) => value !== undefined),
-          ) as AlternateLink,
-      );
+      };
+
+      if (link.hreflang) alt.hreflang = link.hreflang;
+      if (link.type) alt.type = link.type;
+      if (link.title) alt.title = link.title;
+
+      return alt;
+    });
   }
 
   // Extract AMP version
@@ -75,7 +73,7 @@ export function extractCanonical(doc: HTMLElement): CanonicalMetadata {
 /**
  * Extract app linking metadata.
  */
-function extractAppLinks(doc: HTMLElement): AppLinks {
+function extractAppLinks(doc: Document): AppLinks {
   const appLinks: AppLinks = {};
 
   // App Links (Facebook standard)

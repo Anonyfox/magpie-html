@@ -7,7 +7,7 @@
  * @packageDocumentation
  */
 
-import type { HTMLElement } from '../../utils/html-parser.js';
+import type { HTMLDocument as Document } from '../../utils/html-parser.js';
 import { getMetaContent } from '../../utils/meta-helpers.js';
 import type { MonetizationMetadata } from './types.js';
 
@@ -29,7 +29,7 @@ import type { MonetizationMetadata } from './types.js';
  * console.log(monetization.bitcoin);
  * ```
  */
-export function extractMonetization(doc: HTMLElement): MonetizationMetadata {
+export function extractMonetization(doc: Document): MonetizationMetadata {
   const metadata: MonetizationMetadata = {};
 
   // Web Monetization API (payment pointer)

@@ -7,7 +7,7 @@
  * @packageDocumentation
  */
 
-import type { HTMLElement } from '../../utils/html-parser.js';
+import type { HTMLDocument as Document } from '../../utils/html-parser.js';
 import { getMetaContent } from '../../utils/meta-helpers.js';
 import { parseDirectives } from './parse-directives.js';
 import type { RobotsMetadata } from './types.js';
@@ -30,7 +30,7 @@ import type { RobotsMetadata } from './types.js';
  * console.log(robots.robots?.follow); // true/false
  * ```
  */
-export function extractRobots(doc: HTMLElement): RobotsMetadata {
+export function extractRobots(doc: Document): RobotsMetadata {
   const metadata: RobotsMetadata = {};
 
   // Extract general robots directives

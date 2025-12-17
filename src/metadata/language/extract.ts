@@ -7,7 +7,7 @@
  * @packageDocumentation
  */
 
-import type { HTMLElement } from '../../utils/html-parser.js';
+import type { HTMLDocument as Document } from '../../utils/html-parser.js';
 import {
   getAllMetaPropertyValues,
   getMetaContent,
@@ -34,7 +34,7 @@ import type { LanguageMetadata } from './types.js';
  * console.log(lang.region); // 'US'
  * ```
  */
-export function extractLanguage(doc: HTMLElement): LanguageMetadata {
+export function extractLanguage(doc: Document): LanguageMetadata {
   const metadata: LanguageMetadata = {};
 
   // Extract HTML lang attribute

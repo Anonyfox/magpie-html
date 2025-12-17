@@ -2,20 +2,37 @@
  * Magpie HTML - Universal web content scraper for Node.js and browsers
  *
  * @remarks
- * A modern TypeScript library for parsing web feeds (RSS, Atom, JSON Feed) and
- * extracting content from HTML. Designed to be isomorphic, type-safe, and resilient
- * to malformed data.
+ * A modern TypeScript library for parsing web feeds (RSS, Atom, JSON Feed),
+ * extracting metadata, and scraping article content from HTML.
+ * Designed to be isomorphic, type-safe, and resilient to malformed data.
  *
  * Key features:
  * - Universal feed parser with automatic format detection
+ * - Comprehensive metadata extraction (SEO, OpenGraph, Schema.org, etc.)
+ * - Article content extraction with Mozilla Readability
  * - Smart URL resolution (relative to absolute)
- * - HTML text extraction
- * - Zero dependencies
+ * - Content quality assessment
  * - Full TypeScript support
+ * - Minimal runtime dependencies
  *
  * @packageDocumentation
  */
 
+// Content Extraction - Types and Functions
+export type {
+  ContentExtractionOptions,
+  ContentQuality,
+  ContentResult,
+  ExtractedContent,
+  ExtractionErrorType,
+  ExtractionFailure,
+} from './content/index.js';
+export {
+  assessContentQuality,
+  calculateReadingTime,
+  extractContent,
+  isProbablyReaderable,
+} from './content/index.js';
 // Feed Parser - Types
 export type {
   Feed,
@@ -27,6 +44,61 @@ export type {
 } from './feed/index.js';
 // Feed Parser - Main API
 export { detectFormat, isAtom, isFeed, isJSONFeed, isRSS, parseFeed } from './feed/index.js';
+// Metadata Extraction - Types and Functions
+export type {
+  AlternateLink,
+  AnalyticsMetadata,
+  AppLinks,
+  AppleTouchIcon,
+  CanonicalMetadata,
+  CopyrightMetadata,
+  DiscoveredFeed,
+  DublinCoreMetadata,
+  FeedDiscoveryMetadata,
+  GeoMetadata,
+  GeoPosition,
+  IconsMetadata,
+  JsonLdBlock,
+  LanguageMetadata,
+  MaskIcon,
+  MonetizationMetadata,
+  MSTile,
+  NewsMetadata,
+  OpenGraphMetadata,
+  PaginationMetadata,
+  RobotDirectives,
+  RobotsMetadata,
+  SchemaOrgMetadata,
+  SEOMetadata,
+  SecurityMetadata,
+  SitemapDiscoveryMetadata,
+  SocialProfilesMetadata,
+  TwitterCardMetadata,
+  VerificationMetadata,
+  WebsiteMetadata,
+} from './metadata/index.js';
+export {
+  extractAnalytics,
+  extractCanonical,
+  extractCopyright,
+  extractDublinCore,
+  extractFeedDiscovery,
+  extractGeo,
+  extractIcons,
+  extractLanguage,
+  extractMonetization,
+  extractNews,
+  extractOpenGraph,
+  extractPagination,
+  extractRobots,
+  extractSchemaOrg,
+  extractSEO,
+  extractSecurity,
+  extractSitemapDiscovery,
+  extractSocialProfiles,
+  extractTwitterCard,
+  extractVerification,
+} from './metadata/index.js';
 
 /**
  * Simple greeting function for testing package integration.

@@ -8,10 +8,10 @@ describe('parseHTML', () => {
     const doc = parseHTML(html);
 
     const title = doc.querySelector('title');
-    assert.equal(title?.text, 'Test');
+    assert.equal(title?.textContent, 'Test');
 
     const body = doc.querySelector('body');
-    assert.equal(body?.text, 'Content');
+    assert.equal(body?.textContent, 'Content');
   });
 
   it('should parse malformed HTML', () => {

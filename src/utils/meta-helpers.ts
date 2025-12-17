@@ -3,12 +3,12 @@
  *
  * @remarks
  * Generic utilities for extracting content from <meta> tags in parsed HTML documents.
- * These helpers work with parsed HTMLElement from node-html-parser.
+ * These helpers work with parsed HTMLElement from linkedom.
  *
  * @packageDocumentation
  */
 
-import type { HTMLElement } from 'node-html-parser';
+import type { HTMLDocument as Document } from '../utils/html-parser.js';
 
 /**
  * Get content from a meta tag by name attribute.
@@ -27,7 +27,7 @@ import type { HTMLElement } from 'node-html-parser';
  * const keywords = getMetaContent(doc, 'keywords');
  * ```
  */
-export function getMetaContent(doc: HTMLElement, name: string): string | undefined {
+export function getMetaContent(doc: Document, name: string): string | undefined {
   const element = doc.querySelector(`meta[name="${name}"]`);
   return element?.getAttribute('content') || undefined;
 }
@@ -49,7 +49,7 @@ export function getMetaContent(doc: HTMLElement, name: string): string | undefin
  * const ogImage = getMetaProperty(doc, 'og:image');
  * ```
  */
-export function getMetaProperty(doc: HTMLElement, property: string): string | undefined {
+export function getMetaProperty(doc: Document, property: string): string | undefined {
   const element = doc.querySelector(`meta[property="${property}"]`);
   return element?.getAttribute('content') || undefined;
 }
@@ -73,7 +73,7 @@ export function getMetaProperty(doc: HTMLElement, property: string): string | un
  * // Map { 'twitter:card' => 'summary', 'twitter:site' => '@example', ... }
  * ```
  */
-export function getAllMetaByName(doc: HTMLElement, namePrefix: string): Map<string, string> {
+export function getAllMetaByName(doc: Document, namePrefix: string): Map<string, string> {
   const result = new Map<string, string>();
   const elements = doc.querySelectorAll(`meta[name^="${namePrefix}"]`);
 
@@ -108,7 +108,7 @@ export function getAllMetaByName(doc: HTMLElement, namePrefix: string): Map<stri
  * ```
  */
 export function getAllMetaByProperty(
-  doc: HTMLElement,
+  doc: Document,
   propertyPrefix: string,
 ): Map<string, string> {
   const result = new Map<string, string>();
@@ -142,7 +142,7 @@ export function getAllMetaByProperty(
  * // ['https://example.com/image1.jpg', 'https://example.com/image2.jpg']
  * ```
  */
-export function getAllMetaPropertyValues(doc: HTMLElement, property: string): string[] {
+export function getAllMetaPropertyValues(doc: Document, property: string): string[] {
   const elements = doc.querySelectorAll(`meta[property="${property}"]`);
   const values: string[] = [];
 
@@ -173,7 +173,7 @@ export function getAllMetaPropertyValues(doc: HTMLElement, property: string): st
  * const compat = getMetaHttpEquiv(doc, 'X-UA-Compatible');
  * ```
  */
-export function getMetaHttpEquiv(doc: HTMLElement, httpEquiv: string): string | undefined {
+export function getMetaHttpEquiv(doc: Document, httpEquiv: string): string | undefined {
   const element = doc.querySelector(`meta[http-equiv="${httpEquiv}" i]`);
   return element?.getAttribute('content') || undefined;
 }

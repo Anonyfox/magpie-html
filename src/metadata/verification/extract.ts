@@ -7,7 +7,7 @@
  * @packageDocumentation
  */
 
-import type { HTMLElement } from '../../utils/html-parser.js';
+import type { HTMLDocument as Document } from '../../utils/html-parser.js';
 import { getMetaContent } from '../../utils/meta-helpers.js';
 import type { VerificationMetadata } from './types.js';
 
@@ -28,7 +28,7 @@ import type { VerificationMetadata } from './types.js';
  * console.log(verification.facebookDomainVerification);
  * ```
  */
-export function extractVerification(doc: HTMLElement): VerificationMetadata {
+export function extractVerification(doc: Document): VerificationMetadata {
   const metadata: VerificationMetadata = {};
 
   // Google Site Verification

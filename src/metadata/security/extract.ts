@@ -7,7 +7,7 @@
  * @packageDocumentation
  */
 
-import type { HTMLElement } from '../../utils/html-parser.js';
+import type { HTMLDocument as Document } from '../../utils/html-parser.js';
 import { getMetaContent, getMetaHttpEquiv } from '../../utils/meta-helpers.js';
 import type { SecurityMetadata } from './types.js';
 
@@ -29,7 +29,7 @@ import type { SecurityMetadata } from './types.js';
  * console.log(security.contentSecurityPolicy);
  * ```
  */
-export function extractSecurity(doc: HTMLElement): SecurityMetadata {
+export function extractSecurity(doc: Document): SecurityMetadata {
   const metadata: SecurityMetadata = {};
 
   // Referrer policy

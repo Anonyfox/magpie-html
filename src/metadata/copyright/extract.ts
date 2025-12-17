@@ -7,7 +7,7 @@
  * @packageDocumentation
  */
 
-import type { HTMLElement } from '../../utils/html-parser.js';
+import type { HTMLDocument as Document } from '../../utils/html-parser.js';
 import { getLinkHref } from '../../utils/link-helpers.js';
 import { getMetaContent } from '../../utils/meta-helpers.js';
 import type { CopyrightMetadata } from './types.js';
@@ -30,7 +30,7 @@ import type { CopyrightMetadata } from './types.js';
  * console.log(copyright.license);
  * ```
  */
-export function extractCopyright(doc: HTMLElement): CopyrightMetadata {
+export function extractCopyright(doc: Document): CopyrightMetadata {
   const metadata: CopyrightMetadata = {};
 
   // Extract copyright from meta tag

@@ -8,7 +8,7 @@
  * @packageDocumentation
  */
 
-import type { HTMLElement } from 'node-html-parser';
+import type { HTMLDocument as Document } from '../utils/html-parser.js';
 
 /**
  * Extract base URL from document.
@@ -30,7 +30,7 @@ import type { HTMLElement } from 'node-html-parser';
  * // Otherwise returns 'https://example.com/page.html'
  * ```
  */
-export function getBaseUrl(doc: HTMLElement, documentUrl?: string | URL): string | undefined {
+export function getBaseUrl(doc: Document, documentUrl?: string | URL): string | undefined {
   // Check for <base> tag first
   const baseElement = doc.querySelector('base[href]');
   const baseHref = baseElement?.getAttribute('href');

@@ -7,7 +7,7 @@
  * @packageDocumentation
  */
 
-import type { HTMLElement } from '../../utils/html-parser.js';
+import type { HTMLDocument as Document } from '../../utils/html-parser.js';
 import { getMetaContent } from '../../utils/meta-helpers.js';
 import type { NewsMetadata } from './types.js';
 
@@ -29,7 +29,7 @@ import type { NewsMetadata } from './types.js';
  * console.log(news.standout);
  * ```
  */
-export function extractNews(doc: HTMLElement): NewsMetadata {
+export function extractNews(doc: Document): NewsMetadata {
   const metadata: NewsMetadata = {};
 
   // News keywords (distinct from regular keywords)
