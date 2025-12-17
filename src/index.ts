@@ -118,21 +118,6 @@ export {
 } from './metadata/index.js';
 
 /**
- * Simple greeting function for testing package integration.
- *
- * @param name - Name to greet (defaults to 'World')
- * @returns Greeting message
- *
- * @example
- * ```typescript
- * helloWorld('Developer'); // "Hello, Developer! Welcome to Magpie HTML 🦅"
- * ```
- */
-export function helloWorld(name = 'World'): string {
-  return `Hello, ${name}! Welcome to Magpie HTML 🦅`;
-}
-
-/**
  * Extract plain text content from HTML string.
  *
  * @remarks

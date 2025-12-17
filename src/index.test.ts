@@ -1,23 +1,6 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
-import { extractText, getEnvironment, helloWorld, isBrowser } from './index.js';
-
-describe('helloWorld', () => {
-  it('should return a greeting with default name', () => {
-    const result = helloWorld();
-    assert.equal(result, 'Hello, World! Welcome to Magpie HTML 🦅');
-  });
-
-  it('should return a greeting with custom name', () => {
-    const result = helloWorld('Alice');
-    assert.equal(result, 'Hello, Alice! Welcome to Magpie HTML 🦅');
-  });
-
-  it('should handle empty string', () => {
-    const result = helloWorld('');
-    assert.equal(result, 'Hello, ! Welcome to Magpie HTML 🦅');
-  });
-});
+import { extractText, getEnvironment, isBrowser } from './index.js';
 
 describe('extractText', () => {
   it('should extract text from simple HTML', () => {
