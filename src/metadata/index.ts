@@ -34,6 +34,8 @@ export { extractIcons } from './icons/index.js';
 export type { LanguageMetadata } from './language/index.js';
 // Phase 4 modules (implemented)
 export { extractLanguage } from './language/index.js';
+export type { ExtractedLink, LinksExtractionOptions, LinksMetadata } from './links/index.js';
+export { extractLinks } from './links/index.js';
 export type { MonetizationMetadata } from './monetization/index.js';
 export { extractMonetization } from './monetization/index.js';
 export type { NewsMetadata } from './news/index.js';

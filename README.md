@@ -78,6 +78,7 @@ All metadata extractors accept a `Document` object (from `parseHTML`):
 - `extractCanonical(doc)` - Canonical URLs and alternates
 - `extractSchemaOrg(doc)` - Schema.org / JSON-LD data
 - `extractAssets(doc, baseUrl)` - All linked assets (images, scripts, fonts, media, etc.)
+- `extractLinks(doc, baseUrl, options)` - Navigational links with internal/external categorization
 - ...and 15+ more specialized extractors
 
 See TypeDoc documentation for complete API reference.

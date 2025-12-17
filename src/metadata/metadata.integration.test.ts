@@ -11,6 +11,7 @@ import { extractFeedDiscovery } from './feed-discovery/index.js';
 import { extractGeo } from './geo/index.js';
 import { extractIcons } from './icons/index.js';
 import { extractLanguage } from './language/index.js';
+import { extractLinks } from './links/index.js';
 import { extractMonetization } from './monetization/index.js';
 import { extractNews } from './news/index.js';
 import { extractOpenGraph } from './opengraph/index.js';
@@ -482,6 +483,109 @@ describe('Metadata Integration Tests - Real World HTML', () => {
           preload.url.startsWith('http://') || preload.url.startsWith('https://'),
           'Preload URL should be absolute',
         );
+      }
+    });
+  });
+
+  describe('Links extraction', () => {
+    it('should extract links from TechCrunch homepage', () => {
+      const homepage = getHomepage('techcrunch.com');
+      assert.ok(homepage, 'Should find TechCrunch homepage');
+
+      const doc = parseHTML(homepage.content);
+      const links = extractLinks(doc, homepage.url);
+
+      // News sites should have many links
+      assert.ok(links.totalCount && links.totalCount > 0, 'Should find links');
+
+      // Should have both internal and external links
+      assert.ok(links.internalCount !== undefined, 'Should have internal count');
+      assert.ok(links.externalCount !== undefined, 'Should have external count');
+
+      // All links should be absolute URLs
+      if (links.all && links.all.length > 0) {
+        const firstLink = links.all[0];
+        assert.ok(
+          firstLink.url.startsWith('http://') || firstLink.url.startsWith('https://'),
+          'Link URLs should be absolute',
+        );
+      }
+    });
+
+    it('should categorize internal vs external links', () => {
+      const homepage = getHomepage('techcrunch.com');
+      assert.ok(homepage, 'Should find TechCrunch homepage');
+
+      const doc = parseHTML(homepage.content);
+      const links = extractLinks(doc, homepage.url);
+
+      // Should have internal links
+      if (links.internal && links.internal.length > 0) {
+        const internalLink = links.internal[0];
+        assert.ok(internalLink.internal, 'Internal link should be marked as internal');
+        assert.ok(!internalLink.external, 'Internal link should not be marked as external');
+      }
+
+      // Should have external links
+      if (links.external && links.external.length > 0) {
+        const externalLink = links.external[0];
+        assert.ok(externalLink.external, 'External link should be marked as external');
+        assert.ok(!externalLink.internal, 'External link should not be marked as internal');
+      }
+    });
+
+    it('should extract crawler-friendly links', () => {
+      const homepage = getHomepage('techcrunch.com');
+      assert.ok(homepage, 'Should find TechCrunch homepage');
+
+      const doc = parseHTML(homepage.content);
+
+      // Typical crawler configuration: internal links only, exclude nofollow
+      const crawlableLinks = extractLinks(doc, homepage.url, {
+        scope: 'internal',
+        excludeRel: ['nofollow', 'ugc', 'sponsored'],
+      });
+
+      assert.ok(crawlableLinks.totalCount !== undefined, 'Should have total count');
+
+      // All returned links should be internal
+      if (crawlableLinks.all && crawlableLinks.all.length > 0) {
+        for (const link of crawlableLinks.all) {
+          assert.ok(link.internal, 'All links should be internal');
+          assert.ok(!link.nofollow, 'Should not have nofollow links');
+        }
+      }
+    });
+
+    it('should detect nofollow links', () => {
+      const homepage = getHomepage('techcrunch.com');
+      if (!homepage) return;
+
+      const doc = parseHTML(homepage.content);
+      const links = extractLinks(doc, homepage.url);
+
+      // Check if nofollow links are properly detected
+      if (links.nofollow && links.nofollow.length > 0) {
+        const nofollowLink = links.nofollow[0];
+        assert.ok(nofollowLink.nofollow, 'NoFollow link should have nofollow flag');
+        assert.ok(
+          nofollowLink.rel?.includes('nofollow'),
+          'NoFollow link should have rel attribute',
+        );
+      }
+    });
+
+    it('should extract link text', () => {
+      const article = getArticle('react.dev', 'critical-security-vulnerability.html');
+      if (!article) return;
+
+      const doc = parseHTML(article.content);
+      const links = extractLinks(doc, article.url, { limit: 10 });
+
+      // Should have links with text
+      if (links.all && links.all.length > 0) {
+        const linksWithText = links.all.filter((l) => l.text && l.text.length > 0);
+        assert.ok(linksWithText.length > 0, 'Should have links with text content');
       }
     });
   });
