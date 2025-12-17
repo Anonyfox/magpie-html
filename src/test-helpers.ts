@@ -420,3 +420,43 @@ export function getJSONFeeds(): CacheFile[] {
   const cache = getCache();
   return cache.getAllFeeds().filter((f) => f.name.endsWith('.json'));
 }
+
+/**
+ * Get all HTML pages (homepages + articles).
+ *
+ * @returns Array of all HTML page cache files
+ *
+ * @example
+ * ```typescript
+ * const pages = getPages();
+ * for (const page of pages) {
+ *   console.log(page.url, page.content.length);
+ * }
+ * ```
+ */
+export function getPages(): Array<CacheFile & { site: string; file: string }> {
+  const cache = getCache();
+  const pages: Array<CacheFile & { site: string; file: string }> = [];
+
+  // Add all homepages
+  for (const homepage of cache.getAllHomepages()) {
+    const domain = homepage.relativePath.split('/')[0];
+    pages.push({
+      ...homepage,
+      site: domain,
+      file: 'homepage.html',
+    });
+  }
+
+  // Add all articles
+  for (const article of cache.getAllArticles()) {
+    const domain = article.relativePath.split('/')[0];
+    pages.push({
+      ...article,
+      site: domain,
+      file: article.name,
+    });
+  }
+
+  return pages;
+}

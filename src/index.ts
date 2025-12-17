@@ -26,11 +26,13 @@ export type {
   ExtractedContent,
   ExtractionErrorType,
   ExtractionFailure,
+  HtmlToTextOptions,
 } from './content/index.js';
 export {
   assessContentQuality,
   calculateReadingTime,
   extractContent,
+  htmlToText,
   isProbablyReaderable,
 } from './content/index.js';
 // Feed Parser - Types
@@ -45,7 +47,8 @@ export type {
 // Feed Parser - Main API
 export { detectFormat, isAtom, isFeed, isJSONFeed, isRSS, parseFeed } from './feed/index.js';
 // High-level gathering - Convenience methods combining fetch + parse
-export { gatherFeed } from './gather/index.js';
+export type { Website } from './gather/index.js';
+export { gatherFeed, gatherWebsite } from './gather/index.js';
 // Metadata Extraction - Types and Functions
 export type {
   AlternateLink,

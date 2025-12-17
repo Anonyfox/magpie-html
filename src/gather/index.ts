@@ -10,3 +10,5 @@
  */
 
 export { gatherFeed } from './feed.js';
+export type { Website } from './types.js';
+export { gatherWebsite } from './website/index.js';
