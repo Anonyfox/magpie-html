@@ -10,7 +10,7 @@
 
 export { extractContent } from './extract.js';
 export { assessContentQuality, calculateReadingTime } from './quality.js';
-export { type HTMLInput, isProbablyReaderable } from './readability.js';
+export { isProbablyReaderable } from './readability.js';
 
 export type {
   ContentExtractionOptions,

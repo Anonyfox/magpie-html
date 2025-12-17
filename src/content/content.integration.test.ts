@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import { getArticle, getHomepage } from '../test-helpers.js';
+import { parseHTML } from '../utils/html-parser.js';
 import { assessContentQuality, extractContent, isProbablyReaderable } from './index.js';
 
 describe('Content extraction integration tests', () => {
@@ -9,7 +10,7 @@ describe('Content extraction integration tests', () => {
       const article = getArticle('daringfireball.net', 'debunking-special-typefaces-dyslexia.html');
       assert.ok(article, 'Should find Daring Fireball article');
 
-      const result = extractContent(article.content, {
+      const result = extractContent(parseHTML(article.content), {
         baseUrl: 'https://daringfireball.net/2024/12/debunking_special_typefaces_dyslexia',
       });
 
@@ -27,7 +28,7 @@ describe('Content extraction integration tests', () => {
       const article = getArticle('react.dev', 'critical-security-vulnerability.html');
       assert.ok(article, 'Should find React article');
 
-      const result = extractContent(article.content, {
+      const result = extractContent(parseHTML(article.content), {
         baseUrl:
           'https://react.dev/blog/2024/04/25/react-19-upgrade-guide#critical-security-vulnerability',
       });
@@ -44,7 +45,7 @@ describe('Content extraction integration tests', () => {
       const article = getArticle('blog.rust-lang.org', 'project-goals-november-update.html');
       assert.ok(article, 'Should find Rust article');
 
-      const result = extractContent(article.content, {
+      const result = extractContent(parseHTML(article.content), {
         baseUrl: 'https://blog.rust-lang.org/2024/11/project-goals',
       });
 
@@ -59,7 +60,7 @@ describe('Content extraction integration tests', () => {
       const article = getArticle('inessential.com', 'rss-plus-markdown.html');
       assert.ok(article, 'Should find Inessential article');
 
-      const result = extractContent(article.content, {
+      const result = extractContent(parseHTML(article.content), {
         baseUrl: 'https://inessential.com/2025/11/05/rss-plus-markdown.html',
       });
 
@@ -74,7 +75,7 @@ describe('Content extraction integration tests', () => {
       const article = getArticle('techcrunch.com', 'google-upi-card-india.html');
       assert.ok(article, 'Should find TechCrunch article');
 
-      const result = extractContent(article.content, {
+      const result = extractContent(parseHTML(article.content), {
         baseUrl: 'https://techcrunch.com/2024/12/16/google-upi-card-india/',
       });
 
@@ -90,7 +91,7 @@ describe('Content extraction integration tests', () => {
       const article = getArticle('golem.de', 'google-character-ai.html');
       assert.ok(article, 'Should find Golem article');
 
-      const result = extractContent(article.content, {
+      const result = extractContent(parseHTML(article.content), {
         baseUrl: 'https://www.golem.de/news/google-character-ai',
       });
 
@@ -109,7 +110,7 @@ describe('Content extraction integration tests', () => {
       const article = getArticle('faz.net', 'immobilienkauf-foerderprogramme.html');
       assert.ok(article, 'Should find FAZ article');
 
-      const result = extractContent(article.content, {
+      const result = extractContent(parseHTML(article.content), {
         baseUrl: 'https://www.faz.net/aktuell/immobilienkauf-foerderprogramme',
       });
 
@@ -162,7 +163,7 @@ describe('Content extraction integration tests', () => {
       const article = getArticle('daringfireball.net', 'debunking-special-typefaces-dyslexia.html');
       assert.ok(article, 'Should find article');
 
-      const result = extractContent(article.content);
+      const result = extractContent(parseHTML(article.content));
 
       assert.equal(result.success, true);
       if (result.success) {
@@ -191,7 +192,7 @@ describe('Content extraction integration tests', () => {
 
       for (const article of articles) {
         assert.ok(article, 'Should find article');
-        const result = extractContent(article.content);
+        const result = extractContent(parseHTML(article.content));
 
         if (result.success) {
           const quality = assessContentQuality(result);
@@ -223,7 +224,7 @@ describe('Content extraction integration tests', () => {
 
       for (const article of articles) {
         assert.ok(article, 'Should find article');
-        const result = extractContent(article.content);
+        const result = extractContent(parseHTML(article.content));
 
         assert.ok('extractionTime' in result);
         timings.push(result.extractionTime);
@@ -244,7 +245,7 @@ describe('Content extraction integration tests', () => {
       const timings: number[] = [];
 
       for (let i = 0; i < iterations; i++) {
-        const result = extractContent(article.content);
+        const result = extractContent(parseHTML(article.content));
         timings.push(result.extractionTime);
       }
 
@@ -269,7 +270,7 @@ describe('Content extraction integration tests', () => {
 
       for (const article of articles) {
         assert.ok(article, `Should find article ${article?.name}`);
-        const result = extractContent(article.content);
+        const result = extractContent(parseHTML(article.content));
 
         assert.equal(result.success, true, `Failed to extract from ${article.name}`);
         if (result.success) {
@@ -289,7 +290,7 @@ describe('Content extraction integration tests', () => {
 
       for (const article of articles) {
         assert.ok(article, `Should find article ${article?.name}`);
-        const result = extractContent(article.content);
+        const result = extractContent(parseHTML(article.content));
 
         assert.equal(result.success, true, `Failed to extract from ${article.name}`);
         if (result.success) {
@@ -304,7 +305,7 @@ describe('Content extraction integration tests', () => {
       const article = getArticle('www.manton.org', 'day-of-winter.html');
       assert.ok(article, 'Should find article');
 
-      const result = extractContent(article.content);
+      const result = extractContent(parseHTML(article.content));
 
       // May succeed or fail depending on content length
       assert.ok('success' in result);
@@ -320,7 +321,7 @@ describe('Content extraction integration tests', () => {
 
       for (const article of articles) {
         assert.ok(article, 'Should find article');
-        const result = extractContent(article.content);
+        const result = extractContent(parseHTML(article.content));
 
         assert.equal(result.success, true);
         if (result.success) {
@@ -340,7 +341,7 @@ describe('Content extraction integration tests', () => {
 
       for (const article of articles) {
         assert.ok(article, 'Should find article');
-        const result = extractContent(article.content);
+        const result = extractContent(parseHTML(article.content));
 
         assert.equal(result.success, true);
         if (result.success) {
@@ -357,7 +358,7 @@ describe('Content extraction integration tests', () => {
       const article = getArticle('daringfireball.net', 'debunking-special-typefaces-dyslexia.html');
       assert.ok(article, 'Should find article');
 
-      const result = extractContent(article.content, {
+      const result = extractContent(parseHTML(article.content), {
         baseUrl: 'https://daringfireball.net/2024/12/debunking_special_typefaces_dyslexia',
       });
 
@@ -380,7 +381,7 @@ describe('Content extraction integration tests', () => {
 
       for (const article of articles) {
         assert.ok(article, 'Should find article');
-        const result = extractContent(article.content);
+        const result = extractContent(parseHTML(article.content));
 
         if (result.success) {
           // byline is optional, just check it doesn't error
@@ -395,7 +396,7 @@ describe('Content extraction integration tests', () => {
       const homepage = getHomepage('daringfireball.net');
       assert.ok(homepage, 'Should find homepage');
 
-      const result = extractContent(homepage.content);
+      const result = extractContent(parseHTML(homepage.content));
 
       // Homepage might succeed or fail depending on how much content it has
       // Just ensure we get a valid result structure
@@ -412,7 +413,7 @@ describe('Content extraction integration tests', () => {
       const homepage = getHomepage('inessential.com');
       assert.ok(homepage, 'Should find homepage');
 
-      const result = extractContent(homepage.content, {
+      const result = extractContent(parseHTML(homepage.content), {
         checkReadability: true,
       });
 

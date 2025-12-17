@@ -1,29 +1,22 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
+import { parseHTML } from '../utils/html-parser.js';
 import { extractContent } from './extract.js';
 
 describe('extractContent', () => {
   describe('input validation', () => {
-    it('should reject empty string', () => {
-      const result = extractContent('');
-      assert.equal(result.success, false);
-      if (!result.success) {
-        assert.equal(result.errorType, 'INVALID_HTML');
-        assert.match(result.error, /empty/i);
-      }
-    });
-
-    it('should reject whitespace-only string', () => {
-      const result = extractContent('   \n  \t  ');
-      assert.equal(result.success, false);
-      if (!result.success) {
-        assert.equal(result.errorType, 'INVALID_HTML');
-      }
-    });
-
-    it('should reject non-string input', () => {
+    it('should reject invalid document', () => {
       // @ts-expect-error Testing invalid input
       const result = extractContent(null);
+      assert.equal(result.success, false);
+      if (!result.success) {
+        assert.equal(result.errorType, 'INVALID_HTML');
+      }
+    });
+
+    it('should reject non-document object', () => {
+      // @ts-expect-error Testing invalid input
+      const result = extractContent({});
       assert.equal(result.success, false);
       if (!result.success) {
         assert.equal(result.errorType, 'INVALID_HTML');
@@ -34,7 +27,7 @@ describe('extractContent', () => {
   describe('extraction failures', () => {
     it('should handle very short content', () => {
       const html = '<html><body><div>Too short</div></body></html>';
-      const result = extractContent(html);
+      const result = extractContent(parseHTML(html));
 
       // Readability might still extract something or fail
       // Just verify we get a valid response
@@ -54,7 +47,7 @@ describe('extractContent', () => {
           </body>
         </html>
       `;
-      const result = extractContent(html);
+      const result = extractContent(parseHTML(html));
 
       // Readability typically fails on pure navigation
       // But may vary, so just check structure
@@ -64,7 +57,7 @@ describe('extractContent', () => {
 
     it('should fail readability check when enabled', () => {
       const html = '<html><body><div>Short text</div></body></html>';
-      const result = extractContent(html, { checkReadability: true });
+      const result = extractContent(parseHTML(html), { checkReadability: true });
 
       assert.equal(result.success, false);
       if (!result.success) {
@@ -93,7 +86,7 @@ describe('extractContent', () => {
         </html>
       `;
 
-      const result = extractContent(html);
+      const result = extractContent(parseHTML(html));
 
       assert.equal(result.success, true);
       if (result.success) {
@@ -127,7 +120,7 @@ describe('extractContent', () => {
         </html>
       `;
 
-      const result = extractContent(html, { baseUrl: 'https://example.com/article' });
+      const result = extractContent(parseHTML(html), { baseUrl: 'https://example.com/article' });
 
       assert.equal(result.success, true);
       if (result.success) {
@@ -151,7 +144,7 @@ describe('extractContent', () => {
         </html>
       `;
 
-      const result = extractContent(html);
+      const result = extractContent(parseHTML(html));
 
       assert.equal(result.success, true);
       if (result.success) {
@@ -176,7 +169,7 @@ describe('extractContent', () => {
         </html>
       `;
 
-      const result = extractContent(html);
+      const result = extractContent(parseHTML(html));
 
       assert.equal(result.success, true);
       if (result.success) {
@@ -202,7 +195,7 @@ describe('extractContent', () => {
         </html>
       `;
 
-      const result = extractContent(html, {
+      const result = extractContent(parseHTML(html), {
         baseUrl: 'https://example.com/articles/test',
       });
 
@@ -222,11 +215,11 @@ describe('extractContent', () => {
       `;
 
       // With low threshold, should succeed
-      const lowThreshold = extractContent(html, { charThreshold: 10 });
+      const lowThreshold = extractContent(parseHTML(html), { charThreshold: 10 });
       assert.ok('success' in lowThreshold);
 
       // With high threshold, typically fails (but depends on Readability heuristics)
-      const highThreshold = extractContent(html, { charThreshold: 10000 });
+      const highThreshold = extractContent(parseHTML(html), { charThreshold: 10000 });
       assert.ok('success' in highThreshold);
       // High threshold makes it less likely to succeed
       if (!highThreshold.success) {
@@ -248,7 +241,7 @@ describe('extractContent', () => {
         </html>
       `;
 
-      const result = extractContent(html);
+      const result = extractContent(parseHTML(html));
 
       assert.ok('extractionTime' in result);
       assert.ok(result.extractionTime >= 0);
@@ -259,7 +252,7 @@ describe('extractContent', () => {
   describe('edge cases', () => {
     it('should handle malformed HTML gracefully', () => {
       const html = '<html><body><article><p>Unclosed paragraph<article></body>';
-      const result = extractContent(html);
+      const result = extractContent(parseHTML(html));
 
       // Should not throw, may succeed or fail depending on parser
       assert.ok('success' in result);
@@ -280,7 +273,7 @@ describe('extractContent', () => {
         </html>
       `;
 
-      const result = extractContent(html);
+      const result = extractContent(parseHTML(html));
 
       assert.equal(result.success, true);
       if (result.success) {
@@ -306,7 +299,7 @@ describe('extractContent', () => {
         </html>
       `;
 
-      const result = extractContent(html);
+      const result = extractContent(parseHTML(html));
 
       assert.equal(result.success, true);
       if (result.success) {

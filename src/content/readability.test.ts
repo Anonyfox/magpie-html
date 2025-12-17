@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
+import { parseHTML } from '../utils/html-parser.js';
 import { extractWithReadability, isProbablyReaderable } from './readability.js';
 
 describe('isProbablyReaderable', () => {
@@ -17,7 +18,7 @@ describe('isProbablyReaderable', () => {
       </html>
     `;
 
-    const result = isProbablyReaderable(html);
+    const result = isProbablyReaderable(parseHTML(html));
     assert.ok(typeof result === 'boolean');
   });
 
@@ -35,7 +36,7 @@ describe('isProbablyReaderable', () => {
       </html>
     `;
 
-    const result = isProbablyReaderable(html);
+    const result = isProbablyReaderable(parseHTML(html));
     assert.ok(typeof result === 'boolean');
   });
 
@@ -52,14 +53,14 @@ describe('isProbablyReaderable', () => {
       </html>
     `;
 
-    const result = isProbablyReaderable(html);
+    const result = isProbablyReaderable(parseHTML(html));
     assert.ok(typeof result === 'boolean');
   });
 
   it('should return false for short content', () => {
     const html = '<html><body><p>Too short</p></body></html>';
 
-    assert.equal(isProbablyReaderable(html), false);
+    assert.equal(isProbablyReaderable(parseHTML(html)), false);
   });
 
   it('should return false for navigation content', () => {
@@ -75,20 +76,20 @@ describe('isProbablyReaderable', () => {
       </html>
     `;
 
-    assert.equal(isProbablyReaderable(html), false);
+    assert.equal(isProbablyReaderable(parseHTML(html)), false);
   });
 
   it('should return false for empty content', () => {
     const html = '<html><body></body></html>';
 
-    assert.equal(isProbablyReaderable(html), false);
+    assert.equal(isProbablyReaderable(parseHTML(html)), false);
   });
 
   it('should respect minContentLength option', () => {
     const html = '<html><body><article><p>Short</p></article></body></html>';
 
-    const high = isProbablyReaderable(html, { minContentLength: 10 });
-    const low = isProbablyReaderable(html, { minContentLength: 1 });
+    const high = isProbablyReaderable(parseHTML(html), { minContentLength: 10 });
+    const low = isProbablyReaderable(parseHTML(html), { minContentLength: 1 });
 
     assert.ok(typeof high === 'boolean');
     assert.ok(typeof low === 'boolean');
@@ -98,7 +99,7 @@ describe('isProbablyReaderable', () => {
     const html = '<html><body><p>Unclosed paragraph</body>';
 
     // Should not throw
-    const result = isProbablyReaderable(html);
+    const result = isProbablyReaderable(parseHTML(html));
     assert.ok(typeof result === 'boolean');
   });
 });
@@ -122,7 +123,7 @@ describe('extractWithReadability', () => {
       </html>
     `;
 
-    const result = extractWithReadability(html);
+    const result = extractWithReadability(parseHTML(html));
 
     assert.ok(result !== null);
     assert.ok(result.title.length > 0);
@@ -134,7 +135,7 @@ describe('extractWithReadability', () => {
   it('should handle very short content', () => {
     const html = '<html><body><div>Too short</div></body></html>';
 
-    const result = extractWithReadability(html);
+    const result = extractWithReadability(parseHTML(html));
 
     // Readability might extract something minimal or return null
     // Just verify it doesn't throw
@@ -156,7 +157,7 @@ describe('extractWithReadability', () => {
       </html>
     `;
 
-    const result = extractWithReadability(html);
+    const result = extractWithReadability(parseHTML(html));
 
     assert.ok(result !== null);
     // Byline extraction depends on Readability heuristics
@@ -181,7 +182,7 @@ describe('extractWithReadability', () => {
       </html>
     `;
 
-    const result = extractWithReadability(html);
+    const result = extractWithReadability(parseHTML(html));
 
     assert.ok(result !== null);
     assert.ok('siteName' in result);
@@ -201,7 +202,7 @@ describe('extractWithReadability', () => {
       </html>
     `;
 
-    const result = extractWithReadability(html, {
+    const result = extractWithReadability(parseHTML(html), {
       baseUrl: 'https://example.com/article',
     });
 
@@ -222,11 +223,11 @@ describe('extractWithReadability', () => {
     `;
 
     // With low threshold - typically succeeds
-    const lowResult = extractWithReadability(html, { charThreshold: 10 });
+    const lowResult = extractWithReadability(parseHTML(html), { charThreshold: 10 });
     assert.ok(lowResult === null || typeof lowResult === 'object');
 
     // With high threshold - typically fails
-    const highResult = extractWithReadability(html, { charThreshold: 10000 });
+    const highResult = extractWithReadability(parseHTML(html), { charThreshold: 10000 });
     assert.ok(highResult === null || typeof highResult === 'object');
   });
 
@@ -249,7 +250,7 @@ describe('extractWithReadability', () => {
       </html>
     `;
 
-    const result = extractWithReadability(html);
+    const result = extractWithReadability(parseHTML(html));
 
     assert.ok(result !== null);
     assert.ok(result.content.includes('<p>'));
@@ -270,7 +271,7 @@ describe('extractWithReadability', () => {
       </html>
     `;
 
-    const result = extractWithReadability(html);
+    const result = extractWithReadability(parseHTML(html));
 
     assert.ok(result !== null);
     assert.ok('lang' in result);
@@ -291,7 +292,7 @@ describe('extractWithReadability', () => {
       </html>
     `;
 
-    const result = extractWithReadability(html);
+    const result = extractWithReadability(parseHTML(html));
 
     assert.ok(result !== null);
     assert.ok(result.content.includes('<img') || result.content.length > 0);
@@ -311,7 +312,7 @@ describe('extractWithReadability', () => {
       </html>
     `;
 
-    const result = extractWithReadability(html);
+    const result = extractWithReadability(parseHTML(html));
 
     assert.ok(result !== null);
     assert.ok(result.content.includes('<a') || result.textContent.includes('link'));

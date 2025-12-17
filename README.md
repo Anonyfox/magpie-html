@@ -60,9 +60,9 @@ Detect feed format without parsing. Returns `'rss'`, `'atom'`, `'json-feed'`, or
 
 Extract plain text from HTML. Removes tags, scripts, styles and normalizes whitespace.
 
-### `extractContent(input: string | Document, options?: ContentExtractionOptions)`
+### `extractContent(doc: Document, options?: ContentExtractionOptions)`
 
-Extract article content from HTML. Accepts either an HTML string or a pre-parsed Document for performance.
+Extract article content from a pre-parsed Document. Use with `parseHTML()` for optimal performance.
 
 ### `parseHTML(html: string)`
 
@@ -95,13 +95,7 @@ const content = extractContent(doc); // Fast: ~500ms
 // Total: One parse + ~500ms
 ```
 
-**Slower Alternative:** Parsing multiple times:
-
-```typescript
-// ❌ Don't do this - parses HTML twice
-const metadata = extractSEO(parseHTML(html));
-const content = extractContent(html); // Parses again internally
-```
+**Note:** All content and metadata extractors require a pre-parsed Document. Always use `parseHTML()` first.
 
 ## Development
 

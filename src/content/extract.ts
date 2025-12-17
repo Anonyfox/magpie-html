@@ -9,11 +9,7 @@
  */
 
 import { calculateReadingTime } from './quality.js';
-import {
-  type HTMLInput,
-  extractWithReadability,
-  isProbablyReaderable,
-} from './readability.js';
+import { extractWithReadability, isProbablyReaderable } from './readability.js';
 import type {
   ContentExtractionOptions,
   ContentResult,
@@ -69,70 +65,51 @@ function createFailure(
  * Extract article content from HTML.
  *
  * @remarks
- * Uses Mozilla Readability with linkedom to extract clean article content.
+ * Uses Mozilla Readability to extract clean article content from a pre-parsed Document.
  * This function never throws exceptions - always returns a ContentResult.
- *
- * Accepts either an HTML string or a pre-parsed Document for performance.
- * Using a pre-parsed Document allows sharing between metadata and content extraction.
  *
  * Error handling:
  * - Returns success: false for any extraction failure
  * - Categorizes errors by type for better handling
  * - Includes extraction time even for failures
  *
- * @param input - HTML string or pre-parsed Document to extract content from
+ * @param doc - Pre-parsed Document to extract content from
  * @param options - Extraction options
  * @returns Extraction result (success or failure)
  *
  * @example
  * ```typescript
- * // With HTML string
- * const result = extractContent(htmlString, {
+ * import { parseHTML } from '../utils/html-parser.js';
+ * import { extractSEO } from '../metadata/index.js';
+ *
+ * const doc = parseHTML(html);
+ * const metadata = extractSEO(doc);
+ * const content = extractContent(doc, {
  *   baseUrl: 'https://example.com/article',
  *   charThreshold: 300,
  *   checkReadability: true,
  * });
  *
- * // With pre-parsed document (recommended for performance)
- * import { parseHTML } from './utils/html-parser.js';
- * const doc = parseHTML(htmlString);
- * const metadata = extractSEO(doc);
- * const content = extractContent(doc, { baseUrl: 'https://example.com' });
- *
- * if (result.success) {
- *   console.log(result.title);
- *   console.log(result.wordCount);
- *   console.log(`${result.readingTime} min read`);
+ * if (content.success) {
+ *   console.log(content.title);
+ *   console.log(content.wordCount);
+ *   console.log(`${content.readingTime} min read`);
  * } else {
- *   console.error(result.error);
+ *   console.error(content.error);
  * }
  * ```
  */
 export function extractContent(
-  input: HTMLInput,
+  doc: Document,
   options: ContentExtractionOptions = {},
 ): ContentResult {
   const startTime = Date.now();
 
   // Validate input
-  if (!input) {
+  if (!doc || typeof doc !== 'object' || !doc.documentElement) {
     return createFailure(
       'INVALID_HTML',
-      'Input must be a non-empty string or Document',
-      false,
-      Date.now() - startTime,
-    );
-  }
-
-  // Validate string input
-  if (typeof input === 'string') {
-    if (input.trim().length === 0) {
-      return createFailure('INVALID_HTML', 'HTML string is empty', false, Date.now() - startTime);
-    }
-  } else if (typeof input !== 'object' || !input.documentElement) {
-    return createFailure(
-      'INVALID_HTML',
-      'Input must be a string or Document object',
+      'Input must be a valid Document object',
       false,
       Date.now() - startTime,
     );
@@ -142,7 +119,7 @@ export function extractContent(
   let readerable = false;
   if (options.checkReadability) {
     try {
-      readerable = isProbablyReaderable(input);
+      readerable = isProbablyReaderable(doc);
       if (!readerable) {
         return createFailure(
           'NOT_READERABLE',
@@ -162,7 +139,7 @@ export function extractContent(
   // Extract content with Readability
   let article: ReturnType<typeof extractWithReadability> | null;
   try {
-    article = extractWithReadability(input, options);
+    article = extractWithReadability(doc, options);
   } catch (error) {
     const errorMessage = error instanceof Error ? error.message : String(error);
     return createFailure(
