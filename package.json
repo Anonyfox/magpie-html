@@ -35,7 +35,10 @@
     "prepublishOnly": "npm run check && npm run build",
     "typecheck": "tsc --noEmit",
     "docs": "typedoc",
-    "docs:serve": "npx serve docs"
+    "docs:serve": "npx serve docs",
+    "release:patch": "npm run check && npm version patch -m 'Release v%s' && git push && git push --tags",
+    "release:minor": "npm run check && npm version minor -m 'Release v%s' && git push && git push --tags",
+    "release:major": "npm run check && npm version major -m 'Release v%s' && git push && git push --tags"
   },
   "keywords": [
     "scraping",
