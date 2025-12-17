@@ -42,6 +42,9 @@ export interface CacheFile {
 
   /** File content (lazy loaded on first access) */
   content: string;
+
+  /** Reconstructed URL for the file */
+  url: string;
 }
 
 /**
@@ -90,15 +93,36 @@ export interface CacheDict {
  * @param name - File name
  * @param relativePath - Relative path from cache root
  * @param absolutePath - Absolute path to file
+ * @param domain - Domain name for URL reconstruction
+ * @param type - File type (homepage, feed, article)
  * @returns Cache file entry
  */
-function createCacheFile(name: string, relativePath: string, absolutePath: string): CacheFile {
+function createCacheFile(
+  name: string,
+  relativePath: string,
+  absolutePath: string,
+  domain: string,
+  type: 'homepage' | 'feed' | 'article',
+): CacheFile {
   let contentCache: string | null = null;
+
+  // Reconstruct URL
+  let url: string;
+  if (type === 'homepage') {
+    url = `https://${domain}/`;
+  } else if (type === 'feed') {
+    url = `https://${domain}/feeds/${name}`;
+  } else {
+    // article - strip .html extension for URL
+    const slug = name.replace(/\.html$/, '');
+    url = `https://${domain}/articles/${slug}`;
+  }
 
   return {
     name,
     relativePath,
     absolutePath,
+    url,
     get content(): string {
       if (contentCache === null) {
         contentCache = readFileSync(absolutePath, 'utf-8');
@@ -155,6 +179,8 @@ export function loadCache(): CacheDict {
             'homepage.html',
             `${domainDir}/homepage.html`,
             homepagePath,
+            domainDir,
+            'homepage',
           );
         }
       } catch {
@@ -171,7 +197,13 @@ export function loadCache(): CacheDict {
             if (statSync(feedFilePath).isFile()) {
               domainCache.feeds.set(
                 feedFile,
-                createCacheFile(feedFile, `${domainDir}/feeds/${feedFile}`, feedFilePath),
+                createCacheFile(
+                  feedFile,
+                  `${domainDir}/feeds/${feedFile}`,
+                  feedFilePath,
+                  domainDir,
+                  'feed',
+                ),
               );
             }
           }
@@ -194,6 +226,8 @@ export function loadCache(): CacheDict {
                   articleFile,
                   `${domainDir}/articles/${articleFile}`,
                   articleFilePath,
+                  domainDir,
+                  'article',
                 ),
               );
             }

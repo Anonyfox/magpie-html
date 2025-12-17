@@ -11,6 +11,8 @@
 export type { AnalyticsMetadata } from './analytics/index.js';
 // Phase 6 modules (implemented)
 export { extractAnalytics } from './analytics/index.js';
+export type { AssetsMetadata, ConnectionHint, PreloadResource } from './assets/index.js';
+export { extractAssets } from './assets/index.js';
 export type { AlternateLink, AppLinks, CanonicalMetadata } from './canonical/index.js';
 export { extractCanonical } from './canonical/index.js';
 export type { CopyrightMetadata } from './copyright/index.js';

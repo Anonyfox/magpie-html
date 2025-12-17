@@ -3,6 +3,7 @@ import { describe, it } from 'node:test';
 import { getArticle, getCache, getHomepage } from '../test-helpers.js';
 import { parseHTML } from '../utils/html-parser.js';
 import { extractAnalytics } from './analytics/index.js';
+import { extractAssets } from './assets/index.js';
 import { extractCanonical } from './canonical/index.js';
 import { extractCopyright } from './copyright/index.js';
 import { extractDublinCore } from './dublin-core/index.js';
@@ -416,6 +417,72 @@ describe('Metadata Integration Tests - Real World HTML', () => {
 
       assert.equal(typeof seo, 'object', 'Should return object for empty HTML');
       assert.equal(typeof og, 'object', 'Should return object for empty HTML');
+    });
+  });
+
+  describe('Assets extraction', () => {
+    it('should extract assets from TechCrunch homepage', () => {
+      const homepage = getHomepage('techcrunch.com');
+      assert.ok(homepage, 'Should find TechCrunch homepage');
+
+      const doc = parseHTML(homepage.content);
+      const assets = extractAssets(doc, homepage.url);
+
+      // Tech sites should have various assets
+      assert.ok(assets.images || assets.scripts || assets.stylesheets, 'Should find some assets');
+
+      // If images found, they should be absolute URLs
+      if (assets.images && assets.images.length > 0) {
+        const firstImage = assets.images[0];
+        assert.ok(
+          firstImage.startsWith('http://') || firstImage.startsWith('https://'),
+          'Image URLs should be absolute',
+        );
+      }
+
+      // If scripts found, they should be absolute URLs
+      if (assets.scripts && assets.scripts.length > 0) {
+        const firstScript = assets.scripts[0];
+        assert.ok(
+          firstScript.startsWith('http://') || firstScript.startsWith('https://'),
+          'Script URLs should be absolute',
+        );
+      }
+    });
+
+    it('should extract assets from React.dev article', () => {
+      const article = getArticle('react.dev', 'critical-security-vulnerability.html');
+      assert.ok(article, 'Should find React article');
+
+      const doc = parseHTML(article.content);
+      const assets = extractAssets(doc, article.url);
+
+      // React docs should have images and scripts
+      assert.ok(assets.images || assets.scripts, 'Should find assets in React article');
+
+      // Check for deduplication
+      if (assets.images && assets.images.length > 0) {
+        const uniqueImages = new Set(assets.images);
+        assert.equal(uniqueImages.size, assets.images.length, 'Image URLs should be deduplicated');
+      }
+    });
+
+    it('should extract preload hints from modern sites', () => {
+      const homepage = getHomepage('react.dev');
+      if (!homepage) return; // Skip if not available
+
+      const doc = parseHTML(homepage.content);
+      const assets = extractAssets(doc, homepage.url);
+
+      // Modern sites often use preload/prefetch
+      if (assets.preloads && assets.preloads.length > 0) {
+        const preload = assets.preloads[0];
+        assert.ok(preload.url, 'Preload should have URL');
+        assert.ok(
+          preload.url.startsWith('http://') || preload.url.startsWith('https://'),
+          'Preload URL should be absolute',
+        );
+      }
     });
   });
 });

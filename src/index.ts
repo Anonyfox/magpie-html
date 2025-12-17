@@ -50,7 +50,9 @@ export type {
   AnalyticsMetadata,
   AppLinks,
   AppleTouchIcon,
+  AssetsMetadata,
   CanonicalMetadata,
+  ConnectionHint,
   CopyrightMetadata,
   DiscoveredFeed,
   DublinCoreMetadata,
@@ -72,6 +74,7 @@ export type {
   OpenGraphProfile,
   OpenGraphVideo,
   PaginationMetadata,
+  PreloadResource,
   RobotDirectives,
   RobotsMetadata,
   SchemaOrgMetadata,
@@ -88,6 +91,7 @@ export type {
 } from './metadata/index.js';
 export {
   extractAnalytics,
+  extractAssets,
   extractCanonical,
   extractCopyright,
   extractDublinCore,

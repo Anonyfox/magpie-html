@@ -77,7 +77,8 @@ All metadata extractors accept a `Document` object (from `parseHTML`):
 - `extractTwitterCard(doc)` - Twitter Card metadata
 - `extractCanonical(doc)` - Canonical URLs and alternates
 - `extractSchemaOrg(doc)` - Schema.org / JSON-LD data
-- ...and 15 more specialized extractors
+- `extractAssets(doc, baseUrl)` - All linked assets (images, scripts, fonts, media, etc.)
+- ...and 15+ more specialized extractors
 
 See TypeDoc documentation for complete API reference.
 
