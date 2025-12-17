@@ -31,6 +31,10 @@ docs/
 *.md
 !README.md
 
+# Assets and test data
+assets/
+cache/
+
 # Misc
 *.log
 .DS_Store

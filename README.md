@@ -1,6 +1,18 @@
 # Magpie HTML 🦅
 
-Modern TypeScript library for scraping web content with isomorphic support. Works seamlessly in both Node.js and browser environments.
+[![npm version](https://img.shields.io/npm/v/magpie-html.svg?style=flat-square)](https://www.npmjs.com/package/magpie-html)
+[![npm downloads](https://img.shields.io/npm/dm/magpie-html.svg?style=flat-square)](https://www.npmjs.com/package/magpie-html)
+[![CI](https://img.shields.io/github/actions/workflow/status/Anonyfox/magpie-html/ci.yml?branch=main&label=CI&style=flat-square)](https://github.com/Anonyfox/magpie-html/actions/workflows/ci.yml)
+[![Documentation](https://img.shields.io/badge/docs-live-brightgreen?style=flat-square)](https://anonyfox.github.io/magpie-html)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](https://opensource.org/licenses/MIT)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.7-blue?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
+[![Node.js](https://img.shields.io/badge/Node.js-%3E%3D18-green?style=flat-square&logo=node.js)](https://nodejs.org/)
+
+**Modern web scraping for when you need the good parts, not the markup soup.** Extracts clean article content, parses feeds (RSS, Atom, JSON), and gathers metadata from any page. Handles broken encodings, malformed feeds, and the chaos of real-world HTML. TypeScript-native, works everywhere. Named after the bird known for collecting valuable things... you get the idea.
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/Anonyfox/magpie-html/main/assets/magpie-html-logo.png" alt="Magpie HTML Logo" width="300">
+</div>
 
 ## Features
 
@@ -23,27 +35,27 @@ npm install magpie-html
 ## Quick Start
 
 ```typescript
-import { gatherWebsite, gatherArticle, gatherFeed } from 'magpie-html';
+import { gatherWebsite, gatherArticle, gatherFeed } from "magpie-html";
 
 // Gather complete website metadata
-const site = await gatherWebsite('https://example.com');
-console.log(site.title);          // Page title
-console.log(site.description);    // Meta description
-console.log(site.image);          // Featured image
-console.log(site.feeds);          // Discovered feeds
-console.log(site.internalLinks);  // Internal links
+const site = await gatherWebsite("https://example.com");
+console.log(site.title); // Page title
+console.log(site.description); // Meta description
+console.log(site.image); // Featured image
+console.log(site.feeds); // Discovered feeds
+console.log(site.internalLinks); // Internal links
 
 // Gather article content + metadata
-const article = await gatherArticle('https://example.com/article');
-console.log(article.title);       // Article title
-console.log(article.content);     // Clean article text
-console.log(article.wordCount);   // Word count
+const article = await gatherArticle("https://example.com/article");
+console.log(article.title); // Article title
+console.log(article.content); // Clean article text
+console.log(article.wordCount); // Word count
 console.log(article.readingTime); // Reading time in minutes
 
 // Gather feed data
-const feed = await gatherFeed('https://example.com/feed.xml');
-console.log(feed.title);          // Feed title
-console.log(feed.items);          // Feed items
+const feed = await gatherFeed("https://example.com/feed.xml");
+console.log(feed.title); // Feed title
+console.log(feed.items); // Feed items
 ```
 
 ## Usage
@@ -53,32 +65,33 @@ console.log(feed.items);          // Feed items
 Extract comprehensive metadata from any webpage:
 
 ```typescript
-import { gatherWebsite } from 'magpie-html';
+import { gatherWebsite } from "magpie-html";
 
-const site = await gatherWebsite('https://example.com');
+const site = await gatherWebsite("https://example.com");
 
 // Basic metadata
-console.log(site.url);            // Final URL (after redirects)
-console.log(site.title);          // Best title (cleaned)
-console.log(site.description);    // Meta description
-console.log(site.image);          // Featured image URL
-console.log(site.icon);           // Site favicon/icon
+console.log(site.url); // Final URL (after redirects)
+console.log(site.title); // Best title (cleaned)
+console.log(site.description); // Meta description
+console.log(site.image); // Featured image URL
+console.log(site.icon); // Site favicon/icon
 
 // Language & region
-console.log(site.language);       // ISO 639-1 code (e.g., 'en')
-console.log(site.region);         // ISO 3166-1 alpha-2 (e.g., 'US')
+console.log(site.language); // ISO 639-1 code (e.g., 'en')
+console.log(site.region); // ISO 3166-1 alpha-2 (e.g., 'US')
 
 // Discovered content
-console.log(site.feeds);          // Array of feed URLs
-console.log(site.internalLinks);  // Internal links (same domain)
-console.log(site.externalLinks);  // External links (other domains)
+console.log(site.feeds); // Array of feed URLs
+console.log(site.internalLinks); // Internal links (same domain)
+console.log(site.externalLinks); // External links (other domains)
 
 // Raw content
-console.log(site.html);           // Raw HTML
-console.log(site.text);           // Plain text (full page)
+console.log(site.html); // Raw HTML
+console.log(site.text); // Plain text (full page)
 ```
 
 **What it does:**
+
 - Fetches the page with automatic redirect handling
 - Extracts metadata from multiple sources (OpenGraph, Schema.org, Twitter Card, etc.)
 - Picks the "best" value for each field (longest, highest priority, cleaned)
@@ -91,33 +104,34 @@ console.log(site.text);           // Plain text (full page)
 Extract clean article content with metadata:
 
 ```typescript
-import { gatherArticle } from 'magpie-html';
+import { gatherArticle } from "magpie-html";
 
-const article = await gatherArticle('https://example.com/article');
+const article = await gatherArticle("https://example.com/article");
 
 // Core content
-console.log(article.url);          // Final URL
-console.log(article.title);        // Article title (Readability or metadata)
-console.log(article.content);      // Clean article text (formatted)
-console.log(article.description);  // Excerpt/summary
+console.log(article.url); // Final URL
+console.log(article.title); // Article title (Readability or metadata)
+console.log(article.content); // Clean article text (formatted)
+console.log(article.description); // Excerpt/summary
 
 // Metrics
-console.log(article.wordCount);    // Word count
-console.log(article.readingTime);  // Est. reading time (minutes)
+console.log(article.wordCount); // Word count
+console.log(article.readingTime); // Est. reading time (minutes)
 
 // Media & language
-console.log(article.image);        // Article image
-console.log(article.language);     // Language code
-console.log(article.region);       // Region code
+console.log(article.image); // Article image
+console.log(article.language); // Language code
+console.log(article.region); // Region code
 
 // Links & raw content
 console.log(article.internalLinks); // Internal links
 console.log(article.externalLinks); // External links (citations)
-console.log(article.html);          // Raw HTML
-console.log(article.text);          // Plain text (full page)
+console.log(article.html); // Raw HTML
+console.log(article.text); // Plain text (full page)
 ```
 
 **What it does:**
+
 - Uses Mozilla Readability to extract clean article content
 - Falls back to metadata extraction if Readability fails
 - Converts cleaned HTML to well-formatted plain text
@@ -129,30 +143,31 @@ console.log(article.text);          // Plain text (full page)
 Parse any feed format with one function:
 
 ```typescript
-import { gatherFeed } from 'magpie-html';
+import { gatherFeed } from "magpie-html";
 
-const feed = await gatherFeed('https://example.com/feed.xml');
+const feed = await gatherFeed("https://example.com/feed.xml");
 
 // Feed metadata
-console.log(feed.title);           // Feed title
-console.log(feed.description);     // Feed description
-console.log(feed.url);             // Feed URL
-console.log(feed.siteUrl);         // Website URL
+console.log(feed.title); // Feed title
+console.log(feed.description); // Feed description
+console.log(feed.url); // Feed URL
+console.log(feed.siteUrl); // Website URL
 
 // Feed items
 for (const item of feed.items) {
-  console.log(item.title);         // Item title
-  console.log(item.url);           // Item URL (absolute)
-  console.log(item.description);   // Item description
-  console.log(item.publishedAt);   // Publication date
-  console.log(item.author);        // Author
+  console.log(item.title); // Item title
+  console.log(item.url); // Item URL (absolute)
+  console.log(item.description); // Item description
+  console.log(item.publishedAt); // Publication date
+  console.log(item.author); // Author
 }
 
 // Format detection
-console.log(feed.format);          // 'rss', 'atom', or 'json-feed'
+console.log(feed.format); // 'rss', 'atom', or 'json-feed'
 ```
 
 **What it does:**
+
 - Auto-detects feed format (RSS 2.0, Atom 1.0, JSON Feed)
 - Normalizes all formats to a unified interface
 - Resolves relative URLs to absolute
@@ -165,10 +180,10 @@ For more control, use the lower-level modules directly:
 ### Feed Parsing
 
 ```typescript
-import { pluck, parseFeed } from 'magpie-html';
+import { pluck, parseFeed } from "magpie-html";
 
 // Fetch feed content
-const response = await pluck('https://example.com/feed.xml');
+const response = await pluck("https://example.com/feed.xml");
 const feedContent = await response.textUtf8();
 
 // Parse with base URL for relative links
@@ -182,25 +197,25 @@ console.log(result.feed.format); // 'rss', 'atom', or 'json-feed'
 ### Content Extraction
 
 ```typescript
-import { parseHTML, extractContent, htmlToText } from 'magpie-html';
+import { parseHTML, extractContent, htmlToText } from "magpie-html";
 
 // Parse HTML once
 const doc = parseHTML(html);
 
 // Extract article with Readability
 const result = extractContent(doc, {
-  baseUrl: 'https://example.com/article',
+  baseUrl: "https://example.com/article",
   cleanConditionally: true,
   keepClasses: false,
 });
 
 if (result.success) {
-  console.log(result.title);        // Article title
-  console.log(result.excerpt);      // Article excerpt
-  console.log(result.content);      // Clean HTML
-  console.log(result.textContent);  // Plain text
-  console.log(result.wordCount);    // Word count
-  console.log(result.readingTime);  // Reading time
+  console.log(result.title); // Article title
+  console.log(result.excerpt); // Article excerpt
+  console.log(result.content); // Clean HTML
+  console.log(result.textContent); // Plain text
+  console.log(result.wordCount); // Word count
+  console.log(result.readingTime); // Reading time
 }
 
 // Or convert any HTML to text
@@ -214,7 +229,12 @@ const plainText = htmlToText(html, {
 ### Metadata Extraction
 
 ```typescript
-import { parseHTML, extractOpenGraph, extractSchemaOrg, extractSEO } from 'magpie-html';
+import {
+  parseHTML,
+  extractOpenGraph,
+  extractSchemaOrg,
+  extractSEO,
+} from "magpie-html";
 
 const doc = parseHTML(html);
 
@@ -236,6 +256,7 @@ console.log(seo.keywords);
 ```
 
 **Available extractors:**
+
 - `extractSEO` - SEO meta tags
 - `extractOpenGraph` - OpenGraph metadata
 - `extractTwitterCard` - Twitter Card metadata
@@ -253,28 +274,29 @@ console.log(seo.keywords);
 Use `pluck()` for robust fetching with automatic encoding and redirect handling:
 
 ```typescript
-import { pluck } from 'magpie-html';
+import { pluck } from "magpie-html";
 
-const response = await pluck('https://example.com', {
-  timeout: 30000,        // 30 second timeout
-  maxRedirects: 10,      // Follow up to 10 redirects
-  maxSize: 10485760,     // 10MB limit
-  userAgent: 'MyBot/1.0',
+const response = await pluck("https://example.com", {
+  timeout: 30000, // 30 second timeout
+  maxRedirects: 10, // Follow up to 10 redirects
+  maxSize: 10485760, // 10MB limit
+  userAgent: "MyBot/1.0",
   throwOnHttpError: true,
   strictContentType: false,
 });
 
 // Enhanced response properties
-console.log(response.finalUrl);        // URL after redirects
-console.log(response.redirectChain);   // All redirect URLs
+console.log(response.finalUrl); // URL after redirects
+console.log(response.redirectChain); // All redirect URLs
 console.log(response.detectedEncoding); // Detected charset
-console.log(response.timing);          // Request timing
+console.log(response.timing); // Request timing
 
 // Get UTF-8 decoded content
 const text = await response.textUtf8();
 ```
 
 **Why `pluck()`?**
+
 - Handles broken sites with wrong/missing encoding declarations
 - Follows redirect chains and tracks them
 - Enforces timeouts and size limits
@@ -332,13 +354,18 @@ See [TypeDoc documentation](https://anonyfox.github.io/magpie-html) for complete
 **Best Practice:** Parse HTML once and reuse the document:
 
 ```typescript
-import { parseHTML, extractSEO, extractOpenGraph, extractContent } from 'magpie-html';
+import {
+  parseHTML,
+  extractSEO,
+  extractOpenGraph,
+  extractContent,
+} from "magpie-html";
 
 const doc = parseHTML(html);
 
 // Reuse the same document for multiple extractions
-const seo = extractSEO(doc);         // Fast: <5ms
-const og = extractOpenGraph(doc);    // Fast: <5ms
+const seo = extractSEO(doc); // Fast: <5ms
+const og = extractOpenGraph(doc); // Fast: <5ms
 const content = extractContent(doc); // ~100-500ms
 
 // Total: One parse + all extractions
@@ -415,10 +442,18 @@ npm publish
 
 The `prepublishOnly` script automatically builds the package before publishing.
 
-## License
+---
 
-MIT
+<div align="center">
 
-## Author
+### Support
 
-[Anonyfox](https://anonyfox.com)
+If this package helps your project, consider sponsoring its maintenance:
+
+[![GitHub Sponsors](https://img.shields.io/badge/Sponsor-EA4AAA?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sponsors/Anonyfox)
+
+---
+
+**[Anonyfox](https://anonyfox.com) • [MIT License](LICENSE)**
+
+</div>
