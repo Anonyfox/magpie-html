@@ -1,0 +1,89 @@
+/**
+ * Canonical and alternate URL extraction.
+ *
+ * @remarks
+ * Extracts canonical URLs, alternates, and special versions from HTML documents.
+ *
+ * @packageDocumentation
+ */
+
+import type { HTMLElement } from '../../utils/html-parser.js';
+import { getAllLinks, getLinkHref } from '../../utils/link-helpers.js';
+import { getMetaProperty } from '../../utils/meta-helpers.js';
+import type { AlternateLink, AppLinks, CanonicalMetadata } from './types.js';
+
+/**
+ * Extract canonical and alternate URL metadata from parsed HTML document.
+ *
+ * @remarks
+ * Extracts canonical URLs, language alternates, AMP versions, manifests,
+ * and app linking metadata.
+ *
+ * @param doc - Parsed HTML document
+ * @returns Canonical metadata object
+ *
+ * @example
+ * ```typescript
+ * const doc = parseHTML(htmlString);
+ * const canonical = extractCanonical(doc);
+ * console.log(canonical.canonical);
+ * console.log(canonical.alternates);
+ * ```
+ */
+export function extractCanonical(doc: HTMLElement): CanonicalMetadata {
+  const metadata: CanonicalMetadata = {};
+
+  // Extract canonical URL
+  metadata.canonical = getLinkHref(doc, 'canonical');
+
+  // Extract alternate links (language versions, feeds, etc.)
+  const alternateLinks = getAllLinks(doc, 'alternate');
+  if (alternateLinks.length > 0) {
+    metadata.alternates = alternateLinks
+      .map((link) => ({
+        href: link.href,
+        hreflang: link.hreflang,
+        type: link.type,
+        title: link.title,
+      }))
+      .map(
+        (alt) =>
+          Object.fromEntries(
+            Object.entries(alt).filter(([_, value]) => value !== undefined),
+          ) as AlternateLink,
+      );
+  }
+
+  // Extract AMP version
+  metadata.amphtml = getLinkHref(doc, 'amphtml');
+
+  // Extract manifest
+  metadata.manifest = getLinkHref(doc, 'manifest');
+
+  // Extract app links
+  const appLinks = extractAppLinks(doc);
+  if (Object.keys(appLinks).length > 0) {
+    metadata.appLinks = appLinks;
+  }
+
+  // Remove undefined values
+  return Object.fromEntries(
+    Object.entries(metadata).filter(([_, value]) => value !== undefined),
+  ) as CanonicalMetadata;
+}
+
+/**
+ * Extract app linking metadata.
+ */
+function extractAppLinks(doc: HTMLElement): AppLinks {
+  const appLinks: AppLinks = {};
+
+  // App Links (Facebook standard)
+  appLinks.ios = getMetaProperty(doc, 'al:ios:url');
+  appLinks.android = getMetaProperty(doc, 'al:android:url');
+  appLinks.web = getMetaProperty(doc, 'al:web:url');
+
+  return Object.fromEntries(
+    Object.entries(appLinks).filter(([_, value]) => value !== undefined),
+  ) as AppLinks;
+}

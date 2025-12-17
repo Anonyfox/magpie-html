@@ -26,8 +26,8 @@
   "scripts": {
     "build": "tsup",
     "dev": "tsx src/index.ts",
-    "test": "node --import tsx --test src/**/*.test.ts",
-    "test:watch": "node --import tsx --test --watch src/**/*.test.ts",
+    "test": "node --import tsx --test 'src/**/*.test.ts'",
+    "test:watch": "node --import tsx --test --watch 'src/**/*.test.ts'",
     "lint": "biome check .",
     "lint:fix": "biome check --write .",
     "format": "biome format --write .",
@@ -69,5 +69,8 @@
   "bugs": {
     "url": "https://github.com/Anonyfox/magpie-html/issues"
   },
-  "homepage": "https://github.com/Anonyfox/magpie-html#readme"
+  "homepage": "https://github.com/Anonyfox/magpie-html#readme",
+  "dependencies": {
+    "node-html-parser": "^7.0.1"
+  }
 }
