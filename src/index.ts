@@ -134,6 +134,16 @@ export {
   PluckTimeoutError,
   pluck,
 } from './pluck/index.js';
+// Experimental SPA rendering
+export type { SwoopInit, SwoopResult, SwoopWaitStrategy } from './swoop/index.js';
+export {
+  SwoopEnvironmentError,
+  SwoopError,
+  SwoopExecutionError,
+  SwoopSecurityError,
+  SwoopTimeoutError,
+  swoop,
+} from './swoop/index.js';
 // Utilities
 export type { HTMLDocument } from './utils/html-parser.js';
 export { parseHTML } from './utils/html-parser.js';

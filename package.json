@@ -46,7 +46,10 @@
     "web-scraping",
     "parser",
     "isomorphic",
-    "typescript"
+    "typescript",
+    "spa",
+    "rendering",
+    "headless"
   ],
   "author": {
     "name": "Anonyfox",
@@ -63,8 +66,10 @@
     "typescript": "^5.7.2"
   },
   "engines": {
-    "node": ">=18.0.0"
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
   },
+  "engineStrict": false,
   "repository": {
     "type": "git",
     "url": "https://github.com/Anonyfox/magpie-html.git"

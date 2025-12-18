@@ -303,51 +303,51 @@ const text = await response.textUtf8();
 - Compatible with standard `fetch()` API
 - Named `pluck()` to avoid confusion (magpies pluck things! 🦅)
 
-## API Reference
+## Experimental: `swoop()` (client-side DOM rendering without a browser engine)
 
-### High-Level Convenience
+> **⚠️ SECURITY WARNING — Remote Code Execution (RCE)**
+>
+> `swoop()` **executes remote, third‑party JavaScript inside your current Node.js process** (via `node:vm` + browser shims).
+> This is **fundamentally insecure**. Only use `swoop()` on **fully trusted targets** and treat inputs as **hostile by default**.
+> For any professional/untrusted scraping, run this in a **real sandbox** (container/VM/locked-down OS user + seccomp/apparmor/firejail, etc.).
 
-- **`gatherWebsite(url)`** - Extract complete website metadata
-- **`gatherArticle(url)`** - Extract article content + metadata
-- **`gatherFeed(url)`** - Parse any feed format
+> **Note:** `magpie-html` does **not** use `swoop()` internally. It’s provided as an **optional standalone utility** for the few cases where you really need DOM-only client-side rendering.
 
-### Fetching
+`swoop()` is an **explicitly experimental** helper that tries to execute client-side scripts against a **DOM-only** environment and then returns a **best-effort HTML snapshot**.
 
-- **`pluck(url, options?)`** - Enhanced fetch for web scraping
+### Why this exists
 
-### Parsing
+Sometimes `curl` / `fetch` / `pluck()` isn’t enough because the page is a SPA and only renders content after client-side JavaScript runs.
+`swoop()` exists to **quickly turn “CSR-only” pages into HTML** so the rest of `magpie-html` can work with the result.
 
-- **`parseFeed(content, baseUrl?)`** - Parse RSS/Atom/JSON feeds
-- **`detectFormat(content)`** - Detect feed format
-- **`parseHTML(html)`** - Parse HTML to Document
+If it works, it can be **comparably light and fast** because it avoids a full browser engine by using a custom `node:vm`-based execution environment with browser shims.
 
-### Content Extraction
+For very complicated targets (heavy JS, complex navigation, strong anti-bot, layout-dependent rendering), you should use a **real browser engine** instead.
 
-- **`extractContent(doc, options?)`** - Extract article with Readability
-- **`htmlToText(html, options?)`** - Convert HTML to plain text
-- **`isProbablyReaderable(doc)`** - Check if content is article-like
+`swoop()` is best seen as a **building block**—you still need to provide the **real sandboxing** around it.
 
-### Metadata Extraction
+### What it is
 
-- **`extractSEO(doc)`** - SEO meta tags
-- **`extractOpenGraph(doc)`** - OpenGraph metadata
-- **`extractTwitterCard(doc)`** - Twitter Card metadata
-- **`extractSchemaOrg(doc)`** - Schema.org / JSON-LD
-- **`extractCanonical(doc)`** - Canonical URLs
-- **`extractLanguage(doc)`** - Language detection
-- **`extractIcons(doc)`** - Favicons and icons
-- **`extractAssets(doc, baseUrl)`** - Linked assets
-- **`extractLinks(doc, baseUrl, options?)`** - Navigation links
-- **`extractFeedDiscovery(doc, baseUrl)`** - Discover feeds
-- ...and 10+ more specialized extractors
+- A pragmatic “SPA snapshotter” for cases where a page renders content via client-side JavaScript.
+- **No browser engine**: no layout/paint/CSS correctness.
 
-### Utilities
+### What it is NOT
 
-- **`normalizeUrl(baseUrl, url)`** - Convert relative to absolute URLs
-- **`countWords(text)`** - Count words in text
-- **`calculateReadingTime(wordCount)`** - Estimate reading time
+- Not a headless browser replacement (no navigation lifecycle, no reliable layout APIs).
 
-See [TypeDoc documentation](https://anonyfox.github.io/magpie-html) for complete API reference.
+### Usage
+
+```typescript
+import { swoop } from "magpie-html";
+
+const result = await swoop("https://example.com/spa", {
+  waitStrategy: "networkidle",
+  timeout: 3000,
+});
+
+console.log(result.html);
+console.log(result.errors);
+```
 
 ## Performance Tips
 
