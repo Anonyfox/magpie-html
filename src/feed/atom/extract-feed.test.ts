@@ -54,7 +54,7 @@ describe('extractFeed', () => {
   <title>Example</title>
 </feed>`;
 
-    assert.throws(() => extractFeed(xml), /missing required <updated> element/);
+    assert.throws(() => extractFeed(xml), /missing or invalid date/);
   });
 
   it('should throw error when updated is invalid date', () => {
@@ -65,7 +65,7 @@ describe('extractFeed', () => {
   <updated>not a date</updated>
 </feed>`;
 
-    assert.throws(() => extractFeed(xml), /invalid <updated> date/);
+    assert.throws(() => extractFeed(xml), /missing or invalid date/);
   });
 
   it('should extract single author', () => {

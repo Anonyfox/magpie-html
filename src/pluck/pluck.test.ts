@@ -295,7 +295,7 @@ describe('pluck - timeouts', () => {
         const timeout = setTimeout(resolve, 1000);
         init?.signal?.addEventListener('abort', () => {
           clearTimeout(timeout);
-          reject(new DOMException('The operation was aborted', 'AbortError'));
+          reject(new DOMException('The operation timed out', 'TimeoutError'));
         });
       });
       return createMockResponse('Too Slow');
@@ -313,7 +313,7 @@ describe('pluck - timeouts', () => {
         const timeout = setTimeout(resolve, 1000);
         init?.signal?.addEventListener('abort', () => {
           clearTimeout(timeout);
-          reject(new DOMException('The operation was aborted', 'AbortError'));
+          reject(new DOMException('The operation timed out', 'TimeoutError'));
         });
       });
       return createMockResponse('Too Slow');

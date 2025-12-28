@@ -46,7 +46,7 @@ describe('extractEntry', () => {
 </entry>`;
 
     const doc = parseXML(xml);
-    assert.throws(() => extractEntry(doc), /missing required <updated> element/);
+    assert.throws(() => extractEntry(doc), /missing or invalid date/);
   });
 
   it('should throw error when updated is invalid date', () => {
@@ -57,7 +57,7 @@ describe('extractEntry', () => {
 </entry>`;
 
     const doc = parseXML(xml);
-    assert.throws(() => extractEntry(doc), /invalid <updated> date/);
+    assert.throws(() => extractEntry(doc), /missing or invalid date/);
   });
 
   it('should extract authors', () => {

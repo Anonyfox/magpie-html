@@ -8,6 +8,45 @@ import type { AtomCategory, AtomFeed, AtomGenerator, AtomLink, AtomPerson } from
 import { parseXML } from './xml-parser.js';
 
 /**
+ * Extract date from element with fallbacks for different Atom versions and extensions
+ * Tries selectors in order: updated (Atom 1.0), modified (Atom 0.3), issued (Atom 0.3), dc:date (Dublin Core)
+ */
+function extractAtomDate(element: ReturnType<typeof parseXML>): string | null {
+  // Try Atom 1.0 <updated>
+  let dateText = element.querySelector('updated')?.textContent;
+  if (dateText) {
+    const parsed = parseAtomDate(dateText);
+    if (parsed) return parsed;
+  }
+
+  // Try Atom 0.3 <modified>
+  dateText = element.querySelector('modified')?.textContent;
+  if (dateText) {
+    const parsed = parseAtomDate(dateText);
+    if (parsed) return parsed;
+  }
+
+  // Try Atom 0.3 <issued>
+  dateText = element.querySelector('issued')?.textContent;
+  if (dateText) {
+    const parsed = parseAtomDate(dateText);
+    if (parsed) return parsed;
+  }
+
+  // Try Dublin Core <dc:date>
+  const dcDateElements = element.children.filter(child => child.tagName === 'dc:date');
+  if (dcDateElements.length > 0) {
+    dateText = dcDateElements[0].textContent;
+    if (dateText) {
+      const parsed = parseAtomDate(dateText);
+      if (parsed) return parsed;
+    }
+  }
+
+  return null;
+}
+
+/**
  * Extract person (author, contributor)
  */
 function extractPerson(element: ReturnType<typeof parseXML>): AtomPerson | null {
@@ -227,14 +266,9 @@ export function extractFeed(xml: string): AtomFeed {
     throw new Error('Invalid Atom feed: missing required <title> element');
   }
 
-  const updatedRaw = feed.querySelector('updated')?.textContent;
-  if (!updatedRaw) {
-    throw new Error('Invalid Atom feed: missing required <updated> element');
-  }
-
-  const updated = parseAtomDate(updatedRaw);
+  const updated = extractAtomDate(feed);
   if (!updated) {
-    throw new Error('Invalid Atom feed: invalid <updated> date');
+    throw new Error('Invalid Atom feed: missing or invalid date (tried <updated>, <modified>, <issued>, <dc:date>)');
   }
 
   const result: AtomFeed = {

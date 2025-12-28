@@ -99,16 +99,15 @@ export async function pluck(
   const options = normalizeOptions(init);
   const originalUrl = typeof input === 'string' || input instanceof URL ? String(input) : input.url;
 
-  // Setup timeout
-  const abortController = new AbortController();
-  const timeoutId = setTimeout(() => abortController.abort(), options.timeout);
+  // Setup timeout signal
+  const signal = AbortSignal.timeout(options.timeout);
 
   try {
     // Follow redirects manually to capture chain
     const { response, redirectChain, redirectDuration } = await followRedirects(
       input,
       options,
-      abortController.signal,
+      signal,
     );
 
     const finalUrl = response.url;
@@ -161,7 +160,7 @@ export async function pluck(
       throw error;
     }
 
-    if ((error as Error).name === 'AbortError') {
+    if ((error as Error).name === 'TimeoutError') {
       throw new PluckTimeoutError(`Request timeout after ${options.timeout}ms`, options.timeout);
     }
 
@@ -172,8 +171,6 @@ export async function pluck(
 
     // Re-throw pluck errors as-is
     throw error;
-  } finally {
-    clearTimeout(timeoutId);
   }
 }
 
