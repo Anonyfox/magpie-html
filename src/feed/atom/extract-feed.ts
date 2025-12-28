@@ -34,7 +34,7 @@ function extractAtomDate(element: ReturnType<typeof parseXML>): string | null {
   }
 
   // Try Dublin Core <dc:date>
-  const dcDateElements = element.children.filter(child => child.tagName === 'dc:date');
+  const dcDateElements = element.children.filter((child) => child.tagName === 'dc:date');
   if (dcDateElements.length > 0) {
     dateText = dcDateElements[0].textContent;
     if (dateText) {
@@ -268,7 +268,9 @@ export function extractFeed(xml: string): AtomFeed {
 
   const updated = extractAtomDate(feed);
   if (!updated) {
-    throw new Error('Invalid Atom feed: missing or invalid date (tried <updated>, <modified>, <issued>, <dc:date>)');
+    throw new Error(
+      'Invalid Atom feed: missing or invalid date (tried <updated>, <modified>, <issued>, <dc:date>)',
+    );
   }
 
   const result: AtomFeed = {

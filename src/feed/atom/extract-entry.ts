@@ -41,7 +41,7 @@ function extractAtomDate(element: AtomElement): string | null {
   }
 
   // Try Dublin Core <dc:date>
-  const dcDateElements = element.children.filter(child => child.tagName === 'dc:date');
+  const dcDateElements = element.children.filter((child) => child.tagName === 'dc:date');
   if (dcDateElements.length > 0) {
     dateText = dcDateElements[0].textContent;
     if (dateText) {
@@ -264,7 +264,9 @@ export function extractEntry(entryElement: AtomElement): AtomEntry {
 
   const updated = extractAtomDate(entryElement);
   if (!updated) {
-    throw new Error('Invalid Atom entry: missing or invalid date (tried <updated>, <modified>, <issued>, <dc:date>)');
+    throw new Error(
+      'Invalid Atom entry: missing or invalid date (tried <updated>, <modified>, <issued>, <dc:date>)',
+    );
   }
 
   const entry: AtomEntry = {
