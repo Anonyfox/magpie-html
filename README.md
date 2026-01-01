@@ -7,11 +7,16 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.7-blue?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
 [![Node.js](https://img.shields.io/badge/Node.js-%3E%3D18-green?style=flat-square&logo=node.js)](https://nodejs.org/)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-CrispRead-eb6864?style=flat-square&logo=rss&logoColor=white)](https://crispread.com)
 
 **Modern web scraping for when you need the good parts, not the markup soup.** Extracts clean article content, parses feeds (RSS, Atom, JSON), and gathers metadata from any page. Handles broken encodings, malformed feeds, and the chaos of real-world HTML. TypeScript-native, works everywhere. Named after the bird known for collecting valuable things... you get the idea.
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/Anonyfox/magpie-html/main/assets/magpie-html-logo.png" alt="Magpie HTML Logo" width="300">
+
+<br><br>
+<strong>Production-ready</strong> · Powers <a href="https://crispread.com">CrispRead</a>, a trilingual news aggregator processing thousands of articles daily.
+
 </div>
 
 ## Features
@@ -454,6 +459,6 @@ If this package helps your project, consider sponsoring its maintenance:
 
 ---
 
-**[Anonyfox](https://anonyfox.com) • [MIT License](LICENSE)**
+**[Anonyfox](https://anonyfox.com) • [API Docs](https://anonyfox.github.io/magpie-html) • [MIT License](LICENSE)**
 
 </div>
