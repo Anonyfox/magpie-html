@@ -7,7 +7,6 @@
 
 import { normalizeUrlHttps } from '../../utils/normalize-url.js';
 import type {
-  Sitemap,
   SitemapImage,
   SitemapIndexEntry,
   SitemapNews,
@@ -80,10 +79,7 @@ export function parseSitemap(xml: string, baseUrl?: string | URL): SitemapParseR
 /**
  * Parse a sitemap index
  */
-function parseSitemapIndex(
-  element: SitemapElement,
-  baseUrl?: string | URL,
-): SitemapParseResult {
+function parseSitemapIndex(element: SitemapElement, baseUrl?: string | URL): SitemapParseResult {
   const sitemapElements = getChildren(element, 'sitemap');
 
   const sitemaps: SitemapIndexEntry[] = sitemapElements.map((el) => {
@@ -341,7 +337,8 @@ function extractVideos(urlElement: SitemapElement, baseUrl?: string | URL): Site
         getText(getChild(vidEl, 'video:content_loc')) ||
         getText(getChild(vidEl, 'content_loc')) ||
         getText(vidEl.children.find((c) => c.tagName.toLowerCase().endsWith(':content_loc')));
-      if (contentLoc) video.contentLoc = baseUrl ? normalizeUrlHttps(baseUrl, contentLoc) : contentLoc;
+      if (contentLoc)
+        video.contentLoc = baseUrl ? normalizeUrlHttps(baseUrl, contentLoc) : contentLoc;
 
       const playerLoc =
         getText(getChild(vidEl, 'video:player_loc')) ||
@@ -442,4 +439,3 @@ export function isSitemap(xml: string): boolean {
     trimmed.includes('sitemaps.org')
   );
 }
-

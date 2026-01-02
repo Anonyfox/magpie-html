@@ -18,4 +18,3 @@ export type {
   SitemapUrl,
   SitemapVideo,
 } from './types.js';
-

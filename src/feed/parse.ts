@@ -100,6 +100,12 @@ export function parseFeedAs(
         original: jsonFeed,
       };
     }
+
+    case 'sitemap': {
+      throw new Error(
+        'Sitemaps cannot be parsed with parseFeed(). Use parseSitemap() from the sitemap module instead.',
+      );
+    }
   }
 }
 

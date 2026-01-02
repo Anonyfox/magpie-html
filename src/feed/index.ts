@@ -27,17 +27,6 @@ export {
   isRSS,
   isSitemapFormat,
 } from './detect.js';
-// Sitemap parser
-export { isSitemap, parseSitemap } from './sitemap/index.js';
-export type {
-  Sitemap,
-  SitemapImage,
-  SitemapIndexEntry,
-  SitemapNews,
-  SitemapParseResult,
-  SitemapUrl,
-  SitemapVideo,
-} from './sitemap/types.js';
 export { parseJSONFeed } from './json-feed/index.js';
 export type {
   JSONFeed as JSONFeedType,
@@ -52,5 +41,16 @@ export { parseFeed, parseFeedAs, parseFeedNormalized } from './parse.js';
 export { parseRSS } from './rss/index.js';
 // Format-specific types (advanced use)
 export type { RssChannel, RssFeedExtended, RssItem } from './rss/types.js';
+// Sitemap parser
+export { isSitemap, parseSitemap } from './sitemap/index.js';
+export type {
+  Sitemap,
+  SitemapImage,
+  SitemapIndexEntry,
+  SitemapNews,
+  SitemapParseResult,
+  SitemapUrl,
+  SitemapVideo,
+} from './sitemap/types.js';
 // Normalized types (recommended for most use cases)
 export type { Feed, FeedAuthor, FeedEnclosure, FeedItem, ParseResult } from './types.js';

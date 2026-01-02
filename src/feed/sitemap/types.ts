@@ -124,4 +124,3 @@ export interface SitemapParseResult {
   /** Whether this is a sitemap index */
   isIndex: boolean;
 }
-

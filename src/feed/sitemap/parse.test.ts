@@ -369,4 +369,3 @@ describe('isSitemap', () => {
     assert.equal(isSitemap(undefined as unknown as string), false);
   });
 });
-

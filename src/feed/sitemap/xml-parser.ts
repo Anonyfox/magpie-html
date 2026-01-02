@@ -299,4 +299,3 @@ export function getChildren(element: SitemapElement, tagName: string): SitemapEl
   const lowerTag = tagName.toLowerCase();
   return element.children.filter((c) => c.tagName.toLowerCase() === lowerTag);
 }
-

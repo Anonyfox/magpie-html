@@ -193,7 +193,8 @@ describe('detectEncoding', () => {
   });
 
   it('should prioritize XML declaration over HTML meta', () => {
-    const content = '<?xml version="1.0" encoding="windows-1252"?><html><meta charset="utf-8"></html>';
+    const content =
+      '<?xml version="1.0" encoding="windows-1252"?><html><meta charset="utf-8"></html>';
     const buffer = new TextEncoder().encode(content).buffer;
     const result = detectEncoding(buffer);
     assert.equal(result, 'windows-1252'); // XML declaration wins
