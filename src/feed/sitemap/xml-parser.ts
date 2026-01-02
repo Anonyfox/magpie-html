@@ -1,25 +1,25 @@
 /**
- * Minimal RSS-specific XML parser
- * Built specifically for RSS feeds without HTML parsing quirks
+ * Minimal Sitemap-specific XML parser
+ * Built specifically for sitemap XML without HTML parsing quirks
  */
 
-export interface RSSElement {
-  /** Tag name (e.g., 'channel', 'item', 'title') */
+export interface SitemapElement {
+  /** Tag name (e.g., 'url', 'loc', 'urlset') */
   tagName: string;
   /** Element attributes */
   attributes: Record<string, string>;
-  /** Text content (with CDATA stripped) */
+  /** Text content */
   text: string;
   /** Child elements */
-  children: RSSElement[];
+  children: SitemapElement[];
   /** Parent element (for traversal) */
-  parent: RSSElement | null;
+  parent: SitemapElement | null;
 }
 
 /**
- * Parse RSS XML string into element tree
+ * Parse Sitemap XML string into element tree
  */
-export function parseRSSXML(xml: string): RSSElement {
+export function parseSitemapXML(xml: string): SitemapElement {
   const cleaned = cleanXMLDeclaration(xml);
   const withoutComments = removeComments(cleaned);
   const root = parseElement(withoutComments, 0).element;
@@ -124,9 +124,9 @@ function findClosingTag(xml: string, tagName: string, startPos: number): number 
 function parseElement(
   xml: string,
   startPos: number,
-  parent: RSSElement | null = null,
+  parent: SitemapElement | null = null,
   cdataMap?: Map<string, string>,
-): { element: RSSElement; endPos: number; cdataMap: Map<string, string> } {
+): { element: SitemapElement; endPos: number; cdataMap: Map<string, string> } {
   // Extract CDATA first (only at top level)
   const extracted = cdataMap ? { text: xml, cdataMap } : extractCDATA(xml);
   const cleanedXML = extracted.text;
@@ -154,7 +154,7 @@ function parseElement(
   const tagName = spaceIndex === -1 ? tagContent : tagContent.substring(0, spaceIndex);
   const attributes = spaceIndex === -1 ? {} : parseAttributes(tagContent.substring(spaceIndex));
 
-  const element: RSSElement = {
+  const element: SitemapElement = {
     tagName,
     attributes,
     text: '',
@@ -222,14 +222,13 @@ function parseElement(
 }
 
 /**
- * Query selector - find first matching element
- * XML is case-sensitive, but we'll support case-insensitive matching for convenience
+ * Query selector - find first matching element (case-insensitive by default)
  */
 export function querySelector(
-  element: RSSElement,
+  element: SitemapElement,
   selector: string,
   caseSensitive = false,
-): RSSElement | null {
+): SitemapElement | null {
   const tagName = caseSensitive ? selector : selector.toLowerCase();
   const elementTag = caseSensitive ? element.tagName : element.tagName.toLowerCase();
 
@@ -249,11 +248,11 @@ export function querySelector(
  * Query selector all - find all matching elements
  */
 export function querySelectorAll(
-  element: RSSElement,
+  element: SitemapElement,
   selector: string,
   caseSensitive = false,
-): RSSElement[] {
-  const results: RSSElement[] = [];
+): SitemapElement[] {
+  const results: SitemapElement[] = [];
   const tagName = caseSensitive ? selector : selector.toLowerCase();
   const elementTag = caseSensitive ? element.tagName : element.tagName.toLowerCase();
 
@@ -271,13 +270,33 @@ export function querySelectorAll(
 /**
  * Get text content of element
  */
-export function getText(element: RSSElement | null | undefined): string {
+export function getText(element: SitemapElement | null | undefined): string {
   return element?.text || '';
 }
 
 /**
  * Get attribute value
  */
-export function getAttribute(element: RSSElement | null | undefined, name: string): string | null {
+export function getAttribute(
+  element: SitemapElement | null | undefined,
+  name: string,
+): string | null {
   return element?.attributes[name] || null;
 }
+
+/**
+ * Get first child element by tag name
+ */
+export function getChild(element: SitemapElement, tagName: string): SitemapElement | null {
+  const lowerTag = tagName.toLowerCase();
+  return element.children.find((c) => c.tagName.toLowerCase() === lowerTag) || null;
+}
+
+/**
+ * Get all child elements by tag name
+ */
+export function getChildren(element: SitemapElement, tagName: string): SitemapElement[] {
+  const lowerTag = tagName.toLowerCase();
+  return element.children.filter((c) => c.tagName.toLowerCase() === lowerTag);
+}
+

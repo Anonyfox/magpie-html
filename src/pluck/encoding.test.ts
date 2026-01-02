@@ -13,6 +13,7 @@ import {
   isEncodingSupported,
   parseCharsetFromContentType,
   parseCharsetFromHtml,
+  parseCharsetFromXml,
 } from './encoding.js';
 
 describe('parseCharsetFromContentType', () => {
@@ -112,6 +113,43 @@ describe('parseCharsetFromHtml', () => {
   });
 });
 
+describe('parseCharsetFromXml', () => {
+  it('should parse from XML declaration with double quotes', () => {
+    const xml = '<?xml version="1.0" encoding="ISO-8859-1"?><rss>';
+    const result = parseCharsetFromXml(xml);
+    assert.equal(result, 'latin1'); // Normalized
+  });
+
+  it('should parse from XML declaration with single quotes', () => {
+    const xml = "<?xml version='1.0' encoding='UTF-8'?><feed>";
+    const result = parseCharsetFromXml(xml);
+    assert.equal(result, 'utf-8');
+  });
+
+  it('should handle case insensitivity', () => {
+    const xml = '<?xml version="1.0" ENCODING="windows-1252"?><rss>';
+    const result = parseCharsetFromXml(xml);
+    assert.equal(result, 'windows-1252');
+  });
+
+  it('should handle XML declaration without encoding', () => {
+    const xml = '<?xml version="1.0"?><rss>';
+    const result = parseCharsetFromXml(xml);
+    assert.equal(result, null);
+  });
+
+  it('should return null for non-XML content', () => {
+    const html = '<html><head></head></html>';
+    const result = parseCharsetFromXml(html);
+    assert.equal(result, null);
+  });
+
+  it('should return null for empty string', () => {
+    const result = parseCharsetFromXml('');
+    assert.equal(result, null);
+  });
+});
+
 describe('detectEncoding', () => {
   it('should detect UTF-8 BOM', () => {
     // UTF-8 BOM: EF BB BF
@@ -140,11 +178,25 @@ describe('detectEncoding', () => {
     assert.equal(result, 'windows-1252');
   });
 
+  it('should parse charset from XML declaration if no BOM or header', () => {
+    const xml = '<?xml version="1.0" encoding="ISO-8859-1"?><rss>';
+    const buffer = new TextEncoder().encode(xml).buffer;
+    const result = detectEncoding(buffer);
+    assert.equal(result, 'latin1'); // Normalized
+  });
+
   it('should parse charset from HTML meta if no BOM or header', () => {
     const html = '<meta charset="iso-8859-1">Hello';
     const buffer = new TextEncoder().encode(html).buffer;
     const result = detectEncoding(buffer);
     assert.equal(result, 'latin1'); // Normalized
+  });
+
+  it('should prioritize XML declaration over HTML meta', () => {
+    const content = '<?xml version="1.0" encoding="windows-1252"?><html><meta charset="utf-8"></html>';
+    const buffer = new TextEncoder().encode(content).buffer;
+    const result = detectEncoding(buffer);
+    assert.equal(result, 'windows-1252'); // XML declaration wins
   });
 
   it('should default to UTF-8 if nothing found', () => {

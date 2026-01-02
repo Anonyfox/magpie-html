@@ -9,7 +9,7 @@
 [![Node.js](https://img.shields.io/badge/Node.js-%3E%3D18-green?style=flat-square&logo=node.js)](https://nodejs.org/)
 [![Live Demo](https://img.shields.io/badge/Live_Demo-CrispRead-eb6864?style=flat-square&logo=rss&logoColor=white)](https://crispread.com)
 
-**Modern web scraping for when you need the good parts, not the markup soup.** Extracts clean article content, parses feeds (RSS, Atom, JSON), and gathers metadata from any page. Handles broken encodings, malformed feeds, and the chaos of real-world HTML. TypeScript-native, works everywhere. Named after the bird known for collecting valuable things... you get the idea.
+**Modern web scraping for when you need the good parts, not the markup soup.** Extracts clean article content, parses feeds (RSS, Atom, JSON, Sitemaps), and gathers metadata from any page. Handles broken encodings, malformed feeds, and the chaos of real-world HTML. TypeScript-native, works everywhere. Named after the bird known for collecting valuable things... you get the idea.
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/Anonyfox/magpie-html/main/assets/magpie-html-logo.png" alt="Magpie HTML Logo" width="300">
@@ -26,7 +26,7 @@
 - 🔒 **Type-safe** - Full TypeScript support
 - 🧪 **Well-tested** - Built with Node.js native test runner
 - 🚀 **Minimal dependencies** - Lightweight and fast
-- 🔄 **Multi-Format Feed Parser** - Parse RSS 2.0, Atom 1.0, and JSON Feed
+- 🔄 **Multi-Format Feed Parser** - Parse RSS 2.0, Atom 1.0, JSON Feed, and XML Sitemaps
 - 🔗 **Smart URL Resolution** - Automatic normalization to absolute URLs
 - 🛡️ **Error Resilient** - Graceful handling of malformed data
 - 🦅 **High-Level Convenience** - One-line functions for common tasks
@@ -197,6 +197,30 @@ const result = parseFeed(feedContent, response.finalUrl);
 console.log(result.feed.title);
 console.log(result.feed.items[0].title);
 console.log(result.feed.format); // 'rss', 'atom', or 'json-feed'
+```
+
+### Sitemap Parsing (Fallback)
+
+When standard feeds aren't available, XML sitemaps can be a useful fallback for discovering URLs. Supports standard sitemaps, sitemap indexes, and Google News/Image/Video extensions:
+
+```typescript
+import { pluck, parseSitemap, isSitemap } from "magpie-html";
+
+const response = await pluck("https://example.com/sitemap.xml");
+const content = await response.textUtf8();
+
+if (isSitemap(content)) {
+  const result = parseSitemap(content, response.finalUrl);
+
+  for (const url of result.sitemap.urls) {
+    console.log(url.loc); // URL
+    console.log(url.lastmod); // Last modified date
+    console.log(url.news?.title); // Google News title (if present)
+    console.log(url.news?.publicationDate); // Publication date
+  }
+
+  // For sitemap indexes, check result.sitemap.sitemaps[]
+}
 ```
 
 ### Content Extraction

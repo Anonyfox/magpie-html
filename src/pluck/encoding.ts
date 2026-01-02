@@ -43,9 +43,17 @@ export function detectEncoding(buffer: ArrayBuffer, contentType?: string | null)
     }
   }
 
-  // Check HTML meta tags (first 1KB only)
+  // Check first 1KB for meta declarations
   const preview = new Uint8Array(buffer.slice(0, 1024));
   const previewText = new TextDecoder('utf-8', { fatal: false }).decode(preview);
+
+  // Check XML declaration first (for RSS/Atom feeds)
+  const xmlEncoding = parseCharsetFromXml(previewText);
+  if (xmlEncoding) {
+    return xmlEncoding;
+  }
+
+  // Check HTML meta tags
   const metaEncoding = parseCharsetFromHtml(previewText);
   if (metaEncoding) {
     return metaEncoding;
@@ -128,6 +136,25 @@ export function parseCharsetFromHtml(html: string): string | null {
     if (charset) {
       return charset;
     }
+  }
+
+  return null;
+}
+
+/**
+ * Parse charset from XML declaration.
+ *
+ * @remarks
+ * Checks for: `<?xml version="1.0" encoding="XXX"?>`
+ *
+ * @param xml - XML content (typically first 1KB)
+ * @returns Encoding if found, null otherwise
+ */
+export function parseCharsetFromXml(xml: string): string | null {
+  // Check <?xml ... encoding="XXX"?>
+  const xmlDeclMatch = /<\?xml[^?]*encoding\s*=\s*["']([^"']+)["'][^?]*\?>/i.exec(xml);
+  if (xmlDeclMatch) {
+    return normalizeEncoding(xmlDeclMatch[1]);
   }
 
   return null;

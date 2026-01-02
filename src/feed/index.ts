@@ -18,7 +18,26 @@
 export { parseAtom } from './atom/index.js';
 export type { AtomDocument, AtomEntry, AtomFeed } from './atom/types.js';
 // Format detection
-export { detectFormat, type FeedFormat, isAtom, isFeed, isJSONFeed, isRSS } from './detect.js';
+export {
+  detectFormat,
+  type FeedFormat,
+  isAtom,
+  isFeed,
+  isJSONFeed,
+  isRSS,
+  isSitemapFormat,
+} from './detect.js';
+// Sitemap parser
+export { isSitemap, parseSitemap } from './sitemap/index.js';
+export type {
+  Sitemap,
+  SitemapImage,
+  SitemapIndexEntry,
+  SitemapNews,
+  SitemapParseResult,
+  SitemapUrl,
+  SitemapVideo,
+} from './sitemap/types.js';
 export { parseJSONFeed } from './json-feed/index.js';
 export type {
   JSONFeed as JSONFeedType,

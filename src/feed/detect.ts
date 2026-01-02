@@ -12,9 +12,10 @@
  * - `'rss'` - RSS 2.0, 0.9x, or RSS 1.0 (RDF)
  * - `'atom'` - Atom 1.0
  * - `'json-feed'` - JSON Feed 1.0 or 1.1
+ * - `'sitemap'` - XML Sitemap (urlset or sitemapindex)
  * - `'unknown'` - Format could not be determined
  */
-export type FeedFormat = 'rss' | 'atom' | 'json-feed' | 'unknown';
+export type FeedFormat = 'rss' | 'atom' | 'json-feed' | 'sitemap' | 'unknown';
 
 /**
  * Detect feed format from content string.
@@ -100,6 +101,14 @@ export function detectFormat(content: string): FeedFormat {
     return 'rss';
   }
 
+  // Check for Sitemap (urlset or sitemapindex)
+  if (
+    (cleaned.match(/<urlset[\s>]/i) || cleaned.match(/<sitemapindex[\s>]/i)) &&
+    cleaned.includes('sitemaps.org')
+  ) {
+    return 'sitemap';
+  }
+
   return 'unknown';
 }
 
@@ -148,4 +157,14 @@ export function isAtom(content: string): boolean {
  */
 export function isJSONFeed(content: string): boolean {
   return detectFormat(content) === 'json-feed';
+}
+
+/**
+ * Check if content is XML Sitemap format.
+ *
+ * @param content - Feed content as string
+ * @returns `true` if content is a sitemap (urlset or sitemapindex)
+ */
+export function isSitemapFormat(content: string): boolean {
+  return detectFormat(content) === 'sitemap';
 }
