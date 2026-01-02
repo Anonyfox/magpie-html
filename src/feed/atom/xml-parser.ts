@@ -33,10 +33,18 @@ function removeComments(xml: string): string {
 }
 
 /**
+ * Remove DOCTYPE declarations
+ */
+function removeDoctype(xml: string): string {
+  return xml.replace(/<!DOCTYPE[^>]*>/gi, '');
+}
+
+/**
  * Parse Atom XML string into element tree
  */
 export function parseAtomXML(xml: string): AtomElement {
-  const withoutComments = removeComments(xml);
+  const withoutDoctype = removeDoctype(xml);
+  const withoutComments = removeComments(withoutDoctype);
   const { text: cleanedXML, cdataMap } = extractCDATA(withoutComments);
   const root = parseElement(cleanedXML, 0, null, cdataMap).element;
   return root;

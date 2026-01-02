@@ -21,7 +21,8 @@ export interface SitemapElement {
  */
 export function parseSitemapXML(xml: string): SitemapElement {
   const cleaned = cleanXMLDeclaration(xml);
-  const withoutComments = removeComments(cleaned);
+  const withoutDoctype = removeDoctype(cleaned);
+  const withoutComments = removeComments(withoutDoctype);
   const root = parseElement(withoutComments, 0).element;
   return root;
 }
@@ -31,6 +32,13 @@ export function parseSitemapXML(xml: string): SitemapElement {
  */
 function cleanXMLDeclaration(xml: string): string {
   return xml.replace(/<\?xml[^?]*\?>/g, '').trim();
+}
+
+/**
+ * Remove DOCTYPE declarations
+ */
+function removeDoctype(xml: string): string {
+  return xml.replace(/<!DOCTYPE[^>]*>/gi, '');
 }
 
 /**
