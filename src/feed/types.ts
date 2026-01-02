@@ -87,7 +87,7 @@ export interface FeedItem {
  */
 export interface Feed {
   /** Original feed format */
-  format: 'rss' | 'atom' | 'json-feed';
+  format: 'rss' | 'atom' | 'json-feed' | 'sitemap';
   /** Feed title (required) */
   title: string;
   /** Feed description or subtitle */
