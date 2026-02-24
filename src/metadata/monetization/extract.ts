@@ -7,29 +7,32 @@
  * @packageDocumentation
  */
 
-import type { HTMLDocument as Document } from '../../utils/html-parser.js';
+import { type DocumentInput, ensureDocument } from '../../utils/html-parser.js';
 import { getMetaContent } from '../../utils/meta-helpers.js';
 import type { MonetizationMetadata } from './types.js';
 
 /**
- * Extract monetization metadata from parsed HTML document.
+ * Extract monetization metadata from HTML.
  *
  * @remarks
  * Extracts web monetization, payment verification, and cryptocurrency
  * addresses from meta tags and link tags.
  *
- * @param doc - Parsed HTML document
+ * @param input - Parsed HTML document or raw HTML string
  * @returns Monetization metadata
  *
  * @example
  * ```typescript
+ * // With parsed document (recommended for multiple extractions)
  * const doc = parseHTML(htmlString);
  * const monetization = extractMonetization(doc);
- * console.log(monetization.webMonetization);
- * console.log(monetization.bitcoin);
+ *
+ * // Or directly with HTML string
+ * const monetization = extractMonetization(htmlString);
  * ```
  */
-export function extractMonetization(doc: Document): MonetizationMetadata {
+export function extractMonetization(input: DocumentInput): MonetizationMetadata {
+  const doc = ensureDocument(input);
   const metadata: MonetizationMetadata = {};
 
   // Web Monetization API (payment pointer)

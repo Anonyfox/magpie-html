@@ -7,30 +7,37 @@
  * @packageDocumentation
  */
 
-import type { HTMLDocument as Document } from '../../utils/html-parser.js';
+import {
+  type HTMLDocument as Document,
+  type DocumentInput,
+  ensureDocument,
+} from '../../utils/html-parser.js';
 import { getAllLinksByPrefix, getAllLinksByRels, getLinkHref } from '../../utils/link-helpers.js';
 import { getMetaContent } from '../../utils/meta-helpers.js';
 import type { AppleTouchIcon, IconsMetadata, MaskIcon, MSTile } from './types.js';
 
 /**
- * Extract icons metadata from parsed HTML document.
+ * Extract icons metadata from HTML.
  *
  * @remarks
  * Extracts all icon-related metadata including favicons, Apple touch icons,
  * Safari mask icons, and Microsoft tile configuration.
  *
- * @param doc - Parsed HTML document
+ * @param input - Parsed HTML document or raw HTML string
  * @returns Icons metadata
  *
  * @example
  * ```typescript
+ * // With parsed document (recommended for multiple extractions)
  * const doc = parseHTML(htmlString);
  * const icons = extractIcons(doc);
- * console.log(icons.favicon);
- * console.log(icons.appleTouchIcons);
+ *
+ * // Or directly with HTML string
+ * const icons = extractIcons(htmlString);
  * ```
  */
-export function extractIcons(doc: Document): IconsMetadata {
+export function extractIcons(input: DocumentInput): IconsMetadata {
+  const doc = ensureDocument(input);
   const metadata: IconsMetadata = {};
 
   // Extract standard favicons

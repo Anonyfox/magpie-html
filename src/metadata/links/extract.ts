@@ -14,12 +14,16 @@
  * @packageDocumentation
  */
 
-import type { HTMLDocument as Document } from '../../utils/html-parser.js';
+import {
+  type HTMLDocument as Document,
+  type DocumentInput,
+  ensureDocument,
+} from '../../utils/html-parser.js';
 import { normalizeUrl } from '../../utils/normalize-url.js';
 import type { ExtractedLink, LinksExtractionOptions, LinksMetadata } from './types.js';
 
 /**
- * Extract links from parsed HTML document.
+ * Extract links from HTML.
  *
  * @remarks
  * Extracts all `<a href>` links with comprehensive metadata and filtering options.
@@ -34,21 +38,25 @@ import type { ExtractedLink, LinksExtractionOptions, LinksMetadata } from './typ
  * - Deduplication
  * - Link text extraction
  *
- * @param doc - Parsed HTML document
+ * @param input - Parsed HTML document or raw HTML string
  * @param baseUrl - Base URL for resolving relative links and determining internal/external
  * @param options - Extraction options for filtering and categorization
  * @returns Links metadata with categorized links
  *
  * @example
  * ```typescript
+ * // With parsed document (recommended for multiple extractions)
  * const doc = parseHTML(htmlString);
  * const links = extractLinks(doc, 'https://example.com');
+ *
+ * // Or directly with HTML string
+ * const links = extractLinks(htmlString, 'https://example.com');
  *
  * // Get all internal links (same origin)
  * console.log(links.internal);
  *
  * // Get external links excluding nofollow
- * const linksNoFollow = extractLinks(doc, 'https://example.com', {
+ * const linksNoFollow = extractLinks(htmlString, 'https://example.com', {
  *   scope: 'external',
  *   excludeRel: ['nofollow']
  * });
@@ -57,17 +65,18 @@ import type { ExtractedLink, LinksExtractionOptions, LinksMetadata } from './typ
  * @example
  * ```typescript
  * // Crawler use case - get follow-able links
- * const links = extractLinks(doc, baseUrl, {
+ * const links = extractLinks(html, baseUrl, {
  *   excludeRel: ['nofollow', 'ugc', 'sponsored'],
  *   includeHashLinks: false
  * });
  * ```
  */
 export function extractLinks(
-  doc: Document,
+  input: DocumentInput,
   baseUrl?: string | URL | null,
   options: LinksExtractionOptions = {},
 ): LinksMetadata {
+  const doc = ensureDocument(input);
   const opts = normalizeOptions(options);
 
   // Determine effective base URL (from <base> tag or parameter)

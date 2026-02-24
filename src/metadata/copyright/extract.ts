@@ -7,30 +7,33 @@
  * @packageDocumentation
  */
 
-import type { HTMLDocument as Document } from '../../utils/html-parser.js';
+import { type DocumentInput, ensureDocument } from '../../utils/html-parser.js';
 import { getLinkHref } from '../../utils/link-helpers.js';
 import { getMetaContent } from '../../utils/meta-helpers.js';
 import type { CopyrightMetadata } from './types.js';
 
 /**
- * Extract copyright metadata from parsed HTML document.
+ * Extract copyright metadata from HTML.
  *
  * @remarks
  * Extracts copyright and licensing information from meta tags, link tags,
  * and Schema.org structured data.
  *
- * @param doc - Parsed HTML document
+ * @param input - Parsed HTML document or raw HTML string
  * @returns Copyright metadata
  *
  * @example
  * ```typescript
+ * // With parsed document (recommended for multiple extractions)
  * const doc = parseHTML(htmlString);
  * const copyright = extractCopyright(doc);
- * console.log(copyright.copyright);
- * console.log(copyright.license);
+ *
+ * // Or directly with HTML string
+ * const copyright = extractCopyright(htmlString);
  * ```
  */
-export function extractCopyright(doc: Document): CopyrightMetadata {
+export function extractCopyright(input: DocumentInput): CopyrightMetadata {
+  const doc = ensureDocument(input);
   const metadata: CopyrightMetadata = {};
 
   // Extract copyright from meta tag

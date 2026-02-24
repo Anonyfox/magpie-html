@@ -7,30 +7,37 @@
  * @packageDocumentation
  */
 
-import type { HTMLDocument as Document } from '../../utils/html-parser.js';
+import {
+  type HTMLDocument as Document,
+  type DocumentInput,
+  ensureDocument,
+} from '../../utils/html-parser.js';
 import { getAllLinks, getLinkHref } from '../../utils/link-helpers.js';
 import { getMetaProperty } from '../../utils/meta-helpers.js';
 import type { AlternateLink, AppLinks, CanonicalMetadata } from './types.js';
 
 /**
- * Extract canonical and alternate URL metadata from parsed HTML document.
+ * Extract canonical and alternate URL metadata from HTML.
  *
  * @remarks
  * Extracts canonical URLs, language alternates, AMP versions, manifests,
  * and app linking metadata.
  *
- * @param doc - Parsed HTML document
+ * @param input - Parsed HTML document or raw HTML string
  * @returns Canonical metadata object
  *
  * @example
  * ```typescript
+ * // With parsed document (recommended for multiple extractions)
  * const doc = parseHTML(htmlString);
  * const canonical = extractCanonical(doc);
- * console.log(canonical.canonical);
- * console.log(canonical.alternates);
+ *
+ * // Or directly with HTML string
+ * const canonical = extractCanonical(htmlString);
  * ```
  */
-export function extractCanonical(doc: Document): CanonicalMetadata {
+export function extractCanonical(input: DocumentInput): CanonicalMetadata {
+  const doc = ensureDocument(input);
   const metadata: CanonicalMetadata = {};
 
   // Extract canonical URL

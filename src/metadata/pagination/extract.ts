@@ -7,29 +7,32 @@
  * @packageDocumentation
  */
 
-import type { HTMLDocument as Document } from '../../utils/html-parser.js';
+import { type DocumentInput, ensureDocument } from '../../utils/html-parser.js';
 import { getLinkHref } from '../../utils/link-helpers.js';
 import type { PaginationMetadata } from './types.js';
 
 /**
- * Extract pagination metadata from parsed HTML document.
+ * Extract pagination metadata from HTML.
  *
  * @remarks
  * Extracts pagination navigation links including prev, next, first, last,
  * up (parent), and index links.
  *
- * @param doc - Parsed HTML document
+ * @param input - Parsed HTML document or raw HTML string
  * @returns Pagination metadata
  *
  * @example
  * ```typescript
+ * // With parsed document (recommended for multiple extractions)
  * const doc = parseHTML(htmlString);
  * const pagination = extractPagination(doc);
- * console.log(pagination.prev); // Previous page URL
- * console.log(pagination.next); // Next page URL
+ *
+ * // Or directly with HTML string
+ * const pagination = extractPagination(htmlString);
  * ```
  */
-export function extractPagination(doc: Document): PaginationMetadata {
+export function extractPagination(input: DocumentInput): PaginationMetadata {
+  const doc = ensureDocument(input);
   const metadata: PaginationMetadata = {};
 
   // Extract prev/previous (both rel values are valid)

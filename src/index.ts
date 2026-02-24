@@ -145,5 +145,5 @@ export {
   swoop,
 } from './swoop/index.js';
 // Utilities
-export type { HTMLDocument } from './utils/html-parser.js';
+export type { DocumentInput, HTMLDocument } from './utils/html-parser.js';
 export { parseHTML } from './utils/html-parser.js';

@@ -7,29 +7,32 @@
  * @packageDocumentation
  */
 
-import type { HTMLDocument as Document } from '../../utils/html-parser.js';
+import { type DocumentInput, ensureDocument } from '../../utils/html-parser.js';
 import { extractGraphItems, matchesAnyType, parseJsonLd } from './parse-json-ld.js';
 import type { SchemaOrgMetadata } from './types.js';
 
 /**
- * Extract Schema.org metadata from parsed HTML document.
+ * Extract Schema.org metadata from HTML.
  *
  * @remarks
  * Finds all <script type="application/ld+json"> tags, parses the JSON-LD,
  * and organizes by type for easy access.
  *
- * @param doc - Parsed HTML document
+ * @param input - Parsed HTML document or raw HTML string
  * @returns Schema.org metadata object
  *
  * @example
  * ```typescript
+ * // With parsed document (recommended for multiple extractions)
  * const doc = parseHTML(htmlString);
  * const schema = extractSchemaOrg(doc);
- * console.log(schema.jsonLd.length);
- * console.log(schema.articles);
+ *
+ * // Or directly with HTML string
+ * const schema = extractSchemaOrg(htmlString);
  * ```
  */
-export function extractSchemaOrg(doc: Document): SchemaOrgMetadata {
+export function extractSchemaOrg(input: DocumentInput): SchemaOrgMetadata {
+  const doc = ensureDocument(input);
   const metadata: SchemaOrgMetadata = {
     jsonLd: [],
   };

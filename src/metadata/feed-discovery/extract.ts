@@ -7,34 +7,37 @@
  * @packageDocumentation
  */
 
-import type { HTMLDocument as Document } from '../../utils/html-parser.js';
+import { type DocumentInput, ensureDocument } from '../../utils/html-parser.js';
 import { getAllLinks } from '../../utils/link-helpers.js';
 import { generateFeedSuggestions } from './heuristics.js';
 import type { DiscoveredFeed, FeedDiscoveryMetadata } from './types.js';
 
 /**
- * Extract feed discovery metadata from parsed HTML document.
+ * Extract feed discovery metadata from HTML.
  *
  * @remarks
  * Finds all feeds declared in <link rel="alternate"> tags and generates
  * suggestions for common feed URL patterns.
  *
- * @param doc - Parsed HTML document
+ * @param input - Parsed HTML document or raw HTML string
  * @param documentUrl - Optional document URL for generating absolute feed suggestions
  * @returns Feed discovery metadata
  *
  * @example
  * ```typescript
+ * // With parsed document (recommended for multiple extractions)
  * const doc = parseHTML(htmlString);
  * const feeds = extractFeedDiscovery(doc, 'https://example.com');
- * console.log(feeds.feeds); // Discovered feeds
- * console.log(feeds.suggestions); // Suggested feed URLs
+ *
+ * // Or directly with HTML string
+ * const feeds = extractFeedDiscovery(htmlString, 'https://example.com');
  * ```
  */
 export function extractFeedDiscovery(
-  doc: Document,
+  input: DocumentInput,
   documentUrl?: string | URL,
 ): FeedDiscoveryMetadata {
+  const doc = ensureDocument(input);
   const metadata: FeedDiscoveryMetadata = {
     feeds: [],
   };

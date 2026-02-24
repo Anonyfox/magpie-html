@@ -7,28 +7,31 @@
  * @packageDocumentation
  */
 
-import type { HTMLDocument as Document } from '../../utils/html-parser.js';
+import { type DocumentInput, ensureDocument } from '../../utils/html-parser.js';
 import { getMetaContent } from '../../utils/meta-helpers.js';
 import type { VerificationMetadata } from './types.js';
 
 /**
- * Extract verification metadata from parsed HTML document.
+ * Extract verification metadata from HTML.
  *
  * @remarks
  * Extracts verification tags used by various platforms for domain and ownership verification.
  *
- * @param doc - Parsed HTML document
+ * @param input - Parsed HTML document or raw HTML string
  * @returns Verification metadata
  *
  * @example
  * ```typescript
+ * // With parsed document (recommended for multiple extractions)
  * const doc = parseHTML(htmlString);
  * const verification = extractVerification(doc);
- * console.log(verification.googleSiteVerification);
- * console.log(verification.facebookDomainVerification);
+ *
+ * // Or directly with HTML string
+ * const verification = extractVerification(htmlString);
  * ```
  */
-export function extractVerification(doc: Document): VerificationMetadata {
+export function extractVerification(input: DocumentInput): VerificationMetadata {
+  const doc = ensureDocument(input);
   const metadata: VerificationMetadata = {};
 
   // Google Site Verification

@@ -7,29 +7,32 @@
  * @packageDocumentation
  */
 
-import type { HTMLDocument as Document } from '../../utils/html-parser.js';
+import { type DocumentInput, ensureDocument } from '../../utils/html-parser.js';
 import { getMetaContent } from '../../utils/meta-helpers.js';
 import type { GeoMetadata, GeoPosition } from './types.js';
 
 /**
- * Extract geographic metadata from parsed HTML document.
+ * Extract geographic metadata from HTML.
  *
  * @remarks
  * Extracts geographic location information including coordinates,
  * place names, and region codes from meta tags.
  *
- * @param doc - Parsed HTML document
+ * @param input - Parsed HTML document or raw HTML string
  * @returns Geographic metadata
  *
  * @example
  * ```typescript
+ * // With parsed document (recommended for multiple extractions)
  * const doc = parseHTML(htmlString);
  * const geo = extractGeo(doc);
- * console.log(geo.position?.latitude);
- * console.log(geo.placename);
+ *
+ * // Or directly with HTML string
+ * const geo = extractGeo(htmlString);
  * ```
  */
-export function extractGeo(doc: Document): GeoMetadata {
+export function extractGeo(input: DocumentInput): GeoMetadata {
+  const doc = ensureDocument(input);
   const metadata: GeoMetadata = {};
 
   // Extract position from geo.position (semicolon-separated lat;long)

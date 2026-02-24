@@ -13,12 +13,16 @@
  * @packageDocumentation
  */
 
-import type { HTMLDocument as Document } from '../../utils/html-parser.js';
+import {
+  type HTMLDocument as Document,
+  type DocumentInput,
+  ensureDocument,
+} from '../../utils/html-parser.js';
 import { normalizeUrl } from '../../utils/normalize-url.js';
 import type { AssetsMetadata, ConnectionHint, PreloadResource } from './types.js';
 
 /**
- * Extract assets metadata from parsed HTML document.
+ * Extract assets metadata from HTML.
  *
  * @remarks
  * Extracts all external assets referenced in the document, organized by type.
@@ -34,20 +38,22 @@ import type { AssetsMetadata, ConnectionHint, PreloadResource } from './types.js
  * - Preloads: `<link rel="preload">` and `<link rel="prefetch">`
  * - Connection hints: `<link rel="dns-prefetch">` and `<link rel="preconnect">`
  *
- * @param doc - Parsed HTML document
+ * @param input - Parsed HTML document or raw HTML string
  * @param baseUrl - Optional base URL for resolving relative URLs
  * @returns Assets metadata object with categorized URLs
  *
  * @example
  * ```typescript
+ * // With parsed document (recommended for multiple extractions)
  * const doc = parseHTML(htmlString);
  * const assets = extractAssets(doc, 'https://example.com');
- * console.log(assets.images);
- * console.log(assets.stylesheets);
- * console.log(assets.scripts);
+ *
+ * // Or directly with HTML string
+ * const assets = extractAssets(htmlString, 'https://example.com');
  * ```
  */
-export function extractAssets(doc: Document, baseUrl?: string | URL | null): AssetsMetadata {
+export function extractAssets(input: DocumentInput, baseUrl?: string | URL | null): AssetsMetadata {
+  const doc = ensureDocument(input);
   const metadata: AssetsMetadata = {};
 
   // Determine effective base URL (from <base> tag or parameter)

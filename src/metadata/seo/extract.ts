@@ -7,29 +7,32 @@
  * @packageDocumentation
  */
 
-import type { HTMLDocument as Document } from '../../utils/html-parser.js';
+import { type DocumentInput, ensureDocument } from '../../utils/html-parser.js';
 import { getMetaContent } from '../../utils/meta-helpers.js';
 import type { SEOMetadata } from './types.js';
 
 /**
- * Extract SEO metadata from parsed HTML document.
+ * Extract SEO metadata from HTML.
  *
  * @remarks
  * Extracts standard SEO meta tags including title, description, keywords,
  * and browser-specific configuration. All fields are optional.
  *
- * @param doc - Parsed HTML document
+ * @param input - Parsed HTML document or raw HTML string
  * @returns SEO metadata object
  *
  * @example
  * ```typescript
+ * // With parsed document (recommended for multiple extractions)
  * const doc = parseHTML(htmlString);
  * const seo = extractSEO(doc);
- * console.log(seo.title); // Page title
- * console.log(seo.description); // Meta description
+ *
+ * // Or directly with HTML string
+ * const seo = extractSEO(htmlString);
  * ```
  */
-export function extractSEO(doc: Document): SEOMetadata {
+export function extractSEO(input: DocumentInput): SEOMetadata {
+  const doc = ensureDocument(input);
   const metadata: SEOMetadata = {};
 
   // Extract <title> tag

@@ -7,28 +7,35 @@
  * @packageDocumentation
  */
 
-import type { HTMLDocument as Document } from '../../utils/html-parser.js';
+import {
+  type HTMLDocument as Document,
+  type DocumentInput,
+  ensureDocument,
+} from '../../utils/html-parser.js';
 import { getMetaContent } from '../../utils/meta-helpers.js';
 import type { SocialProfilesMetadata } from './types.js';
 
 /**
- * Extract social profiles metadata from parsed HTML document.
+ * Extract social profiles metadata from HTML.
  *
  * @remarks
  * Extracts social media profile URLs and handles from meta tags and structured data.
  *
- * @param doc - Parsed HTML document
+ * @param input - Parsed HTML document or raw HTML string
  * @returns Social profiles metadata
  *
  * @example
  * ```typescript
+ * // With parsed document (recommended for multiple extractions)
  * const doc = parseHTML(htmlString);
  * const profiles = extractSocialProfiles(doc);
- * console.log(profiles.twitter);
- * console.log(profiles.facebook);
+ *
+ * // Or directly with HTML string
+ * const profiles = extractSocialProfiles(htmlString);
  * ```
  */
-export function extractSocialProfiles(doc: Document): SocialProfilesMetadata {
+export function extractSocialProfiles(input: DocumentInput): SocialProfilesMetadata {
+  const doc = ensureDocument(input);
   const metadata: SocialProfilesMetadata = {};
 
   // Twitter - extract from multiple sources

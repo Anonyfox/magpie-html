@@ -41,3 +41,24 @@ export function parseHTML(html: string, baseUrl?: string): Document {
 // Export Document type alias for convenience
 // Note: This is the standard DOM Document type from linkedom
 export type HTMLDocument = Document;
+
+/**
+ * Input type that accepts either a parsed Document or raw HTML string.
+ * This allows extractor functions to be more forgiving.
+ */
+export type DocumentInput = Document | string;
+
+/**
+ * Ensure input is a parsed Document.
+ * If given a string, parses it. If given a Document, returns it as-is.
+ *
+ * @param input - Either a parsed Document or raw HTML string
+ * @param baseUrl - Optional base URL (only used if parsing string)
+ * @returns Parsed Document
+ */
+export function ensureDocument(input: DocumentInput, baseUrl?: string): Document {
+  if (typeof input === 'string') {
+    return parseHTML(input, baseUrl);
+  }
+  return input;
+}

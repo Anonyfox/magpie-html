@@ -7,29 +7,32 @@
  * @packageDocumentation
  */
 
-import type { HTMLDocument as Document } from '../../utils/html-parser.js';
+import { type DocumentInput, ensureDocument } from '../../utils/html-parser.js';
 import { getMetaContent } from '../../utils/meta-helpers.js';
 import type { NewsMetadata } from './types.js';
 
 /**
- * Extract news metadata from parsed HTML document.
+ * Extract news metadata from HTML.
  *
  * @remarks
  * Extracts news-specific metadata including keywords, standout tags,
  * and syndication information.
  *
- * @param doc - Parsed HTML document
+ * @param input - Parsed HTML document or raw HTML string
  * @returns News metadata
  *
  * @example
  * ```typescript
+ * // With parsed document (recommended for multiple extractions)
  * const doc = parseHTML(htmlString);
  * const news = extractNews(doc);
- * console.log(news.keywords);
- * console.log(news.standout);
+ *
+ * // Or directly with HTML string
+ * const news = extractNews(htmlString);
  * ```
  */
-export function extractNews(doc: Document): NewsMetadata {
+export function extractNews(input: DocumentInput): NewsMetadata {
+  const doc = ensureDocument(input);
   const metadata: NewsMetadata = {};
 
   // News keywords (distinct from regular keywords)

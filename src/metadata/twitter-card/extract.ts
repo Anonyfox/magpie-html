@@ -7,29 +7,36 @@
  * @packageDocumentation
  */
 
-import type { HTMLDocument as Document } from '../../utils/html-parser.js';
+import {
+  type HTMLDocument as Document,
+  type DocumentInput,
+  ensureDocument,
+} from '../../utils/html-parser.js';
 import { getMetaContent } from '../../utils/meta-helpers.js';
 import type { TwitterApp, TwitterCardMetadata, TwitterPlayer } from './types.js';
 
 /**
- * Extract Twitter Card metadata from parsed HTML document.
+ * Extract Twitter Card metadata from HTML.
  *
  * @remarks
  * Extracts Twitter Card metadata including card type, site/creator info,
  * title/description, images, app cards, and player cards.
  *
- * @param doc - Parsed HTML document
+ * @param input - Parsed HTML document or raw HTML string
  * @returns Twitter Card metadata object
  *
  * @example
  * ```typescript
+ * // With parsed document (recommended for multiple extractions)
  * const doc = parseHTML(htmlString);
  * const twitter = extractTwitterCard(doc);
- * console.log(twitter.card);
- * console.log(twitter.title);
+ *
+ * // Or directly with HTML string
+ * const twitter = extractTwitterCard(htmlString);
  * ```
  */
-export function extractTwitterCard(doc: Document): TwitterCardMetadata {
+export function extractTwitterCard(input: DocumentInput): TwitterCardMetadata {
+  const doc = ensureDocument(input);
   const metadata: TwitterCardMetadata = {};
 
   // Basic Twitter Card properties

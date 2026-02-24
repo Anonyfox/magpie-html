@@ -7,7 +7,11 @@
  * @packageDocumentation
  */
 
-import type { HTMLDocument as Document } from '../../utils/html-parser.js';
+import {
+  type HTMLDocument as Document,
+  type DocumentInput,
+  ensureDocument,
+} from '../../utils/html-parser.js';
 import { getAllMetaPropertyValues, getMetaProperty } from '../../utils/meta-helpers.js';
 import type {
   OpenGraphArticle,
@@ -38,7 +42,8 @@ import type {
  * console.log(og.article?.publishedTime);
  * ```
  */
-export function extractOpenGraph(doc: Document): OpenGraphMetadata {
+export function extractOpenGraph(input: DocumentInput): OpenGraphMetadata {
+  const doc = ensureDocument(input);
   const metadata: OpenGraphMetadata = {};
 
   // Extract basic OpenGraph properties

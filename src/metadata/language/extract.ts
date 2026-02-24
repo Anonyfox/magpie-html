@@ -7,7 +7,7 @@
  * @packageDocumentation
  */
 
-import type { HTMLDocument as Document } from '../../utils/html-parser.js';
+import { type DocumentInput, ensureDocument } from '../../utils/html-parser.js';
 import {
   getAllMetaPropertyValues,
   getMetaContent,
@@ -17,24 +17,27 @@ import {
 import type { LanguageMetadata } from './types.js';
 
 /**
- * Extract language and localization metadata from parsed HTML document.
+ * Extract language and localization metadata from HTML.
  *
  * @remarks
  * Extracts language information from HTML lang attribute, meta tags,
  * and OpenGraph locale. Normalizes to provide a primary language and region.
  *
- * @param doc - Parsed HTML document
+ * @param input - Parsed HTML document or raw HTML string
  * @returns Language metadata
  *
  * @example
  * ```typescript
+ * // With parsed document (recommended for multiple extractions)
  * const doc = parseHTML(htmlString);
  * const lang = extractLanguage(doc);
- * console.log(lang.primary); // 'en'
- * console.log(lang.region); // 'US'
+ *
+ * // Or directly with HTML string
+ * const lang = extractLanguage(htmlString);
  * ```
  */
-export function extractLanguage(doc: Document): LanguageMetadata {
+export function extractLanguage(input: DocumentInput): LanguageMetadata {
+  const doc = ensureDocument(input);
   const metadata: LanguageMetadata = {};
 
   // Extract HTML lang attribute

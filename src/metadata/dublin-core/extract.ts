@@ -7,30 +7,37 @@
  * @packageDocumentation
  */
 
-import type { HTMLDocument as Document } from '../../utils/html-parser.js';
+import {
+  type HTMLDocument as Document,
+  type DocumentInput,
+  ensureDocument,
+} from '../../utils/html-parser.js';
 import { getMetaContent } from '../../utils/meta-helpers.js';
 import type { DublinCoreMetadata } from './types.js';
 
 /**
- * Extract Dublin Core metadata from parsed HTML document.
+ * Extract Dublin Core metadata from HTML.
  *
  * @remarks
  * Extracts Dublin Core metadata using both DC. and dcterms. prefixes.
  * Fields that can have multiple values (creator, subject, contributor)
  * are extracted as arrays.
  *
- * @param doc - Parsed HTML document
+ * @param input - Parsed HTML document or raw HTML string
  * @returns Dublin Core metadata object
  *
  * @example
  * ```typescript
+ * // With parsed document (recommended for multiple extractions)
  * const doc = parseHTML(htmlString);
  * const dc = extractDublinCore(doc);
- * console.log(dc.title);
- * console.log(dc.creator);
+ *
+ * // Or directly with HTML string
+ * const dc = extractDublinCore(htmlString);
  * ```
  */
-export function extractDublinCore(doc: Document): DublinCoreMetadata {
+export function extractDublinCore(input: DocumentInput): DublinCoreMetadata {
+  const doc = ensureDocument(input);
   const metadata: DublinCoreMetadata = {};
 
   // Extract single-value fields (try DC. first, then dcterms.)

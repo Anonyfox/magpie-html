@@ -8,28 +8,31 @@
  * @packageDocumentation
  */
 
-import type { HTMLDocument as Document } from '../../utils/html-parser.js';
+import { type DocumentInput, ensureDocument } from '../../utils/html-parser.js';
 import type { AnalyticsMetadata } from './types.js';
 
 /**
- * Extract analytics metadata from parsed HTML document.
+ * Extract analytics metadata from HTML.
  *
  * @remarks
  * Detects analytics service IDs by examining script tags and their content.
  * Only extracts identifiers, does not track or collect user data.
  *
- * @param doc - Parsed HTML document
+ * @param input - Parsed HTML document or raw HTML string
  * @returns Analytics metadata
  *
  * @example
  * ```typescript
+ * // With parsed document (recommended for multiple extractions)
  * const doc = parseHTML(htmlString);
  * const analytics = extractAnalytics(doc);
- * console.log(analytics.googleAnalytics);
- * console.log(analytics.googleTagManager);
+ *
+ * // Or directly with HTML string
+ * const analytics = extractAnalytics(htmlString);
  * ```
  */
-export function extractAnalytics(doc: Document): AnalyticsMetadata {
+export function extractAnalytics(input: DocumentInput): AnalyticsMetadata {
+  const doc = ensureDocument(input);
   const metadata: AnalyticsMetadata = {};
 
   // Get all script tags

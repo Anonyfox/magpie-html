@@ -7,30 +7,33 @@
  * @packageDocumentation
  */
 
-import type { HTMLDocument as Document } from '../../utils/html-parser.js';
+import { type DocumentInput, ensureDocument } from '../../utils/html-parser.js';
 import { getMetaContent } from '../../utils/meta-helpers.js';
 import { parseDirectives } from './parse-directives.js';
 import type { RobotsMetadata } from './types.js';
 
 /**
- * Extract robots metadata from parsed HTML document.
+ * Extract robots metadata from HTML.
  *
  * @remarks
  * Extracts robot directives from meta tags for general robots,
  * Googlebot, Bingbot, and Google News bot.
  *
- * @param doc - Parsed HTML document
+ * @param input - Parsed HTML document or raw HTML string
  * @returns Robots metadata
  *
  * @example
  * ```typescript
+ * // With parsed document (recommended for multiple extractions)
  * const doc = parseHTML(htmlString);
  * const robots = extractRobots(doc);
- * console.log(robots.robots?.index); // true/false
- * console.log(robots.robots?.follow); // true/false
+ *
+ * // Or directly with HTML string
+ * const robots = extractRobots(htmlString);
  * ```
  */
-export function extractRobots(doc: Document): RobotsMetadata {
+export function extractRobots(input: DocumentInput): RobotsMetadata {
+  const doc = ensureDocument(input);
   const metadata: RobotsMetadata = {};
 
   // Extract general robots directives
