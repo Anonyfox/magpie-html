@@ -1,6 +1,6 @@
 {
   "name": "magpie-html",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Modern TypeScript library for scraping web content with isomorphic support",
   "type": "module",
   "main": "./dist/index.cjs",
